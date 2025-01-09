@@ -5,7 +5,6 @@ on:
   push:
     branches:
       - master 
-      - main
 permissions:
   contents: write
 jobs:
@@ -28,5 +27,4 @@ jobs:
           restore-keys: |
             mkdocs-material-
       - run: pip install -r requirements.txt
-      - run: pip install mkdocs-material 
       - run: mkdocs gh-deploy --force
