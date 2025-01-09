@@ -1,10 +1,6 @@
 ---
-id: ledger
 title: Using the Polkadot Ledger Apps
-sidebar_label: Ledger
 description: Use the Polkadot Ledger Application.
-keywords: [ledger, staking, polkadot app]
-slug: ../ledger
 ---
 
 import MessageBox from "../../components/MessageBox"; import "../../components/MessageBox.css";

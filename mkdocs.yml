@@ -2,13 +2,13 @@ site_name: Polkadot Wiki
 site_url: https://w3f.github.io/polkadot-wiki-mkdocs
 theme:
   name: material
+  custom_dir: overrides
   features:
     - content.code.annotate
     - content.tooltips
     - navigation.footer
     - navigation.tabs 
     - navigation.tabs.sticky
-    - navigation.sections 
     - navigation.indexes 
     - navigation.top 
     - navigation.path

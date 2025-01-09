@@ -1,24 +1,16 @@
 ---
-id: wallets-and-extensions
 title: Wallets and Extensions
-sidebar_label: Wallets and Extensions
 description: An Overview of Wallets and Browser Extensions in the Polkadot Ecosystem.
-keywords: [wallets, account, signer, supported wallets, balance, token]
-slug: ../wallets-and-extensions
 ---
 
-caution
+!!!caution
 
-Using your due diligence in researching and using the wallets listed below would be best. For any
-issues related to these wallet, reach out to their support teams directly.
-
-
+    Using your due diligence in researching and using the wallets listed below would be best. For any
+    issues related to these wallet, reach out to their support teams directly.
 
 !!!info
-Explore Polkadot with a secure and user-friendly wallets listed on the
-[Polkadot website](https://www.polkadot.network/ecosystem/wallets/).
-
-
+    Explore Polkadot with a secure and user-friendly wallets listed on the
+    [Polkadot website](https://www.polkadot.network/ecosystem/wallets/).
 
 If you are new to blockchain technology, generally a typical blockchain network account is a
 public-private key pair. Access to a private key gives full access to all the allowed transactions

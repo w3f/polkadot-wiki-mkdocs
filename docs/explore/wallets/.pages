@@ -1,0 +1,5 @@
+title: Wallets
+nav:
+  - 'Wallets and Extensions': wallets-and-extensions.md
+  - 'Ledger': ledger.md
+  - 'Polkadot Vault': polkadot-vault.md
