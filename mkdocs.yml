@@ -1,0 +1,39 @@
+site_name: Polkadot Wiki
+site_url: http://wiki.polkadot.com
+theme:
+  name: material
+  features:
+    - content.code.annotate
+    - content.tooltips
+    - navigation.footer
+    - navigation.tabs 
+    - navigation.tabs.sticky
+    - navigation.sections 
+    - navigation.indexes 
+    - navigation.top 
+    - navigation.path
+    - content.action.edit
+  palette: 
+    scheme: default
+    primary: pink
+    accent: pink
+  logo: assets/logo.png
+
+plugins:
+  - awesome-pages
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  
+    
+  
