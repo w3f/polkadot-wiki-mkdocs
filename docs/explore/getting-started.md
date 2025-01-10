@@ -15,7 +15,7 @@ learning, building, and maintaining on Polkadot.
 
 The Wiki has three main sections:
 
-- [**Learn**](./learn-index) (for people who want to learn about Polkadot)
+- [**Learn**](../../learn) (for people who want to learn about Polkadot)
 - [**Build**](../build/build-index.md) (for people who want to build on Polkadot)
 - [**Maintain**](../maintain/maintain-index.md) (for people who want to maintain the Polkadot
   network).
