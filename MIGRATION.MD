@@ -1,3 +1,15 @@
+
+# Migration
+
+Guidelines for migrating from Docusaurus to Mkdocs.
+
+
+<!-- no toc -->
+- [Migrating Structure](#migrating-structure)
+- [Migrating Admonition](#migrating-admonitions)
+
+## Migrating Structure
+
 The Wiki is currently structured as follows: https://github.com/w3f/polkadot-wiki/blob/master/polkadot-wiki/sidebars.js
 
 I am proposing we use the awesome pages mkdocs plugin, which is the same way we structure pages inside of Polkadot Docs. It is pretty simple to use, but will require us to port over the structure above to it (which needs to happen regardless).
@@ -68,3 +80,22 @@ description: An Overview of Wallets and Browser Extensions in the Polkadot Ecosy
 ```
 
 Rinse and repeat for each section, and we would've migrated the current structure to MKdocs.
+
+## Migrating Admonitions
+
+Goes from: 
+
+```
+:::info 
+This is my info admonitions!
+:::
+```
+
+to: 
+
+```
+!!!info 
+    This is my info admonition!
+```
+
+Make sure the content is indented, otherwise it won't format properly.
