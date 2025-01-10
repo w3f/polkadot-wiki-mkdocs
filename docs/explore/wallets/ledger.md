@@ -71,25 +71,15 @@ Ledger apps are developed by [Zondax](https://zondax.ch/) and are available
 [here](https://github.com/Zondax/ledger-polkadot). The Polkadot Ledger application allows you to
 manage Polkadot, Kusama and their parachains native tokens.
 
-!!!note Ledger apps may not support all the transactions
-
-Check the [Ledger Polkadot App](https://github.com/Zondax/ledger-polkadot) specification for the
-list of transactions supported. Some transactions are supported only on a specific app version, and
-others are not supported by any version. For instance, joining a
-[nomination pool](../learn/learn-nomination-pools.md) is only possible with the **XL version** but
-not on the **lite version**.
-
-
+!!! note "Ledger apps may not support all the transactions"
+    Check the [Ledger Polkadot App](https://github.com/Zondax/ledger-polkadot) specification for the list of transactions supported. Some transactions are supported only on a specific app version, and others are not supported by any version. For instance, joining a [nomination pool](../learn/learn-nomination-pools.md) is only possible with the **XL version** but not on the **lite version**.
 
 ### Polkadot Migration App
 
-!!!warning For Migration Only
+!!! warning "For Migration Only"
+    This app is only meant for performing the migration to the Polkadot Generic App; do not use it frequently. 
 
-This app is only meant for performing the migration to the Polkadot Generic App; do not use it
-frequently. After you migrate your assets, delete the Migration app and use the Polkadot Generic
-App.
-
-
+    After you migrate your assets, delete the Migration app and use the Polkadot Generic App.
 
 The Polkadot Migration app is for users having **old Ledger accounts not on the Polkadot relay chain
 and [Polkadot System Chains](./glossary.md#system-parachains)**. Old Ledger accounts are accounts
@@ -103,11 +93,8 @@ Ledger app.
 
 ### Polkadot (Generic) App
 
-!!!info Ledger Generic Support
-
-See [this page](https://data.parity.io/metadata) to see which chains support the Ledger Generic App.
-
-
+!!! info "Ledger Generic Support"
+    See [this page](https://data.parity.io/metadata) to see which chains support the Ledger Generic App.
 
 The Polkadot Ledger Generic App will allow you to use your Ledger device on the relay chain and
 parachains without being affected by runtime upgrades. The goal is to provide a single application
@@ -150,13 +137,10 @@ Chains and parachains, and Polkadot parachains, see the procedure below:
 - When the migration process is finished, you can delete the Migration app, and everything will be
   accessible using the Polkadot Generic app.
 
-!!!info Staking and Identities
-
-The migration process will also include removing identities from your old account and resetting them
-to the new one. You will also need to unstake, wait for the unbonding period, transfer the funds to
-the new account, and stake again.
-
-
+!!! info "Staking and Identities"
+    The migration process will also include removing identities from your old account and resetting them
+    to the new one. You will also need to unstake, wait for the unbonding period, transfer the funds to
+    the new account, and stake again.
 
 ## Using Ledger Live
 
@@ -166,9 +150,8 @@ to learn how to use Polkadot with ledger live.
 
 ---
 
-!!!info Polkadot-JS Guides
-
-If you are an advanced user, see the
-[Polkadot-JS guides about Ledger](../learn/learn-guides-ledger.md).
+!!! info "Polkadot-JS Guides"
+    If you are an advanced user, see the
+    [Polkadot-JS guides about Ledger](../learn/learn-guides-ledger.md).
 
 
