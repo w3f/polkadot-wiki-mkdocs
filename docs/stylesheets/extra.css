@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
+
+:root {
+    --md-text-font: sans-serif;
+    --md-default-fg-color: #000;
+}
+
+h1 {
+    font-family: 'Unbounded', sans-serif;
+    color: var(--md-default-fg-color) !important;
+    font-weight: 900;
+}
+
+.md-tabs__list {
+    margin-bottom: 15px;
+}
+
+.md-tabs__link {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+nav .md-header__ellipsis {
+    font-family: 'Unbounded', sans-serif;
+}
+
+.md-header__button.md-logo img, .md-header__button.md-logo svg {
+    height: 2rem;
+}
+
+.md-nav__list {
+    font-size: 16px;
+    color: var(--md-default-fg-color) !important;
+}
+
+.md-grid {
+    max-width: 80rem;
+}
