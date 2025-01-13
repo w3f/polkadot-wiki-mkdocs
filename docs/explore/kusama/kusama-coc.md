@@ -27,13 +27,12 @@ knowledge about Kusama and all related content. This knowledge equips the commun
 requisite information needed to dispense of their duties as a participant.
 
 !!!note Examples of Unacceptable Behavior
+    These are just a few examples, and you can always consult a team member if you have any questions.
 
-These are just a few examples, and you can always consult a team member if you have any questions.
-
-- Obnoxious, aggressive comments towards individuals or other projects on any medium of
-  communication.
-- Knowingly distributing false information about Kusama or other projects.
-- Harassing other individuals or projects.
+    - Obnoxious, aggressive comments towards individuals or other projects on any medium of
+      communication.
+    - Knowingly distributing false information about Kusama or other projects.
+    - Harassing other individuals or projects.
 
 
 
@@ -41,12 +40,11 @@ That said, please note that Kusama is an edgy and meme-friendly network, and com
 actions shouldn't be taken too seriously - try to assume jest before malice.
 
 !!!tip What To Do If You Witness or Are Subject To Unacceptable Behavior
+    If you are being harassed, notice that someone else is being harassed, or have any other concerns
+    relating to harassment, please contact the administrator of the channel you’re in.
 
-If you are being harassed, notice that someone else is being harassed, or have any other concerns
-relating to harassment, please contact the administrator of the channel you’re in.
-
-This Code of Conduct may be revised at any time. We are always willing to revise this document based
-on feedback from the Kusama participants and/or the Polkadot community.
+    This Code of Conduct may be revised at any time. We are always willing to revise this document based
+    on feedback from the Kusama participants and/or the Polkadot community.
 
 
 

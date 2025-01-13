@@ -16,22 +16,20 @@ and holds real economic value. For developers, Kusama is a proving ground for ru
 on-chain governance, and parachains.
 
 !!!info No Promises
+    Kusama is owned by those who hold the Kusama tokens (KSM). There's no central kill switch and all
+    changes are made through the protocol's on-chain governance.
 
-Kusama is owned by those who hold the Kusama tokens (KSM). There's no central kill switch and all
-changes are made through the protocol's on-chain governance.
+    The network is a permissionless and anyone can come along and start using it. Those who participated
+    in the Polkadot sale can claim a proportional amount of KSM through the
+    [Kusama Claims process](../../learn/learn-guides-claims.md).
 
-The network is a permissionless and anyone can come along and start using it. Those who participated
-in the Polkadot sale can claim a proportional amount of KSM through the
-[Kusama Claims process](../../learn/learn-guides-claims.md).
-
-Kusama is experimental. **Expect Chaos**.
+    Kusama is experimental. **Expect Chaos**.
 
 
 
 !!!tip As a KSM holder
-
-You can interact with all the features of the Kusama network such as staking (i.e. validating or
-nominating), governance, basic transfers and everything else.
+    You can interact with all the features of the Kusama network such as staking (i.e. validating or
+    nominating), governance, basic transfers and everything else.
 
 
 

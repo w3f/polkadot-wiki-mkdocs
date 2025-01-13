@@ -15,9 +15,8 @@ versions of SQL. Below is a comparison table of common features between DuneSQL 
 SQL.
 
 !!!info DuneSQL Reference
-
-For more information on DuneSQL, please refer to the
-[DuneSQL documentation](https://docs.dune.com/query-engine/Functions-and-operators/index).
+    For more information on DuneSQL, please refer to the
+    [DuneSQL documentation](https://docs.dune.com/query-engine/Functions-and-operators/index).
 
 
 

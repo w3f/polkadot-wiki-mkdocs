@@ -19,9 +19,7 @@ Specifically, we highlight data on active accounts, extrinsics, events, and XCMs
 **View On Dune**: [Polkadot & Parachains Ecosystem Metrics](https://dune.com/substrate/polkadot)
 
 !!!info
-This page only shows a high-level overview of the ecosystem metics. For an in-depth analysis, please
-visit [Polkadot Dashboards](dune-analytics/polkadot-dashboards) and
-[Parachain Dashboards](dune-analytics/parachain-dashboards) categories.
+    This page only shows a high-level overview of the ecosystem metics. For an in-depth analysis, please visit [Polkadot Dashboards](dune-analytics/polkadot-dashboards) and [Parachain Dashboards](dune-analytics/parachain-dashboards) categories.
 
 For example, following are some of topics you might be interested in:
 

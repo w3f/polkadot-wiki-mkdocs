@@ -4,7 +4,6 @@ description: An Overview of Wallets and Browser Extensions in the Polkadot Ecosy
 ---
 
 !!!caution
-
     Using your due diligence in researching and using the wallets listed below would be best. For any
     issues related to these wallet, reach out to their support teams directly.
 
@@ -21,11 +20,10 @@ smartphone app (which are considered as a hot wallets as they are online), or an
 or a hardware wallet (which are considered as cold wallets as they are offline).
 
 !!!tip Not your keys, not your tokens!
-
-With **custodial wallets** (like accounts in centralized exchanges), another party controls your
-private keys. Private keys are used to access funds in your account, so you trust the exchange that
-your key will always be given to you whenever you need it. With **non-custodial wallets**, only you
-can access your account's private key.
+    With **custodial wallets** (like accounts in centralized exchanges), another party controls your
+    private keys. Private keys are used to access funds in your account, so you trust the exchange that
+    your key will always be given to you whenever you need it. With **non-custodial wallets**, only you
+    can access your account's private key.
 
 
 
@@ -51,9 +49,8 @@ them also allow interaction with air-gapped wallets and hardware devices.
 | [Fearless Wallet](https://fearlesswallet.io/)                                              | [Brave](https://chrome.google.com/webstore/detail/fearless-wallet/nhlnehondigmgckngjomcpcefcdplmgc), [Chrome](https://chrome.google.com/webstore/detail/fearless-wallet/nhlnehondigmgckngjomcpcefcdplmgc)                                                                                                                                                                                                         | No, No                       | **Yes** | No         | No             | No         | [Fearless Wallet Features](#fearless-wallet) |
 
 !!!info Ledger support only for chromium-based browsers
-
-Currently, all browser extensions support Ledger devices only on chromium-based browsers (i.e.
-Chrome, Brave, Edge, Opera).
+    Currently, all browser extensions support Ledger devices only on chromium-based browsers (i.e.
+    Chrome, Brave, Edge, Opera).
 
 
 

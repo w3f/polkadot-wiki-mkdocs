@@ -10,9 +10,8 @@ For more information about the Developer Heroes Program, see the
 [Polkadot blog post](https://polkadot.network/blog/introducing-the-polkadot-developer-heroes-program?utm_source=twitter&utm_medium=social&utm_campaign=dhp&utm_content=tweet&utm_term=announcement).
 
 !!!info Sign up
-
-Use [this form](https://info.polkadot.network/polkadot-developer-heroes?ref=cms.polkadot.network) to
-sign up and become a candidate for the Polkadot Developer Heroes Program.
+    Use [this form](https://info.polkadot.network/polkadot-developer-heroes?ref=cms.polkadot.network) to
+    sign up and become a candidate for the Polkadot Developer Heroes Program.
 
 
 

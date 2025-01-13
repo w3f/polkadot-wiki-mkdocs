@@ -21,12 +21,11 @@ For more information about Polkadot-JS you can consult the
 ## Polkadot-JS UI
 
 !!!info For Developers and Power Users Only
-
-Please note that this wallet UI is oriented toward developers and power users. Explore Polkadot with
-a secure and user-friendly wallets listed on the
-[Polkadot website](https://www.polkadot.network/ecosystem/wallets/). If you need help using the
-Polkadot-JS UI you can contact the
-[**Polkadot Support Team**](https://support.polkadot.network/support/home).
+    Please note that this wallet UI is oriented toward developers and power users. Explore Polkadot with
+    a secure and user-friendly wallets listed on the
+    [Polkadot website](https://www.polkadot.network/ecosystem/wallets/). If you need help using the
+    Polkadot-JS UI you can contact the
+    [**Polkadot Support Team**](https://support.polkadot.network/support/home).
 
 
 
@@ -52,9 +51,8 @@ The desktop app uses the [**Electron**](https://www.electronjs.org/) framework. 
 features as web app, the only difference being different account storage.
 
 !!!info Ledger not supported
-
-The desktop application does not support Ledger accounts. If you need a cold storage solution you
-can try Parity Signer (aka Polkadot Vault).
+    The desktop application does not support Ledger accounts. If you need a cold storage solution you
+    can try Parity Signer (aka Polkadot Vault).
 
 
 
@@ -80,12 +78,7 @@ and the [**Polkadot Staking Dashboard**](https://staking.polkadot.cloud/#/overvi
 transacting on-chain directly.
 
 !!!info Metadata Updates
-
-The browser extension is a tool that interacts with the Polkadot network, but it is disconnected
-from it when it is not in use. It is important you
-[**always check for metadata updates**](../learn/learn-guides-accounts.md#metadata-updates-with-the-polkadot-js-browser-extension)
-before using the extension or other account management tools such as Parity Signer (aka Polkadot
-Vault).
+    The browser extension is a tool that interacts with the Polkadot network, but it is disconnected from it when it is not in use. It is important you [**always check for metadata updates**](../learn/learn-guides-accounts.md#metadata-updates-with-the-polkadot-js-browser-extension) before using the extension or other account management tools such as Parity Signer (aka Polkadot Vault).
 
 
 

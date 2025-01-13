@@ -8,10 +8,9 @@ slug: ../learn-nft-projects
 ---
 
 !!!info Community Page
-
-This page is open to contributions from the community. Please follow the
-[Wiki contribution guidelines](https://github.com/w3f/polkadot-wiki#contributing-to-documentation)
-and add your NFT app to this page.
+      This page is open to contributions from the community. Please follow the
+      [Wiki contribution guidelines](https://github.com/w3f/polkadot-wiki#contributing-to-documentation)
+      and add your NFT app to this page.
 
 
 
@@ -20,11 +19,16 @@ and add your NFT app to this page.
 <!-- prettier-ignore -->
 <!-- no toc -->
 
+- [List of NFT Projects](#list-of-nft-projects)
 - [Astar](#astar)
 - [Basilisk](#basilisk)
 - [KodaDot](#kodadot)
+  - [The Team Behind KodaDot](#the-team-behind-kodadot)
+  - [Ecosystem Tools by KodaDot](#ecosystem-tools-by-kodadot)
 - [Moonbeam](#moonbeam)
 - [RMRK](#rmrk)
+  - [NFT Legos](#nft-legos)
+  - [NFT from Kanaria](#nft-from-kanaria)
 - [Asset Hub](#asset-hub)
 - [Unique Network](#unique-network)
 
@@ -176,9 +180,8 @@ builder to compose an NFT system of arbitrary complexity without smart contracts
 ![kanaria.png](../assets/nft/kanaria.png)
 
 !!!note Multi-resource NFTs
-
-A multi-resource NFT (gif of statue, and SVG-composable dynamic NFT in one) that can also equip
-other NFTs from within its "inventory".
+      A multi-resource NFT (gif of statue, and SVG-composable dynamic NFT in one) that can also equip
+      other NFTs from within its "inventory".
 
 
 

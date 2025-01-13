@@ -13,7 +13,7 @@ import "../../components/MessageBox.css";
 <MessageBox message="For fundraising in a decentralized, transparent, and regulatory compliant manner within the ecosystem, check out the [Polimec parachain](https://www.polimec.org/)." />
 
 !!!tip
-Check out the [programs](programs-index) for numerous ecosystem support opportunities.
+   Check out the [programs](programs-index) for numerous ecosystem support opportunities.
 
 
 

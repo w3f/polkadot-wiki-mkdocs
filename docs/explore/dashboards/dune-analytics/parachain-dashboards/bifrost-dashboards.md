@@ -118,9 +118,8 @@ Query result:
 <iframe src="https://dune.com/embeds/3532234/5941878/" height="350" width="100%"></iframe>
 
 !!!info DuneSQL Reference
-
-For more information on DuneSQL, please refer to the [DuneSQL Cheatsheet](../dunesql-cheatsheet.md)
-and
-[DuneSQL Official Documentation](https://docs.dune.com/query-engine/Functions-and-operators/index).
+    For more information on DuneSQL, please refer to the [DuneSQL Cheatsheet](../dunesql-cheatsheet.md)
+    and
+    [DuneSQL Official Documentation](https://docs.dune.com/query-engine/Functions-and-operators/index).
 
 

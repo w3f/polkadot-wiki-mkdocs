@@ -80,9 +80,8 @@ Query result:
 <iframe src="https://dune.com/embeds/3760873/6325506/d2393c18-9438-4199-bbd9-27cc28324e6f" height="350" width="100%"></iframe>
 
 !!!info DuneSQL Referece
-
-For more information on DuneSQL, please refer to the [DuneSQL Cheatsheet](../dunesql-cheatsheet.md)
-and
-[DuneSQL Official Documentation](https://docs.dune.com/query-engine/Functions-and-operators/index).
+    For more information on DuneSQL, please refer to the [DuneSQL Cheatsheet](../dunesql-cheatsheet.md)
+    and
+    [DuneSQL Official Documentation](https://docs.dune.com/query-engine/Functions-and-operators/index).
 
 

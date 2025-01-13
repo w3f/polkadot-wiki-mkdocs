@@ -12,23 +12,19 @@ to be the most extensive knowledge resource on the Polkadot and Kusama ecosystem
 material currently focuses on Polkadot and Kusama directly, but is open to covering informational
 material for community projects.
 
-caution Marketing material
+!!!caution Marketing Material
+      Please do not try to pull request any marketing material as this will be rejected.
 
-Please do not try to pull request any marketing material as this will be rejected.
+      Nonetheless, pull requests, discussions, and contributions from the community are encouraged. Active
+      community members who demonstrate a record of good contributions may be given `write` access to the
+      repository.
 
-
-
-Nonetheless, pull requests, discussions, and contributions from the community are encouraged. Active
-community members who demonstrate a record of good contributions may be given `write` access to the
-repository.
-
-Otherwise, the Web3 Foundation holds the administrative position and has the final say on the
-included content. Specifically, the foundation’s Technical Education team is most directly involved.
+      Otherwise, the Web3 Foundation holds the administrative position and has the final say on the
+      included content. Specifically, the foundation’s Technical Education team is most directly involved.
 
 !!!note Contributing Explainer
-
-Check out the [How to Contribute to the Polkadot Wiki](https://www.youtube.com/watch?v=6i55KOcy7B0)
-video for steps on contributions.
+      Check out the [How to Contribute to the Polkadot Wiki](https://www.youtube.com/watch?v=6i55KOcy7B0)
+      video for steps on contributions.
 
 
 
@@ -81,11 +77,7 @@ There are a few basic ground rules for contributors:
 ## Style Guides
 
 !!!info Wiki General Style Guides
-
-The style guide from the
-[Substrate Knowledge Base](https://github.com/substrate-developer-hub/knowledgebase/blob/master/CONTRIBUTING.md#documentation-style)
-provides general guidelines about how to write your Wiki contribution. See also
-[the Wiki readme file](https://github.com/w3f/polkadot-wiki?tab=readme-ov-file#contributing-to-documentation).
+      The style guide from the [Substrate Knowledge Base](https://github.com/substrate-developer-hub/knowledgebase/blob/master/CONTRIBUTING.md#documentation-style) provides general guidelines about how to write your Wiki contribution. See also [the Wiki readme file](https://github.com/w3f/polkadot-wiki?tab=readme-ov-file#contributing-to-documentation).
 
 
 

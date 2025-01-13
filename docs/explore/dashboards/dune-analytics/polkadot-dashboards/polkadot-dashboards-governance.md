@@ -112,10 +112,7 @@ Referenda with approval ratings ranging from **0.2** to **0.8** are considered c
 [Polkadot Opengov - Referendum Voting Analysis](https://dune.com/substrate/polkadot-referendum)
 
 !!!tip
-**Default parameters** are applied to all parameterized charts on this Wiki page as a demonstration.
-Visit our dashboard on Dune to use the `referendum_id` parameter for more in-depth analysis. For
-more information, please visit the
-[Dune documentation on parameters](https://docs.dune.com/web-app/query-editor/parameters).
+    **Default parameters** are applied to all parameterized charts on this Wiki page as a demonstration. Visit our dashboard on Dune to use the `referendum_id` parameter for more in-depth analysis. For more information, please visit the[Dune documentation on parameters](https://docs.dune.com/web-app/query-editor/parameters).
 
 
 

@@ -32,9 +32,8 @@ recovery process to recover your account.
 ![social-recovery-diag-1](../../assets/recovery/social-recovery-diag-1.png)
 
 !!!note Account Recovery
-
-If you are recovering an account, ensure that your network is set to Kusama. You can do this by
-selecting the network from the top right corner in the Polkadot-JS UI.
+    If you are recovering an account, ensure that your network is set to Kusama. You can do this by
+    selecting the network from the top right corner in the Polkadot-JS UI.
 
 
 
@@ -60,8 +59,8 @@ more KSM will be required.
 order to recover the account.
 
 !!!info
-1 is the minimum, but it is not recommended to set a small number. If you set 1, that means any of
-your recovery helpers would be able to recover your account.
+    1 is the minimum, but it is not recommended to set a small number. If you set 1, that means any of
+    your recovery helpers would be able to recover your account.
 
 
 
@@ -71,9 +70,9 @@ owner to have enough time to check and react in case someone pretends to be you 
 recovery process.
 
 !!!info
-Setting the block delay to be a little longer would be better since even if an attacker acquired
-enough signatures to recover your account, they would still have to wait until the block delay is
-passed to control your account.
+    Setting the block delay to be a little longer would be better since even if an attacker acquired
+    enough signatures to recover your account, they would still have to wait until the block delay is
+    passed to control your account.
 
 
 
@@ -89,8 +88,8 @@ held in the lost account to the new account.
 The above diagram shows the whole process of recovering an account.
 
 !!!info
-Ensure that your new account has enough KSM to pay for the transaction fees and the amount that is
-used for reserve when making a recovery.
+    Ensure that your new account has enough KSM to pay for the transaction fees and the amount that is
+    used for reserve when making a recovery.
 
 
 
@@ -156,10 +155,9 @@ The recovery process is now complete and successful.
 ![social-recovery-15](../../assets/recovery/social-recovery-15.png)
 
 !!!tip Using `Root` origin
-
-There is still one possible way to recover the account without going through the recovery process.
-That is by using the `Root` origin. However, in order to use root permissions, you will need to
-either go through [governance](../../learn/learn-polkadot-opengov.md).
+    There is still one possible way to recover the account without going through the recovery process.
+    That is by using the `Root` origin. However, in order to use root permissions, you will need to
+    either go through [governance](../../learn/learn-polkadot-opengov.md).
 
 
 

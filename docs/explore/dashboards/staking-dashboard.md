@@ -47,12 +47,11 @@ connect it to the dashboard (connect button on the top-right corner), this will 
 interact with native staking.
 
 !!!info The dashboard is a Web3 dApp
-
-The dashboard is a decentralized application (dApp), and to login you do not need to sign up with an
-email and password but just need an account created on the supported non-custodial wallets. Any
-transaction to be submitted needs to be signed by you. Also, if you use light clients, which are
-resistant to censorship, you interact trustlessly with the network without intermediaries. Welcome
-to the world of [true Web3](./web3-and-polkadot.md)!
+    The dashboard is a decentralized application (dApp), and to login you do not need to sign up with an
+    email and password but just need an account created on the supported non-custodial wallets. Any
+    transaction to be submitted needs to be signed by you. Also, if you use light clients, which are
+    resistant to censorship, you interact trustlessly with the network without intermediaries. Welcome
+    to the world of [true Web3](./web3-and-polkadot.md)!
 
 
 
@@ -63,24 +62,22 @@ the main features of the dashboard. If you need more information, see the
 [Walkthrough Tutorial](https://youtu.be/hvXLc4H7rA4).
 
 !!!info Walk-through Video Tutorials
-
-- [**Nominating**](https://youtu.be/F59N3YKYCRs): Stake your tokens, choose your best validators,
-  and start your staking journey.
-- [**Becoming a Pool Member**](https://youtu.be/dDIG7QAApig): Start becoming a part of the Polkadot
-  movement, keep the network secure by staking minimum 1 DOT and receiving staking rewards.
-- [**Dashboard Walkthrough**](https://youtu.be/hvXLc4H7rA4): Become a Pro using the Staking
-  Dashboard.
-- [**After Staking**](https://youtu.be/58pIe8tt2o4): Nominating is not a set-and-forget action,
-  learn what you can do with the dashboard after you started staking.
+  - [**Nominating**](https://youtu.be/F59N3YKYCRs): Stake your tokens, choose your best validators,
+    and start your staking journey.
+  - [**Becoming a Pool Member**](https://youtu.be/dDIG7QAApig): Start becoming a part of the Polkadot
+    movement, keep the network secure by staking minimum 1 DOT and receiving staking rewards.
+  - [**Dashboard Walkthrough**](https://youtu.be/hvXLc4H7rA4): Become a Pro using the Staking
+    Dashboard.
+  - [**After Staking**](https://youtu.be/58pIe8tt2o4): Nominating is not a set-and-forget action,
+    learn what you can do with the dashboard after you started staking.
 
 
 
 ## Overview
 
 !!!info Staking Dashboard Walk-through video tutorial
-
-[This video tutorial](https://youtu.be/hvXLc4H7rA4) shows you everything you can do with the Staking
-Dashboard.
+    [This video tutorial](https://youtu.be/hvXLc4H7rA4) shows you everything you can do with the Staking
+    Dashboard.
 
 
 
@@ -126,10 +123,9 @@ Note that Sections A and B will always be visible while you use the dashboard.
 Additional statistics can be found at the bottom of the overview page.
 
 !!!info Pool funds are in system accounts
-
-Remember that funds bonded in a pool are transferred to the pool's system account, which can only be
-accessed by the protocol, and not by any individual user. Some wallets might not display the balance
-bonded in pools, but the dashboard will always show it.
+    Remember that funds bonded in a pool are transferred to the pool's system account, which can only be
+    accessed by the protocol, and not by any individual user. Some wallets might not display the balance
+    bonded in pools, but the dashboard will always show it.
 
 
 
@@ -142,12 +138,7 @@ most recently received rewards.
 ### Pools
 
 !!!info Joining a Nomination Pool - Walk-through video tutorial
-
-[This video tutorial](https://youtu.be/dDIG7QAApig) shows you how to join a
-[nomination pool](../learn/learn-nomination-pools.md) with the Staking Dashboard. You can also read
-the
-[dedicated support article](https://support.polkadot.network/support/solutions/articles/65000182376-staking-dashboard-how-to-join-a-nomination-pool)
-about joining a pool.
+    [This video tutorial](https://youtu.be/dDIG7QAApig) shows you how to join a [nomination pool](../learn/learn-nomination-pools.md) with the Staking Dashboard. You can also read the [dedicated support article](https://support.polkadot.network/support/solutions/articles/65000182376-staking-dashboard-how-to-join-a-nomination-pool) about joining a pool.
 
 
 
@@ -165,9 +156,8 @@ This page of the dashboard has four main panels (Sidebar and Accounts Panels exc
   that will be available as a free balance.
 
 !!!info No fast unstake and pool swap for pool members
-
-Note that the option to fast unstake is only available to nominators. Also, to change pool, you
-cannot simply swap memberships. You will need to unbond and go through the whole unbonding period.
+    Note that the option to fast unstake is only available to nominators. Also, to change pool, you
+    cannot simply swap memberships. You will need to unbond and go through the whole unbonding period.
 
 
 
@@ -246,9 +236,8 @@ pools that you liked (you can like a pool in the All Pools section by clicking o
 ### Nominate
 
 !!!info Walk-through video tutorial of How to Nominate
-
-[This video tutorial](https://youtu.be/F59N3YKYCRs) shows you how to become a nominator with the
-Staking Dashboard.
+    [This video tutorial](https://youtu.be/F59N3YKYCRs) shows you how to become a nominator with the
+    Staking Dashboard.
 
 
 
@@ -271,9 +260,8 @@ This page of the dashboard has four main panels (Sidebar and Accounts Panels exc
   balance.
 
 !!!info Fast unstake
-
-If your account did not receive rewards in the past 28 eras, you will be eligible for fast unstake.
-The dashboard will automatically check this for you and prompt a banner.
+    If your account did not receive rewards in the past 28 eras, you will be eligible for fast unstake.
+    The dashboard will automatically check this for you and prompt a banner.
 
 
 
@@ -296,9 +284,8 @@ validators and/or nomination pools that paid out rewards to your accounts in the
 ### After Staking
 
 !!!info Walk-through video tutorial - What to do after Staking
-
-[This video tutorial](https://youtu.be/F59N3YKYCRs) shows you how to what you can do after staking
-with the Staking Dashboard.
+    [This video tutorial](https://youtu.be/F59N3YKYCRs) shows you how to what you can do after staking
+    with the Staking Dashboard.
 
 
 

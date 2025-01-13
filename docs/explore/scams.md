@@ -30,9 +30,7 @@ share these with anyone, they can access your account and execute any transactio
 </div>
 
 !!!info
-Visit
-[this support article](https://support.polkadot.network/support/solutions/articles/65000181874-how-to-store-your-mnemonic-phrase-and-backup-file-safely)
-for more information about key security.
+    Visit [this support article](https://support.polkadot.network/support/solutions/articles/65000181874-how-to-store-your-mnemonic-phrase-and-backup-file-safely) for more information about key security.
 
 
 

@@ -71,10 +71,8 @@ Query result:
 
 <iframe src="https://dune.com/embeds/3830615/6442645/" height="350" width="100%"></iframe>
 
-!!!info DuneSQL Reference
-
-For more information on DuneSQL, please refer to the [DuneSQL Cheatsheet](../dunesql-cheatsheet.md)
-and
-[DuneSQL Official Documentation](https://docs.dune.com/query-engine/Functions-and-operators/index).
+!!!info DuneSQL Referece
+    For more information on DuneSQL, please refer to the [DuneSQL Cheatsheet](../dunesql-cheatsheet.md)
+    and [DuneSQL Official Documentation](https://docs.dune.com/query-engine/Functions-and-operators/index).
 
 

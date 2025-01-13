@@ -8,11 +8,10 @@ slug: ../grants
 ---
 
 !!!info Decentralized Futures Program
-
-In addition to the listed grants programs, the Web3 Foundation has launched the **Decentralized
-Futures** program to support individuals and teams as they launch new initiatives aimed at growing
-the Polkadot ecosystem. For details on the status of the program, see the
-[Decentralized Futures Program](./decentralized-futures.md).
+    In addition to the listed grants programs, the Web3 Foundation has launched the **Decentralized
+    Futures** program to support individuals and teams as they launch new initiatives aimed at growing
+    the Polkadot ecosystem. For details on the status of the program, see the
+    [Decentralized Futures Program](./decentralized-futures.md).
 
 
 
@@ -28,8 +27,8 @@ Information regarding requirements, the application process, deliveries, etc. ca
 ## Alternative Funding Sources
 
 !!!info
-Check the [alternative funding sources](https://grants.web3.foundation/docs/funding) section on the
-Web3 Foundation Grants website for comprehensive information.
+    Check the [alternative funding sources](https://grants.web3.foundation/docs/funding) section on the
+    Web3 Foundation Grants website for comprehensive information.
 
 
 

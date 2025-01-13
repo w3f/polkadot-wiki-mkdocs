@@ -4,12 +4,9 @@ description: Multisig Apps in the Polkadot Ecosystem.
 ---
 
 !!!info Community Page
-
-This page is open to contributions from the community. Please follow the
-[Wiki contribution guidelines](https://github.com/w3f/polkadot-wiki#contributing-to-documentation)
-and add your Multisig app to this page.
-
-
+    This page is open to contributions from the community. Please follow the
+    [Wiki contribution guidelines](https://github.com/w3f/polkadot-wiki#contributing-to-documentation)
+    and add your Multisig app to this page.
 
 List of Multisig apps in Polkadot Ecosystem
 
@@ -39,10 +36,9 @@ Quick Link: [Demo](https://www.youtube.com/watch?v=amm_Vk0vzP4&t=43s) |
 ## Multix by Chainsafe
 
 !!!info Walk-Through Video Tutorial
-
-See [this video tutorial](https://www.youtube.com/watch?v=APxPsawebJw) and
-[this article](https://blog.chainsafe.io/multix-a-simple-interface-to-manage-complex-multisigs-on-polkadot-97328be26f9d)
-for more information about using [Multix](https://multix.chainsafe.io/) for multisig accounts.
+    See [this video tutorial](https://www.youtube.com/watch?v=APxPsawebJw) and
+    [this article](https://blog.chainsafe.io/multix-a-simple-interface-to-manage-complex-multisigs-on-polkadot-97328be26f9d)
+    for more information about using [Multix](https://multix.chainsafe.io/) for multisig accounts.
 
 
 

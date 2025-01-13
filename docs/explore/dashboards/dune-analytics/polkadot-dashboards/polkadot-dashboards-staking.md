@@ -121,10 +121,10 @@ Source Table: **polkadot.stakings**, MaterializedView:
 [**dune.substrate.result_polkadot_nominators**](https://dune.com/queries/3326829)
 
 !!!tip
-**Default parameters** are applied to all parameterized charts on this Wiki page as a demonstration.
-Visit our dashboard on Dune to use the `nominator_ss58` parameter for more in-depth analysis. For
-more information, please visit the
-[Dune documentation on parameters](https://docs.dune.com/web-app/query-editor/parameters).
+    **Default parameters** are applied to all parameterized charts on this Wiki page as a demonstration.
+    Visit our dashboard on Dune to use the `nominator_ss58` parameter for more in-depth analysis. For
+    more information, please visit the
+    [Dune documentation on parameters](https://docs.dune.com/web-app/query-editor/parameters).
 
 
 
@@ -152,10 +152,10 @@ Source Table: **polkadot.stakings**, MaterializedView:
 [**dune.substrate.result_polkadot_nominationpools**](https://dune.com/queries/3327350)
 
 !!!tip
-**Default parameters** are applied to all parameterized charts on this Wiki page as a demonstration.
-Visit our dashboard on Dune to use the `pool_id` parameter for more in-depth analysis. For more
-information, please visit the
-[Dune documentation on parameters](https://docs.dune.com/web-app/query-editor/parameters).
+    **Default parameters** are applied to all parameterized charts on this Wiki page as a demonstration.
+    Visit our dashboard on Dune to use the `pool_id` parameter for more in-depth analysis. For more
+    information, please visit the
+    [Dune documentation on parameters](https://docs.dune.com/web-app/query-editor/parameters).
 
 
 
@@ -191,10 +191,10 @@ Source Table: **polkadot.stakings**, MaterializedView:
 [**dune.substrate.result_polkadot_poolmembers**](https://dune.com/queries/3327479)
 
 !!!tip
-**Default parameters** are applied to all parameterized charts on this Wiki page as a demonstration.
-Visit our dashboard on Dune to use the `user_ss58` parameter for more in-depth analysis. For more
-information, please visit the
-[Dune documentation on parameters](https://docs.dune.com/web-app/query-editor/parameters).
+    **Default parameters** are applied to all parameterized charts on this Wiki page as a demonstration.
+    Visit our dashboard on Dune to use the `user_ss58` parameter for more in-depth analysis. For more
+    information, please visit the
+    [Dune documentation on parameters](https://docs.dune.com/web-app/query-editor/parameters).
 
 
 
