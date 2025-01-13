@@ -1,10 +1,6 @@
 ---
-id: governance-apps
 title: Polkadot Governance Apps
-sidebar_label: Governance Apps
 description: Governance Apps in the Polkadot Ecosystem.
-keywords: [voting, vote, delegate, conviction, OpenGov, delegation dashboard]
-slug: ../governance-apps
 ---
 
 !!!info Community Page

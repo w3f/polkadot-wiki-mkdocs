@@ -1,10 +1,6 @@
 ---
-id: parachains-apps
 title: Polkadot Parachain Apps
-sidebar_label: Parachain Apps
 description: Polkadot's Parachain Apps.
-keywords: [parachains, apps, staking, liquid staking]
-slug: ../parachains-apps
 ---
 
 !!!tip Polkadot dApps

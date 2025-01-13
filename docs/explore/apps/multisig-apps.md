@@ -1,10 +1,6 @@
 ---
-id: multisig-apps
 title: Polkadot Multisig Apps
-sidebar_label: Multisig Apps
 description: Multisig Apps in the Polkadot Ecosystem.
-keywords: [account, signer, balance, multisig]
-slug: ../multisig-apps
 ---
 
 !!!info Community Page
@@ -21,6 +17,7 @@ List of Multisig apps in Polkadot Ecosystem
 - [Multix by Chainsafe](#multix-by-chainsafe)
 - [Nova Spektr](#nova-spektr)
 - [Polkadot Multisig by Signet](#polkadot-multisig-by-signet)
+  - [Signet](#signet)
 - [Polkasafe](#polkasafe)
 
 ## Mimir
