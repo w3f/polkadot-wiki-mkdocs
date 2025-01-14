@@ -2,8 +2,4 @@ title: Apps
 nav:
   - 'Polkadot Ecosystem Apps': https://polkadot.network/ecosystem/dapps/
   - 'DotAppStore': https://dotappstore.com/
-  - staking-apps.md
-  - governance-apps.md
-  - multisig-apps.md
-  - nft-projects.md
-  - parachains-apps.md
+  - ...
