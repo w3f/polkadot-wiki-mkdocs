@@ -1,0 +1,5 @@
+nav:
+  - 'Learn': index.md
+  - general
+  - basics
+  - advanced
