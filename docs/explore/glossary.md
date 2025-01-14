@@ -257,10 +257,7 @@ The origin of a blockchain, also known as block 0. It can also be used to refere
 state of the blockchain at origination.
 
 !!!note Example
-
-In the _genesis_ state Alice, Bob, and Charlie had 30 tokens each.
-
-
+    In the _genesis_ state Alice, Bob, and Charlie had 30 tokens each.
 
 ## Governance
 

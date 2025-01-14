@@ -8,10 +8,9 @@ slug: ../getting-started
 ---
 
 !!!info Welcome to the Polkadot Wiki
-
-The Polkadot Wiki serves as the central source of truth for Polkadot. It is a community-focused
-initiative led by Web3 Foundation to keep an up-to-date resource on the best information for
-learning, building, and maintaining on Polkadot.
+    The Polkadot Wiki serves as the central source of truth for Polkadot. It is a community-focused
+    initiative led by Web3 Foundation to keep an up-to-date resource on the best information for
+    learning, building, and maintaining on Polkadot.
 
 The Wiki has three main sections:
 
@@ -152,8 +151,7 @@ functionalities on Polkadot. See more information on
 [the Chain State Values page](./chain-state-values.md).
 
 !!!info
-Explore Polkadot with a secure and user-friendly wallets listed on the
-[Polkadot website](https://www.polkadot.network/ecosystem/wallets/).
+    Explore Polkadot with a secure and user-friendly wallets listed on the [Polkadot website](https://www.polkadot.network/ecosystem/wallets/).
 
 
 

@@ -4,27 +4,25 @@ description: Your old Smartphone as an Air-gapped Wallet.
 ---
 
 !!!info Rebranding of Parity Signer to Polkadot Vault
+    The Polkadot Vault app rebranding is live on
+    [iOS](https://apps.apple.com/us/app/parity-signer/id1218174838) and
+    [Android](https://play.google.com/store/apps/details?id=io.parity.signer) devices. The source code
+    of all versions can be downloaded on
+    [the GitHub repo](https://github.com/novasamatech/parity-signer/releases).
 
-The Polkadot Vault app rebranding is live on
-[iOS](https://apps.apple.com/us/app/parity-signer/id1218174838) and
-[Android](https://play.google.com/store/apps/details?id=io.parity.signer) devices. The source code
-of all versions can be downloaded on
-[the GitHub repo](https://github.com/novasamatech/parity-signer/releases).
-
-The Polkadot Vault app is an air-gapped cold storage solution for all users, including developers
-and power users. See [Ledger](./ledger.md) devices for other cold storage solutions.
+    The Polkadot Vault app is an air-gapped cold storage solution for all users, including developers
+    and power users. See [Ledger](./ledger.md) devices for other cold storage solutions.
 
 
 
 !!!warning Smartphone compatibility with Polkadot Vault
-
-Note that although the Vault app is available for old smartphones, different versions will be
-installed according to the phone's hardware. For example, smartphones like iPhone 6 will install
-Parity Signer (the old brand name of the Vault app) with limited capabilities. There will be no log
-or warning if the phone was connected to the internet while not using the app. Also, no metadata
-updates are possible, and no option to add new networks. This would not be as secure as the latest
-version of the app. We would recommend that you use smartphones compatible with the latest Polkadot
-Vault app.
+    Note that although the Vault app is available for old smartphones, different versions will be
+    installed according to the phone's hardware. For example, smartphones like iPhone 6 will install
+    Parity Signer (the old brand name of the Vault app) with limited capabilities. There will be no log
+    or warning if the phone was connected to the internet while not using the app. Also, no metadata
+    updates are possible, and no option to add new networks. This would not be as secure as the latest
+    version of the app. We would recommend that you use smartphones compatible with the latest Polkadot
+    Vault app.
 
 
 
@@ -80,8 +78,8 @@ For guidelines about how to create an account using Polkadot Vault, see
 [**this support article**](https://support.polkadot.network/support/solutions/articles/65000180512-how-to-create-an-account-in-parity-signer).
 
 !!!info
-Importing an account into an extension will not import its private key. Only the public key will be
-imported and you must sign using your air-gapped phone which holds the private key.
+    Importing an account into an extension will not import its private key. Only the public key will be
+    imported and you must sign using your air-gapped phone which holds the private key.
 
 
 
@@ -94,9 +92,8 @@ to learn how to restore your account on the Polkadot Vault app.
 ## Signing Extrinsics
 
 !!!warning Always check for Metadata Updates
-
-Before signing extrinsics with the Polkadot Vault app, always check for metadata updates.
-[**This video tutorial**](https://youtu.be/gbvrHzr4EDY?t=328) will explain how to do it.
+    Before signing extrinsics with the Polkadot Vault app, always check for metadata updates.
+    [**This video tutorial**](https://youtu.be/gbvrHzr4EDY?t=328) will explain how to do it.
 
 
 
@@ -119,17 +116,16 @@ The procedure to sign transactions with the Vault app is as follows:
   the camera on your laptop to sign for the transaction.
 
 !!!info QR codes are signature-specific
-
-Note that QR codes are signature-specific. If someone by chance has access to the QR code signature
-for one of your transactions, future transactions cannot be signed with that same QR code, and it is
-impossible to find out the private key of your account only with that QR code.
+    Note that QR codes are signature-specific. If someone by chance has access to the QR code signature
+    for one of your transactions, future transactions cannot be signed with that same QR code, and it is
+    impossible to find out the private key of your account only with that QR code.
 
 
 
 ## Update the Vault App
 
 !!!danger
-Ensure you always have your mnemonic seed phrase secure and available.
+    Ensure you always have your mnemonic seed phrase secure and available.
 
 
 
@@ -147,10 +143,9 @@ Briefly,
 ## Security Notes
 
 !!!info Remove SIM cards and Forget Networks
-
-To avoid unintended connection of your phone to the Internet, remove SIM cards, reset eSIM settings,
-and forget any added WiFi networks. In this way, the only possibility of having an unintended
-internet connection is either through the cellular network or through WiFi connection.
+    To avoid unintended connection of your phone to the Internet, remove SIM cards, reset eSIM settings,
+    and forget any added WiFi networks. In this way, the only possibility of having an unintended
+    internet connection is either through the cellular network or through WiFi connection.
 
 
 
@@ -165,10 +160,9 @@ Internet. In case of an unrecognized connection, it is recommended to:
 - Import the compromised accounts and transfer the funds to the new non-compromised account.
 
 !!!danger The Vault App has the option to export private keys
-
-If an account's private key has been exported from the Vault app, the public key will be marked as
-"hot" and the following message will be displayed _This key is marked hot because its root private
-key has been exported_.
+    If an account's private key has been exported from the Vault app, the public key will be marked as
+    "hot" and the following message will be displayed _This key is marked hot because its root private
+    key has been exported_.
 
 
 
@@ -191,8 +185,7 @@ for detailed instructions. If you choose this approach, you should trust the pro
 ---
 
 !!!info Polkadot-JS Guides
-
-If you are an advanced user, see the
-[Polkadot-JS guides about Polkadot Vault](../learn/learn-guides-vault.md).
+    If you are an advanced user, see the
+    [Polkadot-JS guides about Polkadot Vault](../learn/learn-guides-vault.md).
 
 
