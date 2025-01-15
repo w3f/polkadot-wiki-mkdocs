@@ -12,12 +12,13 @@ independent, standalone networks with different priorities. Kusama is wild and f
 bold experimentation and early-stage deployment. Polkadot is more conservative, prioritizing
 stability and dependability. Cousins have their differences after all.
 
-!!!info
+:::info
+
 To get a better understanding of the key similarities and difference between Polkadot and Kusama,
 checkout
 [this support article](https://support.polkadot.network/support/solutions/articles/65000182146-kusama-and-polkadot-what-s-the-difference-).
 
-
+:::
 
 ## Cost and Speed
 
@@ -49,9 +50,9 @@ Kusama is not simply a testnet, the blockchain is fully functional with attached
 own governance. The future of Kusama is in the hands of its participants. In a typical blockchain
 development pipeline, Kusama would sit in between a "testnet" and a "mainnet":
 
-!!!info Testnet --> Kusama --> Polkadot
+:::info Testnet --> Kusama --> Polkadot
 
-
+:::
 
 As you can imagine, building on Kusama first allows teams to test things out in a live, fully
 decentralized, and community-controlled network with real-world conditions and lower stakes in the
@@ -76,14 +77,6 @@ perform under those upgrades.
 
 Ultimately, Kusama and Polkadot will live on as independent, standalone networks with their own
 communities, their own governance, and their own complementary use cases, though they will continue
-to maintain a close relationship, with many teams likely deploying applications to both networks. In
-the future, we’re also likely to see Kusama bridged to Polkadot for cross-network interoperability.
+to maintain a close relationship, with many teams likely deploying applications to both networks.
 Web3 Foundation remains committed to both networks going forward, providing crucial support and
 guidance to teams building for the ecosystem.
-
-## Explore more
-
-- [About Kusama](https://kusama.network)
-- [The Kusama Wiki](https://guide.kusama.network)
-- [Kusama on Polkadot-JS Apps](https://kusama.dotapps.io)
-- [Polkadot and Kusama: What's the difference?](https://support.polkadot.network/support/solutions/articles/65000182146-kusama-and-polkadot-what-s-the-difference-)
