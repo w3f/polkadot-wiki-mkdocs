@@ -9,42 +9,37 @@ slug: ../getting-started
 
 !!!info "Welcome to the Polkadot Wiki"
     The Polkadot Wiki serves as the central source of truth for Polkadot. It is a community-focused
-    initiative led by Web3 Foundation to keep an up-to-date resource on the best information for
-    learning, building, and maintaining on Polkadot.
+    initiative led by Web3 Foundation to keep an up-to-date resource on the best information for learning about Polkadot.
 
-    The Wiki has three main sections:
+    For developer-focused documentation see [the Polkadot Documentation](https://docs.polkadot.com/).
 
     - [**Learn**](../../learn) (for people who want to learn about Polkadot)
-    - [**Build**](../build/build-index.md) (for people who want to build on Polkadot)
-    - [**Maintain**](../maintain/maintain-index.md) (for people who want to maintain the Polkadot network).
-
-
-
+    
 ## Interact with Polkadot
 
 <div className="row">
   <div className="col text--center" data-aos="fade-up" data-aos-delay="100">
-    <a href="../docs/learn-accounts">
+    <a href="../../learn/learn-accounts">
       <img src="/img/polkadot-guide/Creating an account.png" width="350" style={{ borderRadius: 10, border: '1px solid slategrey' }} />
     </a>
     <p>
-      <a href="../docs/learn-accounts">Accounts</a>
+      <a href="../../learn/learn-accounts">Accounts</a>
     </p>
   </div>
   <div className="col text--center" data-aos="fade-up" data-aos-delay="200">
-    <a href="../docs/learn-transactions">
+    <a href="../../learn/learn-transactions">
       <img src="/img/polkadot-guide/Balance Transfers.png" width="350" style={{ borderRadius: 10, border: '1px solid slategrey' }} />
     </a>
     <p>
-      <a href="../docs/learn-transactions">Transactions</a>
+      <a href="../../learn/learn-transactions">Transactions</a>
     </p>
   </div>
   <div className="col text--center" data-aos="fade-up" data-aos-delay="300">
-    <a href="../docs/learn-staking">
+    <a href="../../learn/learn-staking">
       <img src="/img/polkadot-guide/Staking.png" width="350" style={{ borderRadius: 10, border: '1px solid slategrey' }} />
     </a>
     <p>
-      <a href="../docs/learn-staking">Staking</a>
+      <a href="../../learn/learn-staking">Staking</a>
     </p>
   </div>
 </div>
