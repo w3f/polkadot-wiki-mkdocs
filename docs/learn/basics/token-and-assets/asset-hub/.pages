@@ -1,3 +1,4 @@
 title: Asset Hub
 nav:
-  - ...
+  - 'Asset Hub': index.md
+  - 'Asset Conversion on AssetHub': learn-asset-conversion-assethub.md

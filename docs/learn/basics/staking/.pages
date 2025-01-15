@@ -1,3 +1,5 @@
 title: Staking
 nav:
-  - ...
+  - 'Staking': index.md
+  - 'Introduction to Staking': learn-staking.md
+  - 'Nomination Pools': learn-nomination-pools.md
