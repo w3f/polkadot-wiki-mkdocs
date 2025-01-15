@@ -1,3 +1,5 @@
-title: Bridges
+title: Scheduling
 nav:
-  - ...
+  - 'Bridges': index.md
+  - 'Coretime Marketplaces': learn-guides-coretime-marketplaces.md
+  - 'Coretime Parachains': learn-guides-coretime-parachains.md

@@ -4,5 +4,6 @@ nav:
   - basics
   - advanced
   - comparisons
+  - 'Videos': learn-video-tutorials.md
   - future-implementations
   - archive
