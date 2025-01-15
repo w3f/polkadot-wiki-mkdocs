@@ -239,10 +239,8 @@ and maintain on the Kusama network, please head over to our
 - [Polkadot & Substrate Overview](https://www.youtube.com/watch?v=0IoUZdDi5Is&feature=youtu.be) -
   Dr. Gavin Wood presents Substrate (blockchain in-a-box + VM) and Polkadot, and builds a blockchain
   on-stage in 30 minutes using Substrate. (Video)
-- [Community / Ecosystem](community.md) - List of community rooms and channels to talk to others
+- [Community / Ecosystem](./community-and-contributors/community.md) - List of community rooms and channels to talk to others
   about Polkadot.
-- [Sample Applications](#) - Sample applications that are built on or currently being built for
-  Polkadot.
-- [Contributing Guide](contributing.md) - Rules for contributing to the wiki.
+- [Contributing Guide](./community-and-contributors/contributing.md) - Rules for contributing to the wiki.
 - [Polkadot Knowledge Base](https://support.polkadot.network/) - Troubleshooting resources for
   specific errors and problems.
