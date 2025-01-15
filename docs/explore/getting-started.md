@@ -7,17 +7,16 @@ keywords: [introduction, getting started, what is polkadot, why polkadot]
 slug: ../getting-started
 ---
 
-!!!info Welcome to the Polkadot Wiki
+!!!info "Welcome to the Polkadot Wiki"
     The Polkadot Wiki serves as the central source of truth for Polkadot. It is a community-focused
     initiative led by Web3 Foundation to keep an up-to-date resource on the best information for
     learning, building, and maintaining on Polkadot.
 
-The Wiki has three main sections:
+    The Wiki has three main sections:
 
-- [**Learn**](../../learn) (for people who want to learn about Polkadot)
-- [**Build**](../build/build-index.md) (for people who want to build on Polkadot)
-- [**Maintain**](../maintain/maintain-index.md) (for people who want to maintain the Polkadot
-  network).
+    - [**Learn**](../../learn) (for people who want to learn about Polkadot)
+    - [**Build**](../build/build-index.md) (for people who want to build on Polkadot)
+    - [**Maintain**](../maintain/maintain-index.md) (for people who want to maintain the Polkadot network).
 
 
 
