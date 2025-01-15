@@ -36,6 +36,18 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
+  - codehilite
+  - toc
+  - tables
+  - sane_lists
+  - pymdownx.mark
+  - pymdownx.highlight
+  - pymdownx.critic
+  - pymdownx.keys
+  - pymdownx.smartsymbols
+  - pymdownx.tasklist
+  - pymdownx.tilde
+  - pymdownx.arithmatex
   
     
   

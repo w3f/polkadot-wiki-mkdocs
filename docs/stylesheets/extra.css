@@ -36,3 +36,29 @@ nav .md-header__ellipsis {
 .md-grid {
     max-width: 80rem;
 }
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.col {
+    flex: 1;
+    margin: 10px;
+    text-align: center;
+}
+
+.col img {
+    max-width: 100%;
+    height: auto;
+}
+
+.col a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.col a:hover {
+    color: #0078d4; /* Add hover effect */
+}

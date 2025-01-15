@@ -17,32 +17,33 @@ slug: ../getting-started
     
 ## Interact with Polkadot
 
-<div className="row">
-  <div className="col text--center" data-aos="fade-up" data-aos-delay="100">
+<div class="row">
+  <div class="col text--center" data-aos="fade-up" data-aos-delay="100">
     <a href="../../learn/learn-accounts">
-      <img src="/img/polkadot-guide/Creating an account.png" width="350" style={{ borderRadius: 10, border: '1px solid slategrey' }} />
+      <img src="../../assets/explore/Creating an account.png" width="350" style="border-radius: 10px; border: 1px solid slategrey;" />
     </a>
     <p>
       <a href="../../learn/learn-accounts">Accounts</a>
     </p>
   </div>
-  <div className="col text--center" data-aos="fade-up" data-aos-delay="200">
+  <div class="col text--center" data-aos="fade-up" data-aos-delay="200">
     <a href="../../learn/learn-transactions">
-      <img src="/img/polkadot-guide/Balance Transfers.png" width="350" style={{ borderRadius: 10, border: '1px solid slategrey' }} />
+      <img src="../../assets/explore/Balance Transfers.png" width="350" style="border-radius: 10px; border: 1px solid slategrey;" />
     </a>
     <p>
       <a href="../../learn/learn-transactions">Transactions</a>
     </p>
   </div>
-  <div className="col text--center" data-aos="fade-up" data-aos-delay="300">
+  <div class="col text--center" data-aos="fade-up" data-aos-delay="300">
     <a href="../../learn/learn-staking">
-      <img src="/img/polkadot-guide/Staking.png" width="350" style={{ borderRadius: 10, border: '1px solid slategrey' }} />
+      <img src="../../assets/explore/Staking.png" width="350" style="border-radius: 10px; border: 1px solid slategrey;" />
     </a>
     <p>
       <a href="../../learn/learn-staking">Staking</a>
     </p>
   </div>
 </div>
+
 
 <div className="row">
   <div className="col text--center" data-aos="fade-up" data-aos-delay="400">
