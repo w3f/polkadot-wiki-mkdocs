@@ -1,5 +1,6 @@
 title: Wallets
 nav:
+  - 'Polkadot Ecosystem Wallets': https://polkadot.com/get-started/wallets
   - 'Wallets and Extensions': wallets-and-extensions.md
   - 'Ledger': ledger.md
   - 'Polkadot Vault': polkadot-vault.md

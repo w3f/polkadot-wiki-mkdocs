@@ -12,8 +12,6 @@ slug: ../getting-started
     initiative led by Web3 Foundation to keep an up-to-date resource on the best information for learning about Polkadot.
 
     For developer-focused documentation see [the Polkadot Documentation](https://docs.polkadot.com/).
-
-    - [**Learn**](../../learn) (for people who want to learn about Polkadot)
     
 ## Interact with Polkadot
 
@@ -108,7 +106,7 @@ Polkadot. For more information about Polkadot see the dedicated page about the s
 
 Polkadot has an on-chain [open governance](../learn/learn-polkadot-opengov.md) (also called Polkadot
 OpenGov) to orchestrate decisions, including accessing funds from the
-[treasury](../learn/learn-polkadot-opengov-treasury.md).
+[treasury](../explore/funding/learn-polkadot-opengov-treasury.md).
 
 The [DOT token](../learn/learn-DOT.md) gives you the power to participate in Polkadot OpenGov, and
 [staking](../learn/learn-staking.md).
