@@ -1,10 +1,10 @@
 ---
-id: learn-kusama-inflation
+id: kusama-inflation
 title: Kusama Inflation Model
 sidebar_label: KSM Inflation
 description: Explanation of KSM's Inflation Model.
 keywords: [token, KSM, inflation]
-slug: ../learn-kusama-inflation
+slug: ../../kusama-inflation
 ---
 
 import MessageBox from "../../components/MessageBox"; import "../../components/MessageBox.css";
