@@ -15,7 +15,7 @@ slug: ../getting-started
     
 ## Interact with Polkadot
 
-<div class="row" style="display: flex; gap: 20px; justify-content: center;">
+<div class="row">
   <!-- Card 1 -->
   <a 
     href="../../learn/learn-accounts" 
@@ -25,7 +25,7 @@ slug: ../getting-started
     style="width: 300px; height: 200px;"
   >
     <img src="../../assets/explore/Creating an account.png" class="card-image" alt="Explore" />
-    <p class="card-title" style="font-size: 18px; font-weight: normal">Accounts</p>
+    <p class="card-title">Accounts</p>
   </a>
 
   <!-- Card 2 -->
@@ -37,7 +37,7 @@ slug: ../getting-started
     style="width: 300px; height: 200px;"
   >
     <img src="../../assets/explore/Balance Transfers.png" class="card-image" alt="Transactions" />
-    <p class="card-title" style="font-size: 18px; font-weight: normal">Transactions</p>
+    <p class="card-title">Transactions</p>
   </a>
 
   <!-- Card 3 -->
@@ -49,11 +49,11 @@ slug: ../getting-started
     style="width: 300px; height: 200px;"
   >
     <img src="../../assets/explore/Staking.png" class="card-image" alt="Staking" />
-    <p class="card-title" style="font-size: 18px; font-weight: normal">Staking</p>
+    <p class="card-title">Staking</p>
   </a>
 </div>
 
-<div class="row" style="display: flex; gap: 20px; justify-content: center;">
+<div class="row">
   <!-- Card 1 -->
   <a 
     href="../../learn/learn-polkadot-opengov" 
@@ -63,7 +63,7 @@ slug: ../getting-started
     style="width: 300px; height: 200px;"
   >
     <img src="../../assets/explore/Polkadot OpenGov.png" class="card-image" alt="OpenGov" />
-    <p class="card-title" style="font-size: 18px; font-weight: normal">Polkadot OpenGov</p>
+    <p class="card-title">Polkadot OpenGov</p>
   </a>
 
   <!-- Card 2 -->
@@ -75,7 +75,7 @@ slug: ../getting-started
     style="width: 300px; height: 200px;"
   >
     <img src="../../assets/explore/Proxy Accounts.png" class="card-image" alt="Proxies" />
-    <p class="card-title" style="font-size: 18px; font-weight: normal">Proxy Accounts</p>
+    <p class="card-title">Proxy Accounts</p>
   </a>
 
   <!-- Card 3 -->
@@ -87,11 +87,11 @@ slug: ../getting-started
     style="width: 300px; height: 200px;"
   >
     <img src="../../assets/explore/Set an Identity.png" class="card-image" alt="Identity" />
-    <p class="card-title" style="font-size: 18px; font-weight: normal">Account Identity</p>
+    <p class="card-title">Account Identity</p>
   </a>
 </div>
 
-<div class="row" style="display: flex; gap: 20px; justify-content: center;">
+<div class="row">
   <!-- Card 1 -->
   <a 
     href="../../learn/learn-parachains" 
@@ -101,7 +101,7 @@ slug: ../getting-started
     style="width: 300px; height: 200px;"
   >
     <img src="../../assets/explore/Parachains.png" class="card-image" alt="Parachains" />
-    <p class="card-title" style="font-size: 18px; font-weight: normal">Parachains</p>
+    <p class="card-title">Parachains</p>
   </a>
 
   <!-- Card 2 -->
@@ -113,7 +113,7 @@ slug: ../getting-started
     style="width: 300px; height: 200px;"
   >
     <img src="../../assets/explore/Bridges.png" class="card-image" alt="Bridges" />
-    <p class="card-title" style="font-size: 18px; font-weight: normal">Bridges</p>
+    <p class="card-title">Bridges</p>
   </a>
 
   <!-- Card 3 -->
@@ -125,7 +125,7 @@ slug: ../getting-started
     style="width: 300px; height: 200px;"
   >
     <img src="../../assets/explore/Become an Ambassador.png" class="card-image" alt="Ambassador" />
-    <p class="card-title" style="font-size: 18px; font-weight: normal">Become an Ambassador</p>
+    <p class="card-title">Become an Ambassador</p>
   </a>
 </div>
 
@@ -159,7 +159,7 @@ ideal ecosystem to build a [web3 future](./web3-and-polkadot.md).
     style="width: 300px; height: 300px;"
   >
     <img src="https://img.youtube.com/vi/_-k0xkooSlA/0.jpg" class="card-image"/>
-    <p class="card-title" style="font-size: 18px; font-weight: normal">Polkadot: Are You Ready to Start Building?</p>
+    <p class="card-title">Polkadot: Are You Ready to Start Building?</p>
   </a>
 
   <!-- Card 2 -->
@@ -171,7 +171,7 @@ ideal ecosystem to build a [web3 future](./web3-and-polkadot.md).
     style="width: 300px; height: 300px;"
   >
     <img src="https://img.youtube.com/vi/BQ60bTU1bPg/0.jpg" class="card-image"/>
-    <p class="card-title" style="font-size: 18px; font-weight: normal">What is Polkadot?</p>
+    <p class="card-title">What is Polkadot?</p>
   </a>
 </div>
 
