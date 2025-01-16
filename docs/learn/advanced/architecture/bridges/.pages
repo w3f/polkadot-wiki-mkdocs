@@ -1,0 +1,6 @@
+title: Bridges
+nav:
+  - 'Bridges': index.md
+  - 'Snowbridge': learn-snowbridge.md
+  - 'Hyperbridge': learn-hyperbridge.md
+  - 'Polkadot <> Kusama Bridge': learn-DOT-KSM-bridge.md

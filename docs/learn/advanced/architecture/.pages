@@ -1,0 +1,11 @@
+title: Architecture
+nav:
+  - 'Architecture': index.md
+  - 'Consensus': learn-consensus.md
+  - 'Security Protocol': learn-parachains-protocol.md
+  - 'Pipelining': learn-async-backing.md
+  - scheduling
+  - 'Parallel Computing': learn-elastic-scaling.md
+  - parachains
+  - bridges
+  - 'Cross Consensus Messaging (XCM)': xcm
