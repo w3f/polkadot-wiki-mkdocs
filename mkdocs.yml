@@ -10,7 +10,7 @@ repo_name: w3f/polkadot-wiki-mkdocs
 repo_url: https://github.com/w3f/polkadot-wiki-mkdocs
 
 # Copyright
-copyright: Copyright &copy; 2017 - 2025 Web3 Foundation
+copyright: Copyright &copy; 2017 - 2025 Web3 Foundation Technologies
 
 # Configuration
 theme:
@@ -38,6 +38,18 @@ plugins:
   - search
 
 # Additional configuration
+extra:
+  social:
+    - icon: fontawesome/brands/x-twitter
+      link: https://twitter.com/Polkadot
+    - icon: fontawesome/brands/reddit
+      link: https://www.reddit.com/r/polkadot
+    - icon: fontawesome/brands/github
+      link: https://github.com/paritytech/polkadot-sdk
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/channel/UCB7PbjuZLEba_znc7mEGNgw
+    - icon: fontawesome/brands/discord
+      link: https://dot.li/discord
 extra_css:
   - stylesheets/extra.css
   - stylesheets/MessageBox.css
