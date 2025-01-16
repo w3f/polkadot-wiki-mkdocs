@@ -7,7 +7,7 @@ The Polkadot Wiki is a high-level technical documentation about the Polkadot Eco
 
 <div class="row" style="display: flex; gap: 20px; justify-content: center;">
   <!-- Card 1 -->
-  <a href="./explore" class="card-container" data-aos="fade-up" data-aos-delay="100">
+  <a href="./explore/getting-started" class="card-container" data-aos="fade-up" data-aos-delay="100">
     <img src="./assets/home/Explore.png" class="card-image" alt="Explore" />
     <p class="card-title">Explore</p>
     <p class="card-description">
@@ -16,7 +16,7 @@ The Polkadot Wiki is a high-level technical documentation about the Polkadot Eco
   </a>
 
   <!-- Card 2 -->
-  <a href="./learn" class="card-container" data-aos="fade-up" data-aos-delay="200">
+  <a href="./explore/web3-and-polkadot" class="card-container" data-aos="fade-up" data-aos-delay="200">
     <img src="./assets/home/Learn.png" class="card-image" alt="Learn" />
     <p class="card-title">Learn</p>
     <p class="card-description">
