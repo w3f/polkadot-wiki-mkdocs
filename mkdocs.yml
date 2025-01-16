@@ -29,6 +29,8 @@ theme:
     scheme: default
     primary: white
     accent: pink
+  icon:
+    fontawesome: true
   favicon: assets/Polkadot_Favicon.png
   logo: assets/wiki-logo.svg
 
@@ -58,30 +60,38 @@ extra_javascript:
 
 # Extensions
 markdown_extensions:
+  - abbr
   - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
   - pymdownx.details
-  - pymdownx.tabbed:
-      alternate_style: true
-  - pymdownx.highlight:
-      anchor_linenums: true
-      line_spans: __span
-      pygments_lang_class: true
+  - pymdownx.emoji
+  - pymdownx.highlight
   - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
   - pymdownx.snippets
   - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+      combine_header_slug: true
   - codehilite
-  - toc
   - tables
   - sane_lists
-  - pymdownx.mark
-  - pymdownx.highlight
   - pymdownx.critic
-  - pymdownx.keys
-  - pymdownx.smartsymbols
-  - pymdownx.tasklist
+  - pymdownx.tasklist:
+      custom_checkbox: true
   - pymdownx.tilde
-  - pymdownx.arithmatex
-  - attr_list
   
     
   
