@@ -1,10 +1,10 @@
 ---
-id: learn-comparisons-ethereum-2
+id: learn-comparisons-ethereum
 title: Polkadot vs. Ethereum
 sidebar_label: Ethereum
 description: Comparison between Polkadot and Ethereum.
 keywords: [ethereum, Ethereum, proof of stake, sharding]
-slug: ../learn-comparisons-ethereum-2
+slug: ../learn-comparisons-ethereum
 ---
 
 Both protocols are blockchains at their core but serve fundamentally different roles in how they are
@@ -17,13 +17,13 @@ utilized:
   multiple layer one blockchains and allows them to partake in shared security. Polkadot acts as a
   **meta-protocol** allowing multiple protocols to coexist and work together.
 
-!!!note Sharding
+:::note Sharding
 
 In the context of blockchains, the term "shards" or "sharded protocol" is typically used to refer to
 sub-protocols or as a general term to refer to a form of
 [**horizontal scaling**](https://en.wikipedia.org/wiki/Scalability#Horizontal_or_scale_out).
 
-
+:::
 
 ## High-Level Comparison
 
@@ -32,8 +32,8 @@ Both protocols have fundamentally different goals:
 - Ethereum is a general-purpose blockchain based on the Ethereum Virtual Machine (EVM). Ethereum is
   not specialized nor optimized for any particular application. Instead, its primary focus is the
   Ethereum Virtual Machine for executing smart contracts. Ethereum achieves scalability via
-  [**rollups**](./learn-comparisons-rollups) are secondary protocols that utilize Ethereum as a
-  settlement layer.
+  [**rollups**](./learn-comparisons#rollup-comparison) are secondary protocols that utilize Ethereum
+  as a settlement layer.
 
 - Polkadot is a multi-chain protocol that provides shared security and secure interoperability for
   each of its **parachains**. Each parachain (also called an "appchain" in this context) is
@@ -79,12 +79,12 @@ collectively validated them.
 Ethereum primarily focuses on optimizing itself for rollups; Polkadot's parachains protocol allows
 validation to occur on the protocol level without needing a layer two solution.
 
-!!!info Rollup vs. Parachain Comparison
+:::info Rollup vs. Parachain Comparison
 
 For a more in-depth comparison of parachains versus rollups, take a look at the
-[rollup comparison page](./learn-comparison-rollups.md)
+[rollup comparison page](./learn-comparisons.md#rollup-comparison).
 
-
+:::
 
 Each parachain hosts its own core logic, called a **runtime** (sometimes called a **state transition
 function**). Polkadot uses WebAssembly ([Wasm](./learn-wasm.md)) as a "meta-protocol".
