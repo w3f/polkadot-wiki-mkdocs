@@ -1,10 +1,18 @@
-site_name: Polkadot Wiki
+# Project information
+site_name: ""
 site_url: https://w3f.github.io/polkadot-wiki-mkdocs
-extra_css:
-  - stylesheets/extra.css
-  - stylesheets/MessageBox.css
-extra_javascript:
-  - assets/MessageBox.js
+site_author: Web3 Foundation Technologies
+site_description: >-
+  High-level documentation for the Polkadot Ecosystem.
+
+# Repository
+repo_name: w3f/polkadot-wiki-mkdocs
+repo_url: https://github.com/w3f/polkadot-wiki-mkdocs
+
+# Copyright
+copyright: Copyright &copy; 2017 - 2025 Web3 Foundation
+
+# Configuration
 theme:
   name: material
   custom_dir: material-overrides
@@ -19,14 +27,24 @@ theme:
     - content.action.edit
   palette: 
     scheme: default
-    primary: pink
+    primary: white
     accent: pink
-  logo: assets/logo.png
+  favicon: assets/Polkadot_Favicon.png
+  logo: assets/wiki-logo.svg
 
+# Plugins
 plugins:
   - awesome-pages
   - search
 
+# Additional configuration
+extra_css:
+  - stylesheets/extra.css
+  - stylesheets/MessageBox.css
+extra_javascript:
+  - assets/MessageBox.js
+
+# Extensions
 markdown_extensions:
   - admonition
   - pymdownx.details
