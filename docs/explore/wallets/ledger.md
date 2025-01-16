@@ -3,10 +3,20 @@ title: Using the Polkadot Ledger Apps
 description: Use the Polkadot Ledger Application.
 ---
 
-import MessageBox from "../../components/MessageBox"; import "../../components/MessageBox.css";
-
-<MessageBox message="If you need help using Ledger, see [this support article](https://support.ledger.com/article/Migrate-Assets-to-Polkadot-Generic-App-Accounts-Using-the-Polkadot-Generic-App). If the problem persists, you can contact the
-[Polkadot Support Team](https://support.polkadot.network/support/home)." />
+<!-- MessageBox -->
+<div id="messageBox" class="floating-message-box">
+  <p>
+    If you need help using Ledger, see
+    <a href="https://support.ledger.com/article/Migrate-Assets-to-Polkadot-Generic-App-Accounts-Using-the-Polkadot-Generic-App" target="_blank" rel="noopener noreferrer">
+      this support article.
+    </a>
+    If the problem persists, you can contact the
+    <a href="https://support.polkadot.network/support/home" target="_blank" rel="noopener noreferrer">
+      Polkadot Support Team.
+    </a>
+  </p>
+  <button class="close-messagebox" aria-label="Close message">✖</button>
+</div>
 
 The Polkadot [Ledger](https://www.ledger.com/) application is compatible with the Ledger Nano S,
 Nano X, and Stax devices. Ledger devices are hardware wallets that keep your secret key secured on a

@@ -9,98 +9,124 @@ slug: ../getting-started
 
 !!!info "Welcome to the Polkadot Wiki"
     The Polkadot Wiki serves as the central source of truth for Polkadot. It is a community-focused
-    initiative led by Web3 Foundation to keep an up-to-date resource on the best information for
-    learning, building, and maintaining on Polkadot.
+    initiative led by Web3 Foundation to keep an up-to-date resource on the best information for learning about Polkadot.
 
-    The Wiki has three main sections:
-
-    - [**Learn**](../../learn) (for people who want to learn about Polkadot)
-    - [**Build**](../build/build-index.md) (for people who want to build on Polkadot)
-    - [**Maintain**](../maintain/maintain-index.md) (for people who want to maintain the Polkadot network).
-
-
-
+    For developer-focused documentation see [the Polkadot Documentation](https://docs.polkadot.com/).
+    
 ## Interact with Polkadot
 
-<div className="row">
-  <div className="col text--center" data-aos="fade-up" data-aos-delay="100">
-    <a href="../docs/learn-accounts">
-      <img src="/img/polkadot-guide/Creating an account.png" width="350" style={{ borderRadius: 10, border: '1px solid slategrey' }} />
-    </a>
-    <p>
-      <a href="../docs/learn-accounts">Accounts</a>
-    </p>
-  </div>
-  <div className="col text--center" data-aos="fade-up" data-aos-delay="200">
-    <a href="../docs/learn-transactions">
-      <img src="/img/polkadot-guide/Balance Transfers.png" width="350" style={{ borderRadius: 10, border: '1px solid slategrey' }} />
-    </a>
-    <p>
-      <a href="../docs/learn-transactions">Transactions</a>
-    </p>
-  </div>
-  <div className="col text--center" data-aos="fade-up" data-aos-delay="300">
-    <a href="../docs/learn-staking">
-      <img src="/img/polkadot-guide/Staking.png" width="350" style={{ borderRadius: 10, border: '1px solid slategrey' }} />
-    </a>
-    <p>
-      <a href="../docs/learn-staking">Staking</a>
-    </p>
-  </div>
+<div class="row" style="display: flex; gap: 20px; justify-content: center;">
+  <!-- Card 1 -->
+  <a 
+    href="../../learn/learn-accounts" 
+    class="card-container" 
+    data-aos="fade-up" 
+    data-aos-delay="100" 
+    style="width: 300px; height: 200px;"
+  >
+    <img src="../../assets/explore/Creating an account.png" class="card-image" alt="Explore" />
+    <p class="card-title" style="font-size: 18px; font-weight: normal">Accounts</p>
+  </a>
+
+  <!-- Card 2 -->
+  <a 
+    href="../../learn/learn-transactions" 
+    class="card-container" 
+    data-aos="fade-up" 
+    data-aos-delay="100" 
+    style="width: 300px; height: 200px;"
+  >
+    <img src="../../assets/explore/Balance Transfers.png" class="card-image" alt="Transactions" />
+    <p class="card-title" style="font-size: 18px; font-weight: normal">Transactions</p>
+  </a>
+
+  <!-- Card 3 -->
+  <a 
+    href="../../learn/learn-staking" 
+    class="card-container" 
+    data-aos="fade-up" 
+    data-aos-delay="100" 
+    style="width: 300px; height: 200px;"
+  >
+    <img src="../../assets/explore/Staking.png" class="card-image" alt="Staking" />
+    <p class="card-title" style="font-size: 18px; font-weight: normal">Staking</p>
+  </a>
 </div>
 
-<div className="row">
-  <div className="col text--center" data-aos="fade-up" data-aos-delay="400">
-    <a href="../docs/learn-polkadot-opengov">
-      <img src="/img/polkadot-guide/Polkadot OpenGov.png" width="350" style={{ borderRadius: 10, border: '1px solid slategrey' }} />
-    </a>
-    <p>
-      <a href="../docs/learn-polkadot-opengov">Polkadot OpenGov</a>
-    </p>
-  </div>
-  <div className="col text--center" data-aos="fade-up" data-aos-delay="500">
-    <a href="../docs/learn-proxies">
-      <img src="/img/polkadot-guide/Proxy Accounts.png" width="350" style={{ borderRadius: 10, border: '1px solid slategrey' }} />
-    </a>
-    <p>
-      <a href="../docs/learn-proxies">Proxy Accounts</a>
-    </p>
-  </div>
-  <div className="col text--center" data-aos="fade-up" data-aos-delay="600">
-    <a href="../docs/learn-identity">
-      <img src="/img/polkadot-guide/Set an Identity.png" width="350" style={{ borderRadius: 10, border: '1px solid slategrey' }} />
-    </a>
-    <p>
-      <a href="../docs/learn-identity">Account Identity</a>
-    </p>
-  </div>
+<div class="row" style="display: flex; gap: 20px; justify-content: center;">
+  <!-- Card 1 -->
+  <a 
+    href="../../learn/learn-polkadot-opengov" 
+    class="card-container" 
+    data-aos="fade-up" 
+    data-aos-delay="100" 
+    style="width: 300px; height: 200px;"
+  >
+    <img src="../../assets/explore/Polkadot OpenGov.png" class="card-image" alt="OpenGov" />
+    <p class="card-title" style="font-size: 18px; font-weight: normal">Polkadot OpenGov</p>
+  </a>
+
+  <!-- Card 2 -->
+  <a 
+    href="../../learn/learn-proxies" 
+    class="card-container" 
+    data-aos="fade-up" 
+    data-aos-delay="100" 
+    style="width: 300px; height: 200px;"
+  >
+    <img src="../../assets/explore/Proxy Accounts.png" class="card-image" alt="Proxies" />
+    <p class="card-title" style="font-size: 18px; font-weight: normal">Proxy Accounts</p>
+  </a>
+
+  <!-- Card 3 -->
+  <a 
+    href="../../learn/learn-identity" 
+    class="card-container" 
+    data-aos="fade-up" 
+    data-aos-delay="100" 
+    style="width: 300px; height: 200px;"
+  >
+    <img src="../../assets/explore/Set an Identity.png" class="card-image" alt="Identity" />
+    <p class="card-title" style="font-size: 18px; font-weight: normal">Account Identity</p>
+  </a>
 </div>
 
-<div className="row">
-  <div className="col text--center" data-aos="fade-up" data-aos-delay="700">
-    <a href="../docs/learn-parachains">
-      <img src="/img/polkadot-guide/Parachains.png" width="350" style={{ borderRadius: 10, border: '1px solid slategrey' }} />
-    </a>
-    <p>
-      <a href="../docs/learn-parachains">Parachains</a>
-    </p>
-  </div>
-  <div className="col text--center" data-aos="fade-up" data-aos-delay="900">
-    <a href="../docs/learn-bridges">
-      <img src="/img/polkadot-guide/Bridges.png" width="350" style={{ borderRadius: 10, border: '1px solid slategrey' }} />
-    </a>
-    <p>
-      <a href="../docs/learn-bridges">Bridges</a>
-    </p>
-  </div>
-  <div className="col text--center" data-aos="fade-up" data-aos-delay="900">
-    <a href="../docs/ambassadors">
-      <img src="/img/polkadot-guide/Become an Ambassador.png" width="350" style={{ borderRadius: 10, border: '1px solid slategrey' }} />
-    </a>
-    <p>
-      <a href="../docs/ambassadors">Become an Ambassador</a>
-    </p>
-  </div>
+<div class="row" style="display: flex; gap: 20px; justify-content: center;">
+  <!-- Card 1 -->
+  <a 
+    href="../../learn/learn-parachains" 
+    class="card-container" 
+    data-aos="fade-up" 
+    data-aos-delay="100" 
+    style="width: 300px; height: 200px;"
+  >
+    <img src="../../assets/explore/Parachains.png" class="card-image" alt="Parachains" />
+    <p class="card-title" style="font-size: 18px; font-weight: normal">Parachains</p>
+  </a>
+
+  <!-- Card 2 -->
+  <a 
+    href="../../learn/learn-bridges" 
+    class="card-container" 
+    data-aos="fade-up" 
+    data-aos-delay="100" 
+    style="width: 300px; height: 200px;"
+  >
+    <img src="../../assets/explore/Bridges.png" class="card-image" alt="Bridges" />
+    <p class="card-title" style="font-size: 18px; font-weight: normal">Bridges</p>
+  </a>
+
+  <!-- Card 3 -->
+  <a 
+    href="../../learn/ambassador" 
+    class="card-container" 
+    data-aos="fade-up" 
+    data-aos-delay="100" 
+    style="width: 300px; height: 200px;"
+  >
+    <img src="../../assets/explore/Become an Ambassador.png" class="card-image" alt="Ambassador" />
+    <p class="card-title" style="font-size: 18px; font-weight: normal">Become an Ambassador</p>
+  </a>
 </div>
 
 ## What is Polkadot?
@@ -113,7 +139,7 @@ Polkadot. For more information about Polkadot see the dedicated page about the s
 
 Polkadot has an on-chain [open governance](../learn/learn-polkadot-opengov.md) (also called Polkadot
 OpenGov) to orchestrate decisions, including accessing funds from the
-[treasury](../learn/learn-polkadot-opengov-treasury.md).
+[treasury](../explore/funding/learn-polkadot-opengov-treasury.md).
 
 The [DOT token](../learn/learn-DOT.md) gives you the power to participate in Polkadot OpenGov, and
 [staking](../learn/learn-staking.md).
@@ -123,23 +149,30 @@ specific to their use cases, and for those applications to communicate securely 
 other value proposition. The trustless cooperation between applications is what makes Polkadot an
 ideal ecosystem to build a [web3 future](./web3-and-polkadot.md).
 
-<div className="row">
-  <div className="col text--center">
-    <a href="https://www.youtube.com/watch?v=_-k0xkooSlA">
-      <img src="https://img.youtube.com/vi/_-k0xkooSlA/0.jpg" width="350" style={{ borderRadius: 10, border: '1px solid slategrey' }} />
-    </a>
-    <p>
-      <a href="https://www.youtube.com/watch?v=_-k0xkooSlA">Polkadot: Are You Ready to Start Building?</a>
-    </p>
-  </div>
-  <div className="col text--center">
-    <a href="https://www.youtube.com/watch?v=BQ60bTU1bPg">
-      <img src="https://img.youtube.com/vi/BQ60bTU1bPg/0.jpg" width="350" style={{ borderRadius: 10, border: '1px solid slategrey' }} />
-    </a>
-    <p>
-      <a href="https://www.youtube.com/watch?v=BQ60bTU1bPg">What is Polkadot?</a>
-    </p>
-  </div>
+<div class="row" style="display: flex; gap: 20px; justify-content: center;">
+  <!-- Card 1 -->
+  <a 
+    href="https://www.youtube.com/watch?v=_-k0xkooSlA" 
+    class="card-container" 
+    data-aos="fade-up" 
+    data-aos-delay="100" 
+    style="width: 300px; height: 300px;"
+  >
+    <img src="https://img.youtube.com/vi/_-k0xkooSlA/0.jpg" class="card-image"/>
+    <p class="card-title" style="font-size: 18px; font-weight: normal">Polkadot: Are You Ready to Start Building?</p>
+  </a>
+
+  <!-- Card 2 -->
+  <a 
+    href="https://www.youtube.com/watch?v=BQ60bTU1bPg" 
+    class="card-container" 
+    data-aos="fade-up" 
+    data-aos-delay="100" 
+    style="width: 300px; height: 300px;"
+  >
+    <img src="https://img.youtube.com/vi/BQ60bTU1bPg/0.jpg" class="card-image"/>
+    <p class="card-title" style="font-size: 18px; font-weight: normal">What is Polkadot?</p>
+  </a>
 </div>
 
 ## What can I do with my DOT?
@@ -162,7 +195,7 @@ in programs like the [Decentralized Nodes program](https://nodes.web3.foundation
 
 ## Polkadot Gifts
 
-<img align="right" src="/img/polkadot-guide/Gift.png" width="210" height="200"/>
+<img align="right" src="../../assets/explore/Gift.png" width="210" height="200"/>
 
 Polkadot Gifts provide an easy way to:
 
@@ -177,9 +210,8 @@ Learn more about how you can create and send Polkadot Gifts
 ## Why should you use Polkadot?
 
 Whether you're a blockchain developer or if you're interested in taking part of
-[Polkadot's community](https://polkadot.network/polkadot-ambassador-program/), Polkadot offers a
-platform for everyone. This wiki offers a place for builders and maintainers to utilize
-[tools](../build/build-tools-index.md) and for brand-new learners to dive into educational material.
+[Polkadot's community](../explore/programs/ambassadors.md), Polkadot offers a
+platform for everyone.
 
 ## Where to start learning?
 
@@ -192,12 +224,12 @@ This is recommended for users with backgrounds of all levels, and the course is 
 
 ### Brand-New Polkadot learners
 
-- [Polkadot's original white paper](https://polkadot.network/PolkaDotPaper.pdf) is a technical
+- [Polkadot's original white paper](https://polkadot.com/papers/Polkadot-whitepaper.pdf) is a technical
   summary around one possible direction of implementing the Polkadot network. This paper uses
   rationale and technical details to support why this direction is beneficial. This original white
   paper also explains how Polkadot's core components work together to build this decentralized
   network.
-- [Polkadot's light paper](https://polkadot.network/Polkadot-lightpaper.pdf) is a visual, easy to
+- [Polkadot's light paper](https://polkadot.com/papers/Polkadot-lightpaper.pdf) is a visual, easy to
   read, and less technical introduction into its blockchain technology. This paper dives into the
   components of Polkadot but is understandable for both a non-technical and technical reader.
 - [Polkadot's overview paper](https://arxiv.org/abs/2005.13456) is an updated version of the white
@@ -214,7 +246,7 @@ This is recommended for users with backgrounds of all levels, and the course is 
   explores how various processes function in the Polkadot network. The Polkadot specification takes
   Polkadot's ideas and concepts from the light and the white paper but focuses on the technical
   specs of the technology.
-- [Watching the Technical Explainer Videos](https://www.youtube.com/watch?v=mNStMPZjiHM&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8):
+- [Watching the Technical Explainer Videos](https://www.youtube.com/playlist?list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8):
   These are great introductory videos that explain and demonstrate how to use Polkadot and its
   [User Interface](https://polkadot.js.org/apps/).
 - Reading
@@ -247,10 +279,8 @@ and maintain on the Kusama network, please head over to our
 - [Polkadot & Substrate Overview](https://www.youtube.com/watch?v=0IoUZdDi5Is&feature=youtu.be) -
   Dr. Gavin Wood presents Substrate (blockchain in-a-box + VM) and Polkadot, and builds a blockchain
   on-stage in 30 minutes using Substrate. (Video)
-- [Community / Ecosystem](community.md) - List of community rooms and channels to talk to others
+- [Community / Ecosystem](./community-and-contributors/community.md) - List of community rooms and channels to talk to others
   about Polkadot.
-- [Sample Applications](#) - Sample applications that are built on or currently being built for
-  Polkadot.
-- [Contributing Guide](contributing.md) - Rules for contributing to the wiki.
+- [Contributing Guide](./community-and-contributors/contributing.md) - Rules for contributing to the wiki.
 - [Polkadot Knowledge Base](https://support.polkadot.network/) - Troubleshooting resources for
   specific errors and problems.

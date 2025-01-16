@@ -36,3 +36,82 @@ nav .md-header__ellipsis {
 .md-grid {
     max-width: 80rem;
 }
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.col {
+    flex: 1;
+    margin: 10px;
+    text-align: center;
+}
+
+.col img {
+    max-width: 100%;
+    height: auto;
+}
+
+.col a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.col a:hover {
+    color: #0078d4; /* Add hover effect */
+}
+
+/* Card container: Entire card is clickable */
+.card-container {
+    width: 500px; /* Fixed width */
+    height: 450px; /* Adjusted height for description */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid slategrey;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Ensure text inherits color */
+  }
+  
+  .card-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    background-color: #f4f4f4; /* Optional: Slight color change on hover */
+  }
+  
+  /* Image inside the card */
+  .card-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    object-fit: contain; /* Ensures images fit nicely */
+    max-height: 250px; /* Keeps image height consistent */
+  }
+  
+  /* Title text inside the card */
+  .card-title {
+    margin-top: 5px;
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+  }
+  
+  /* Description text inside the card */
+  .card-description {
+    font-size: 16px;
+    color: #555;
+    text-align: center;
+    margin-top: 5px;
+    line-height: 1.4; /* Better spacing for multi-line descriptions */
+  }
+  
