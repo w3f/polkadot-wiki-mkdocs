@@ -63,13 +63,13 @@ nav .md-header__ellipsis {
     color: #0078d4; /* Add hover effect */
 }
 
-/* Card container: Ensures all cards are the same size */
+/* Card container: Entire card is clickable */
 .card-container {
     width: 350px; /* Fixed width */
     height: 500px; /* Adjusted height for description */
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Align content */
+    justify-content: space-between;
     align-items: center;
     padding: 20px;
     border: 1px solid slategrey;
@@ -77,11 +77,14 @@ nav .md-header__ellipsis {
     background-color: #f9f9f9;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Ensure text inherits color */
   }
   
   .card-container:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    background-color: #f4f4f4; /* Optional: Slight color change on hover */
   }
   
   /* Image inside the card */
@@ -100,15 +103,7 @@ nav .md-header__ellipsis {
     font-size: 25px;
     font-weight: bold;
     color: black;
-  }
-  
-  .card-title a {
-    text-decoration: none;
-    color: black;
-  }
-  
-  .card-title a:hover {
-    text-decoration: underline;
+    text-align: center;
   }
   
   /* Description text inside the card */
