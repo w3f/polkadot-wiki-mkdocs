@@ -66,7 +66,7 @@ nav .md-header__ellipsis {
 /* Card container: Entire card is clickable */
 .card-container {
     width: 500px; /* Fixed width */
-    height: 500px; /* Adjusted height for description */
+    height: 450px; /* Adjusted height for description */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
