@@ -65,7 +65,7 @@ nav .md-header__ellipsis {
 
 /* Card container: Entire card is clickable */
 .card-container {
-    width: 350px; /* Fixed width */
+    width: 500px; /* Fixed width */
     height: 500px; /* Adjusted height for description */
     display: flex;
     flex-direction: column;
@@ -92,14 +92,14 @@ nav .md-header__ellipsis {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     object-fit: contain; /* Ensures images fit nicely */
     max-height: 250px; /* Keeps image height consistent */
   }
   
   /* Title text inside the card */
   .card-title {
-    margin-top: 10px;
+    margin-top: 5px;
     font-size: 25px;
     font-weight: bold;
     color: black;
@@ -108,7 +108,7 @@ nav .md-header__ellipsis {
   
   /* Description text inside the card */
   .card-description {
-    font-size: 14px;
+    font-size: 16px;
     color: #555;
     text-align: center;
     margin-top: 5px;

@@ -15,85 +15,118 @@ slug: ../getting-started
     
 ## Interact with Polkadot
 
-<div class="row">
-  <div class="col text--center" data-aos="fade-up" data-aos-delay="100">
-    <a href="../../learn/learn-accounts">
-      <img src="../../assets/explore/Creating an account.png" width="350" style="border-radius: 10px; border: 1px solid slategrey;" />
-    </a>
-    <p>
-      <a href="../../learn/learn-accounts">Accounts</a>
-    </p>
-  </div>
-  <div class="col text--center" data-aos="fade-up" data-aos-delay="200">
-    <a href="../../learn/learn-transactions">
-      <img src="../../assets/explore/Balance Transfers.png" width="350" style="border-radius: 10px; border: 1px solid slategrey;" />
-    </a>
-    <p>
-      <a href="../../learn/learn-transactions">Transactions</a>
-    </p>
-  </div>
-  <div class="col text--center" data-aos="fade-up" data-aos-delay="300">
-    <a href="../../learn/learn-staking">
-      <img src="../../assets/explore/Staking.png" width="350" style="border-radius: 10px; border: 1px solid slategrey;" />
-    </a>
-    <p>
-      <a href="../../learn/learn-staking">Staking</a>
-    </p>
-  </div>
+<div class="row" style="display: flex; gap: 20px; justify-content: center;">
+  <!-- Card 1 -->
+  <a 
+    href="../../learn/learn-accounts" 
+    class="card-container" 
+    data-aos="fade-up" 
+    data-aos-delay="100" 
+    style="width: 300px; height: 200px;"
+  >
+    <img src="../../assets/explore/Creating an account.png" class="card-image" alt="Explore" />
+    <p class="card-title" style="font-size: 18px">Accounts</p>
+  </a>
+
+  <!-- Card 2 -->
+  <a 
+    href="../../learn/learn-transactions" 
+    class="card-container" 
+    data-aos="fade-up" 
+    data-aos-delay="100" 
+    style="width: 300px; height: 200px;"
+  >
+    <img src="../../assets/explore/Balance Transfers.png" class="card-image" alt="Transactions" />
+    <p class="card-title" style="font-size: 18px">Transactions</p>
+  </a>
+
+  <!-- Card 3 -->
+  <a 
+    href="../../learn/learn-staking" 
+    class="card-container" 
+    data-aos="fade-up" 
+    data-aos-delay="100" 
+    style="width: 300px; height: 200px;"
+  >
+    <img src="../../assets/explore/Staking.png" class="card-image" alt="Staking" />
+    <p class="card-title" style="font-size: 18px">Staking</p>
+  </a>
 </div>
 
-<div class="row">
-  <div class="col text--center" data-aos="fade-up" data-aos-delay="400">
-    <a href="../../learn/learn-polkadot-opengov">
-      <img src="../../assets/explore/Polkadot OpenGov.png" width="350" style="border-radius: 10px; border: 1px solid slategrey;" />
-    </a>
-    <p>
-      <a href="../../learn/learn-polkadot-opengov">Polkadot OpenGov</a>
-    </p>
-  </div>
-  <div class="col text--center" data-aos="fade-up" data-aos-delay="500">
-    <a href="../../learn/learn-proxies">
-      <img src="../../assets/explore/Proxy Accounts.png" width="350" style="border-radius: 10px; border: 1px solid slategrey;" />
-    </a>
-    <p>
-      <a href="../../learn/learn-proxies">Proxy Accounts</a>
-    </p>
-  </div>
-  <div class="col text--center" data-aos="fade-up" data-aos-delay="600">
-    <a href="../../learn/learn-identity">
-      <img src="../../assets/explore/Set an Identity.png" width="350" style="border-radius: 10px; border: 1px solid slategrey;" />
-    </a>
-    <p>
-      <a href="../../learn/learn-identity">Account Identity</a>
-    </p>
-  </div>
+<div class="row" style="display: flex; gap: 20px; justify-content: center;">
+  <!-- Card 1 -->
+  <a 
+    href="../../learn/learn-polkadot-opengov" 
+    class="card-container" 
+    data-aos="fade-up" 
+    data-aos-delay="100" 
+    style="width: 300px; height: 200px;"
+  >
+    <img src="../../assets/explore/Polkadot OpenGov.png" class="card-image" alt="OpenGov" />
+    <p class="card-title" style="font-size: 18px">Polkadot OpenGov</p>
+  </a>
+
+  <!-- Card 2 -->
+  <a 
+    href="../../learn/learn-proxies" 
+    class="card-container" 
+    data-aos="fade-up" 
+    data-aos-delay="100" 
+    style="width: 300px; height: 200px;"
+  >
+    <img src="../../assets/explore/Proxy Accounts.png" class="card-image" alt="Proxies" />
+    <p class="card-title" style="font-size: 18px">Proxy Accounts</p>
+  </a>
+
+  <!-- Card 3 -->
+  <a 
+    href="../../learn/learn-identity" 
+    class="card-container" 
+    data-aos="fade-up" 
+    data-aos-delay="100" 
+    style="width: 300px; height: 200px;"
+  >
+    <img src="../../assets/explore/Set an Identity.png" class="card-image" alt="Identity" />
+    <p class="card-title" style="font-size: 18px">Account Identity</p>
+  </a>
 </div>
 
-<div class="row">
-  <div class="col text--center" data-aos="fade-up" data-aos-delay="700">
-    <a href="../../learn/learn-parachains">
-      <img src="../../assets/explore/Parachains.png" width="350" style="border-radius: 10px; border: 1px solid slategrey;" />
-    </a>
-    <p>
-      <a href="../../learn/learn-parachains">Parachains</a>
-    </p>
-  </div>
-  <div class="col text--center" data-aos="fade-up" data-aos-delay="900">
-    <a href="../../learn/learn-bridges">
-      <img src="../../assets/explore/Bridges.png" width="350" style="border-radius: 10px; border: 1px solid slategrey;" />
-    </a>
-    <p>
-      <a href="../../learn/learn-bridges">Bridges</a>
-    </p>
-  </div>
-  <div class="col text--center" data-aos="fade-up" data-aos-delay="900">
-    <a href="../../learn/ambassadors">
-      <img src="../../assets/explore/Become an Ambassador.png" width="350" style="border-radius: 10px; border: 1px solid slategrey;" />
-    </a>
-    <p>
-      <a href="../../explore/programs/ambassadors">Become an Ambassador</a>
-    </p>
-  </div>
+<div class="row" style="display: flex; gap: 20px; justify-content: center;">
+  <!-- Card 1 -->
+  <a 
+    href="../../learn/learn-parachains" 
+    class="card-container" 
+    data-aos="fade-up" 
+    data-aos-delay="100" 
+    style="width: 300px; height: 200px;"
+  >
+    <img src="../../assets/explore/Parachains.png" class="card-image" alt="Parachains" />
+    <p class="card-title" style="font-size: 18px">Parachains</p>
+  </a>
+
+  <!-- Card 2 -->
+  <a 
+    href="../../learn/learn-bridges" 
+    class="card-container" 
+    data-aos="fade-up" 
+    data-aos-delay="100" 
+    style="width: 300px; height: 200px;"
+  >
+    <img src="../../assets/explore/Bridges.png" class="card-image" alt="Bridges" />
+    <p class="card-title" style="font-size: 18px">Bridges</p>
+  </a>
+
+  <!-- Card 3 -->
+  <a 
+    href="../../learn/ambassador" 
+    class="card-container" 
+    data-aos="fade-up" 
+    data-aos-delay="100" 
+    style="width: 300px; height: 200px;"
+  >
+    <img src="../../assets/explore/Become an Ambassador.png" class="card-image" alt="Ambassador" />
+    <p class="card-title" style="font-size: 18px">Become an Ambassador</p>
+  </a>
 </div>
 
 ## What is Polkadot?
