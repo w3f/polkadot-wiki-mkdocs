@@ -1,9 +1,9 @@
 ---
-title: Polkadot Wiki
+title: Welcome to the Polkadot Wiki
 description: Home Page
 ---
 
-A staging repository for moving the Polkadot Wiki to Mkdocs.
+The Polkadot Wiki is a high-level technical documentation about the Polkadot Ecosystem. Use the cards below to explore and learn more about Polkadot.
 
 <div class="row" style="display: flex; gap: 20px; justify-content: center;">
   <!-- Card 1 -->
