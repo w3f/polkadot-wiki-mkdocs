@@ -25,7 +25,7 @@ slug: ../getting-started
     style="width: 300px; height: 200px;"
   >
     <img src="../../assets/explore/Creating an account.png" class="card-image" alt="Explore" />
-    <p class="card-title" style="font-size: 18px">Accounts</p>
+    <p class="card-title" style="font-size: 18px; font-weight: normal">Accounts</p>
   </a>
 
   <!-- Card 2 -->
@@ -37,7 +37,7 @@ slug: ../getting-started
     style="width: 300px; height: 200px;"
   >
     <img src="../../assets/explore/Balance Transfers.png" class="card-image" alt="Transactions" />
-    <p class="card-title" style="font-size: 18px">Transactions</p>
+    <p class="card-title" style="font-size: 18px; font-weight: normal">Transactions</p>
   </a>
 
   <!-- Card 3 -->
@@ -49,7 +49,7 @@ slug: ../getting-started
     style="width: 300px; height: 200px;"
   >
     <img src="../../assets/explore/Staking.png" class="card-image" alt="Staking" />
-    <p class="card-title" style="font-size: 18px">Staking</p>
+    <p class="card-title" style="font-size: 18px; font-weight: normal">Staking</p>
   </a>
 </div>
 
@@ -63,7 +63,7 @@ slug: ../getting-started
     style="width: 300px; height: 200px;"
   >
     <img src="../../assets/explore/Polkadot OpenGov.png" class="card-image" alt="OpenGov" />
-    <p class="card-title" style="font-size: 18px">Polkadot OpenGov</p>
+    <p class="card-title" style="font-size: 18px; font-weight: normal">Polkadot OpenGov</p>
   </a>
 
   <!-- Card 2 -->
@@ -75,7 +75,7 @@ slug: ../getting-started
     style="width: 300px; height: 200px;"
   >
     <img src="../../assets/explore/Proxy Accounts.png" class="card-image" alt="Proxies" />
-    <p class="card-title" style="font-size: 18px">Proxy Accounts</p>
+    <p class="card-title" style="font-size: 18px; font-weight: normal">Proxy Accounts</p>
   </a>
 
   <!-- Card 3 -->
@@ -87,7 +87,7 @@ slug: ../getting-started
     style="width: 300px; height: 200px;"
   >
     <img src="../../assets/explore/Set an Identity.png" class="card-image" alt="Identity" />
-    <p class="card-title" style="font-size: 18px">Account Identity</p>
+    <p class="card-title" style="font-size: 18px; font-weight: normal">Account Identity</p>
   </a>
 </div>
 
@@ -101,7 +101,7 @@ slug: ../getting-started
     style="width: 300px; height: 200px;"
   >
     <img src="../../assets/explore/Parachains.png" class="card-image" alt="Parachains" />
-    <p class="card-title" style="font-size: 18px">Parachains</p>
+    <p class="card-title" style="font-size: 18px; font-weight: normal">Parachains</p>
   </a>
 
   <!-- Card 2 -->
@@ -113,7 +113,7 @@ slug: ../getting-started
     style="width: 300px; height: 200px;"
   >
     <img src="../../assets/explore/Bridges.png" class="card-image" alt="Bridges" />
-    <p class="card-title" style="font-size: 18px">Bridges</p>
+    <p class="card-title" style="font-size: 18px; font-weight: normal">Bridges</p>
   </a>
 
   <!-- Card 3 -->
@@ -125,7 +125,7 @@ slug: ../getting-started
     style="width: 300px; height: 200px;"
   >
     <img src="../../assets/explore/Become an Ambassador.png" class="card-image" alt="Ambassador" />
-    <p class="card-title" style="font-size: 18px">Become an Ambassador</p>
+    <p class="card-title" style="font-size: 18px; font-weight: normal">Become an Ambassador</p>
   </a>
 </div>
 
@@ -149,23 +149,30 @@ specific to their use cases, and for those applications to communicate securely 
 other value proposition. The trustless cooperation between applications is what makes Polkadot an
 ideal ecosystem to build a [web3 future](./web3-and-polkadot.md).
 
-<div class="row">
-  <div className="col text--center">
-    <a href="https://www.youtube.com/watch?v=_-k0xkooSlA">
-      <img src="https://img.youtube.com/vi/_-k0xkooSlA/0.jpg" width="350" style="border-radius: 10px; border: 1px solid slategrey;" />
-    </a>
-    <p>
-      <a href="https://www.youtube.com/watch?v=_-k0xkooSlA">Polkadot: Are You Ready to Start Building?</a>
-    </p>
-  </div>
-  <div class="col text--center">
-    <a href="https://www.youtube.com/watch?v=BQ60bTU1bPg">
-      <img src="https://img.youtube.com/vi/BQ60bTU1bPg/0.jpg" width="350" style="border-radius: 10px; border: 1px solid slategrey;" />
-    </a>
-    <p>
-      <a href="https://www.youtube.com/watch?v=BQ60bTU1bPg">What is Polkadot?</a>
-    </p>
-  </div>
+<div class="row" style="display: flex; gap: 20px; justify-content: center;">
+  <!-- Card 1 -->
+  <a 
+    href="https://www.youtube.com/watch?v=_-k0xkooSlA" 
+    class="card-container" 
+    data-aos="fade-up" 
+    data-aos-delay="100" 
+    style="width: 300px; height: 300px;"
+  >
+    <img src="https://img.youtube.com/vi/_-k0xkooSlA/0.jpg" class="card-image"/>
+    <p class="card-title" style="font-size: 18px; font-weight: normal">Polkadot: Are You Ready to Start Building?</p>
+  </a>
+
+  <!-- Card 2 -->
+  <a 
+    href="https://www.youtube.com/watch?v=BQ60bTU1bPg" 
+    class="card-container" 
+    data-aos="fade-up" 
+    data-aos-delay="100" 
+    style="width: 300px; height: 300px;"
+  >
+    <img src="https://img.youtube.com/vi/BQ60bTU1bPg/0.jpg" class="card-image"/>
+    <p class="card-title" style="font-size: 18px; font-weight: normal">What is Polkadot?</p>
+  </a>
 </div>
 
 ## What can I do with my DOT?
