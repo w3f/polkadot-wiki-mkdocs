@@ -8,12 +8,12 @@ description: Use the Polkadot Ledger Application.
   <p>
     If you need help using Ledger, see
     <a href="https://support.ledger.com/article/Migrate-Assets-to-Polkadot-Generic-App-Accounts-Using-the-Polkadot-Generic-App" target="_blank" rel="noopener noreferrer">
-      this support article
-    </a>.
+      this support article.
+    </a>
     If the problem persists, you can contact the
     <a href="https://support.polkadot.network/support/home" target="_blank" rel="noopener noreferrer">
-      Polkadot Support Team
-    </a>.
+      Polkadot Support Team.
+    </a>
   </p>
   <button class="close-messagebox" aria-label="Close message">✖</button>
 </div>
