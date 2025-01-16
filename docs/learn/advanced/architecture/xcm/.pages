@@ -1,0 +1,9 @@
+title: Cross Consensus Messaging (XCM)
+nav:
+  - 'Cross Consensus Messaging (XCM)': index.md
+  - 'Introduction to Cross-Consensus Message Format (XCM)': learn-xcm.md
+  - 'XCM Pallet': learn-xcm-pallet.md
+  - 'XCM Use-cases': learn-xcm-usecases.md
+  - 'XCM Transport': learn-xcm-transport.md
+  - 'XCM Virtual Machine (XCVM)': learn-xcvm.md
+  - 'XCM Instructions': learn-xcm-instructions.md

@@ -69,6 +69,7 @@ markdown_extensions:
   - pymdownx.tasklist
   - pymdownx.tilde
   - pymdownx.arithmatex
+  - attr_list
   
     
   
