@@ -39,6 +39,7 @@ plugins:
   - awesome-pages
   - search
   - open-in-new-tab
+  - macros
 
 # Additional configuration
 extra:

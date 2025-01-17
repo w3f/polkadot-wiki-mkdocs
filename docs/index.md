@@ -5,6 +5,8 @@ description: Home Page
 
 The Polkadot Wiki is a high-level technical documentation about the Polkadot Ecosystem. Use the cards below to explore and learn more about Polkadot.
 
+{{ add() }}
+
 <div class="row">
   <!-- Card 1 -->
   <a href="./explore/getting-started" class="card-container" data-aos="fade-up" data-aos-delay="100">
