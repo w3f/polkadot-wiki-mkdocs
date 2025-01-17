@@ -38,6 +38,7 @@ theme:
 plugins:
   - awesome-pages
   - search
+  - open-in-new-tab
 
 # Additional configuration
 extra:
