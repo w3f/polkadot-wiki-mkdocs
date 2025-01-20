@@ -38,6 +38,7 @@ theme:
 plugins:
   - awesome-pages
   - search
+  - mermaid2
 
 # Additional configuration
 extra:
