@@ -58,7 +58,8 @@ extra_css:
   - stylesheets/extra.css
   - stylesheets/MessageBox.css
 extra_javascript:
-  - assets/MessageBox.js
+  - javascript/MessageBox.js
+  - javascript/init_kapa_widget.js
 
 # Extensions
 markdown_extensions:
