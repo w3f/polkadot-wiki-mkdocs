@@ -11,10 +11,8 @@ import Tabs from "@theme/Tabs"; import TabItem from "@theme/TabItem";
 
 Below are the most essential links to the community channels for Polkadot and Kusama.
 
-caution
-
-Keep in mind that no admin or moderator will ever DM you for any reason whatsoever without prior
-contact and anyone doing so is likely trying to scam you.
+!!!caution
+    Keep in mind that no admin or moderator will ever DM you for any reason whatsoever without prior contact and anyone doing so is likely trying to scam you.
 
 
 
