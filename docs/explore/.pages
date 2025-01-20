@@ -9,3 +9,4 @@ nav:
   - programs
   - 'Metadata Explorer': https://paritytech.github.io/subxt-explorer/#/
   - 'Chain State': chain-state-values.md
+  - 'Open Source Stack': build-open-source.md

@@ -11,6 +11,7 @@
 - **[Programs](./programs/)** - Programs, Contributors, Ambassadors and many more inititatives.
 - **[Metadata Explorer](https://paritytech.github.io/subxt-explorer/#/)** - Visualize Metadata and related Documentation.
 - **[Chain State](./chain-state-values.md)** - Chain constants and storage values that can be queried from the live network nodes of Polkadot, Kusama and their system chains.
+- **[Open Source Stack](./build-open-source.md)** - An Overview of the open-source Polkadot Tech Stack.
 
 </div>
 
