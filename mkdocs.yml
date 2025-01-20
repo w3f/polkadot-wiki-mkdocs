@@ -39,6 +39,7 @@ plugins:
   - awesome-pages
   - search
   - mermaid2
+  - open-in-new-tab
 
 # Additional configuration
 extra:
