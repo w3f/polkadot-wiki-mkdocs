@@ -38,7 +38,6 @@ theme:
 plugins:
   - awesome-pages
   - search
-  - mermaid2
   - open-in-new-tab
 
 # Additional configuration
@@ -85,7 +84,11 @@ markdown_extensions:
   - pymdownx.mark
   - pymdownx.smartsymbols
   - pymdownx.snippets
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
       combine_header_slug: true
