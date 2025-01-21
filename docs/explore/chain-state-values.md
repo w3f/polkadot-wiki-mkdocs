@@ -11,19 +11,17 @@ slug: ../chain-state-values
 
 === "Polkadot"
     !!!info "What to do with DOT"
-        - __<RPC network="polkadot" path="consts.balances.existentialDeposit" defaultValue={10000000000} filter="humanReadable"/>:__
+        - __{{ rpc("polkadot", "Balances", "ExistentialDeposit", 10000000000, true) }}__:
           the minimum balance required to have an active account on Polkadot Network. If your account
           balance drops below the minimum, your account will be reaped. Learn more about
           [Accounts](../learn/learn-accounts.md) and the
           [Existential Deposit](../learn/learn-accounts.md#existential-deposit-and-reaping) requirement.
-
-        - __<RPC network="polkadot" path="query.nominationPools.minJoinBond" defaultValue={10000000000} filter="humanReadable"/>:__
+        - __{{ rpc("polkadot", "NominationPools", "MinJoinBond", 10000000000) }}:__
           the minimum contribution required to join a [nomination pool](../learn/learn-nomination-pools.md)
           and earn staking rewards for contributing to the security of the network. Learn more about
           [nomination pools](../learn/learn-nomination-pools.md).
 
-        - __<RPC network="polkadotpeople" path="consts.identity.basicDeposit" defaultValue={2001700000} filter="humanReadable"/>:__
-            register an [on-chain identity](../learn/learn-identity.md)
+        - __{{ rpc("polkadot-people", "Identity", "BasicDeposit", 10000000000, true) }}:__ register an [on-chain identity](../learn/learn-identity.md)
 
         - __<RPC network="polkadot" path="consts.proxy.proxyDepositBase" defaultValue={200080000000} filter="humanReadable"/>:__
             create a [proxy account](../learn/learn-proxies.md).
