@@ -1,3 +1,6 @@
 title: Community & Contributors
 nav:
-  - ...
+  - 'Community & Contributors': index.md
+  - 'Community': community.md
+  - 'Contributing to the Wiki': contributing.md
+  - 'Contributors': contributors.md

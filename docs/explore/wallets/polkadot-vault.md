@@ -179,6 +179,6 @@ for detailed instructions. If you choose this approach, you should trust the pro
 
 !!!info "Polkadot-JS Guides"
     If you are an advanced user, see the
-    [Polkadot-JS guides about Polkadot Vault](../learn/learn-guides-vault.md).
+    [Polkadot-JS guides about Polkadot Vault](../../learn/advanced/polkadot-js/polkadot-js-guides/learn-guides-vault.md).
 
 

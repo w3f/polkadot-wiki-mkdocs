@@ -8,8 +8,8 @@ slug: ../decentralized-voices
 ---
 
 The Decentralized Voices program empowers broader community participation in
-[Polkadot OpenGov](../learn/learn-polkadot-opengov.md) by
-[delegating](../learn/learn-polkadot-opengov.md#multirole-delegation) 42 Million DOT and 80,000 KSM
+[Polkadot OpenGov](../../learn/basics/polkadot-opengov/learn-polkadot-opengov.md) by
+[delegating](../../learn/basics/polkadot-opengov/learn-polkadot-opengov.md#multirole-delegation) 42 Million DOT and 80,000 KSM
 of voting power.
 
 ## Decentralized Votes
@@ -21,7 +21,7 @@ decentralizing governance within the Polkadot ecosystem to ensure a fair decisio
 line with the Foundation's ethos, this program seeks to amplify the voices of passionate and
 knowledgeable participants who may lack significant holdings, aiming to mitigate potential
 marginalization. This initiative does not impact existing programs like Decentralize Nodes, as
-[the tokens allocated can be used for both staking and governance](../learn/learn-polkadot-opengov.md#voluntary-locking-conviction-voting).
+[the tokens allocated can be used for both staking and governance](../../learn/basics/polkadot-opengov/learn-polkadot-opengov.md#voluntary-locking-conviction-voting).
 
 ## How to Apply
 

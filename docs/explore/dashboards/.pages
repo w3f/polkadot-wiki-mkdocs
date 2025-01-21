@@ -1,4 +1,7 @@
 title: Dashboards
 nav:
-  - ...
+  - 'Dashoards': index.md
+  - 'Dune Analytics': dune-analytics
+  - 'Parity Data Dashboards': parity-data-dashboards.md
+  - 'Staking Dashboard': staking-dashboard.md
   - 'Polkadot Technical Fellowship Dashboard': https://polkadot-fellows.xyz/

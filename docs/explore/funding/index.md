@@ -7,17 +7,31 @@ keywords: [funding, grants, decentralized futures, treasury, bounties]
 slug: ../funding
 ---
 
-import DocCardList from '@theme/DocCardList'; import MessageBox from "../../components/MessageBox";
-import "../../components/MessageBox.css";
-
-<MessageBox message="For fundraising in a decentralized, transparent, and regulatory compliant manner within the ecosystem, check out the [Polimec parachain](https://www.polimec.org/)." />
+<!-- MessageBox -->
+<div id="messageBox" class="floating-message-box">
+  <p>
+    For fundraising in a decentralized, transparent, and regulatory compliant manner within the ecosystem, check out the
+    <a href="https://www.polimec.org/" target="_blank" rel="noopener noreferrer">
+      Polimec parachain.
+    </a>
+  </p>
+  <button class="close-messagebox" aria-label="Close message">✖</button>
+</div>
 
 !!!tip
-   Check out the [programs](programs-index) for numerous ecosystem support opportunities.
+      Check out the [programs](../programs/index.md) for numerous ecosystem support opportunities.
 
 
 
-<DocCardList />
+<div class="grid cards" markdown>
+
+- [Grants](./grants.md) - The Grant Program in the Polkadot Ecosystem.
+- [Decentralized Futures](decentralized-futures.md) - Learn about the Decentralized Futures Program.
+- [Treasury](learn-polkadot-opengov-treasury.md) - Polkadot's On-chain Treasury.
+- [Polkadot Community Foundation](pcf.md) - Polkadot Community Foundation.
+- [Ecosystem Funds](ecosystem-funds.md) - An Overview of the Trusted Polkadot Ecosystem Development Funds.
+
+</div>
 
 If you are certain you want to apply for a W3F grant, head straight to the
 [application process documentation](https://grants.web3.foundation/docs/Process/how-to-apply).

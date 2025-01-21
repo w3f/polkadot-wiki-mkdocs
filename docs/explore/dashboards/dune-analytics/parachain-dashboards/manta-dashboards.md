@@ -76,7 +76,7 @@ Query result:
 
 <iframe src="https://dune.com/embeds/3747203/6371404/ea0be060-b61c-4379-8227-f7fc5e04c980" height="350" width="100%"></iframe>
 
-!!!info DuneSQL Referece
+!!!info "DuneSQL Reference"
     For more information on DuneSQL, please refer to the [DuneSQL Cheatsheet](../dunesql-cheatsheet.md)
     and
     [DuneSQL Official Documentation](https://docs.dune.com/query-engine/Functions-and-operators/index).
