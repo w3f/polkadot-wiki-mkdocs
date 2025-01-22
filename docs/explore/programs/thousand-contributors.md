@@ -12,11 +12,9 @@ support and reward community contributions. The program focuses on rewarding con
 areas of technical education, community, and support that relate to the Polkadot and Kusama
 ecosystems.
 
-!!!note The pilot phase of Thousand Contributors Program has ended
-   You can still submit your intent to participate. The submissions will be reviewed and accepted on a
-   case-by-case basis.
-
-
+!!!note 
+      The pilot phase of Thousand Contributors Program has ended
+      You can still submit your intent to participate. The submissions will be reviewed and accepted on a case-by-case basis.
 
 ## How to Participate
 

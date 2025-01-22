@@ -99,7 +99,7 @@ Query result:
 
 <iframe src="https://dune.com/embeds/3811524/6410355/b0ebb3df-de06-43b8-a3e2-3255ca4b29b6" height="350" width="100%"></iframe>
 
-!!!info DuneSQL Referece
+!!!info "DuneSQL Reference"
     For more information on DuneSQL, please refer to the [DuneSQL Cheatsheet](../dunesql-cheatsheet.md)
     and
     [DuneSQL Official Documentation](https://docs.dune.com/query-engine/Functions-and-operators/index).

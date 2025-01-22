@@ -1,0 +1,13 @@
+# credit to https://til.simonwillison.net/github/dependabot-python-setup for the easy setup!
+version: 2
+updates:
+- package-ecosystem: pip
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "14:30"
+  groups:
+    python-packages:
+      patterns:
+        - "*"
+  open-pull-requests-limit: 10

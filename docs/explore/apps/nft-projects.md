@@ -7,30 +7,27 @@ keywords: [NFT, non-fungible token, NFT 2.0]
 slug: ../learn-nft-projects
 ---
 
-!!!info Community Page
-      This page is open to contributions from the community. Please follow the
-      [Wiki contribution guidelines](https://github.com/w3f/polkadot-wiki#contributing-to-documentation)
-      and add your NFT app to this page.
-
-
+!!!info "Community Page"
+    This page is open to contributions from the community. Please follow the
+    [Wiki contribution guidelines](https://github.com/w3f/polkadot-wiki#contributing-to-documentation) and add your NFT app to this page.
 
 ## List of NFT Projects
 
 <!-- prettier-ignore -->
 <!-- no toc -->
 
-- [List of NFT Projects](#list-of-nft-projects)
-- [Astar](#astar)
-- [Basilisk](#basilisk)
-- [KodaDot](#kodadot)
-  - [The Team Behind KodaDot](#the-team-behind-kodadot)
-  - [Ecosystem Tools by KodaDot](#ecosystem-tools-by-kodadot)
-- [Moonbeam](#moonbeam)
-- [RMRK](#rmrk)
-  - [NFT Legos](#nft-legos)
-  - [NFT from Kanaria](#nft-from-kanaria)
-- [Asset Hub](#asset-hub)
-- [Unique Network](#unique-network)
+  - [List of NFT Projects](#list-of-nft-projects)
+  - [Astar](#astar)
+  - [Basilisk](#basilisk)
+  - [KodaDot](#kodadot)
+    1. [The Team Behind KodaDot](#the-team-behind-kodadot)
+    2. [Ecosystem Tools by KodaDot](#ecosystem-tools-by-kodadot)
+  - [Moonbeam](#moonbeam)
+  - [RMRK](#rmrk)
+    1. [NFT Legos](#nft-legos)
+    2. [NFT from Kanaria](#nft-from-kanaria)
+  - [Asset Hub](#asset-hub)
+  - [Unique Network](#unique-network)
 
 ## Astar
 
@@ -48,8 +45,7 @@ developers writing smart contracts with [ink!](https://use.ink) based on
 
 The main advantage of having a multi-virtual machine environment for NFT developers is that it will
 give more possibilities to the builders for the use case they are developing. With the support of
-WASM smart contracts, developers can develop solutions like [RMRK](./learn-nft#rmrk) with smart
-contracts.
+WASM smart contracts, developers can develop solutions like [RMRK](#rmrk) with smart contracts.
 
 ## Basilisk
 
@@ -63,7 +59,7 @@ that allows creating a buy order for a specific NFT.
 
 These NFTs can be viewed and interacted instantly on [KodaDot](https://kodadot.xyz).
 
-![nft-basilisk](../assets/nft/nft-basilisk.png)
+![nft-basilisk](../../assets/nft/nft-basilisk.png)
 
 ## [KodaDot](https://kodadot.xyz)
 
@@ -81,15 +77,18 @@ robust collaboration has earned KodaDot the
 See below a video tutorial about how to mint your NFT on [the Polkadot Asset Hub](#asset-hub) using
 KodaDot.
 
-<div className="row">
-  <div className="col text--center">
-    <a href="https://www.youtube.com/watch?v=SKdx4pTgL04">
-      <img src="https://img.youtube.com/vi/SKdx4pTgL04/0.jpg" width="350" style={{ borderRadius: 10, border: '1px solid slategrey' }} />
-    </a>
-    <p>
-      <a href="https://www.youtube.com/watch?v=SKdx4pTgL04">KodaDot Tutorial on Minting NFTs</a>
-    </p>
-  </div>
+<div class="row">
+  <!-- Card 1 -->
+  <a 
+    href="https://www.youtube.com/watch?v=SKdx4pTgL04" 
+    class="card-container" 
+    data-aos="fade-up" 
+    data-aos-delay="100" 
+    style="width: 300px; height: 300px;"
+  >
+    <img src="https://img.youtube.com/vi/SKdx4pTgL04/0.jpg" class="card-image" />
+    <p class="card-title">KodaDot Tutorial on Minting NFTs</p>
+  </a>
 </div>
 
 For more information about minting using KodaDot see
@@ -177,27 +176,23 @@ builder to compose an NFT system of arbitrary complexity without smart contracts
 
 ### NFT from [Kanaria](https://kanaria.rmrk.app)
 
-![kanaria.png](../assets/nft/kanaria.png)
+![kanaria.png](../../assets/nft/kanaria.png)
 
-!!!note Multi-resource NFTs
-      A multi-resource NFT (gif of statue, and SVG-composable dynamic NFT in one) that can also equip
-      other NFTs from within its "inventory".
-
-
+!!!note "Multi-resource NFTs"
+    A multi-resource NFT (gif of statue, and SVG-composable dynamic NFT in one) that can also equip other NFTs from within its "inventory".
 
 Two marketplaces for RMRK-based NFTs exist with hundreds of projects already launched:
 
 - [Singular](https://singular.rmrk.app), the official marketplace
 
-For a complete introduction into RMRK, see [this presentation](https://url.rmrk.app/wasmconf) or
-read [the non-technical docs](https://docs.rmrk.app).
+For a complete introduction into RMRK, see [this presentation](https://url.rmrk.app/wasmconf) or read [the non-technical docs](https://docs.rmrk.app).
 
 ## Asset Hub
 
 The Asset Hub is a generic assets parachain which provides functionality for deploying and
 transferring assets — both Fungible and Non-Fungible Tokens (NFTs). The Asset Hub currently hosts
-[Uniques pallet](./learn-nft-pallets.md#uniques-pallet) and the
-[NFTs pallet](./learn-nft-pallets.md#nfts-pallet) with NFT 2.0 functionalities.
+[Uniques pallet](../../learn/advanced/learn-nft-pallets.md#uniques-pallet) and the
+[NFTs pallet](../../learn/advanced/learn-nft-pallets.md#nfts-pallet) with NFT 2.0 functionalities.
 
 ## Unique Network
 

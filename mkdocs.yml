@@ -57,8 +57,11 @@ extra:
 extra_css:
   - stylesheets/extra.css
   - stylesheets/MessageBox.css
+  - stylesheets/announcement-bar.css
 extra_javascript:
-  - assets/MessageBox.js
+  - javascript/MessageBox.js
+  - javascript/init_kapa_widget.js
+  - javascript/announcement-bar.js
 
 # Extensions
 markdown_extensions:
@@ -70,6 +73,7 @@ markdown_extensions:
   - md_in_html
   - toc:
       permalink: true
+      toc_depth: 3
   - pymdownx.arithmatex:
       generic: true
   - pymdownx.betterem:
@@ -83,7 +87,11 @@ markdown_extensions:
   - pymdownx.mark
   - pymdownx.smartsymbols
   - pymdownx.snippets
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
       combine_header_slug: true

@@ -9,35 +9,20 @@ keywords: [polkadot, kusama, constants, storage, values]
 slug: ../chain-state-values
 ---
 
+import RPC from "./../../components/RPC-Connection";
+
+<!-- prettier-ignore-start -->
+
 === "Polkadot"
+
     !!!info "What to do with DOT"
-        - __{{ rpc("polkadot", "Balances", "ExistentialDeposit", 10000000000, true) }}__:
-          the minimum balance required to have an active account on Polkadot Network. If your account
-          balance drops below the minimum, your account will be reaped. Learn more about
-          [Accounts](../learn/learn-accounts.md) and the
-          [Existential Deposit](../learn/learn-accounts.md#existential-deposit-and-reaping) requirement.
-        - __{{ rpc("polkadot", "NominationPools", "MinJoinBond", 10000000000) }}:__
-          the minimum contribution required to join a [nomination pool](../learn/learn-nomination-pools.md)
-          and earn staking rewards for contributing to the security of the network. Learn more about
-          [nomination pools](../learn/learn-nomination-pools.md).
-
-        - __{{ rpc("polkadot-people", "Identity", "BasicDeposit", 10000000000, true) }}:__ register an [on-chain identity](../learn/learn-identity.md)
-
-        - __<RPC network="polkadot" path="consts.proxy.proxyDepositBase" defaultValue={200080000000} filter="humanReadable"/>:__
-            create a [proxy account](../learn/learn-proxies.md).
-
-        - __<RPC network="polkadot" path="query.staking.minNominatorBond" defaultValue={2500000000000} filter="humanReadable"/>:__
-          the minimum stake required to submit your intent to directly nominate validators.
-        - __<RPC network="polkadot" path="query.staking.minimumActiveStake" defaultValue={2937000000000} filter="humanReadable"/>:__
-          the minimum amount of DOT required to become an active nominator and earn rewards, i.e. the
-          minimum active bond. To increase the chance of earning staking rewards, your stake should not be
-          less than the minimum stake among the active nominators, which is a dynamic threshold. If you have
-          lesser DOT than the minimum active nomination, please consider contributing to
-          [nomination pools](../learn/learn-nomination-pools.md). Learn more about
-          [becoming a nominator](../learn/learn-nominator.md).
-
-        - __<RPC network="polkadot" path="query.nominationPools.minCreateBond" defaultValue={5000000000000} filter="humanReadable"/>:__
-          you can create your own [nomination pool](../learn/learn-nomination-pools.md).
+        - __<RPC network="polkadot" path="consts.balances.existentialDeposit" defaultValue={10000000000} filter="humanReadable"/>:__ the minimum balance required to have an active account on Polkadot Network. If your account balance drops below the minimum, your account will be reaped. Learn more about [Accounts](../learn/basics/accounts/index.md) and the [Existential Deposit](../learn/basics/accounts/index.md#existential-deposit-and-reaping) requirement.
+        - __<RPC network="polkadot" path="query.nominationPools.minJoinBond" defaultValue={10000000000} filter="humanReadable"/>:__ the minimum contribution required to join a [nomination pool](../learn/basics/staking/learn-nomination-pools.md) and earn staking rewards for contributing to the security of the network. Learn more about [nomination pools](../learn/basics/staking/learn-nomination-pools.md).
+        - __<RPC network="polkadotpeople" path="consts.identity.basicDeposit" defaultValue={2001700000} filter="humanReadable"/>:__ register an [on-chain identity](../learn/basics/accounts/learn-identity.md)
+        - __<RPC network="polkadot" path="consts.proxy.proxyDepositBase" defaultValue={200080000000} filter="humanReadable"/>:__ create a [proxy account](../learn/basics/accounts/learn-proxies.md).
+        - __<RPC network="polkadot" path="query.staking.minNominatorBond" defaultValue={2500000000000} filter="humanReadable"/>:__ the minimum stake required to submit your intent to directly nominate validators.
+        - __<RPC network="polkadot" path="query.staking.minimumActiveStake" defaultValue={2937000000000} filter="humanReadable"/>:__ the minimum amount of DOT required to become an active nominator and earn rewards, i.e. the minimum active bond. To increase the chance of earning staking rewards, your stake should not be less than the minimum stake among the active nominators, which is a dynamic threshold. If you have lesser DOT than the minimum active nomination, please consider contributing to [nomination pools](../learn/basics/staking/learn-nomination-pools.md). Learn more about [becoming a nominator](../learn/basics/network-participants/learn-nominator.md).
+        - __<RPC network="polkadot" path="query.nominationPools.minCreateBond" defaultValue={5000000000000} filter="humanReadable"/>:__ you can create your own [nomination pool](../learn/basics/staking/learn-nomination-pools.md).
 
     #### Active Validator Count
 
@@ -190,25 +175,14 @@ slug: ../chain-state-values
     era** (in hours), and dividing by the **hours in a day** (24). Example: 28 × 24 ÷ 24 = 28 days.
 
 === "Kusama"
+
     !!!info "What to do with KSM"
-        - __<RPC network="kusama" path="consts.balances.existentialDeposit" defaultValue={333333333} filter="humanReadable"/>:__
-          the minimum balance required to have an active account on Kusama Network. If your account balance
-          drops below the minimum, your account will be reaped. Learn more about
-          [Accounts](../learn/learn-accounts.md) and the
-          [Existential Deposit](../learn/learn-accounts.md#existential-deposit-and-reaping) requirement.
-        - __<RPC network="kusama" path="query.nominationPools.minJoinBond" defaultValue={1666666650} filter="humanReadable"/>:__
-          the minimum contribution required to join a
-          [nomination pool](../learn/learn-nomination-pools.md) and earn staking rewards for contributing
-          to the security of the network. Learn more about
-          [nomination pools](../learn/learn-nomination-pools.md).
-        - __<RPC network="kusamapeople" path="consts.identity.basicDeposit" defaultValue={6672333321} filter="humanReadable"/>:__
-          register an [on-chain identity](../learn/learn-identity.md)
-        - __<RPC network="kusama" path="consts.proxy.proxyDepositBase" defaultValue={666933332400} filter="humanReadable"/>:__
-          create a [proxy account](../learn/learn-proxies.md).
-        - __<RPC network="kusama" path="query.nominationPools.minCreateBond" defaultValue={1000000000000} filter="humanReadable"/>:__
-          you can create your own [nomination pool](../learn/learn-nomination-pools.md).
-        - __<RPC network="kusama" path="query.staking.minimumActiveStake" defaultValue={0} filter="humanReadable"/>:__
-          the minimum amount of KSM required to become an active nominator and earn rewards.
+        - __<RPC network="kusama" path="consts.balances.existentialDeposit" defaultValue={333333333} filter="humanReadable"/>:__ the minimum balance required to have an active account on Kusama Network. If your account balance drops below the minimum, your account will be reaped. Learn more about [Accounts](../learn/basics/accounts/index.md) and the [Existential Deposit](../learn/basics/accounts/index.md#existential-deposit-and-reaping) requirement.
+        - __<RPC network="kusama" path="query.nominationPools.minJoinBond" defaultValue={1666666650} filter="humanReadable"/>:__ the minimum contribution required to join a [nomination pool](../learn/basics/staking/learn-nomination-pools.md) and earn staking rewards for contributing to the security of the network. Learn more about [nomination pools](../learn/basics/staking/learn-nomination-pools.md).
+        - __<RPC network="kusamapeople" path="consts.identity.basicDeposit" defaultValue={6672333321} filter="humanReadable"/>:__ register an [on-chain identity](../learn/basics/accounts/learn-identity.md)
+        - __<RPC network="kusama" path="consts.proxy.proxyDepositBase" defaultValue={666933332400} filter="humanReadable"/>:__ create a [proxy account](../learn/basics/accounts/learn-proxies.md).
+        - __<RPC network="kusama" path="query.nominationPools.minCreateBond" defaultValue={1000000000000} filter="humanReadable"/>:__ you can create your own [nomination pool](../learn/basics/staking/learn-nomination-pools.md).
+        - __<RPC network="kusama" path="query.staking.minimumActiveStake" defaultValue={0} filter="humanReadable"/>:__ the minimum amount of KSM required to become an active nominator and earn rewards.
 
     #### Active Validator Count
 
@@ -361,6 +335,7 @@ slug: ../chain-state-values
     era** (in hours), and dividing by the **hours in a day** (24). Example: 28 × 6 ÷ 24 = 7 days.
 
 === "Polkadot Asset Hub"
+
     #### Asset Deposit
 
     To reserve an asset on the Polkadot Asset Hub you need a deposit of <RPC network="statemint" path="consts.assets.assetDeposit" defaultValue={100000000000} filter="humanReadable"/> and <RPC network="statemint" path="consts.assets.metadataDepositBase" defaultValue={668933304} filter="humanReadable"/> for the asset metadata.
@@ -369,7 +344,8 @@ slug: ../chain-state-values
 
     The minimum number of tokens to keep an account alive on the Polkadot Asset Hub is <RPC network="statemint" path="consts.balances.existentialDeposit" defaultValue={100000000} filter="humanReadable"/>.
 
-=== "Kusama Asset Hub"
+=== "Kusma Asset Hub"
+
     #### Asset Deposit
 
     To reserve an asset on the Kusama Asset Hub you need a deposit of <RPC network="statemine" path="consts.assets.assetDeposit" defaultValue={100000000000} filter="humanReadable"/> and <RPC network="statemine" path="consts.assets.metadataDepositBase" defaultValue={668933304} filter="humanReadable"/> for the asset metadata.
@@ -379,6 +355,7 @@ slug: ../chain-state-values
     The minimum number of tokens to keep an account alive on the Kusama Asset Hub is <RPC network="statemine" path="consts.balances.existentialDeposit" defaultValue={1000000000} filter="humanReadable"/>.
 
 === "Polkadot People"
+
     #### Identity Deposit
 
     The creation of a Polkadot identity required a deposit of <RPC network="polkadotpeople" path="consts.identity.basicDeposit" defaultValue={2001700000} filter="humanReadable"/> and <RPC network="polkadotpeople" path="consts.identity.byteDeposit" defaultValue={100000} filter="humanReadable"/> (per byte) per each field beyond the legal name.
@@ -388,6 +365,7 @@ slug: ../chain-state-values
     The creation of a Polkadot sub-identity required a deposit of <RPC network="polkadotpeople" path="consts.identity.subAccountDeposit" defaultValue={2005300000} filter="humanReadable"/>.
 
 === "Kusama People"
+
     #### Identity Deposit
 
     The creation of a Kusama identity required a deposit of <RPC network="kusamapeople" path="consts.identity.basicDeposit" defaultValue={6672333321} filter="humanReadable"/> and <RPC network="kusamapeople" path="consts.identity.byteDeposit" defaultValue={333333} filter="humanReadable"/> (per byte) per each field beyond the legal name.
@@ -395,3 +373,5 @@ slug: ../chain-state-values
     #### Sub-identity Deposit
 
     The creation of a Kusama sub-identity required a deposit of <RPC network="kusamapeople" path="consts.identity.subAccountDeposit" defaultValue={6684333309} filter="humanReadable"/>.
+
+<!-- prettier-ignore-end -->

@@ -18,7 +18,7 @@ slug: ../getting-started
 <div class="row">
   <!-- Card 1 -->
   <a 
-    href="../../learn/learn-accounts" 
+    href="../../learn/basics/accounts" 
     class="card-container" 
     data-aos="fade-up" 
     data-aos-delay="100" 
@@ -30,7 +30,7 @@ slug: ../getting-started
 
   <!-- Card 2 -->
   <a 
-    href="../../learn/learn-transactions" 
+    href="../../learn/basics/learn-transactions" 
     class="card-container" 
     data-aos="fade-up" 
     data-aos-delay="100" 
@@ -42,7 +42,7 @@ slug: ../getting-started
 
   <!-- Card 3 -->
   <a 
-    href="../../learn/learn-staking" 
+    href="../../learn/basics/staking/learn-staking" 
     class="card-container" 
     data-aos="fade-up" 
     data-aos-delay="100" 
@@ -56,7 +56,7 @@ slug: ../getting-started
 <div class="row">
   <!-- Card 1 -->
   <a 
-    href="../../learn/learn-polkadot-opengov" 
+    href="../../learn/basics/polkadot-opengov/learn-polkadot-opengov" 
     class="card-container" 
     data-aos="fade-up" 
     data-aos-delay="100" 
@@ -68,7 +68,7 @@ slug: ../getting-started
 
   <!-- Card 2 -->
   <a 
-    href="../../learn/learn-proxies" 
+    href="../../learn/basics/accounts/learn-proxies" 
     class="card-container" 
     data-aos="fade-up" 
     data-aos-delay="100" 
@@ -80,7 +80,7 @@ slug: ../getting-started
 
   <!-- Card 3 -->
   <a 
-    href="../../learn/learn-identity" 
+    href="../../learn/basics/accounts/learn-identity" 
     class="card-container" 
     data-aos="fade-up" 
     data-aos-delay="100" 
@@ -94,7 +94,7 @@ slug: ../getting-started
 <div class="row">
   <!-- Card 1 -->
   <a 
-    href="../../learn/learn-parachains" 
+    href="../../learn/advanced/architecture/parachains/learn-parachains" 
     class="card-container" 
     data-aos="fade-up" 
     data-aos-delay="100" 
@@ -106,7 +106,7 @@ slug: ../getting-started
 
   <!-- Card 2 -->
   <a 
-    href="../../learn/learn-bridges" 
+    href="../../learn/advanced/architecture/bridges" 
     class="card-container" 
     data-aos="fade-up" 
     data-aos-delay="100" 
@@ -118,7 +118,7 @@ slug: ../getting-started
 
   <!-- Card 3 -->
   <a 
-    href="../../learn/ambassador" 
+    href="../../explore/programs/ambassadors" 
     class="card-container" 
     data-aos="fade-up" 
     data-aos-delay="100" 

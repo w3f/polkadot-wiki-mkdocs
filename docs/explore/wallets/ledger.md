@@ -162,6 +162,6 @@ to learn how to use Polkadot with ledger live.
 
 !!! info "Polkadot-JS Guides"
     If you are an advanced user, see the
-    [Polkadot-JS guides about Ledger](../learn/learn-guides-ledger.md).
+    [Polkadot-JS guides about Ledger](../../learn/advanced/polkadot-js/polkadot-js-guides/learn-guides-ledger.md).
 
 
