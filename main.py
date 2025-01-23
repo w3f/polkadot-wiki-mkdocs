@@ -4,6 +4,22 @@ Polkadot Wiki Macro functionality
 
 import substrateinterface
 
+def format(value, filter):
+    match filter:
+        case "percentage":
+            return f"{value / 10000}%"
+        case "human_readable":
+            return human_readable(10, value)
+        case "human_readable_kusama":
+            return human_readable(12, value)
+        case "blocks_to_days":
+            return str(blocks_to_days(value))
+        case _:
+            return str(value)
+        
+def blocks_to_days(blocks): 
+    return (blocks * 6) / 86400
+
 def get_network_url(network):
     match network:
         case "polkadot":
@@ -33,7 +49,7 @@ def human_readable(decimals_amount, number):
 
 def define_env(env):
     @env.macro
-    def rpc(network, module, call, default_value, is_constant=False):
+    def rpc(network, module, call, default_value, is_constant=False, readable="human_readable"):
         url = get_network_url(network)
         api = substrateinterface.SubstrateInterface(url)
         result = None
@@ -41,6 +57,6 @@ def define_env(env):
             result = api.get_constant(module, call)
         else:
             result = api.query(module, call)
-        if result.value == None:
-            return default_value
-        return human_readable(10, result.value)
+        if result == None or result.value == None:
+            return "NOT_FOUND"
+        return format(result.value, readable)
