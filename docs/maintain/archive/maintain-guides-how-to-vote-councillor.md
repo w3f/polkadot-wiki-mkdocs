@@ -7,8 +7,16 @@ keywords: [council, vote, councillors]
 slug: ../maintain-guides-how-to-vote-councillor
 ---
 
-<MessageBox message="The content on this page is archived. For up-to-date information about governance, see the
-[Polkadot OpenGov page](../learn-polkadot-opengov)." />
+<!-- MessageBox -->
+<div id="messageBox" class="floating-message-box">
+  <p>
+    The content on this page is archived. For up-to-date information about governance, see the
+    <a href="../learn-polkadot-opengov" target="_blank" rel="noopener noreferrer">
+      Polkadot OpenGov page.
+    </a>
+  </p>
+  <button class="close-messagebox" aria-label="Close message">✖</button>
+</div>
 
 The council is an elected body of on-chain accounts that are intended to represent the passive
 stakeholders of Polkadot and/or Kusama. The council has two major tasks in governance: proposing

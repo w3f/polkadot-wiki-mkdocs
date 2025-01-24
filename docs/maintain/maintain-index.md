@@ -7,7 +7,7 @@ keywords: [maintain, validator, collator]
 slug: ../maintain-index
 ---
 
-import DocCardList from '@theme/DocCardList';
+
 
 Welcome to the network maintainers section of the Polkadot Wiki. Here you will find information and
 guides to set up a node and run the network.

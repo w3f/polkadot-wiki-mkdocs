@@ -7,5 +7,11 @@ keywords: [Democracy, Council, Gov1, Councillor]
 slug: ../maintain-archive
 ---
 
-<MessageBox message="This section contains archived pages. The content in them no longer applies to Polkadot but can
-still be relevant for parachains and related projects." />
+<!-- MessageBox -->
+<div id="messageBox" class="floating-message-box">
+  <p>
+    This section contains archived pages. The content in them no longer applies to Polkadot but can
+    still be relevant for parachains and related projects.
+  </p>
+  <button class="close-messagebox" aria-label="Close message">✖</button>
+</div>
