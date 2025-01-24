@@ -7,8 +7,6 @@ keywords: [build, how to build, develop, parachain, smart contract]
 slug: ../build-guide
 ---
 
-import Tabs from "@theme/Tabs"; import TabItem from "@theme/TabItem";
-
 Polkadot is a blockchain network protocol that provides **shared security** among all connected
 parachains and allowing all connected tasks to **interoperate** by using
 [XCM](../learn/learn-xcm.md).

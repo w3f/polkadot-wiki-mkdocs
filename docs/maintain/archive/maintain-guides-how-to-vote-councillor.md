@@ -7,9 +7,6 @@ keywords: [council, vote, councillors]
 slug: ../maintain-guides-how-to-vote-councillor
 ---
 
-import MessageBox from "../../../components/MessageBox"; import
-"../../../components/MessageBox.css";
-
 <MessageBox message="The content on this page is archived. For up-to-date information about governance, see the
 [Polkadot OpenGov page](../learn-polkadot-opengov)." />
 

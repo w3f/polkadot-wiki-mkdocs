@@ -7,10 +7,6 @@ keywords: [node, full node, sync, setup node]
 slug: ../maintain-sync
 ---
 
-import Tabs from "@theme/Tabs";
-
-import TabItem from "@theme/TabItem";
-
 If you're building dApps or products on a Substrate-based chain like Polkadot, Kusama, or a custom
 Substrate implementation, you want the ability to run a node-as-a-back-end. After all, relying on
 your infrastructure is always better than a third-party-hosted one in this brave new decentralized

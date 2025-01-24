@@ -7,10 +7,6 @@ keywords: [validate, validator, kusama, stake, maintain]
 slug: ../../maintain-guides-how-to-validate-kusama
 ---
 
-import RPC from "./../../../components/RPC-Connection";
-
-import MinimumStake from "./../../../components/Minimum-Stake";
-
 ## Preliminaries
 
 Running a validator on a live network is a lot of responsibility! You will be accountable for not

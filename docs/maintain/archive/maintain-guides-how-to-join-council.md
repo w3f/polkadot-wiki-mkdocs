@@ -7,9 +7,6 @@ keywords: [council, how to join council, governance, candidate]
 slug: ../maintain-guides-how-to-join-council
 ---
 
-import MessageBox from "../../../components/MessageBox"; import
-"../../../components/MessageBox.css";
-
 <MessageBox message="The content on this page is archived. For up-to-date information about governance, see the
 [Polkadot OpenGov page](../learn-polkadot-opengov)." />
 

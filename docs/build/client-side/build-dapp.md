@@ -7,7 +7,6 @@ keywords: [data, index, query, explorer, dashboard, dapp, uapp, app, frontend, c
 slug: ../build-dapp
 ---
 
-import Tabs from "@theme/Tabs"; import TabItem from "@theme/TabItem";
 
 As with any blockchain, building decentralized applications (dApps) is a huge part of how a
 developer can build on Polkadot.

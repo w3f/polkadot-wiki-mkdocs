@@ -7,8 +7,6 @@ keywords: [coretime, blockspace, parathread, parachain, cores]
 slug: ../build-guides-coretime-start
 ---
 
-import Tabs from "@theme/Tabs"; import DocCardList from '@theme/DocCardList';
-
 !!!warning
     This section is under construction.
 

@@ -7,7 +7,7 @@ keywords: [endpoints, network, connect]
 slug: ../maintain-endpoints
 ---
 
-import Tabs from "@theme/Tabs"; import TabItem from "@theme/TabItem";
+
 
 Ideally, one may run their own node when interacting with the
 [Polkadot network](https://polkadot.network/) via [Polkadot-JS Apps](https://polkadot.js.org/apps/)
