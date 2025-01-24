@@ -100,9 +100,6 @@ service, and additional metrics.
 - [SubQuery](https://www.rpc.subquery.network/)
 - [dRPC](https://drpc.org/)
 
-:::note
-
-The list of third party RPC endpoints above for Polkadot and Kusama is directly fetched from
-[Polkadot-JS UI](https://polkadot.js.org/apps/#/explorer)
-
-:::
+!!!note
+    The list of third party RPC endpoints above for Polkadot and Kusama is directly fetched from
+    [Polkadot-JS UI](https://polkadot.js.org/apps/#/explorer)

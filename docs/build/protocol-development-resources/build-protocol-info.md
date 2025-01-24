@@ -53,13 +53,10 @@ See the
 in the Substrate documentation for encoding information and a more comprehensive list of network
 prefixes.
 
-:::warning Do not use regular expressions (regex) to validate addresses
-
-Always verify using the prefix and checksum of the address. Substrate API Sidecar provides an
-`accounts/{accountId}/validate` path that returns a boolean `isValid` response for a provided
-address.
-
-:::
+!!!warning "Do not use regular expressions (regex) to validate addresses"
+    Always verify using the prefix and checksum of the address. Substrate API Sidecar provides an
+    `accounts/{accountId}/validate` path that returns a boolean `isValid` response for a provided
+    address.
 
 Relevant SS58 prefixes for this guide:
 
@@ -165,13 +162,10 @@ immortal transaction. Always default to using a mortal extrinsic.
 
 ### Unique Identifiers for Extrinsics
 
-:::caution Transaction Hash is not a unique identifier
-
-The assumption that a transaction's hash is a unique identifier is the number one mistake that
-indexing services and custodians make. This error will cause major issues for your users. Make sure
-that you read this section carefully.
-
-:::
+!!!caution "Transaction Hash is not a unique identifier"
+    The assumption that a transaction's hash is a unique identifier is the number one mistake that
+    indexing services and custodians make. This error will cause major issues for your users. Make sure
+    that you read this section carefully.
 
 Many infrastructure providers on existing blockchains, e.g. Ethereum, consider a transaction's hash
 as a unique identifier. In Substrate-based chains like Polkadot, a transaction's hash only serves as

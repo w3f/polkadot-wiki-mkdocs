@@ -26,23 +26,17 @@ an amount of 0.032 DOT (0.0001 KSM on Kusama) per vote. You can then bond whatev
 to put behind your vote. See the [democracy guide](./maintain-guides-democracy.md) for more
 information.
 
-:::warning
-
-If your balance is vesting, you cannot use unvested tokens for this lock. You will have to wait
-until you have at least that many **free** tokens to vote.
-
-:::
+!!!warning
+    If your balance is vesting, you cannot use unvested tokens for this lock. You will have to wait
+    until you have at least that many **free** tokens to vote.
 
 Like the validator elections, you can approve up to 16 different councillors and your vote will be
 equalized among the chosen group. Unlike validator elections, there is no unbonding period for your
 reserved tokens. Once you remove your vote, your tokens will be liquid again.
 
-:::warning
-
-It is your responsibility not to put your entire balance into the reserved value when you make a
-vote for councillors. It's best to keep _at least_ enough DOT/KSM to pay for transaction fees.
-
-:::
+!!!warning
+    It is your responsibility not to put your entire balance into the reserved value when you make a
+    vote for councillors. It's best to keep _at least_ enough DOT/KSM to pay for transaction fees.
 
 Go to the [Polkadot-JS Apps Dashboard](https://polkadot.js.org/apps) and click on the "Council" tab.
 On the right side of the window there are two blue buttons, click on the one that says "Vote."

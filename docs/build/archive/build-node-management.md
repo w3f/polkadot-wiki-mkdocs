@@ -13,12 +13,9 @@ guide will always refer to the executable as `polkadot`.
 
 **Always refer to the client's help `polkadot --help` for the most up-to-date information.**
 
-:::note
-
-Other client implementation teams: Feel free to make a PR to this page with instructions (or a link
-to instructions) for your client.
-
-:::
+!!!note
+    Other client implementation teams: Feel free to make a PR to this page with instructions (or a link
+    to instructions) for your client.
 
 If you are trying to run a validator, refer to this tutorial
 [here](../maintain/maintain-guides-how-to-validate-polkadot.md).
@@ -39,12 +36,9 @@ types of nodes like validators must run in archive mode. Likewise, all
 [events](build-protocol-info.md/#events) are cleared from state in each block, so if you want to
 store events then you will need an archive node.
 
-:::note Explainer video on upgrading a node
-
-To upgrade a node, please refer to this
-[video](https://www.youtube.com/watch?v=5LtcdBR9F40&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=5)
-
-:::
+!!!note "Explainer video on upgrading a node"
+    To upgrade a node, please refer to this
+    [video](https://www.youtube.com/watch?v=5LtcdBR9F40&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=5)
 
 **Exporting blocks**
 
@@ -104,15 +98,12 @@ To delete your DB and re-sync from genesis, run:
 polkadot purge-chain
 ```
 
-:::note Validators should sync using the RocksDb backend
+!!!note Va"lidators should sync using the RocksDb backend"
+    This is implicit by default, but can be explicit by passing the `--database RocksDb` flag. In the
+    future, it is recommended to switch to using the faster and more efficient ParityDb option.
+    Switching between database backends will require a resync.
 
-This is implicit by default, but can be explicit by passing the `--database RocksDb` flag. In the
-future, it is recommended to switch to using the faster and more efficient ParityDb option.
-Switching between database backends will require a resync.
-
-If you want to test out ParityDB you can add the flag `--database paritydb`.
-
-:::
+    If you want to test out ParityDB you can add the flag `--database paritydb`.
 
 ## Monitoring and Telemetry
 

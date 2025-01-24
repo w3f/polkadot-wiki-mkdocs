@@ -171,12 +171,9 @@ Here are the available public instances:
 The purpose of these instances is to allow anyone to check and get a quick overview of the info that
 the asset-related endpoints provide.
 
-:::caution
-
-These instances should only be used for ad-hoc checks or tests and not for production, heavy testing
-or any other critical purpose.
-
-:::
+!!!caution
+    These instances should only be used for ad-hoc checks or tests and not for production, heavy testing
+    or any other critical purpose.
 
 ### Tx Wrapper Polkadot
 

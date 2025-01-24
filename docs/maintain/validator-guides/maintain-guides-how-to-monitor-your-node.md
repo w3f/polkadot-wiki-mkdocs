@@ -252,14 +252,11 @@ sudo systemctl start grafana-server
 You can now access it by going to the `http://SERVER_IP_ADDRESS:3000/login`. The default user and
 password is admin/admin.
 
-:::note
-
-If you want to change the port on which Grafana runs (3000 is a popular port), edit the file
-`/usr/share/grafana/conf/defaults.ini` with a command like
-`sudo vim /usr/share/grafana/conf/defaults.ini` and change the `http_port` value to something else.
-Then restart grafana with `sudo systemctl restart grafana-server`.
-
-:::
+!!!note
+    If you want to change the port on which Grafana runs (3000 is a popular port), edit the file
+    `/usr/share/grafana/conf/defaults.ini` with a command like
+    `sudo vim /usr/share/grafana/conf/defaults.ini` and change the `http_port` value to something else.
+    Then restart grafana with `sudo systemctl restart grafana-server`.
 
 ![1-grafana-login](../assets/guides/how-to-monitor/1-grafana-login.png)
 
@@ -336,15 +333,12 @@ There is a configuration file named `alertmanager.yml` inside the directory that
 in the previous command, but that is not of our use. We will create our `alertmanager.yml` file
 under `/etc/alertmanager` with the following config.
 
-:::note
+!!!:note
+    Ensure to change the ownership of "/etc/alertmanager" to `prometheus` by executing
 
-Ensure to change the ownership of "/etc/alertmanager" to `prometheus` by executing
-
-```bash
-sudo chown -R prometheus:prometheus /etc/alertmanager
-```
-
-:::
+    ```bash
+    sudo chown -R prometheus:prometheus /etc/alertmanager
+    ```
 
 ```
 global:
@@ -372,11 +366,8 @@ With the above configuration, alerts will be sent using the email you set above.
 Next, create another `systemd` configuration file named `alertmanager.service` by running the
 command `sudo nano /etc/systemd/system/alertmanager.service` with the following config.
 
-:::info SERVER_IP
-
-Change to your host IP address and make sure port 9093 is opened.
-
-:::
+!!!:info "SERVER_IP"
+    Change to your host IP address and make sure port 9093 is opened.
 
 ```
 [Unit]

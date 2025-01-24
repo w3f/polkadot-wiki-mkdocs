@@ -76,13 +76,10 @@ messages between them. Furthermore, as [bridges](../learn/learn-bridges.md) to o
 connected (such as those to Bitcoin or Ethereum), Polkadot's parachains will be able to communicate
 with these as well.
 
-:::note
-
-Despite the benefits of becoming a parachain, developers should be conscious of the challenges in
-becoming a parachain, and whether building a blockchain with an end goal of becoming a parachain is
-a viable one for their project.
-
-:::
+!!!note
+    Despite the benefits of becoming a parachain, developers should be conscious of the challenges in
+    becoming a parachain, and whether building a blockchain with an end goal of becoming a parachain is
+    a viable one for their project.
 
 On Polkadot, you are able to put your blockchain’s latest block head onto the relay chain. As a
 parachain, the blocks you submit are verified by validators with a Wasm runtime, which can be stored
@@ -125,15 +122,12 @@ parachain. They can be incentivized with a native token payout from:
 
 ### Para-objects
 
-:::info The relay chain can host arbitrary state machines, not just blockchains.
+!!!info The relay chain can host arbitrary state machines, not just blockchains.
+    The Polkadot network will encourage the connection and interoperability between different
+    _para-objects_.
 
-The Polkadot network will encourage the connection and interoperability between different
-_para-objects_.
-
-Here, para-objects are referring to objects on the network that operate in parallel, generally,
-parallelizable objects.
-
-:::
+    Here, para-objects are referring to objects on the network that operate in parallel, generally,
+    parallelizable objects.
 
 These could be in the form of:
 
@@ -202,12 +196,9 @@ this reason, `Cumulus`, an added _library_ contains all of the Polkadot compatib
 
 #### Cumulus
 
-:::info
-
-Cumulus clouds are shaped sort of like dots. Together, they form an intricate system that is
-beautiful and functional.
-
-:::
+!!!info
+    Cumulus clouds are shaped sort of like dots. Together, they form an intricate system that is
+    beautiful and functional.
 
 [Cumulus](https://github.com/paritytech/polkadot-sdk/tree/master/cumulus) is an extension to
 Substrate that makes it easy to make any Substrate-built runtime into a Polkadot-compatible
@@ -225,15 +216,12 @@ Cumulus is still in development, but the idea is that it should be simple to tak
 and add the parachain code by importing the crates and adding a single line of code. Keep up-to-date
 with the latest Cumulus developments from the [Cumulus section](###cumulus).
 
-:::info
+!!!info
+    Substrate and Cumulus provide a PDK from the abstraction of the blockchain format, but it is **not
+    necessary** that a parachain even needs to be a blockchain. For example, a parachain just needs to
+    satisfy the two constraints listed above: _state transition function_ and _collator node_.
 
-Substrate and Cumulus provide a PDK from the abstraction of the blockchain format, but it is **not
-necessary** that a parachain even needs to be a blockchain. For example, a parachain just needs to
-satisfy the two constraints listed above: _state transition function_ and _collator node_.
-
-Everything else is up to the implementer of the PDK.
-
-:::
+    Everything else is up to the implementer of the PDK.
 
 Cumulus handles the network compatibility overhead that any parachain would need to implement to be
 connected to the relay chain. This includes:
@@ -267,13 +255,10 @@ relay chain as a parachain.
 
 ### Future PDKs
 
-:::info Call to action
-
-Do you want to build a Parachain Development Kit from scratch? The Web3 Foundation is giving grants
-to teams who are doing this, learn more and apply on the
-[W3F grants page](https://grants.web3.foundation).
-
-:::
+!!!info "Call to action"
+    Do you want to build a Parachain Development Kit from scratch? The Web3 Foundation is giving grants
+    to teams who are doing this, learn more and apply on the
+    [W3F grants page](https://grants.web3.foundation).
 
 One example of a PDK W3F is interested in supporting is a
 [roll-up](https://ethresear.ch/t/roll-up-roll-back-snark-side-chain-17000-tps/3675) kit that allowed

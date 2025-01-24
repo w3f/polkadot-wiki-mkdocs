@@ -47,17 +47,17 @@ across belongs to the validator, and actions of that identity throughout various
 ecosystem (staking, governance, block explorers, etc.) form a cohesive representation of their
 participation.
 
-:::note When running multiple validator nodes, the best way to scale an identity is to use multiple
-sub-identities from a single verified identity
-
-:::
+!!!note
+    When running multiple validator nodes, the best way to scale an identity is to use multiple
+    sub-identities from a single verified identity
 
 It's recommended to fill out as many fields in the identity as possible so Nominators have ample
 means of reaching out. Nominators may wish to know more about the Validator, the particular setup,
 future staking plans, tooling used, or several additional topics. Having a dedicated website
 additionally to provide this sort of information is ideal.
 
-:::note Ledger app on **Nano S** doesn't support the extrinsic for setting identity yet
+!!!note
+    Ledger app on **Nano S** doesn't support the extrinsic for setting identity yet.
 
 ### Website
 

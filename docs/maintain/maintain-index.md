@@ -14,13 +14,10 @@ guides to set up a node and run the network.
 
 <DocCardList />
 
-:::info Polkadot's Canary Network Kusama
+!!!info "Polkadot's Canary Network Kusama"
+    For more information about being a Kusama maintainer, see the pages below:
 
-For more information about being a Kusama maintainer, see the pages below:
-
-- [Nomination Guide](../learn/learn-nominator.md) - Walkthrough on how to nominate on the Kusama
-  canary network.
-- [Validation Guide (Kusama)](kusama/maintain-guides-how-to-validate-kusama.md) - Walkthrough on how
-  to validate on the Kusama canary network.
-
-:::
+    - [Nomination Guide](../learn/learn-nominator.md) - Walkthrough on how to nominate on the Kusama
+      canary network.
+    - [Validation Guide (Kusama)](kusama/maintain-guides-how-to-validate-kusama.md) - Walkthrough on how
+      to validate on the Kusama canary network.

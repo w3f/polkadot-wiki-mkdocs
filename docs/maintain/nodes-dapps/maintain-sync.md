@@ -35,12 +35,9 @@ a particular block was or which extrinsics resulted in a specific state change a
 when using an archive node. However, an archive node takes up a lot of disk space - around Kusama's
 12 millionth block, this was around 660 GB.
 
-:::tip
-
-On the [Paranodes](https://paranodes.io/DBSize) or [Stakeworld](https://stakeworld.io/docs/dbsize)
-websites, you can find lists of the database sizes of Polkadot and Kusama nodes.
-
-:::
+!!!tip
+    On the [Paranodes](https://paranodes.io/DBSize) or [Stakeworld](https://stakeworld.io/docs/dbsize)
+    websites, you can find lists of the database sizes of Polkadot and Kusama nodes.
 
 Archive nodes are used by utilities that need past information - like block explorers, council
 scanners, discussion platforms like [Polkassembly](https://polkassembly.io), and others. They need
@@ -67,16 +64,13 @@ light nodes is a browser extension, which is a node in its own right, running th
 format, as well as a full or light node that is completely encapsulated in WASM and can be
 integrated into web apps: https://github.com/smol-dot/smoldot.
 
-:::note Substrate Connect
-
-[Substrate Connect](https://github.com/paritytech/substrate-connect) provides a way to interact with
-substrate-based blockchains in the browser without using an RPC server. It is a light node that runs
-entirely in Javascript. Substrate Connect uses a
-[smoldot WASM light client](https://github.com/paritytech/smoldot) to securely connect to the
-blockchain network without relying on specific 3rd parties. Substrate Connect is available on Chrome
-and Firefox as a [browser extension](https://substrate.io/developers/substrate-connect/).
-
-:::
+!!!note "Substrate Connect"
+    [Substrate Connect](https://github.com/paritytech/substrate-connect) provides a way to interact with
+    substrate-based blockchains in the browser without using an RPC server. It is a light node that runs
+    entirely in Javascript. Substrate Connect uses a
+    [smoldot WASM light client](https://github.com/paritytech/smoldot) to securely connect to the
+    blockchain network without relying on specific 3rd parties. Substrate Connect is available on Chrome
+    and Firefox as a [browser extension](https://substrate.io/developers/substrate-connect/).
 
 <!--separates content from instructions-->
 
@@ -89,16 +83,13 @@ and Firefox as a [browser extension](https://substrate.io/developers/substrate-c
 This is not recommended if you're a validator. Please see the
 [secure validator setup](maintain-guides-secure-validator.md) if you are running validator.
 
-:::note The bash commands that are provided to run against **your node** use `Polkadot` as the
-default chain
+!!!note "The bash commands that are provided to run against **your node** use `Polkadot` as the
+default chain"
+    Use the `--chain` flag if you follow the setup instructions to setup a `Kusama` node. For example:
 
-Use the `--chain` flag if you follow the setup instructions to setup a `Kusama` node. For example:
-
-```bash
-./target/release/polkadot --name "Your Node's Name" --chain kusama
-```
-
-:::
+    ```bash
+    ./target/release/polkadot --name "Your Node's Name" --chain kusama
+    ```
 
 <Tabs groupId="operating-systems" values={[ {label: 'macOS', value: 'mac'}, {label: 'Windows',
 value: 'win'}, {label: 'Linux (standalone)', value: 'linux-standalone'}, {label: 'Linux (package)',
@@ -215,14 +206,11 @@ value: 'linux-package'} ]}>
 - Determine the latest version of the
   [Polkadot binary](https://github.com/paritytech/polkadot-sdk/releases).
 
-  :::info
-
-  The nature of pre-built binaries means that they may not work on your particular architecture or
-  Linux distribution. If you see an error like `cannot execute binary file: Exec format error` it
-  likely means the binary is not compatible with your system. You will either need to compile the
-  [**source code**](#clone-and-build) or use [**Docker**](#using-docker).
-
-  :::
+!!!info
+    The nature of pre-built binaries means that they may not work on your particular architecture or
+    Linux distribution. If you see an error like `cannot execute binary file: Exec format error` it
+    likely means the binary is not compatible with your system. You will either need to compile the
+    [**source code**](#clone-and-build) or use [**Docker**](#using-docker).
 
 - Download the correct Polkadot binary within Ubuntu by running the following command. Replace
   `*VERSION*` with the tag of the latest version from the last step (e.g. `v0.8.22`):
@@ -294,35 +282,32 @@ dnf config-manager --set-enabled polkadot
 dnf install polkadot
 ```
 
-:::info
+!!!info
+    If you choose to use a custom folder for the polkadot home by passing `--base-path '/custom-path'`,
+    you will need to issue following command:
 
-If you choose to use a custom folder for the polkadot home by passing `--base-path '/custom-path'`,
-you will need to issue following command:
+    ```bash
+    sudo mkdir /etc/systemd/system/polkadot.service.d
+    ```
 
-```bash
-sudo mkdir /etc/systemd/system/polkadot.service.d
-```
+    And create a new file inside this folder:
 
-And create a new file inside this folder:
+    ```bash
+    sudo -e /etc/systemd/system/polkadot.service.d/custom.conf
+    ```
 
-```bash
-sudo -e /etc/systemd/system/polkadot.service.d/custom.conf
-```
+    With the following content:
 
-With the following content:
+    ```
+    [Service]
+    ReadWritePaths=/custom-path
+    ```
 
-```
-[Service]
-ReadWritePaths=/custom-path
-```
+    And finally issue a reload to have your modifications applied by systemd:
 
-And finally issue a reload to have your modifications applied by systemd:
-
-```bash
-systemctl daemon-reload
-```
-
-:::
+    ```bash
+    systemctl daemon-reload
+    ```
 
 </TabItem>
 </Tabs>

@@ -9,11 +9,8 @@ slug: ../build-open-source
 
 # Open Source Polkadot Stack <!-- omit in toc -->
 
-:::caution Do your research before using open-source tools
-
-The tools listed here are open-source and are linked directly to their source code. Before using these tools to build your projects, always [do your research](../general/how-to-dyor.md) and be aware of [scams](../general/scams.md).
-
-:::
+!!!caution "Do your research before using open-source tools"
+    The tools listed here are open-source and are linked directly to their source code. Before using these tools to build your projects, always [do your research](../general/how-to-dyor.md) and be aware of [scams](../general/scams.md).
 
 This page aims to provide an overview of the open-source Polkadot Tech Stack.
 
@@ -25,7 +22,7 @@ apologize if we missed your project!
 
 - [About](#about)
 - [Layers of Polkadot Stack](#layers-of-polkadot-stack)
-  - [Wallets](#wallets)  
+  - [Wallets](#wallets)
   - [User Interface](#user-interface)
   - [Tools, APIs, and Languages](#tools-apis-and-languages)
   - [ink! Smart Contracts](#ink-smart-contracts)

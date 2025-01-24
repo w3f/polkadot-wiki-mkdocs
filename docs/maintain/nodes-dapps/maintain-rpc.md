@@ -16,12 +16,9 @@ between the end user and the RPC server. This can be achieved by setting up a se
 browsers, such as Google Chrome, will block non-secure ws endpoints if they come from a different
 origin.
 
-:::note
-
-Enabling remote access to your validator node should not be necessary and is not suggested, as it
-can often lead to security problems
-
-:::
+!!!note
+    Enabling remote access to your validator node should not be necessary and is not suggested, as it
+    can often lead to security problems
 
 ## Set up a Node
 
@@ -59,11 +56,8 @@ An archive node requires a lot more disk space. At the start of April 2023, Polk
 archive node, you need the options `--state-pruning archive --blocks-pruning archive` in your
 startup settings.
 
-:::tip
-
-Inclusion in the Polkadot.js UI requires an archive node.
-
-:::
+!!!tip
+    Inclusion in the Polkadot.js UI requires an archive node.
 
 ### Secure the RPC server
 

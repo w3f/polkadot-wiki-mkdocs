@@ -30,12 +30,9 @@ Polkadot has some basic transaction information that is common to all transactio
 - MetadataHash: Optional, the metadata hash which should match the RUNTIME_METADATA_HASH environment
   variable.
 
-:::caution
-
-There are risks to making a transaction immortal. If an account is reaped and a user re-funds the
-account, then they could replay an immortal transaction. Always default to using a mortal extrinsic.
-
-:::
+!!!caution
+    There are risks to making a transaction immortal. If an account is reaped and a user re-funds the
+    account, then they could replay an immortal transaction. Always default to using a mortal extrinsic.
 
 \*The nonce queried from the System module does not account for pending transactions. You must track
 and increment the nonce manually if you want to submit multiple valid transactions at the same time.

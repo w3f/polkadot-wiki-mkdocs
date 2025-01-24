@@ -85,12 +85,9 @@ The [browser extension](https://www.npmjs.com/package/@substrate/connect-extensi
 end-users to interact with applications connected to multiple blockchains or connect their own
 blockchains to applications that support it.
 
-:::note
-
-Substrate Connect will auto-detect whether a user is using the extension. If not, the Wasm light
-client will be created in-page for them.
-
-:::
+!!!note
+    Substrate Connect will auto-detect whether a user is using the extension. If not, the Wasm light
+    client will be created in-page for them.
 
 ## Resources
 

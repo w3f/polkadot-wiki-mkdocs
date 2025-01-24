@@ -10,11 +10,8 @@ slug: ../build-network-overview
 While Polkadot itself is the mainnet, there are several networks that can cater to different
 development or application-driven contexts.
 
-:::info Looking for faucets?
-
-[See here for all available faucets and how to obtain testnet tokens.](../learn/learn-DOT.md#obtaining-testnet-tokens)
-
-:::
+!!!info "Looking for faucets?"
+    [See here for all available faucets and how to obtain testnet tokens.](../learn/learn-DOT.md#obtaining-testnet-tokens)
 
 ## Polkadot Ecosystem Networks
 
