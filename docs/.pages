@@ -1,6 +1,6 @@
 nav:
   - 'Explore': explore
   - 'Learn': learn
-  - 'Build': https://docs.polkadot.com/develop/
-  - 'Maintain': https://docs.polkadot.com/infrastructure/
+  - 'Build': build
+  - 'Maintain': maintain
   - 'Kusama': kusama
