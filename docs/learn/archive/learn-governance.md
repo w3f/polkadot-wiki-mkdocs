@@ -83,12 +83,12 @@ Referenda can be started in different ways:
 - Emergency proposals submitted by the [Technical Committee](#technical-committee) and approved by
   the [Council](#council)
 
-!!!info Starting a proposal in Governance V1
+:::info Starting a proposal in Governance V1
 
 For more information about how to start a proposal, see the
 [dedicated page](../../maintain/archive/maintain-guides-democracy.md#proposing-an-action).
 
-
+:::
 
 ### Endorsing Proposals
 
@@ -178,11 +178,11 @@ increases towards 100%, it will require a simple majority of _aye_ votes to pass
 Note that the bonded tokens will be released once the proposal is tabled (that is, brought to a
 vote), and a maximum of 100 public proposals can be in the proposal queue.
 
-!!!info turnout
+:::info turnout
 
 The total number of voting tokens excluding conviction or [voluntary locking](#voluntary-locking).
 
-
+:::
 
 ### Council Referenda
 
@@ -194,7 +194,7 @@ will require a simple majority of _nay_ votes to fail (i.e. 51% wins).
 Majority Council - When agreement from only a simple majority of council members occurs, the
 referendum will need [**simple majority**](#adaptive-quorum-biasing) to pass.
 
-!!!info Public- vs. Council-initiated Referenda
+:::info Public- vs. Council-initiated Referenda
 
 Public referenda must be agreed upon using a positive bias to mitigate attacks by malicious or
 ill-conceived proposals. Conversely, when a proposal is unanimously voted in favor by the council,
@@ -203,7 +203,7 @@ proposes a referendum. Also, the council members are elected by the community an
 technical as well as functional knowledge about the system, and we assume solid justifications back
 changes proposed by the council.
 
-
+:::
 
 ### Alternating Voting Timetable
 
@@ -300,13 +300,13 @@ Since the above example is a public referendum, **Super-Majority Approve** would
 calculate the result. Super-Majority Approve requires more _aye_ votes to pass the referendum when
 turnout is low; therefore, based on the above result, the referendum will be rejected.
 
-!!!info only the winning voter's tokens are locked.
+:::info only the winning voter's tokens are locked.
 
 If the voters on the losing side of the referendum believe that the outcome will have adverse
 effects, their tokens are transferrable, so they will not be locked into the decision. Winning
 proposals are autonomously enacted after the [enactment period](#enactment).
 
-
+:::
 
 ### Enactment
 
@@ -328,12 +328,12 @@ To vote, a voter generally must lock their tokens up for at least the enactment 
 end of the referendum. This is to ensure that some minimal economic buy-in to the result is needed
 and to dissuade vote selling.
 
-!!!note Referenda explainer video
+:::note Referenda explainer video
 
 To learn more about voting on referenda, please check out our
 [technical explainer video](https://www.youtube.com/watch?v=BkbhhlsezGA&list=PLOyWqupZ-WGuAuS00rK-pebTMAOxW41W8&index=31&ab_channel=Polkadot).
 
-
+:::
 
 It is possible to vote without locking, but your vote is worth a small fraction of a normal vote,
 given your stake. At the same time, holding only a small amount of tokens does not mean that the
@@ -342,12 +342,12 @@ below).
 
 ### Voluntary Locking
 
-!!!info Voluntary Locking
+:::info Voluntary Locking
 
 For more information about voluntary locking or conviction voting see
 [Polkadot OpenGov](../learn-polkadot-opengov.md#voluntary-locking).
 
-
+:::
 
 ### Delegations
 
@@ -381,12 +381,12 @@ will move to a public referendum under a neutral, majority-carries voting scheme
 all members of the council that voted are in favor of a motion, the vote is considered unanimous and
 becomes a referendum with [negative turnout bias](#adaptive-quorum-biasing).
 
-!!!note Explainer video on the Council
+:::note Explainer video on the Council
 
 For more information, check out our
 [video explainer on Council](https://www.youtube.com/watch?v=837Vv3gdRzI)
 
-
+:::
 
 ### Prime Members
 
@@ -495,11 +495,12 @@ At some point, you will likely need a place for a longer-form discussion. For th
 a post on Polkassembly, present all the evidence for your circumstances and state clearly what kind
 of change you would suggest to the councilors to enact.
 
-!!!info
+:::info
+
 Remember, the councilors do not need to make the change, it is your responsibility to make a strong
 case for why the change should be made.
 
-
+:::
 
 ## Gov1 Runtime Upgrade Monitoring
 

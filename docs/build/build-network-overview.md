@@ -44,7 +44,7 @@ within front-end contexts. You can view more on PolkadotJS and its resources
 [here](https://polkadot.js.org/).
 
 For other programmatic ways of interacting with these networks (including PolkadotJS), please view
-the [Node Interactions page](./build-node-interaction.md).
+the [Node Interactions page](build-node-interaction.md).
 
 ## Testnet Faucets
 

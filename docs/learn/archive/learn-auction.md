@@ -71,20 +71,21 @@ propagating through the entire ending period, where a snapshot is taken at each 
 ending period to capture the winners for that given block. At the end of the period, one of the
 snapshots is randomly selected to determine the winner of the auction.
 
-!!!info The parachain candidate with the highest bid at the ending time chosen by the Verifiable
+:::info The parachain candidate with the highest bid at the ending time chosen by the Verifiable
 Random Function wins the slot auction.
 
-
+:::
 
 A parachain auction lasts exactly one week from the starting period (1 day and 18 hours) to
 [ending period](../../general/chain-state-values.md#auction-ending-period) (candle auction phase)
 and finally 6 hours for determining the auction winner.
 
-!!!info
+:::info
+
 [Crowdloan contributions](./learn-crowdloans.md##supporting-a-crowdloan-campaign) cannot be made
 during these six hours when the winning block for the auction is being determined on-chain.
 
-
+:::
 
 More details on this are available in the [Network Implementation](#network-implementation) section.
 
@@ -171,12 +172,12 @@ into 6-week periods for Kusama). Parachains may lease a slot for any combination
 slot duration. Parachains may lease more than one slot over time, meaning that they could extend
 their lease to the network past the maximum duration by leasing a contiguous slot.
 
-!!!note Individual parachain slots are fungible
+:::note Individual parachain slots are fungible
 
 This means that parachains do not need to always inhabit the same slot, however they always must
 maintain a slot to remain a parachain.
 
-
+:::
 
 ## Bidding
 
@@ -209,10 +210,10 @@ Bidders will submit a configuration of bids specifying the token amount they are
 for which periods. The slot ranges may be any of the periods 1 - `n`, where `n` is the number of
 [periods available for a slot](../../general/chain-state-values.md#period-per-slot-auction).
 
-!!!note If you bond tokens with a parachain slot, you cannot stake with those tokens. In this way,
+:::note If you bond tokens with a parachain slot, you cannot stake with those tokens. In this way,
 you pay for the parachain slot by forfeiting the opportunity to earn staking rewards.
 
-
+:::
 
 A bidder configuration for a single bidder may look like the following pseudocode example:
 
@@ -301,14 +302,14 @@ the `registrar` pallet.
 
 ![Parachain Slot Swap](../../assets/para-swap.png)
 
-!!!note Any two parachains can swap their slots via XCM
+:::note Any two parachains can swap their slots via XCM
 
 The [slot swap via XCM](https://github.com/paritytech/polkadot/pull/4772) requires two live
 parachains to send an XCM message to the relay chain to approve the swap. A parachain team with
 access to two overlapping slots can start a shell parachain on the new slot and swap it with their
 actual parachain on the old slot, thus ensuring continuity of the lease.
 
-
+:::
 
 ### Lease Extension with Non-Overlapping Slots
 

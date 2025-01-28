@@ -14,8 +14,8 @@ decided to be. The members of the society are incentivized to participate in the
 rewards paid by the treasury. Currently, there is only one society on Kusama but it is possible to
 have multiple societies in the future through a runtime upgrade.
 
-![kusama_society_page](../../assets/kusama/kusama_society_page.png)
-![kusama_society_page2](../../assets/kusama/kusama_society_page2.png)
+![kusama_society_page](../assets/kusama/kusama_society_page.png)
+![kusama_society_page2](../assets/kusama/kusama_society_page2.png)
 
 Before joining the society, let's take a brief look at the
 [Society UI](https://polkadot.js.org/apps/#/society) on Polkadot-JS apps and read through all the
@@ -70,7 +70,7 @@ chooses to unbid.
 Anyone who wants to join the society is required to deposit 1.6 KSM for reserve on Kusama and
 declare the bid amount (1 KSM in this case) that they will receive for joining the society.
 
-![test_bid](../../assets/society/test_bid.jpg)
+![test_bid](../assets/society/test_bid.jpg)
 
 Once you have submitted the transaction, your bid will be shown on the
 [Society page](https://cloudflare-ipfs.com/ipns/kusama.dotapps.io/#/society) under the bids section.
@@ -91,7 +91,7 @@ The final value that the candidate will get = (value - tip)
 
 :::
 
-![vouch](../../assets/society/vouch.jpg)
+![vouch](../assets/society/vouch.jpg)
 
 ### 2. Candidate Phase
 
@@ -170,7 +170,7 @@ for the membership in every rotation period.
 Second, you will need to claim your payout manually by calling `payout` after the lockup time. It is
 the same as the above mentioned lockup formula.
 
-![Society Payout](../../assets/society/payout.jpg)
+![Society Payout](../assets/society/payout.jpg)
 
 Third, there will be a membership challenge every seven days on Kusama. So one of the members will
 be randomly selected as a defender. Then, other members can vote whether this defender should stay

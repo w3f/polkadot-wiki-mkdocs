@@ -29,13 +29,13 @@ on-chain governance, and parachains.
 
 <div class="grid cards" markdown>
 
-- **[Timeline](./kusama-timeline.md)** – Stay up-to-date with the latest action on Kusama.
-- **[Code of Conduct](./kusama-coc.md)** - Kusama's Code of Conduct to sustain chaos.
-- **[Bug Bounty](./kusama-bug-bounty.md)** - An Overview of how you can help catch bugs.
-- **[Account Recovery](./kusama-social-recovery.md)** - Steps on how to perform account recovery on Kusama.
-- **[Adversarial Cheatsheet](./kusama-adverserial-cheatsheet.md)** - A Cheatsheet to help you create chaos.
-- **[Kappa Sigma Mu](./kusama-society.md)** - Learn about the Kappa Sigma Mu Society and Join as a Member.
-- **[KSM Inflation](./kusama-inflation.md)** - Explanation of KSM's Inflation Model.
+- **[Timeline](kusama-timeline.md)** – Stay up-to-date with the latest action on Kusama.
+- **[Code of Conduct](kusama-coc.md)** - Kusama's Code of Conduct to sustain chaos.
+- **[Bug Bounty](kusama-bug-bounty.md)** - An Overview of how you can help catch bugs.
+- **[Account Recovery](kusama-social-recovery.md)** - Steps on how to perform account recovery on Kusama.
+- **[Adversarial Cheatsheet](kusama-adverserial-cheatsheet.md)** - A Cheatsheet to help you create chaos.
+- **[Kappa Sigma Mu](kusama-society.md)** - Learn about the Kappa Sigma Mu Society and Join as a Member.
+- **[KSM Inflation](kusama-inflation.md)** - Explanation of KSM's Inflation Model.
 
 </div>
 

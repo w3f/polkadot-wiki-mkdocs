@@ -18,7 +18,7 @@ marking each phase. Keep up-to-date with the Polkadot's phased roll-out plan at 
 
 **Current Phase: Post-launch Upgrades**
 
-!!!info Claims
+:::info Claims
 
 For the most update-to-date information on DOT claims (if you bought your DOTs before Polkadot went
 live), check out the following claiming resources and tutorials:
@@ -28,7 +28,7 @@ live), check out the following claiming resources and tutorials:
 - [How to claim your DOT - Tutorial](https://support.polkadot.network/support/solutions/articles/65000138217-how-to-claim-your-dot-tutorial)
 - [How do I know my claim worked?](https://support.polkadot.network/support/solutions/articles/65000103605-how-do-i-know-my-claim-worked-)
 
-
+:::
 
 ## The PoA Launch
 
