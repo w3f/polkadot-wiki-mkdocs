@@ -87,7 +87,7 @@ where `auction_proportion` is obtained by computing `min(auctioned_slots, 60) / 
 `auctioned_slots` are all the auctioned slots (or cores) without the cores for system parachains.
 
 Assuming there are 50 filled cores, of which five are dedicated to
-[system parachains](learn-system-chains.md), there are 45 auctioned cores. The
+[system parachains](../learn/learn-system-chains.md), there are 45 auctioned cores. The
 `auction_proportion` is thus `45 / 300 = 0.15`. The ideal staking rate is `0.75 - 0.15 = 0.6`.
 
 If the amount of tokens staked goes below 60%, then staking rewards for nominators increase,

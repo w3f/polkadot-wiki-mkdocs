@@ -28,7 +28,7 @@ voting for councillors in the elections.
 
 Voting for councillors requires you to reserve 20.064 DOT (0.067 KSM on Kusama) as a base amount and
 an amount of 0.032 DOT (0.0001 KSM on Kusama) per vote. You can then bond whatever amount you wish
-to put behind your vote. See the [democracy guide](maintain-guides-democracy.md) for more
+to put behind your vote. See the [democracy guide](./archive/maintain-guides-democracy.md) for more
 information.
 
 !!!warning
