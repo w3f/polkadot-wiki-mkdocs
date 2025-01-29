@@ -32,7 +32,7 @@ The program provides:
 A rookie is a beginner or first-timer developer. Someone who has previous experience in programming
 but needs to gain in-depth knowledge about the Polkadot technology.
 
-The technology includes but is not limited to independent [Substrate](../learn/glossary.md#substrate)
+The technology includes but is not limited to independent [Substrate](../general/glossary.md#substrate)
 chains and [ink! development](https://docs.polkadot.com/develop/smart-contracts/), and Polkadot-related tooling.
 Rookies will need to learn these concepts and tools so that they can deliver the tasks required to
 be a Hero.
@@ -49,7 +49,7 @@ Depending on what you enjoy doing, you can become a hero by doing some of the fo
   or on the [Polkadot Forum](https://forum.polkadot.network/?ref=cms.polkadot.network).
 
 - **Contribute to the Polkadot stack**: Have a look at the
-  [open source technology stack list](../build-open-source.md) and contribute with a pull
+  [open source technology stack list](../build/build-open-source.md) and contribute with a pull
   request, an issue, or find and fix bugs.
 
 - **Create content**: Write a blog post, record a video tutorial, and write a Twitter thread. Share

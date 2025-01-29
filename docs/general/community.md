@@ -117,8 +117,8 @@ community members. The application we use most often to interact with the Matrix
 - [Polkadot Deep Dive Quarterly Report](https://dotinsights.subwallet.app/polkadot-report-q4-2022-en/) -
   A quarterly report series that dives deep into the growth of the whole ecosystem. Made by
   SubWallet with sections focused on Ecosystem Overview, DeFi, [NFT](../learn/learn-nft.md) &
-  [Web3](../learn/web3-and-polkadot.md).
-- [Polkadot Stack](../build-open-source.md) - if you're interested in seeing what's under
+  [Web3](web3-and-polkadot.md).
+- [Polkadot Stack](../build/build-open-source.md) - if you're interested in seeing what's under
   development and where there's room for your contributions.
 - [Teams Building on Polkadot](https://polkaproject.com/) - Community maintained list of teams
   building on Polkadot and/or Substrate. (Note that this may contain inaccuracies, as it's

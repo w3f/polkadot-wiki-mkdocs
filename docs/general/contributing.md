@@ -131,7 +131,7 @@ yarn polkadot:start
 The Polkadot Wiki can render chain state values via RPC as shown
 [here](https://github.com/w3f/polkadot-wiki/blob/master/components/RPC-Connection.jsx) and display
 them directly in the docs without the need to recompile or even reload the web app. The rendering of
-on-chain values is reserved only in the [Chain State page](../chain-state-values.md).
+on-chain values is reserved only in the [Chain State page](chain-state-values.md).
 
 See the example for a react component below:
 

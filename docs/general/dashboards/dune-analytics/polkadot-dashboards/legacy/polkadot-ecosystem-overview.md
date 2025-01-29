@@ -19,17 +19,17 @@ Specifically, we highlight data on active accounts, extrinsics, events, and XCMs
 **View On Dune**: [Polkadot & Parachains Ecosystem Metrics](https://dune.com/substrate/polkadot)
 
 !!!info
-    This page only shows a high-level overview of the ecosystem metics. For an in-depth analysis, please visit [Polkadot Dashboards](polkadot-dashboards/polkadot-dashboards-overview.md) and [Parachain Dashboards](parachain-dashboards/) categories.
+    This page only shows a high-level overview of the ecosystem metics. For an in-depth analysis, please visit [Polkadot Dashboards](polkadot-dashboards/polkadot-dashboards-overview.md) and [Parachain Dashboards](../../parachain-dashboards) categories.
 
 For example, following are some of topics you might be interested in:
 
 - For **stablecoins**, visit
-  [Asset Hub Dashboards](parachain-dashboards/assethub-dashboards.md)
+  [Asset Hub Dashboards](../../parachain-dashboards/assethub-dashboards.md)
 - For Polkadot relay chain **treasury**, visit
-  [Polkadot Dashboards Governance](polkadot-dashboards/polkadot-dashboards-governance.md)
+  [Polkadot Dashboards Governance](../polkadot-dashboards-governance.md)
 - For Polkadot **staking**, visit
-  [Polkadot Dashboards Staking](polkadot-dashboards/polkadot-dashboards-staking.md)
-- For **NFTs**, visit [Unique Dashboards](parachain-dashboards/unique-dashboards.md)
+  [Polkadot Dashboards Staking](../polkadot-dashboards-staking.md)
+- For **NFTs**, visit [Unique Dashboards](../../parachain-dashboards/unique-dashboards.md)
 
 ### Activities Metrics
 

@@ -98,13 +98,13 @@ on [**Polkassembly**](https://polkadot.polkassembly.io/opengov).
 
 ### Referenda Basic Information
 
-![Preview screenshot 1](../../assets/dune-analytics/polkadot-opengov-referenda-home_preview_1.jpeg)
+![Preview screenshot 1](../../../../assets/dune-analytics/polkadot-opengov-referenda-home_preview_1.jpeg)
 
 ### Controversial Referenda
 
 Referenda with approval ratings ranging from **0.2** to **0.8** are considered controversial.
 
-![Preview screenshot 2](../../assets/dune-analytics/polkadot-opengov-referenda-home_preview_2.jpeg)
+![Preview screenshot 2](../../../../assets/dune-analytics/polkadot-opengov-referenda-home_preview_2.jpeg)
 
 ## Polkadot Opengov - Referendum Voting Analysis
 

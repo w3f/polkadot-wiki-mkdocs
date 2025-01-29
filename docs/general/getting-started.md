@@ -42,7 +42,7 @@ slug: ../getting-started
 
   <!-- Card 3 -->
   <a 
-    href="../learn/staking/learn-staking" 
+    href="../learn/learn-staking" 
     class="card-container" 
     data-aos="fade-up" 
     data-aos-delay="100" 
@@ -68,7 +68,7 @@ slug: ../getting-started
 
   <!-- Card 2 -->
   <a 
-    href="../learn/accounts/learn-proxies" 
+    href="../learn/learn-proxies" 
     class="card-container" 
     data-aos="fade-up" 
     data-aos-delay="100" 
@@ -80,7 +80,7 @@ slug: ../getting-started
 
   <!-- Card 3 -->
   <a 
-    href="../learn/accounts/learn-identity" 
+    href="../learn/learn-identity" 
     class="card-container" 
     data-aos="fade-up" 
     data-aos-delay="100" 
@@ -94,7 +94,7 @@ slug: ../getting-started
 <div class="row">
   <!-- Card 1 -->
   <a 
-    href="../learn/parachains/learn-parachains" 
+    href="../learn/learn-parachains" 
     class="card-container" 
     data-aos="fade-up" 
     data-aos-delay="100" 
@@ -106,7 +106,7 @@ slug: ../getting-started
 
   <!-- Card 2 -->
   <a 
-    href="../learn/bridges" 
+    href="../learn/learn-bridges" 
     class="card-container" 
     data-aos="fade-up" 
     data-aos-delay="100" 
@@ -118,7 +118,7 @@ slug: ../getting-started
 
   <!-- Card 3 -->
   <a 
-    href="../../explore/programs/ambassadors" 
+    href="./ambassadors" 
     class="card-container" 
     data-aos="fade-up" 
     data-aos-delay="100" 
@@ -139,7 +139,7 @@ Polkadot. For more information about Polkadot see the dedicated page about the s
 
 Polkadot has an on-chain [open governance](../learn/learn-polkadot-opengov.md) (also called Polkadot
 OpenGov) to orchestrate decisions, including accessing funds from the
-[treasury](../explore/funding/learn-polkadot-opengov-treasury.md).
+[treasury](learn-polkadot-opengov-treasury.md).
 
 The [DOT token](../learn/learn-DOT.md) gives you the power to participate in Polkadot OpenGov, and
 [staking](../learn/learn-staking.md).
@@ -210,7 +210,7 @@ Learn more about how you can create and send Polkadot Gifts
 ## Why should you use Polkadot?
 
 Whether you're a blockchain developer or if you're interested in taking part of
-[Polkadot's community](../explore/programs/ambassadors.md), Polkadot offers a
+[Polkadot's community](ambassadors.md), Polkadot offers a
 platform for everyone.
 
 ## Where to start learning?
@@ -279,8 +279,8 @@ and maintain on the Kusama network, please head over to our
 - [Polkadot & Substrate Overview](https://www.youtube.com/watch?v=0IoUZdDi5Is&feature=youtu.be) -
   Dr. Gavin Wood presents Substrate (blockchain in-a-box + VM) and Polkadot, and builds a blockchain
   on-stage in 30 minutes using Substrate. (Video)
-- [Community / Ecosystem](community-and-contributors/community.md) - List of community rooms and channels to talk to others
+- [Community / Ecosystem](community.md) - List of community rooms and channels to talk to others
   about Polkadot.
-- [Contributing Guide](community-and-contributors/contributing.md) - Rules for contributing to the wiki.
+- [Contributing Guide](contributing.md) - Rules for contributing to the wiki.
 - [Polkadot Knowledge Base](https://support.polkadot.network/) - Troubleshooting resources for
   specific errors and problems.

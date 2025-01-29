@@ -16,17 +16,17 @@ description: Staking Apps in the Polkadot Ecosystem.
 ## Polkadot Staking Dashboard
 
 The [Polkadot Staking Dashboard](https://staking.polkadot.cloud/#/overview) is a web3 application
-dedicated to native non-custodial [staking](../learn/staking/learn-staking.md) on the relay chain. The
+dedicated to native non-custodial [staking](../learn/learn-staking.md) on the relay chain. The
 dashboard allows to stake as a solo nominator or as a
-[nomination pool](../learn/staking/learn-nomination-pools.md) member. Users can also create their nomination
-pools. The dashboard supports [Ledger](../wallets/ledger.md),
-[Polkadot Vault](../wallets/polkadot-vault.md),
-[SubWallet](../wallets/wallets-and-extensions.md#subwallet),
-[Talisman](../wallets/wallets-and-extensions.md#talisman), WalletConnect, Fearless Wallet,
-[PolkaGate](../wallets/wallets-and-extensions.md#polkagate), and Enkrypt. The dashboard also
-supports [staking proxies](../learn/staking/learn-staking.md#stash-account-and-staking-proxy).
+[nomination pool](../learn/learn-nomination-pools.md) member. Users can also create their nomination
+pools. The dashboard supports [Ledger](ledger.md),
+[Polkadot Vault](polkadot-vault.md),
+[SubWallet](wallets-and-extensions.md#subwallet),
+[Talisman](wallets-and-extensions.md#talisman), WalletConnect, Fearless Wallet,
+[PolkaGate](wallets-and-extensions.md#polkagate), and Enkrypt. The dashboard also
+supports [staking proxies](../learn/learn-staking.md#stash-account-and-staking-proxy).
 
-You can find more information about the Polkadot staking dashboard on the dedicated [wiki page](../dashboards/staking-dashboard.md) and
+You can find more information about the Polkadot staking dashboard on the dedicated [wiki page](staking-dashboard.md) and
 [support articles](https://support.polkadot.network/support/solutions/folders/65000157523).
 
 Below a list of video tutorial about the Polkadot Staking Dashboard.

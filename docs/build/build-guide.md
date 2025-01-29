@@ -105,7 +105,7 @@ in order to gain context about the application you could make.
 
 Polkadot is canonically referred to as the relay chain. It is also considered a _layer zero_
 protocol, as it enables the interoperability and shared security of multiple
-[parachains](learn-parachains.md), which are _layer one_ protocols. Parachains currently
+[parachains](../learn/learn-parachains.md), which are _layer one_ protocols. Parachains currently
 connect to a relay chain using the [Parachains Protocol](../learn/learn-parachains-protocol.md).
 More elaborate (or simpler) tasks could be constructed in the future.
 

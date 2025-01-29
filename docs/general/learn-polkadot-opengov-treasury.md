@@ -9,7 +9,7 @@ slug: ../learn-polkadot-opengov-treasury
 
 The Treasury is a pot of funds collected through a portion of block production rewards,
 [transaction fees](../learn/learn-transactions.md#transaction-fees), [slashing](../learn/learn-offenses.md), and
-[staking inefficiencies](../learn/token-and-assets/learn-inflation.md). Treasury funds are held in a
+[staking inefficiencies](../learn/learn-inflation.md). Treasury funds are held in a
 [system account](../learn/learn-account-advanced.md#system-accounts) that cannot be controlled by any
 external account; only the system internal logic can access it.
 
@@ -32,16 +32,16 @@ mechanisms:
 The outflow is determined by the following mechanisms:
 
 - **Burned tokens:** at the end of each spend period,
-  **[a fraction](../chain-state-values.md#treasury-burn-factor) of the available funds are
+  **[a fraction](chain-state-values.md#treasury-burn-factor) of the available funds are
   burned**.
 - **Treasury proposals & Bounties:** they make up the largest share of outflow tokens to the
   community and need to be approved by governance. Then, payouts occur at the end of a
-  [spend period](../learn/glossary.md#spend-period).
+  [spend period](../general/glossary.md#spend-period).
 - **Tips:** smaller payouts directly to grantees that can happen within a
-  [spend period](../learn/glossary.md#spend-period).
+  [spend period](../general/glossary.md#spend-period).
 
 !!!info "Spend Period Schedule"
-    On Polkadot-JS UI, navigate to Governance > Treasury to view the status of current [spend period](../learn/glossary.md#spend-period).
+    On Polkadot-JS UI, navigate to Governance > Treasury to view the status of current [spend period](../general/glossary.md#spend-period).
 
     ![preimage-whitelist](../assets/treasury/treasury-spend-period.png)
 
@@ -87,14 +87,14 @@ bottom right corner. Then,
 
 The treasury currently operates on a single account on-chain. The above tracks manage the outflow of
 the treasury on the network. With _sub_-treasuries, having treasury accounts that correspond to each
-[collective](../learn/parachains/learn-system-chains.md#collectives) is also possible.
+[collective](../learn/learn-system-chains.md#collectives) is also possible.
 
 Rather than have many referenda through OpenGov, the treasury can allocate funds to each
 sub-treasury (through [governance](../learn/learn-polkadot-opengov.md)), from which each respective collective
 can spend funds (depending on their specific rule set).
 
 New treasuries could be added to respective
-[system chains](../learn/parachains/learn-system-chains.md#existing-system-chains) through governance by adding more
+[system chains](../learn/learn-system-chains.md#existing-system-chains) through governance by adding more
 instances of this pallet.
 
 ## Multi-Asset Treasury Support
@@ -128,7 +128,7 @@ events later on through [child bounties](#child-bounties). This is why bounties 
 Parent bounty proposals aim to reserve a portion of treasury funds once, which will be used later.
 They save proponents the time needed to create and obtain approval for several OpenGov referenda.
 Bounties are managed by curators, where the curator is usually a
-[multi-signature account](../learn/accounts/learn-account-multisig.md). Bounties can access a large amount of funds,
+[multi-signature account](../learn/learn-account-multisig.md). Bounties can access a large amount of funds,
 so managing those funds with a multisig is a good practice to enhance security. Essentially,
 curators are multisig addresses with agency over a portion of the treasury to promote events, fix a
 bug or vulnerability, develop a strategy, or monitor a set of tasks related to a specific topic, all
@@ -145,7 +145,7 @@ total value of the bounty. In this sense, the curator's fee can be defined as th
 the amounts paid to child bounty awardees and the total value of the bounty.
 
 Curators are selected through OpenGov referendum after the bounty proposal passes; and they need to
-pay an upfront [deposit](../chain-state-values.md#bounty-curator-deposit) to take the
+pay an upfront [deposit](chain-state-values.md#bounty-curator-deposit) to take the
 position. This deposit can be used to punish curators if they act maliciously. However, if they are
 successful in managing the bounty to completion, they will receive their deposit back, and part of
 the bounty funding as a payment for their efforts.
@@ -157,7 +157,7 @@ mechanism. A Bounty is a reward for a specified body of work or set of objective
 executed for a predefined treasury amount designated to be paid out. The responsibility of assigning
 a payout address once the specified set of objectives is completed is delegated to the curator.
 
-The bounty has a [predetermined duration](../chain-state-values.md#bounty-duration), with
+The bounty has a [predetermined duration](chain-state-values.md#bounty-duration), with
 possible extension(s) to be requested by the curator. To maintain flexibility during the tasks’
 curation, the curator will also be able to create child bounties for more granularity in the
 allocation of funds and as part of a nested iteration of the bounty mechanism.

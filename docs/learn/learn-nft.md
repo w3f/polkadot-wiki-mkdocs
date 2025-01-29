@@ -97,6 +97,6 @@ and Efinity (Paratoken), the following efforts are underway:
 
 ## References
 
-- [1]: [Investopedia](https://www.investopedia.com/terms/l/liars-poker.asp)
+- [1]: [Investopedia](https://www.investopedia.com/terms/learn/liars-poker.asp)
 - [2]:
   [Unique Network's Chelobrick](https://unique.network/blog/chelobricks-making-waves-with-10-000-substrate-based-nfts/)
