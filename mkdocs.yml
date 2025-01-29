@@ -298,7 +298,68 @@ nav:
           - Auction: learn/archive/learn-auction.md
           - Crowdloans: learn/archive/learn-crowdloans.md
           - Thousand Validators: learn/archive/thousand-validators.md
-
-
+  - Build:
+        - Build Guide: build/build-guide.md
+        - Network Overview: build/build-network-overview.md
+        - Client-side Development:
+            - Client-side Development: build/build-client-side.md
+            - Light Clients: build/build-light-clients.md
+            - Node Interaction: build/build-node-interaction.md
+        - Smart Contracts: build/build-smart-contracts.md
+        - Protocol Development Resources:
+            - Coretime Guides:
+                - Install Dependencies: build/build-guides-install-deps.md
+                - Basic Template: build/build-guides-template-basic.md
+                - Coretime Troubleshooting: build/build-guides-coretime-troubleshoot.md
+                - Coretime Swap: learn/learn-guides-coretime-swap.md
+            - Protocol Information: build/build-protocol-info.md
+            - Integrate Assets: build/build-integrate-assets.md
+            - HRMP Channels: build/build-hrmp-channels.md
+        - Tooling:
+            - Data: build/build-data.md
+            - Open Source: build/build-open-source.md
+        - Hackathon: build/build-hackathon.md
+        - Archive:
+            - Transaction Construction: build/build-transaction-construction.md
+            - Integration: build/build-integration.md
+            - Node Management: build/build-node-management.md
+            - Parachains: build/build-parachains.md
+  - Maintain:
+      - Maintain Index: maintain/maintain-index.md
+      - Polkadot Parameters: maintain/maintain-polkadot-parameters.md
+      - Nodes and Dapps:
+          - Endpoints: maintain/maintain-endpoints.md
+          - Sync: maintain/maintain-sync.md
+          - Bootnode: maintain/maintain-bootnode.md
+          - RPC: maintain/maintain-rpc.md
+          - WSS: maintain/maintain-wss.md
+          - Networks: maintain/maintain-networks.md
+          - Errors: maintain/maintain-errors.md
+      - Collator Guides:
+          - Async Backing: maintain/maintain-guides-async-backing.md
+      - Validator Guides:
+          - How to Validate Polkadot: maintain/maintain-guides-how-to-validate-polkadot.md
+          - Validator Payout: maintain/maintain-guides-validator-payout.md
+          - How to Systemd: maintain/maintain-guides-how-to-systemd.md
+          - Secure Validator: maintain/maintain-guides-secure-validator.md
+          - How to Upgrade: maintain/maintain-guides-how-to-upgrade.md
+          - How to Monitor Your Node: maintain/maintain-guides-how-to-monitor-your-node.md
+          - How to Chill: maintain/maintain-guides-how-to-chill.md
+          - How to Stop Validating: maintain/maintain-guides-how-to-stop-validating.md
+          - Community Validator Guide: maintain/doc-maintain-guides-validator-community.md
+      - Archive:
+          - Democracy Guide: maintain/archive/maintain-guides-democracy.md
+          - How to Join Council: maintain/archive/maintain-guides-how-to-join-council.md
+          - How to Vote Councillor: maintain/archive/maintain-guides-how-to-vote-councillor
+  - Kusama:
+      - Getting Started: general/kusama/kusama-getting-started.md
+      - Timeline: general/kusama/kusama-timeline.md
+      - Code of Conduct: general/kusama/kusama-coc.md
+      - Bug Bounty: general/kusama/kusama-bug-bounty.md
+      - Social Recovery: general/kusama/kusama-social-recovery.md
+      - Adversarial Cheatsheet: general/kusama/kusama-adversarial-cheatsheet.md
+      - Society Guide: maintain/kusama/maintain-guides-society-kusama.md
+      - How to Validate Kusama: maintain/kusama/maintain-guides-how-to-validate-kusama.md
+      - Kusama Inflation: learn/learn-kusama-inflation.md    
 
 
