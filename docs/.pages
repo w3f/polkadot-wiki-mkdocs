@@ -1,5 +1,5 @@
 nav:
-  - 'Explore': explore
+  - 'Explore': general
   - 'Learn': learn
   - 'Build': build
   - 'Maintain': maintain

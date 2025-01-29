@@ -52,13 +52,13 @@ additional information on how to
 Attaining a rank of 100 usually takes around two months. In order to apply to the Polkadot 1KV
 programme, set up your Polkadot node to adhere to the [requirements](#requirements) below.
 
-!!!info 1KV on Kusama
+:::info 1KV on Kusama
 
 In order to apply to the Kusama 1KV programme, set up your node to adhere to the requirements below.
 The process of review and addition is a manual one; you'll be invited to the 1KV Kusama channel and
 added to the leaderboard, if accepted.
 
-
+:::
 
 #### Requirements
 

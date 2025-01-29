@@ -1,5 +1,0 @@
-title: Components
-nav:
-  - 'Polkadot Host': learn-polkadot-host.md
-  - 'WebAssembly (Wasm)': learn-wasm.md
-  - 'Runtime Upgrades': learn-runtime-upgrades.md

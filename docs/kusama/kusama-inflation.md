@@ -9,20 +9,20 @@ slug: ../../kusama-inflation
 
 import MessageBox from "../../components/MessageBox"; import "../../components/MessageBox.css";
 
-<MessageBox message="[Learn about Polkadot's native token DOT inflation](./learn-inflation)." />
+<MessageBox message="[Learn about Polkadot's native token DOT inflation](learn-inflation)." />
 
 KSM is an inflationary token. Inflation is set to be 10% annually. Depending on the supply staked
 and the ideal staking rate (more about this below), part of the inflation is distributed to the
-stakers and part to the [treasury](./learn-polkadot-opengov-treasury.md).
+stakers and part to the [treasury](../learn/learn-polkadot-opengov-treasury.md).
 
 !!!info
-The current KSM token supply can be seen [here](./../general/chain-state-values.md#total-issuance).
+The current KSM token supply can be seen [here](../general/chain-state-values.md#total-issuance).
 
 
 
 It is essential to understand that the primary objective of inflation is to incentivize network
 participants through
-[Nominated Proof of Stake (NPoS)](./learn-consensus.md#nominated-proof-of-stake) and to grow the
+[Nominated Proof of Stake (NPoS)](../learn/learn-consensus.md#nominated-proof-of-stake) and to grow the
 network through funding the on-chain treasury. There is an opportunity cost of keeping the number of
 tokens idle with the current inflation model as the tokens get diluted over time. Economics and game
 theory suggest that setting an ideal inflation rate is essential for incentivizing the network
@@ -30,7 +30,7 @@ participants as well as the growth of the network, and any deviation from it can
 effects. Reducing the inflation rate could limit growth, while increasing the inflation rate could
 break the incentive model of the token. Hence, **token inflation rate is not a forever fixed value,
 and inflation can be updated in the future through
-[on-chain governance](./learn-polkadot-opengov.md)** based on thorough tokenomics research.
+[on-chain governance](../learn/learn-polkadot-opengov.md)** based on thorough tokenomics research.
 
 ## Kusama Inflation Model
 
@@ -47,7 +47,7 @@ total token supply, where the total amount staked is the stake of all validators
 the network. The ideal staking rate accounts for having sufficient backing of tokens to prevent the
 possible compromise of security while keeping the native token liquid.
 
-![staking](./../assets/rewards-inflation.png)
+![staking](../assets/rewards-inflation.png)
 
 <p style={{textAlign:"center"}}>Source: <a href="https://research.web3.foundation/Polkadot/overview/token-economics">Research - Web3 Foundation</a></p>
 
@@ -67,7 +67,7 @@ nominators if 60% of all tokens are staked. Any deviation from the 60% - positiv
 sends the proportional remainder to the treasury. Deviations from the ideal staking rate are
 referred to as _staking inefficiencies_. Thus, the treasury does not receive an inflow of funds from
 inflation when the system staking rate equals the ideal staking rate. See
-[this page](./learn-polkadot-opengov-treasury.md) for more information about treasury inflow
+[this page](../learn/learn-polkadot-opengov-treasury.md) for more information about treasury inflow
 sources.
 
 For those who are interested in knowing more about the design of the inflation model for the
@@ -87,7 +87,7 @@ where `auction_proportion` is obtained by computing `min(auctioned_slots, 60) / 
 `auctioned_slots` are all the auctioned slots (or cores) without the cores for system parachains.
 
 Assuming there are 50 filled cores, of which five are dedicated to
-[system parachains](./learn-system-chains.md), there are 45 auctioned cores. The
+[system parachains](../learn/learn-system-chains.md), there are 45 auctioned cores. The
 `auction_proportion` is thus `45 / 300 = 0.15`. The ideal staking rate is `0.75 - 0.15 = 0.6`.
 
 If the amount of tokens staked goes below 60%, then staking rewards for nominators increase,

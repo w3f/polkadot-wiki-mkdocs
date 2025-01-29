@@ -7,12 +7,12 @@ keywords: [learn, video, tutorials, explainers]
 slug: ../learn-video-tutorials
 ---
 
-!!!info Visit the Polkadot YouTube Channel
+:::info Visit the Polkadot YouTube Channel
 
 For more videos see all playlists on the
 [Polkadot YouTube channel](https://www.youtube.com/@PolkadotNetwork/playlists).
 
-
+:::
 
 ## Ongoing Series
 

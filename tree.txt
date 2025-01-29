@@ -1,0 +1,838 @@
+├── assets
+│   ├── AccountData-struct.png
+│   ├── JS-UI-bond.png
+│   ├── JS-UI-sign-transaction.png
+│   ├── JS-UI-stash-overview.png
+│   ├── NPoS
+│   │   └── staking-keys-stash-proxy.png
+│   ├── Polkadot_Favicon.png
+│   ├── SPREE
+│   │   └── spree_module.png
+│   ├── VRF_babe.png
+│   ├── account-balance-types.png
+│   ├── accounts
+│   │   ├── index.png
+│   │   ├── pubkey-1.png
+│   │   ├── pubkey-2.png
+│   │   └── query-index.png
+│   ├── anon-vs-stash-plot.png
+│   ├── asset-hub
+│   │   ├── Asset-Conversion-Add-Liquidity.png
+│   │   ├── Asset-Conversion-Create-Pool.png
+│   │   ├── Asset-Conversion-Liquidity-Pool-Example.png
+│   │   ├── Asset-Conversion-Remove-Liquidity-Example.png
+│   │   ├── Asset-Conversion-Remove-Liquidity.png
+│   │   ├── Asset-Conversion-Swap-Exact-Token.png
+│   │   ├── Asset-Conversion-Swap-Exact-Tokens-Example.png
+│   │   ├── Asset-Conversion-Swap-To-Exact-Example.png
+│   │   ├── Asset-Conversion-Swap-To-Exact-Tokens.png
+│   │   ├── asset-hub-establish-channel-xcm.png
+│   │   ├── establish-channel-asset-hub.png
+│   │   ├── hub-asset-0.png
+│   │   ├── hub-asset-1.png
+│   │   ├── hub-asset-2.png
+│   │   ├── hub-asset-3.png
+│   │   ├── hub-asset-4.png
+│   │   ├── hub-nft.png
+│   │   ├── spend-amount-account-validfrom-temp.png
+│   │   ├── spend-amount-account-validfrom.png
+│   │   ├── spend-usdt-assethub-temp.png
+│   │   ├── spend-usdt-assethub.png
+│   │   └── teleport-asset.png
+│   ├── async-backing.png
+│   ├── bags-list-example-0.png
+│   ├── bags-list-example-1.png
+│   ├── bags-list-example-2.png
+│   ├── bags-list-example-3.png
+│   ├── balance-example-1.png
+│   ├── balance-example-2.png
+│   ├── balance-example-3.png
+│   ├── balance-example-4.png
+│   ├── best_chain.png
+│   ├── bridge-hub
+│   │   ├── KAH-DOT-Balance.png
+│   │   ├── KAH-DOT-transfer-PAH.png
+│   │   ├── KAH-PAH-KSM-Transfer-PJS-Extrinsic.png
+│   │   ├── PAH-KSM-Balance.png
+│   │   ├── PAH-KSM-Transfer-KAH.png
+│   │   └── PAH-to-KAH-DOT-transfer.png
+│   ├── build-1.png
+│   ├── build-2.png
+│   ├── cancel-referenda-preimage-check.png
+│   ├── cancel-referenda-preimage-creation.png
+│   ├── cancel-referenda-proposal.png
+│   ├── chain-state-constant.png
+│   ├── claim
+│   │   ├── claim-1.png
+│   │   ├── claim-2.png
+│   │   ├── claim-3.png
+│   │   ├── claim-4.png
+│   │   └── claim_3.png
+│   ├── claim-copy-msg.png
+│   ├── claim-get-signature.png
+│   ├── claim-paste-signature.png
+│   ├── claim-preimage-deposit.png
+│   ├── claim-referendum-decision-deposit.png
+│   ├── claim-select-dot-account.png
+│   ├── claim-select-eth-account.png
+│   ├── comparisons
+│   │   └── avalanche
+│   │       ├── avalanche-consensus-protocols.png
+│   │       └── avalanche-network.png
+│   ├── contributing.png
+│   ├── core-usage-agile-combined.png
+│   ├── core-usage-agile-composable.png
+│   ├── core-usage-agile-compressed.png
+│   ├── core-usage-agile-rangeSplit.png
+│   ├── core-usage-agile-rangeStrided.png
+│   ├── core-usage-agile-shared.png
+│   ├── core-usage-dumb-noAffinity.png
+│   ├── core-usage-dumb.png
+│   ├── coretime
+│   │   ├── Coretime-ParaId-Registered.png
+│   │   ├── Coretime-Sale-Timeline.png
+│   │   ├── Lastic-UI.png
+│   │   ├── Lastic-manage-core.png
+│   │   ├── RegionX-UI.png
+│   │   ├── Register-Parachain.png
+│   │   ├── coretime-collation-bulk.png
+│   │   ├── coretime-create-new-collation.png
+│   │   ├── coretime-on-demand-assignment.png
+│   │   ├── coretime-on-demand-parahead.png
+│   │   ├── coretime-parachain-onboarding.png
+│   │   ├── coretime-regionx-connect-wallet.png
+│   │   ├── coretime-register-parathread.png
+│   │   ├── coretime-reserve-paraID.png
+│   │   ├── lastic-assign-core.png
+│   │   ├── onDemand-block-production.png
+│   │   ├── regionx-add-task.png
+│   │   ├── regionx-assign-region.png
+│   │   ├── regionx-assigned-region.png
+│   │   ├── regionx-balance-change.png
+│   │   ├── regionx-cross-chain-roc.png
+│   │   ├── regionx-manage-cores.png
+│   │   ├── regionx-purchase-bulk.png
+│   │   ├── regionx-purchase-core.png
+│   │   ├── regionx-select-region.png
+│   │   └── tx-payment-api-weights-lease-swap.png
+│   ├── council
+│   │   ├── polkadotjs_candidates.png
+│   │   ├── polkadotjs_council_members.png
+│   │   ├── polkadotjs_removeVoter.png
+│   │   ├── polkadotjs_submit_candidancy.png
+│   │   ├── polkadotjs_vote_button.png
+│   │   └── polkadotjs_voting.png
+│   ├── creating-pull-request-2.png
+│   ├── creating-pull-request.png
+│   ├── cross-consensus
+│   │   ├── hrmp-ex.png
+│   │   ├── multilocation.png
+│   │   ├── xcm-asset-teleportation.png
+│   │   └── xcm-reserve-asset-transfer.png
+│   ├── cross-consensus-tech-stack.png
+│   ├── crowdloan-refund.png
+│   ├── dashboard-managePoolCommission.png
+│   ├── dashboard-nominate.png
+│   ├── dashboard-overview.png
+│   ├── dashboard-permissionlessPoolClaims.png
+│   ├── dashboard-pools.png
+│   ├── dashboard-validators.png
+│   ├── delegation-locks-1.png
+│   ├── delegation-locks-2.png
+│   ├── democracy
+│   │   ├── delegate-vote.png
+│   │   ├── endorse.png
+│   │   ├── endorse1.png
+│   │   ├── endorsed-list.png
+│   │   ├── manage-delegation.png
+│   │   ├── proposal-hash.png
+│   │   ├── proposals.png
+│   │   ├── query-delegation.png
+│   │   ├── submit-preimage.png
+│   │   ├── submit_preimage.png
+│   │   ├── submit_proposal.png
+│   │   ├── undelegate-save.png
+│   │   └── voting.png
+│   ├── democracy_balance_details.png
+│   ├── democracy_clear_lock_extrinsic_1.png
+│   ├── democracy_clear_lock_extrinsic_2.png
+│   ├── democracy_clear_locks.png
+│   ├── dot-inflation.png
+│   ├── dune-analytics
+│   │   ├── acala-on-polkadot_preview_1.jpeg
+│   │   ├── acala-on-polkadot_preview_2.jpeg
+│   │   ├── acala-on-polkadot_preview_3.jpeg
+│   │   ├── acala-on-polkadot_preview_4.jpeg
+│   │   ├── assethub_preview_1.jpeg
+│   │   ├── assethub_preview_2.jpeg
+│   │   ├── assethub_preview_3.jpeg
+│   │   ├── polkadot-opengov-referenda-home_preview_1.jpeg
+│   │   ├── polkadot-opengov-referenda-home_preview_2.jpeg
+│   │   ├── unique-collection-details-dashboard_preview_1.jpeg
+│   │   ├── unique-collection-details-dashboard_preview_2.jpeg
+│   │   ├── unique-collection-details-dashboard_preview_3.jpeg
+│   │   ├── unique-collection-details-dashboard_preview_4.jpeg
+│   │   └── unique-nft-dashboard_preview.jpeg
+│   ├── ens
+│   │   ├── 01-min.png
+│   │   ├── 02-min.png
+│   │   ├── 03-min.png
+│   │   └── 04-min.png
+│   ├── errors
+│   │   ├── 01.jpg
+│   │   └── 02.jpg
+│   ├── explore
+│   │   ├── Balance Transfers.png
+│   │   ├── Become an Ambassador.png
+│   │   ├── Bridges.png
+│   │   ├── Creating an account.png
+│   │   ├── Gift.png
+│   │   ├── Parachains.png
+│   │   ├── Polkadot OpenGov.png
+│   │   ├── Proxy Accounts.png
+│   │   ├── Set an Identity.png
+│   │   └── Staking.png
+│   ├── favicon.ico
+│   ├── fee-details.png
+│   ├── fellowship-induct-call.png
+│   ├── fellowship-promote-member.png
+│   ├── fellowship-promotion-proposal.png
+│   ├── fellowship-whitelist-xcm.png
+│   ├── files
+│   │   ├── substrate-files-1.png
+│   │   ├── substrate-files-2.png
+│   │   ├── substrate-files-3.png
+│   │   ├── substrate-files-4.png
+│   │   ├── substrate-files-5.png
+│   │   └── substrate-files-6.png
+│   ├── gov1-overview.png
+│   ├── gov1-timeline.png
+│   ├── governance
+│   │   ├── Delegate-Kusama.png
+│   │   ├── Delegate-Window-Kusama.png
+│   │   ├── Undelegate-Kusama.png
+│   │   ├── adaptive-quorum-biasing.png
+│   │   ├── approval-vote.png
+│   │   ├── collectives-receive-xcm.png
+│   │   ├── collectives-remove-call-weights.png
+│   │   ├── collectives-remove-member.png
+│   │   ├── collectives-remove-xcm-call.png
+│   │   ├── encoded-call-hash.png
+│   │   ├── javascript-console-fellowship-admin-call.png
+│   │   ├── opengov-call-test-treasury-proposal.png
+│   │   ├── opengov-preimage-submitted.png
+│   │   ├── opengov-submit-preimage-whitelist.png
+│   │   ├── opengov-submit-preimage.png
+│   │   ├── opengov-submit-proposal.png
+│   │   ├── opengov-vote-referendum.png
+│   │   ├── polkadot-chopsticks-call.png
+│   │   ├── polkadot-fork-locally.png
+│   │   ├── polkadot-js-local-node.png
+│   │   ├── polkadot-js-ui-explorer.png
+│   │   ├── polkadot-send-xcm.png
+│   │   ├── support-approval-auction.png
+│   │   ├── support-approval-big-spender.png
+│   │   ├── support-approval-big-tipper.png
+│   │   ├── support-approval-canceler.png
+│   │   ├── support-approval-fellowship.png
+│   │   ├── support-approval-general.png
+│   │   ├── support-approval-killer.png
+│   │   ├── support-approval-lease.png
+│   │   ├── support-approval-medium-spender.png
+│   │   ├── support-approval-polkadot-js-ui.png
+│   │   ├── support-approval-root.png
+│   │   ├── support-approval-small-spender.png
+│   │   ├── support-approval-small-tipper.png
+│   │   ├── support-approval-staking.png
+│   │   ├── support-approval-treasurer.png
+│   │   ├── support-approval-whitelist.png
+│   │   ├── tx-payment-call-api.png
+│   │   └── unpaid-execution-xcm-call.png
+│   ├── graypaper_inverted_no_background.pdf
+│   ├── guides
+│   │   ├── how-to-monitor
+│   │   │   ├── 1-alert-manager.png
+│   │   │   ├── 1-grafana-login.png
+│   │   │   ├── 2-add-data-source-2.png
+│   │   │   ├── 2-add-data-source.png
+│   │   │   ├── 2-alert-manager.png
+│   │   │   ├── 3-alert-manager.png
+│   │   │   ├── 3-select-prometheus.png
+│   │   │   ├── 4-alert-manager.png
+│   │   │   ├── 4-configure-data-source.png
+│   │   │   ├── 5-alert-manager.png
+│   │   │   ├── 5-import-dashboard-2.png
+│   │   │   ├── 5-import-dashboard.png
+│   │   │   ├── 6-alert-manager.png
+│   │   │   └── 6-dashboard-metric.png
+│   │   └── how-to-validate
+│   │       ├── polkadot-dashboard-staking.png
+│   │       ├── polkadot-dashboard-telemetry.png
+│   │       ├── polkadot-dashboard-validate-1.png
+│   │       ├── polkadot-dashboard-validate-2.png
+│   │       ├── polkadot-explorer-rotatekeys-rpc.jpg
+│   │       ├── polkadot-zero-peer.jpg
+│   │       ├── set-session-key-1.png
+│   │       └── set-session-key-2.png
+│   ├── home
+│   │   ├── Build.png
+│   │   ├── Explore.png
+│   │   ├── Learn.png
+│   │   └── Maintain.png
+│   ├── identity
+│   │   ├── 01.jpg
+│   │   ├── 02.jpg
+│   │   ├── 12.jpg
+│   │   ├── 13.jpg
+│   │   ├── 16.jpg
+│   │   ├── sub-id-1.png
+│   │   ├── sub-id-2.png
+│   │   └── sub-id-3.png
+│   ├── js-delegation-allTracks.png
+│   ├── js-delegation-delegate.png
+│   ├── js-delegation-start.png
+│   ├── js-delegation-undelegate.png
+│   ├── js-delegation-undelegated.png
+│   ├── kusama
+│   │   ├── kusama_make_account_initial.png
+│   │   ├── kusama_make_account_recoverable.png
+│   │   ├── kusama_make_recoverable.png
+│   │   ├── kusama_nominator_popup.png
+│   │   ├── kusama_nominator_selection.png
+│   │   ├── kusama_polkadotjs_add_account-1.png
+│   │   ├── kusama_polkadotjs_create.png
+│   │   ├── kusama_polkadotjs_final_account.png
+│   │   ├── kusama_polkadotjs_mnemonicseed.jpg
+│   │   ├── kusama_polkadotjs_uncheck.png
+│   │   ├── kusama_social_recovery_accounts_page.png
+│   │   ├── kusama_society_page.png
+│   │   ├── kusama_society_page2.png
+│   │   ├── statemine-asset-0.png
+│   │   ├── statemine-asset-1.png
+│   │   ├── statemine-asset-2.png
+│   │   └── statemine-asset-3.png
+│   ├── kusama-crowdloans.png
+│   ├── kusama-gifs.gif
+│   ├── ledger-help-menu.png
+│   ├── light-clients.png
+│   ├── locks-example-1.png
+│   ├── locks-example-2.png
+│   ├── logo.png
+│   ├── maintain-wss-image.png
+│   ├── multisig-diagram.png
+│   ├── multisig-with-anons.png
+│   ├── multisig-with-one-anon.png
+│   ├── multisig-with-pure.png
+│   ├── nested-proxy-calls.png
+│   ├── nft
+│   │   ├── kanaria.png
+│   │   ├── nft-basilisk.png
+│   │   ├── samurai.png
+│   │   └── uniques.png
+│   ├── nomination-pools-bondExtraOthers.png
+│   ├── nomination-pools-payoutOthers.png
+│   ├── nominators_target.png
+│   ├── nova_spektr.png
+│   ├── one-parachain.png
+│   ├── opengov-curves-nopass.png
+│   ├── opengov-curves-pass.png
+│   ├── opengov-overview.png
+│   ├── opengov-timeline.png
+│   ├── opengov-track-capacity.png
+│   ├── origin-abstraction.png
+│   ├── para-swap.png
+│   ├── parachain-approval-process.png
+│   ├── parachain-development.png
+│   ├── parachain-forks.png
+│   ├── parachain-inclusion-pipeline.png
+│   ├── parachain-playground.png
+│   ├── parachain-protocol-summary.png
+│   ├── parity-data-dashboards
+│   │   ├── dotlake-batch.png
+│   │   ├── dotlake-rt.png
+│   │   ├── ecosystem-chain-selection-example.png
+│   │   ├── ecosystem-chart-default-selection.png
+│   │   ├── ecosystem-polkadot-daily-substrate-transactions-selection.png
+│   │   └── stablecoins-usdc-toggle-chart-type-example.png
+│   ├── paseo-chains.png
+│   ├── payout
+│   │   └── 01.png
+│   ├── polkadot-consensus-example-1.png
+│   ├── polkadot_relay_chain.png
+│   ├── polkadot_view_proxies.png
+│   ├── polkadot_view_proxies_dev.png
+│   ├── polkadotjs_payout_complete.png
+│   ├── polkadotjs_payout_page.png
+│   ├── polkadotjs_payout_popup.png
+│   ├── polkassembly-child-bounties.png
+│   ├── polkassembly-create-preimage.png
+│   ├── polkassembly-write-proposal.png
+│   ├── polkawallet-accounts-page.jpg
+│   ├── polkawallet-copy-address.jpg
+│   ├── polkawallet-create-account.jpg
+│   ├── proxy-vs-anon.png
+│   ├── recovery
+│   │   ├── social-recovery-10.png
+│   │   ├── social-recovery-11.png
+│   │   ├── social-recovery-12.png
+│   │   ├── social-recovery-13.png
+│   │   ├── social-recovery-14.png
+│   │   ├── social-recovery-15.png
+│   │   ├── social-recovery-6.png
+│   │   ├── social-recovery-7.png
+│   │   ├── social-recovery-8.png
+│   │   ├── social-recovery-9.png
+│   │   ├── social-recovery-diag-1.png
+│   │   └── social-recovery-diag-2.png
+│   ├── redenomination.png
+│   ├── refine-accumulate.png
+│   ├── reward-risk.png
+│   ├── rewards-inflation.png
+│   ├── rm-vote.png
+│   ├── rm-voting-lock.png
+│   ├── runtime-node-version.png
+│   ├── society
+│   │   ├── payout.jpg
+│   │   ├── test_bid.jpg
+│   │   └── vouch.jpg
+│   ├── staking
+│   │   ├── NPoS-Pools.png
+│   │   ├── Nomination-Pools-1.png
+│   │   ├── Nomination-Pools-2.png
+│   │   ├── Nomination-Pools-5.png
+│   │   ├── Nomination-Pools-7.png
+│   │   ├── min-active-nomination.png
+│   │   ├── nominator-election.png
+│   │   ├── polkadotjs_nominator_account.png
+│   │   ├── reward-risk.png
+│   │   ├── stash-controller.png
+│   │   └── stash-stakingProxy.png
+│   ├── staking-miner
+│   │   └── NPoS-election-optimization.png
+│   ├── stash-and-staking-proxy.png
+│   ├── stash-as-controller.png
+│   ├── stash-controller.png
+│   ├── stash-not-as-controller.png
+│   ├── stash-vs-stash-and-staking-proxy.png
+│   ├── sync-backing.png
+│   ├── sync-vs-async-backing.png
+│   ├── time-delayed-proxies.png
+│   ├── translate
+│   │   ├── crowdin-translate-1.png
+│   │   ├── crowdin-translate-2.png
+│   │   ├── crowdin-translate-3.png
+│   │   ├── crowdin-translate-4.png
+│   │   ├── crowdin-translate-5.png
+│   │   ├── crowdin-translate-6.png
+│   │   ├── crowdin-translate-7.png
+│   │   ├── crowdin-translate-8.png
+│   │   ├── crowdin-translate-9.png
+│   │   └── polkadot-translate-feature.png
+│   ├── treasury
+│   │   ├── OpenGov-Treasury-Preimage-SpendLocal.png
+│   │   ├── motion.png
+│   │   ├── proposal.jpg
+│   │   ├── proposals.png
+│   │   ├── spend-period.png
+│   │   ├── submit-new.png
+│   │   ├── submit-proposal-treasury.png
+│   │   ├── treasury-multistage-payout-spend-id.png
+│   │   ├── treasury-preimage-hash.png
+│   │   ├── treasury-preimage.png
+│   │   ├── treasury-proposal-decision-deposit.png
+│   │   └── treasury-spend-period.png
+│   ├── unlock-vesting.png
+│   ├── updated_pre.png
+│   ├── validator_stats.png
+│   ├── vote_numeric_conversion.png
+│   ├── voting-locks-1.png
+│   ├── voting-locks-2.png
+│   ├── warning-multichain-account.png
+│   ├── why-anon-proxy.png
+│   ├── wiki-logo-white.svg
+│   └── wiki-logo.svg
+├── build
+│   ├── archive
+│   │   ├── build-integration.md
+│   │   ├── build-node-management.md
+│   │   ├── build-parachains.md
+│   │   └── build-transaction-construction.md
+│   ├── build-guide.md
+│   ├── build-hackathon.md
+│   ├── build-index.md
+│   ├── build-network-overview.md
+│   ├── build-oracle.md
+│   ├── build-smart-contracts.md
+│   ├── build-storage.md
+│   ├── client-side
+│   │   ├── build-client-side.md
+│   │   ├── build-dapp.md
+│   │   ├── build-light-clients.md
+│   │   └── build-node-interaction.md
+│   ├── protocol-development-resources
+│   │   ├── build-hrmp-channels.md
+│   │   ├── build-integrate-assets.md
+│   │   ├── build-protocol-info.md
+│   │   └── coretime-guides
+│   │       ├── build-guides-coretime-start.md
+│   │       ├── build-guides-coretime-troubleshoot.md
+│   │       ├── build-guides-install-deps.md
+│   │       └── build-guides-template-basic.md
+│   └── tooling
+│       ├── build-data.md
+│       ├── build-open-source.md
+│       └── build-tools-index.md
+├── explore
+│   ├── apps
+│   │   ├── governance-apps.md
+│   │   ├── index.md
+│   │   ├── multisig-apps.md
+│   │   ├── nft-projects.md
+│   │   ├── parachains-apps.md
+│   │   └── staking-apps.md
+│   ├── build-open-source.md
+│   ├── chain-state-values.md
+│   ├── community-and-contributors
+│   │   ├── community.md
+│   │   ├── contributing.md
+│   │   ├── contributors.md
+│   │   └── index.md
+│   ├── dashboards
+│   │   ├── dune-analytics
+│   │   │   ├── annual-reviews
+│   │   │   │   ├── index.md
+│   │   │   │   └── polkadot-dashboards-2024-year-in-review.md
+│   │   │   ├── dunesql-cheatsheet.md
+│   │   │   ├── index.md
+│   │   │   ├── onboarding-status-and-key-dashboards.md
+│   │   │   ├── parachain-dashboards
+│   │   │   │   ├── acala-dashboards.md
+│   │   │   │   ├── assethub-dashboards.md
+│   │   │   │   ├── astar-dashboards.md
+│   │   │   │   ├── bifrost-dashboards.md
+│   │   │   │   ├── bridgehub-dashboards.md
+│   │   │   │   ├── centrifuge-dashboards.md
+│   │   │   │   ├── collectives-dashboards.md
+│   │   │   │   ├── coretime-dashboards.md
+│   │   │   │   ├── energywebx-dashboards.md
+│   │   │   │   ├── frequency-dashboards.md
+│   │   │   │   ├── hydration-dashboards.md
+│   │   │   │   ├── index.md
+│   │   │   │   ├── interlay-dashboards.md
+│   │   │   │   ├── invarch-dashboards.md
+│   │   │   │   ├── litentry-dashboards.md
+│   │   │   │   ├── manta-dashboards.md
+│   │   │   │   ├── moonbeam-dashboards.md
+│   │   │   │   ├── neuroweb-dashboards.md
+│   │   │   │   ├── nodle-dashboards.md
+│   │   │   │   ├── pendulum-dashboards.md
+│   │   │   │   ├── people-dashboards.md
+│   │   │   │   ├── phala-dashboards.md
+│   │   │   │   ├── polimec-dashboards.md
+│   │   │   │   ├── polkadex-dashboards.md
+│   │   │   │   ├── snowbridge-dashboards.md
+│   │   │   │   ├── stellaswap-dashboards.md
+│   │   │   │   └── unique-dashboards.md
+│   │   │   ├── polkadot-dashboards
+│   │   │   │   ├── index.md
+│   │   │   │   ├── legacy
+│   │   │   │   │   ├── polkadot-dot-ordinals.md
+│   │   │   │   │   ├── polkadot-governance-dashboard.md
+│   │   │   │   │   ├── polkadot-opengov-referenda-home.md
+│   │   │   │   │   ├── polkadot-opengov-referendum-voting-analysis.md
+│   │   │   │   │   ├── polkadot-staking-dashboard-nomination-pool.md
+│   │   │   │   │   ├── polkadot-staking-dashboard-nominators.md
+│   │   │   │   │   ├── polkadot-staking-dashboard-pool-member.md
+│   │   │   │   │   ├── polkadot-staking-dashboard-validators.md
+│   │   │   │   │   └── polkadot-staking-dashboard.md
+│   │   │   │   ├── polkadot-dashboards-governance.md
+│   │   │   │   ├── polkadot-dashboards-network.md
+│   │   │   │   ├── polkadot-dashboards-overview.md
+│   │   │   │   └── polkadot-dashboards-staking.md
+│   │   │   ├── polkadot-ecosystem-overview.md
+│   │   │   └── project-dashboards.md
+│   │   ├── index.md
+│   │   ├── parity-data-dashboards.md
+│   │   └── staking-dashboard.md
+│   ├── funding
+│   │   ├── decentralized-futures.md
+│   │   ├── ecosystem-funds.md
+│   │   ├── grants.md
+│   │   ├── index.md
+│   │   ├── learn-polkadot-opengov-treasury.md
+│   │   └── pcf.md
+│   ├── getting-started.md
+│   ├── index.md
+│   ├── metadata.md
+│   ├── programs
+│   │   ├── alpha-program.md
+│   │   ├── ambassadors.md
+│   │   ├── bug-bounty.md
+│   │   ├── decentralized-voices.md
+│   │   ├── dev-heroes.md
+│   │   ├── index.md
+│   │   └── thousand-contributors.md
+│   └── wallets
+│       ├── index.md
+│       ├── ledger.md
+│       ├── polkadot-vault.md
+│       └── wallets-and-extensions.md
+├── index.md
+├── javascript
+│   ├── MessageBox.js
+│   ├── announcement-bar.js
+│   └── init_kapa_widget.js
+├── kusama
+│   ├── index.md
+│   ├── kusama-adverserial-cheatsheet.md
+│   ├── kusama-bug-bounty.md
+│   ├── kusama-coc.md
+│   ├── kusama-inflation.md
+│   ├── kusama-social-recovery.md
+│   ├── kusama-society.md
+│   └── kusama-timeline.md
+├── learn
+│   ├── advanced
+│   │   ├── architecture
+│   │   │   ├── bridges
+│   │   │   │   ├── index.md
+│   │   │   │   ├── learn-DOT-KSM-bridge.md
+│   │   │   │   ├── learn-hyperbridge.md
+│   │   │   │   └── learn-snowbridge.md
+│   │   │   ├── index.md
+│   │   │   ├── learn-async-backing.md
+│   │   │   ├── learn-consensus.md
+│   │   │   ├── learn-elastic-scaling.md
+│   │   │   ├── learn-parachains-protocol.md
+│   │   │   ├── parachains
+│   │   │   │   ├── index.md
+│   │   │   │   ├── learn-parachains-faq.md
+│   │   │   │   ├── learn-parachains.md
+│   │   │   │   └── learn-system-chains.md
+│   │   │   ├── scheduling
+│   │   │   │   ├── index.md
+│   │   │   │   ├── learn-guides-coretime-marketplaces.md
+│   │   │   │   └── learn-guides-coretime-parachains.md
+│   │   │   └── xcm
+│   │   │       ├── index.md
+│   │   │       ├── learn-xcm-instructions.md
+│   │   │       ├── learn-xcm-pallet.md
+│   │   │       ├── learn-xcm-transport.md
+│   │   │       ├── learn-xcm-usecases.md
+│   │   │       ├── learn-xcm.md
+│   │   │       └── learn-xcvm.md
+│   │   ├── index.md
+│   │   ├── learn-account-advanced.md
+│   │   ├── learn-cryptography.md
+│   │   ├── learn-nft-pallets.md
+│   │   ├── learn-phragmen.md
+│   │   ├── learn-staking-advanced.md
+│   │   └── polkadot-js
+│   │       ├── index.md
+│   │       ├── learn-polkadotjs.md
+│   │       ├── polkadot-js-guides
+│   │       │   ├── account-guides
+│   │       │   │   ├── index.md
+│   │       │   │   ├── learn-guides-accounts-multisig.md
+│   │       │   │   ├── learn-guides-accounts-proxy-pure.md
+│   │       │   │   ├── learn-guides-accounts-proxy.md
+│   │       │   │   └── learn-guides-accounts.md
+│   │       │   ├── asset-hub-guides
+│   │       │   │   ├── index.md
+│   │       │   │   ├── learn-guides-asset-conversion.md
+│   │       │   │   ├── learn-guides-assets-create.md
+│   │       │   │   └── learn-guides-assets.md
+│   │       │   ├── bridge-hub-guides
+│   │       │   │   ├── index.md
+│   │       │   │   ├── learn-guides-DOT-KSM-bridge.md
+│   │       │   │   └── learn-guides-bridges.md
+│   │       │   ├── index.md
+│   │       │   ├── learn-guides-bounties.md
+│   │       │   ├── learn-guides-claims.md
+│   │       │   ├── learn-guides-coretime-swap.md
+│   │       │   ├── learn-guides-identity.md
+│   │       │   ├── learn-guides-ledger.md
+│   │       │   ├── learn-guides-polkadot-opengov.md
+│   │       │   ├── learn-guides-test-opengov-proposals.md
+│   │       │   ├── learn-guides-transfers.md
+│   │       │   ├── learn-guides-treasury.md
+│   │       │   ├── learn-guides-vault.md
+│   │       │   └── staking-guides
+│   │       │       ├── index.md
+│   │       │       ├── learn-guides-nominator.md
+│   │       │       ├── learn-guides-staking-pools.md
+│   │       │       └── learn-guides-staking.md
+│   │       ├── polkadotjs-ui.md
+│   │       └── polkadotjs.md
+│   ├── archive
+│   │   ├── index.md
+│   │   ├── learn-archive.md
+│   │   ├── learn-auction.md
+│   │   ├── learn-controller.md
+│   │   ├── learn-crowdloans.md
+│   │   ├── learn-governance.md
+│   │   ├── learn-launch.md
+│   │   ├── learn-redenomination.md
+│   │   ├── learn-treasury.md
+│   │   └── thousand-validators.md
+│   ├── basics
+│   │   ├── accounts
+│   │   │   ├── index.md
+│   │   │   ├── learn-account-abstraction.md
+│   │   │   ├── learn-account-balances.md
+│   │   │   ├── learn-account-multisig.md
+│   │   │   ├── learn-identity.md
+│   │   │   ├── learn-proxies-pure.md
+│   │   │   └── learn-proxies.md
+│   │   ├── components
+│   │   │   ├── index.md
+│   │   │   ├── learn-polkadot-host.md
+│   │   │   ├── learn-runtime-upgrades.md
+│   │   │   └── learn-wasm.md
+│   │   ├── index.md
+│   │   ├── learn-offenses.md
+│   │   ├── learn-transactions.md
+│   │   ├── network-participants
+│   │   │   ├── index.md
+│   │   │   ├── learn-collator.md
+│   │   │   ├── learn-nominator.md
+│   │   │   └── learn-validator.md
+│   │   ├── polkadot-opengov
+│   │   │   ├── index.md
+│   │   │   ├── learn-polkadot-opengov-origins.md
+│   │   │   ├── learn-polkadot-opengov.md
+│   │   │   └── learn-polkadot-technical-fellowship.md
+│   │   ├── staking
+│   │   │   ├── index.md
+│   │   │   ├── learn-nomination-pools.md
+│   │   │   └── learn-staking.md
+│   │   └── token-and-assets
+│   │       ├── asset-hub
+│   │       │   ├── index.md
+│   │       │   └── learn-asset-conversion-assethub.md
+│   │       ├── learn-DOT.md
+│   │       ├── learn-inflation.md
+│   │       ├── learn-nft.md
+│   │       └── learn-teleport.md
+│   ├── comparisons
+│   │   ├── index.md
+│   │   ├── learn-comparison-ethereum.md
+│   │   ├── learn-comparisons-avalanche.md
+│   │   ├── learn-comparisons-cosmos.md
+│   │   └── learn-comparisons-kusama.md
+│   ├── future-implementations
+│   │   ├── index.md
+│   │   ├── jam
+│   │   │   ├── index.md
+│   │   │   ├── learn-jam-chain.md
+│   │   │   └── learn-jam-faq.md
+│   │   ├── learn-safrole.md
+│   │   └── learn-spree.md
+│   ├── general
+│   │   ├── faq.md
+│   │   ├── glossary.md
+│   │   ├── index.md
+│   │   ├── polkadot-vision
+│   │   │   ├── polkadot-direction.md
+│   │   │   └── polkadot-v1.md
+│   │   ├── start-building.md
+│   │   ├── stay-safe
+│   │   │   ├── how-to-dyor.md
+│   │   │   ├── scams.md
+│   │   │   └── transaction-attacks.md
+│   │   └── web3-and-polkadot.md
+│   ├── index.md
+│   ├── learn-implementations.md
+│   ├── learn-video-tutorials.md
+│   └── xcm
+│       ├── executor_config
+│       │   ├── config.md
+│       │   └── images
+│       │       └── executor.png
+│       ├── fundamentals
+│       │   ├── images
+│       │   │   ├── MultiLocation_Example.png
+│       │   │   └── MultiLocation_simple_example.png
+│       │   ├── multiasset.md
+│       │   ├── multilocation
+│       │   │   ├── example.md
+│       │   │   ├── junction.md
+│       │   │   └── summary.md
+│       │   ├── summary.md
+│       │   ├── weight_and_fees.md
+│       │   └── xcvm.md
+│       ├── journey
+│       │   ├── channels-and-bridges.md
+│       │   ├── expects.md
+│       │   ├── fees.md
+│       │   ├── holding-modifiers.md
+│       │   ├── locks
+│       │   │   ├── images
+│       │   │   │   ├── Example1.png
+│       │   │   │   └── Example2.png
+│       │   │   └── locks.md
+│       │   ├── origins.md
+│       │   ├── queries.md
+│       │   ├── register-modifiers.md
+│       │   ├── summary.md
+│       │   ├── transact.md
+│       │   ├── transfers
+│       │   │   ├── images
+│       │   │   │   ├── asset_teleportation.png
+│       │   │   │   ├── reserve_asset_transfer.png
+│       │   │   │   └── source_is_reserve.png
+│       │   │   ├── reserve.md
+│       │   │   ├── summary.md
+│       │   │   └── teleports.md
+│       │   ├── trap-and-claim.md
+│       │   └── version.md
+│       ├── learn-xcm-docs-intro.md
+│       ├── overview
+│       │   ├── architecture.md
+│       │   ├── format.md
+│       │   ├── intro.md
+│       │   ├── summary.md
+│       │   └── xcvm.md
+│       ├── quickstart
+│       │   ├── first-look.md
+│       │   ├── summary.md
+│       │   └── xcm-simulator.md
+│       ├── reference
+│       │   ├── glossary.md
+│       │   └── xcvm-registers.md
+│       └── testing.md
+├── maintain
+│   ├── archive
+│   │   ├── maintain-archive.md
+│   │   ├── maintain-guides-democracy.md
+│   │   ├── maintain-guides-how-to-join-council.md
+│   │   └── maintain-guides-how-to-vote-councillor.md
+│   ├── collator-guides
+│   │   └── maintain-guides-async-backing.md
+│   ├── kusama
+│   │   ├── maintain-guides-how-to-validate-kusama.md
+│   │   └── maintain-guides-society-kusama.md
+│   ├── maintain-index.md
+│   ├── maintain-polkadot-parameters.md
+│   ├── nodes-dapps
+│   │   ├── maintain-bootnode.md
+│   │   ├── maintain-endpoints.md
+│   │   ├── maintain-errors.md
+│   │   ├── maintain-networks.md
+│   │   ├── maintain-rpc.md
+│   │   ├── maintain-sync.md
+│   │   └── maintain-wss.md
+│   └── validator-guides
+│       ├── maintain-guides-how-to-chill.md
+│       ├── maintain-guides-how-to-monitor-your-node.md
+│       ├── maintain-guides-how-to-stop-validating.md
+│       ├── maintain-guides-how-to-systemd.md
+│       ├── maintain-guides-how-to-upgrade.md
+│       ├── maintain-guides-how-to-validate-polkadot.md
+│       ├── maintain-guides-secure-validator.md
+│       ├── maintain-guides-validator-community.md
+│       └── maintain-guides-validator-payout.md
+└── stylesheets
+    ├── MessageBox.css
+    ├── announcement-bar.css
+    └── extra.css

@@ -30,4 +30,4 @@ python -m mkdocs serve
 
 ## Migration
 
-For documentation on migration, see: [MIGRATION.MD](./MIGRATION.MD).
+For documentation on migration, see: [MIGRATION.MD](MIGRATION.MD).

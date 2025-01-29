@@ -1,9 +1,0 @@
-title: Advanced
-nav:
-  - architecture
-  - 'Accounts': learn-account-advanced.md
-  - 'Advanced Staking Concepts': learn-staking-advanced.md
-  - 'NFT Pallets': learn-nft-pallets.md
-  - 'Cryptography': learn-cryptography.md
-  - 'NPoS Election Algorithms': learn-phragmen.md
-  - polkadot-js

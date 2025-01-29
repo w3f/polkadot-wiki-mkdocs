@@ -1,0 +1,7 @@
+nav:
+  - 'Explore': index.md
+  - 'Getting Started': getting-started.md
+  - ...
+  - 'Metadata Explorer': https://paritytech.github.io/subxt-explorer/#/
+  - 'Chain State': chain-state-values.md
+  - 'Open Source Stack': build-open-source.md

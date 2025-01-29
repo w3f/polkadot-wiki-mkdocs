@@ -1,9 +1,0 @@
-title: Accounts
-nav:
-  - 'Accounts': index.md
-  - 'Account Balances': learn-account-balances.md
-  - 'Account Abstraction': learn-account-abstraction.md
-  - 'Account Identity': learn-identity.md
-  - 'Multi-Signature Accounts': learn-account-multisig.md
-  - 'Proxy Accounts': learn-proxies.md
-  - 'Pure Proxy Accounts': learn-proxies-pure.md
