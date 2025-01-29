@@ -1,7 +1,92 @@
 nav:
-  - 'Explore': index.md
-  - 'Getting Started': getting-started.md
-  - ...
-  - 'Metadata Explorer': https://paritytech.github.io/subxt-explorer/#/
-  - 'Chain State': chain-state-values.md
-  - 'Open Source Stack': build-open-source.md
+  - Explore:
+      - Getting Started: getting-started.md
+      - General:
+        - Web3 and Polkadot: web3-and-polkadot.md
+        - Polkadot Vision:
+            - Polkadot V1: polkadot-v1.md
+            - Polkadot Direction: polkadot-direction
+        - Stay Safe:
+            - How to DYOR: how-to-dyor.md
+            - Scams: scams.md
+            - Transaction Attacks: transaction-attacks.md
+        - Web3 Foundation Research: "https://research.web3.foundation/"
+        - Start Building: start-building.md
+        - FAQ: faq.md
+        - Glossary: "glossary"
+      - Wallets:
+          - Polkadot Ecosystem Wallets: https://polkadot.network/ecosystem/wallets/
+          - Wallets and Extensions: wallets-and-extensions.md
+          - Ledger: ledger.md
+          - Polkadot Vault: polkadot-vault.md
+      - Apps:
+          - Polkadot Ecosystem Apps: https://polkadot.network/ecosystem/dapps/
+          - DotAppStore: https://dotappstore.com/
+          - Staking Apps: staking-apps.md
+          - Governance Apps: governance-apps.md
+          - Multisig Apps: multisig-apps.md
+          - NFT Projects: learn/learn-nft-projects.md
+          - Parachains Apps: parachains-apps.md
+      - Dashboards:
+          - Dune Analytics:
+              - Polkadot Ecosystem Overview: dune-analytics/polkadot-ecosystem-overview.md
+              - Onboarding Status and Key Dashboards: dune-analytics/onboarding-status-and-key-dashboards.md
+              - Annual Reviews:
+                  - Polkadot 2024 Review: dune-analytics/polkadot-dashboards/polkadot-2024-review.md
+              - Polkadot Dashboards:
+                  - Overview: dune-analytics/polkadot-dashboards/polkadot-dashboards-overview.md
+                  - Governance: dune-analytics/polkadot-dashboards/polkadot-dashboards-governance.md
+                  - Staking: dune-analytics/polkadot-dashboards/polkadot-dashboards-staking.md
+                  - Network: dune-analytics/polkadot-dashboards/polkadot-dashboards-network.md
+              - Parachain Dashboards:
+                  - Acala: dune-analytics/parachain-dashboards/acala-dashboards.md
+                  - AssetHub: dune-analytics/parachain-dashboards/assethub-dashboards.md
+                  - Astar: dune-analytics/parachain-dashboards/astar-dashboards.md
+                  - Bifrost: dune-analytics/parachain-dashboards/bifrost-dashboards.md
+                  - BridgeHub: dune-analytics/parachain-dashboards/bridgehub-dashboards.md
+                  - Centrifuge: dune-analytics/parachain-dashboards/centrifuge-dashboards.md
+                  - Collectives: dune-analytics/parachain-dashboards/collectives-dashboards.md
+                  - Coretime: dune-analytics/parachain-dashboards/coretime-dashboards.md
+                  - EnergyWebX: dune-analytics/parachain-dashboards/energywebx-dashboards.md
+                  - Frequency: dune-analytics/parachain-dashboards/frequency-dashboards.md
+                  - Hydration: dune-analytics/parachain-dashboards/hydration-dashboards.md
+                  - Interlay: dune-analytics/parachain-dashboards/interlay-dashboards.md
+                  - InvArch: dune-analytics/parachain-dashboards/invarch-dashboards.md
+                  - Litentry: dune-analytics/parachain-dashboards/litentry-dashboards.md
+                  - Manta: dune-analytics/parachain-dashboards/manta-dashboards.md
+                  - Moonbeam: dune-analytics/parachain-dashboards/moonbeam-dashboards.md
+                  - Neuroweb: dune-analytics/parachain-dashboards/neuroweb-dashboards.md
+                  - Nodle: dune-analytics/parachain-dashboards/nodle-dashboards.md
+                  - People: dune-analytics/parachain-dashboards/people-dashboards.md
+                  - Pendulum: dune-analytics/parachain-dashboards/pendulum-dashboards.md
+                  - Phala: dune-analytics/parachain-dashboards/phala-dashboards.md
+                  - Polkadex: dune-analytics/parachain-dashboards/polkadex-dashboards.md
+                  - Polimec: dune-analytics/parachain-dashboards/polimec-dashboards.md
+                  - Snowbridge: dune-analytics/parachain-dashboards/snowbridge-dashboards.md
+                  - Stellaswap: dune-analytics/parachain-dashboards/stellaswap-dashboards.md
+                  - Unique: dune-analytics/parachain-dashboards/unique-dashboards.md
+              - Project Dashboards: dune-analytics/project-dashboards.md
+              - DuneSQL Cheatsheet: dune-analytics/dunesql-cheatsheet.md
+          - Parity Data Dashboards: parity-data-dashboards.md
+          - Staking Dashboard: staking-dashboard.md
+          - Fellowship Dashboard: https://polkadot-fellows.xyz
+      - Community & Contributors:
+          - Community: community.md
+          - Contributing: contributing.md
+          - Contributors: contributors.md
+      - Funding:
+          - Grants: grants.md
+          - Decentralized Futures: decentralized-futures.md
+          - Polkadot OpenGov Treasury: learn/learn-polkadot-opengov-treasury.md
+          - Polkadot Community Foundation: polkadot-community-foundation.md
+          - Ecosystem Funds: ecosystem-funds.md
+      - Programs:
+          - Decentralized Voices: decentralized-voices.md
+          - Bug Bounty: bug-bounty.md
+          - Ambassadors: ambassadors.md
+          - Alpha Program: alpha-program.md
+          - Decentralized Nodes: https://nodes.web3.foundation/
+          - Thousand Contributors: doc-thousand-contributors.md
+          - Dev Heroes: dev-heroes.md
+      - Metadata: metadata.md
+      - Chain State Values: chain-state-values.md

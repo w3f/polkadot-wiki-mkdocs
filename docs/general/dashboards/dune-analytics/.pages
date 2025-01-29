@@ -1,10 +1,3 @@
 title: Dune Analytics
 nav:
-  - 'Dune Analytics': index.md
-  - 'Polkadot Ecosystem Overview': polkadot-ecosystem-overview.md
-  - 'Onboarding Status & Key Dashboards': onboarding-status-and-key-dashboards.md
-  - 'Annual Reviews': annual-reviews
-  - 'Polkadot Dashboards': polkadot-dashboards
-  - 'Parachain Dashboards': parachain-dashboards
-  - 'Project Dashboards': project-dashboards.md
-  - 'DuneSQL Cheatsheet': dunesql-cheatsheet.md
+  - ...
