@@ -168,7 +168,7 @@ nav:
       - Funding:
           - Grants: general/grants.md
           - Decentralized Futures: general/decentralized-futures.md
-          - Polkadot OpenGov Treasury: ../learn/learn-polkadot-opengov-treasury.md
+          - Polkadot OpenGov Treasury: learn/learn-polkadot-opengov-treasury.md
           - Polkadot Community Foundation: general/pcf.md
           - Ecosystem Funds: general/ecosystem-funds.md
       - Programs:
@@ -177,7 +177,7 @@ nav:
           - Ambassadors: general/ambassadors.md
           - Alpha Program: general/alpha-program.md
           - Decentralized Nodes: https://nodes.web3.foundation/
-          - Thousand Contributors: general/doc-thousand-contributors.md
+          - Thousand Contributors: general/thousand-contributors.md
           - Dev Heroes: general/dev-heroes.md
       - Metadata: general/metadata.md
       - Chain State Values: general/chain-state-values.md
@@ -253,8 +253,8 @@ nav:
           - Cryptography: learn/learn-cryptography.md
           - Phragmen: learn/learn-phragmen.md
           - Polkadot-JS:
-              - PolkadotJS: learn/general/polkadotjs.md
-              - PolkadotJS UI: learn/general/polkadotjs-ui.md
+              - PolkadotJS: general/polkadotjs.md
+              - PolkadotJS UI: general/polkadotjs-ui.md
               - Polkadot-JS Guides:
                   - Account Guides:
                       - Accounts Multisig: learn/learn-guides-accounts-multisig.md
@@ -346,18 +346,18 @@ nav:
           - How to Monitor Your Node: maintain/maintain-guides-how-to-monitor-your-node.md
           - How to Chill: maintain/maintain-guides-how-to-chill.md
           - How to Stop Validating: maintain/maintain-guides-how-to-stop-validating.md
-          - Community Validator Guide: maintain/doc-maintain-guides-validator-community.md
+          - Community Validator Guide: maintain/maintain-guides-validator-community.md
       - Archive:
           - Democracy Guide: maintain/archive/maintain-guides-democracy.md
           - How to Join Council: maintain/archive/maintain-guides-how-to-join-council.md
           - How to Vote Councillor: maintain/archive/maintain-guides-how-to-vote-councillor
   - Kusama:
-      - Getting Started: general/kusama/kusama-getting-started.md
-      - Timeline: general/kusama/kusama-timeline.md
-      - Code of Conduct: general/kusama/kusama-coc.md
-      - Bug Bounty: general/kusama/kusama-bug-bounty.md
-      - Social Recovery: general/kusama/kusama-social-recovery.md
-      - Adversarial Cheatsheet: general/kusama/kusama-adversarial-cheatsheet.md
+      - Getting Started: kusama/kusama-getting-started.md
+      - Timeline: kusama/kusama-timeline.md
+      - Code of Conduct: kusama/kusama-coc.md
+      - Bug Bounty: kusama/kusama-bug-bounty.md
+      - Social Recovery: kusama/kusama-social-recovery.md
+      - Adversarial Cheatsheet: kusama/kusama-adverserial-cheatsheet.md
       - Society Guide: maintain/kusama/maintain-guides-society-kusama.md
       - How to Validate Kusama: maintain/kusama/maintain-guides-how-to-validate-kusama.md
       - Kusama Inflation: learn/learn-kusama-inflation.md    
