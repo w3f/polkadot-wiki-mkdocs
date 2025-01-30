@@ -22,8 +22,8 @@ pip install -r requirements.txt
 
 3. Once installed, run the serve command:
 ```sh
-# If you're in a virtual env
-mkdocs serve
+# If you're in a virtual env (set to false if you're not editing RPC commands, otherwise it will take time to load)
+ENABLE_RPC=false mkdocs serve
 # If you're not in a virtual env and this the above doesn't work
 python -m mkdocs serve
 ```
