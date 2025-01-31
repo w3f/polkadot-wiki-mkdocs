@@ -12,7 +12,7 @@ parachains and allowing all connected tasks to **interoperate** by using
 [XCM](../learn/learn-xcm.md).
 
 With the [Polkadot SDK](https://github.com/paritytech/polkadot-sdk) and
-[Agile Coretime](../build/cor), the time it takes to develop and launch a new
+[Agile Coretime](../learn/learn-agile-coretime.md), the time it takes to develop and launch a new
 chain has dropped significantly. Depending on your goals, it may only take weeks or even days.
 
 This starters guide will walk you through the steps you can take today to get started building your
@@ -36,7 +36,7 @@ development to user-facing applications:
 !!!tip "Keep reading to find out more, or explore each respective area"
     Keep in mind that these areas are merely suggestive, and there are many ways to utilize Polkadot,
     Substrate, and their various developmental components. For more inspiration, look at the
-    [open source projects](build-open-source.md) featured here in the wiki!
+    [open source projects](./build-open-source.md) featured here in the wiki!
 
 ## Development Ecosystem Overview
 
@@ -99,13 +99,13 @@ developmental component can do for you within the Polkadot ecosystem.
 Before diving into any one of these tracks, it is encouraged to read about Polkadot and its networks
 in order to gain context about the application you could make.
 
-[Take a look at the various development network options here.](build-network-overview.md)
+[Take a look at the various development network options here.](./build-network-overview.md)
 
 ## Building Parachains
 
 Polkadot is canonically referred to as the relay chain. It is also considered a _layer zero_
 protocol, as it enables the interoperability and shared security of multiple
-[parachains](../learn/learn-parachains.md), which are _layer one_ protocols. Parachains currently
+[parachains](learn-parachains.md), which are _layer one_ protocols. Parachains currently
 connect to a relay chain using the [Parachains Protocol](../learn/learn-parachains-protocol.md).
 More elaborate (or simpler) tasks could be constructed in the future.
 
@@ -272,7 +272,7 @@ on-chain.
 
 A Polkadot-native choice for smart contracts is [ink!](https://use.ink/). Other parachains that
 offer EVM-based contracts written in Solidity alongside ink!
-[are also available](build-smart-contracts#parachains).
+[are also available](./build-smart-contracts#parachains).
 
 Because smart contracts exist on a single chain at a time, they can have smooth interoperability
 with other smart contracts on the same chain. However, they will always be constrained and limited
