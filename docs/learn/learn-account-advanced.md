@@ -163,12 +163,8 @@ and Substrate that are returned based on your public key should match the ones y
 
 ![20](../assets/accounts/pubkey-2.png)
 
-:::note
-
-You may have to scroll down to the bottom of the menu to find the Substrate address based on the
-menu listings. You will notice that many networks that also use the same Substrate address.
-
-:::
+!!!note
+    You may have to scroll down to the bottom of the menu to find the Substrate address based on the menu listings. You will notice that many networks that also use the same Substrate address.
 
 You can verify your public key verification by recalling that Polkadot addresses start with a '1',
 whereas Substrate addresses generally start with a '5' (Kusama addresses start with a capital
@@ -189,16 +185,8 @@ private key, which affects the ability to use the same mnemonic phrase in multip
 that use different measures will arrive at a different set of addresses from the exact mnemonic
 phrase.
 
-:::danger Not all wallets use the same algorithm to convert from mnemonic phrase to private key
-
-[Subkey](https://docs.substrate.io/reference/command-line-tools/subkey/) and Polkadot-JS based
-wallets use the BIP39 dictionary for mnemonic generation, but use the entropy byte array to generate
-the private key, while full BIP39 wallets (like Ledger) use 2048 rounds of PBKDF2 on the mnemonic.
-The same mnemonic may generate different private keys on other wallets due to the various
-cryptographic algorithms used. See
-[Substrate BIP39 Repo](https://github.com/paritytech/substrate-bip39) for more information.
-
-:::
+!!!danger "Not all wallets use the same algorithm to convert from mnemonic phrase to private key"
+    [Subkey](https://docs.substrate.io/reference/command-line-tools/subkey/) and Polkadot-JS based wallets use the BIP39 dictionary for mnemonic generation, but use the entropy byte array to generate the private key, while full BIP39 wallets (like Ledger) use 2048 rounds of PBKDF2 on the mnemonic. The same mnemonic may generate different private keys on other wallets due to the various cryptographic algorithms used. See [Substrate BIP39 Repo](https://github.com/paritytech/substrate-bip39) for more information.
 
 Portability depends on several factors:
 
@@ -401,13 +389,8 @@ words, the slot frees up again, making it available for anyone to claim. It is p
 an index and permanently assign it to an address. **This action consumes a deposit, and the index
 will be permanently bound to the address with no option to release it.**
 
-:::note Lookup Account Index on-chain
-
-When someone shares their account index, their actual account address on-chain can be looked up
-through Polkadot-JS Apps UI > Developer > Chain state > Storage and selecting state query on indices
-pallet for the account corresponding to the index.
-
-:::
+!!!note "Lookup Account Index on-chain"
+    When someone shares their account index, their actual account address on-chain can be looked up through Polkadot-JS Apps UI > Developer > Chain state > Storage and selecting state query on indices pallet for the account corresponding to the index.
 
 Here is an example snapshot that shows how to lookup the corresponding account address of the
 account index 1988 on

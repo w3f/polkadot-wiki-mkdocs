@@ -152,13 +152,8 @@ through the
 bridges that connect Polkadot with other ecosystems. Here below is a main technical comparison
 between the two.
 
-:::danger Tokens sent through different bridges are different
-
-Unless specific logic is implemented, WETH sent through Snowbridge cannot be sent back using
-Hyperbridge, and _vice versa_. **Sending tokens using different bridges might lead to loss of
-funds.**
-
-:::
+!!!danger "Tokens sent through different bridges are different"
+    Unless specific logic is implemented, WETH sent through Snowbridge cannot be sent back using Hyperbridge, and _vice versa_. **Sending tokens using different bridges might lead to loss of funds.**
 
 |                                                                                                                       Snowbridge                                                                                                                       |                                                                                                          Hyperbridge                                                                                                          |
 | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |

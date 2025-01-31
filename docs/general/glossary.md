@@ -256,11 +256,8 @@ The collection of Substrate-provided pallets (Substrate Runtime Modules).
 The origin of a blockchain, also known as block 0. It can also be used to reference the initial
 state of the blockchain at origination.
 
-:::note Example
-
-In the _genesis_ state Alice, Bob, and Charlie had 30 tokens each.
-
-:::
+!!!note "Example"
+    In the _genesis_ state Alice, Bob, and Charlie had 30 tokens each.
 
 ## Governance
 

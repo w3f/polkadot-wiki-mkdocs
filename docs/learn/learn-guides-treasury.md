@@ -135,12 +135,8 @@ Using the Utility pallet, one can batch multiple `treasury.spend` calls together
 calls can have its own `validFrom` block height, which allows for scenarios such as the above to be
 possible.
 
-:::tip Multistage payout proposal example
-
-For reference on how to create a multistage payout proposal, please check
-[Referendum 382](https://kusama.subsquare.io/referenda/382?tab=call) on Kusama.
-
-:::
+!!!tip "Multistage payout proposal example"
+    For reference on how to create a multistage payout proposal, please check [Referendum 382](https://kusama.subsquare.io/referenda/382?tab=call) on Kusama.
 
 ### Using `validFrom` for a Milestone-Based Proposal
 
