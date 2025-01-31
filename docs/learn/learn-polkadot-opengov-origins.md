@@ -10,12 +10,8 @@ slug: ../learn-polkadot-opengov-origins
 import Tracks from "./../../components/Referenda-Tracks"; import Chart from
 "./../../components/Chart"; import Tabs from "@theme/Tabs"; import TabItem from "@theme/TabItem";
 
-:::info Learn more about Polkadot OpenGov
-
-For background information about Polkadot OpenGov, please refer to this
-[dedicated Wiki document](../learn/learn-polkadot-opengov.md).
-
-:::
+!!!info "Learn more about Polkadot OpenGov"
+    For background information about Polkadot OpenGov, please refer to this [dedicated Wiki document](../learn/learn-polkadot-opengov.md).
 
 ## Polkadot OpenGov Terminology and Parameters
 
@@ -82,14 +78,10 @@ than the min enactment period.
 </TabItem>
 </Tabs>
 
-:::info
-
-For every referendum in each of these tracks, the Polkadot-JS UI displays interactive graphs of the
-support and approval.
+!!!info
+    For every referendum in each of these tracks, the Polkadot-JS UI displays interactive graphs of the support and approval.
 
 ![UI Support and Approval](./../assets/governance/support-approval-polkadot-js-ui.png)
-
-:::
 
 ### Root
 

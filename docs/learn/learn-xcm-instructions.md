@@ -9,12 +9,8 @@ slug: ../learn-xcm-instructions
 
 import Tabs from "@theme/Tabs"; import TabItem from "@theme/TabItem";
 
-:::info XCM Documentation
-
-For a more practical approach to utilizing XCM, refer to the [XCM Docs](./learn/xcm). Please keep in
-mind that XCM is under active development.
-
-:::
+!!!info "XCM Documentation"
+    For a more practical approach to utilizing XCM, refer to the [XCM Docs](./learn/xcm). Please keep in mind that XCM is under active development.
 
 This page can also be viewed at the [`xcm-format`](https://github.com/paritytech/xcm-format)
 repository, where each instruction and register is explained in-depth.

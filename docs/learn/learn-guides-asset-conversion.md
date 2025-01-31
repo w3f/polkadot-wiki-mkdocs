@@ -13,13 +13,8 @@ import MessageBox from "../../components/MessageBox"; import "../../components/M
 [Polkadot Support Team](https://support.polkadot.network/support/home). For more user-friendly tools
 see the [wallets](./wallets-index), [apps](./apps-index) and [dashboard](./dashboards-index) pages." />
 
-:::info Wallet and UI Developers
-
-The [DOT ACP UI](https://github.com/MVPWorkshop/dot-acp-ui) project is part of Polkadot initiative
-for building front-end and UI for Asset Conversion Pallet on Polkadot's Asset Hub. Currently, the
-app is deployed on Westend and Kusama [here](https://app.dotacp.mvpworkshop.co/swap).
-
-:::
+!!!info "Wallet and UI Developers"
+    The [DOT ACP UI](https://github.com/MVPWorkshop/dot-acp-ui) project is part of Polkadot initiative for building front-end and UI for Asset Conversion Pallet on Polkadot's Asset Hub. Currently, the app is deployed on Westend and Kusama [here](https://app.dotacp.mvpworkshop.co/swap).
 
 The tutorial below demonstrates the complete journey from creating a liquidity pool on Paseo test
 net and exploring all of the key functionalities of Asset Conversion pallet.

@@ -15,11 +15,8 @@ KSM is an inflationary token. Inflation is set to be 10% annually. Depending on 
 and the ideal staking rate (more about this below), part of the inflation is distributed to the
 stakers and part to the [treasury](./learn-polkadot-opengov-treasury.md).
 
-:::info
-
-The current KSM token supply can be seen [here](./../general/chain-state-values.md#total-issuance).
-
-:::
+!!!info
+    The current KSM token supply can be seen [here](./../general/chain-state-values.md#total-issuance).
 
 It is essential to understand that the primary objective of inflation is to incentivize network
 participants through

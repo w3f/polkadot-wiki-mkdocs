@@ -50,12 +50,8 @@ Proposals may consist of (but are not limited to):
 The [Council](learn-governance#council) governs the Treasury and how the funds are spent is up to
 their judgment.
 
-:::caution
-
-The Council does not approve or deny Treasury Proposals based on the available funds. Proposals are
-not approved just because there are funds ready to spend but are subject to a burn.
-
-:::
+!!!caution
+    The Council does not approve or deny Treasury Proposals based on the available funds. Proposals are not approved just because there are funds ready to spend but are subject to a burn.
 
 ## Funding the Treasury
 
@@ -85,12 +81,8 @@ There are two types of tips:
   finder's fee of 20% (same on Polkadot and Kusama) which is paid out from the total amount.
 - tipper-initiated: Tips that a Council member published, do not have a finder's fee or a bond.
 
-:::info
-
-For information about how to submit a tip from the Treasury you can read
-[this support article](https://support.polkadot.network/support/solutions/articles/65000181971).
-
-:::
+!!!info
+    For information about how to submit a tip from the Treasury you can read [this support article](https://support.polkadot.network/support/solutions/articles/65000181971).
 
 To better understand the process a tip goes through until it is paid out, let's consider the example
 below.

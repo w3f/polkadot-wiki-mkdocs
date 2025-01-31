@@ -90,12 +90,8 @@ Previously known as instantaneous coretime, the on-demand coretime refers to cor
 through bidding in near real-time for the validation of a single parachain block on one of the cores
 reserved specifically for on-demand orders.
 
-:::info Parathreads are renamed to on-demand parachains
-
-On-demand parachains (previously called parathreads) are parachains that buy on-demand coretime and
-use it to access the relay chain through the on-demand coretime pool.
-
-:::
+!!!info "Parathreads are renamed to on-demand parachains"
+    On-demand parachains (previously called parathreads) are parachains that buy on-demand coretime and use it to access the relay chain through the on-demand coretime pool.
 
 ### On-demand Coretime Pool
 
@@ -407,13 +403,8 @@ the relay chain side’s cores and how many cores a parachain uses.
 
 ### Implementation
 
-:::caution Unable to use multiple cores!
-
-The coretime chain does not prohibit ordering multiple cores and assigning them to the same
-parachain. However, elastic scaling is still in the works **so don't do this, you will not be able
-to use those cores.**
-
-:::
+!!!caution "Unable to use multiple cores!"
+    The coretime chain does not prohibit ordering multiple cores and assigning them to the same parachain. However, elastic scaling is still in the works **so don't do this, you will not be able to use those cores.**
 
 #### What do I need to do for my parachain to continue working in the switch to coretime?
 

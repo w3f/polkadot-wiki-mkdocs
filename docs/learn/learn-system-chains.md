@@ -32,14 +32,8 @@ System parachains always defer to on-chain governance to manage their upgrades a
 actions. That is, they do not have their own native tokens or governance systems separate from DOT
 KSM. In fact, there will likely be a system parachain specifically for network governance.
 
-:::note
-
-In the past, these were often called "Common Good Parachains", so you may come across articles and
-discussions using that term. As the network has evolved, that term has been confusing in many cases,
-so "System Parachains" is preferred now. A discussion on this evolution can be found in
-[this forum thread](https://forum.polkadot.network/t/polkadot-protocol-and-common-good-parachains/866).
-
-:::
+!!!note
+    In the past, these were often called "Common Good Parachains", so you may come across articles and discussions using that term. As the network has evolved, that term has been confusing in many cases, so "System Parachains" is preferred now. A discussion on this evolution can be found in [this forum thread](https://forum.polkadot.network/t/polkadot-protocol-and-common-good-parachains/866).
 
 ## Existing System Chains
 
@@ -149,12 +143,8 @@ Encointer was accepted as a system chain based on its offer of a Sybil defense m
 for digital democracy. This can also be adapted by other chains, which can use the unique identity
 system to prevent Sybil attacks and use PoP for token airdrops or faucets.
 
-:::tip
-
-To learn more about Encointer, check out the official
-[Encointer book](https://book.encointer.org/introduction.html).
-
-:::
+!!!tip
+    To learn more about Encointer, check out the official [Encointer book](https://book.encointer.org/introduction.html).
 
 </TabItem>
 </Tabs>

@@ -29,16 +29,10 @@ For additional background on the Asset Hub check out
 
 ## Creating Assets on the Asset Hub with Polkadot-JS
 
-:::info
-
-Before minting assets on the Asset Hub, we recommend that you try out this tutorial on Westend Asset
-Hub, which is a system parachain on Westend test network. The WND tokens (Westies) can be teleported
-from Westend to Westend Asset Hub, are available for free through a
-[faucet](https://faucet.polkadot.io/).
+!!!info
+    Before minting assets on the Asset Hub, we recommend that you try out this tutorial on Westend Asset Hub, which is a system parachain on Westend test network. The WND tokens (Westies) can be teleported from Westend to Westend Asset Hub, are available for free through a [faucet](https://faucet.polkadot.io/).
 
 **The images in the guides below are for Polkadot, but they also apply to Kusama.**
-
-:::
 
 To create an asset on the Asset Hub, you would need to
 [deposit some funds](../general/chain-state-values.md#asset-deposit). Before you create an asset on

@@ -9,12 +9,8 @@ slug: ../learn-comparisons-avalanche
 
 <!-- Add more infographics to this page -->
 
-:::info
-
-To keep the content on this page factually correct and up-to-date,
-[contributions](https://github.com/w3f/polkadot-wiki#contributing-to-documentation) are welcome.
-
-:::
+!!!info
+    To keep the content on this page factually correct and up-to-date, [contributions](https://github.com/w3f/polkadot-wiki#contributing-to-documentation) are welcome.
 
 Polkadot and Avalanche both have an architecture that allows for application-specific blockchains to
 be designed and connected to a primary network. In Polkadot, the primary network is the relay chain

@@ -71,21 +71,16 @@ propagating through the entire ending period, where a snapshot is taken at each 
 ending period to capture the winners for that given block. At the end of the period, one of the
 snapshots is randomly selected to determine the winner of the auction.
 
-:::info The parachain candidate with the highest bid at the ending time chosen by the Verifiable
-Random Function wins the slot auction.
-
-:::
+!!!info 
+    The parachain candidate with the highest bid at the ending time chosen by the Verifiable
+    Random Function wins the slot auction.
 
 A parachain auction lasts exactly one week from the starting period (1 day and 18 hours) to
 [ending period](../../general/chain-state-values.md#auction-ending-period) (candle auction phase)
 and finally 6 hours for determining the auction winner.
 
-:::info
-
-[Crowdloan contributions](./learn-crowdloans.md##supporting-a-crowdloan-campaign) cannot be made
-during these six hours when the winning block for the auction is being determined on-chain.
-
-:::
+!!!info
+    [Crowdloan contributions](./learn-crowdloans.md##supporting-a-crowdloan-campaign) cannot be made during these six hours when the winning block for the auction is being determined on-chain.
 
 More details on this are available in the [Network Implementation](#network-implementation) section.
 
@@ -98,32 +93,19 @@ or during the auction.
 
 - The ending period of auction 9 starts at [`block 9362014`](https://kusama.subscan.io/auction/9).
 
-  :::note The auction has a full duration equal to `block 9362014` + `72000`
-
-  Here, `block 72000` is the "ending period", which is divided into **3600 samples of 20 blocks**.
-  Figuratively, the candle is lit, and the candle phase lasts for 72,000 blocks.
-
-  :::
+  !!!note "The auction has a full duration equal to `block 9362014` + `72000`"
+      Here, `block 72000` is the "ending period", which is divided into **3600 samples of 20 blocks**. Figuratively, the candle is lit, and the candle phase lasts for 72,000 blocks.
 
 - The winning sample during the ending period had the `index 1078`.
 
-  :::note Sample 1078 is the winner
-
-  Sample 1078 refers to the winner as of `block 9362014 + 21560`, which equals
-  [`block 9383574`](https://kusama.subscan.io/block/9383574).
-
-  :::
+  !!!note "Sample 1078 is the winner"
+      Sample 1078 refers to the winner as of `block 9362014 + 21560`, which equals [`block 9383574`](https://kusama.subscan.io/block/9383574).
 
 - The parent block was a new BABE session in the `Logs`, which updated the randomness that was used
   to select that [sample index](https://kusama.subscan.io/block/9434277).
 
-  :::note Inspecting the block state
-
-  You can inspect the state at the end of `block 9434277` to see the sample indices with an
-  [archive node](../../maintain/maintain-sync.md####types-of-nodes). The digest in the `Logs` of
-  `9434277` is decodable and contains the random value as well as the BABE authorities.
-
-  :::
+  !!!note "Inspecting the block state"
+      You can inspect the state at the end of `block 9434277` to see the sample indices with an [archive node](../../maintain/maintain-sync.md####types-of-nodes). The digest in the `Logs` of `9434277` is decodable and contains the random value as well as the BABE authorities.
 
 - As a result, the winner of this auction was not the highest bid during the full duration.
 
@@ -172,12 +154,8 @@ into 6-week periods for Kusama). Parachains may lease a slot for any combination
 slot duration. Parachains may lease more than one slot over time, meaning that they could extend
 their lease to the network past the maximum duration by leasing a contiguous slot.
 
-:::note Individual parachain slots are fungible
-
-This means that parachains do not need to always inhabit the same slot, however they always must
-maintain a slot to remain a parachain.
-
-:::
+!!!note "Individual parachain slots are fungible"
+    This means that parachains do not need to always inhabit the same slot, however they always must maintain a slot to remain a parachain.
 
 ## Bidding
 
@@ -210,10 +188,8 @@ Bidders will submit a configuration of bids specifying the token amount they are
 for which periods. The slot ranges may be any of the periods 1 - `n`, where `n` is the number of
 [periods available for a slot](../../general/chain-state-values.md#period-per-slot-auction).
 
-:::note If you bond tokens with a parachain slot, you cannot stake with those tokens. In this way,
+!!!note If you bond tokens with a parachain slot, you cannot stake with those tokens. In this way,
 you pay for the parachain slot by forfeiting the opportunity to earn staking rewards.
-
-:::
 
 A bidder configuration for a single bidder may look like the following pseudocode example:
 
@@ -302,14 +278,8 @@ the `registrar` pallet.
 
 ![Parachain Slot Swap](../../assets/para-swap.png)
 
-:::note Any two parachains can swap their slots via XCM
-
-The [slot swap via XCM](https://github.com/paritytech/polkadot/pull/4772) requires two live
-parachains to send an XCM message to the relay chain to approve the swap. A parachain team with
-access to two overlapping slots can start a shell parachain on the new slot and swap it with their
-actual parachain on the old slot, thus ensuring continuity of the lease.
-
-:::
+!!!note "Any two parachains can swap their slots via XCM"
+    The [slot swap via XCM](https://github.com/paritytech/polkadot/pull/4772) requires two live parachains to send an XCM message to the relay chain to approve the swap. A parachain team with access to two overlapping slots can start a shell parachain on the new slot and swap it with their actual parachain on the old slot, thus ensuring continuity of the lease.
 
 ### Lease Extension with Non-Overlapping Slots
 

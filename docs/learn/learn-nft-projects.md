@@ -7,13 +7,8 @@ keywords: [NFT, non-fungible token, NFT 2.0]
 slug: ../learn-nft-projects
 ---
 
-:::info Community Page
-
-This page is open to contributions from the community. Please follow the
-[Wiki contribution guidelines](https://github.com/w3f/polkadot-wiki#contributing-to-documentation)
-and add your NFT app to this page.
-
-:::
+!!!info "Community Page"
+    This page is open to contributions from the community. Please follow the [Wiki contribution guidelines](https://github.com/w3f/polkadot-wiki#contributing-to-documentation) and add your NFT app to this page.
 
 ## List of NFT Projects
 
@@ -175,12 +170,8 @@ builder to compose an NFT system of arbitrary complexity without smart contracts
 
 ![kanaria.png](../assets/nft/kanaria.png)
 
-:::note Multi-resource NFTs
-
-A multi-resource NFT (gif of statue, and SVG-composable dynamic NFT in one) that can also equip
-other NFTs from within its "inventory".
-
-:::
+!!!note "Multi-resource NFTs"
+      A multi-resource NFT (gif of statue, and SVG-composable dynamic NFT in one) that can also equip other NFTs from within its "inventory".
 
 Two marketplaces for RMRK-based NFTs exist with hundreds of projects already launched:
 

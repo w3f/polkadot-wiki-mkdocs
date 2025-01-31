@@ -26,13 +26,8 @@ can do this by using the Polkadot-JS UI [Claims app](https://polkadot.js.org/app
 that you are connected to the Polkadot network (displayed in the upper-left-hand corner of the
 screen).
 
-:::warning Third-party claim processes
-
-Claiming using a third-party process can lead to losing your allocation; therefore, we cannot
-recommend using any third-party apps. Manually specifying your transaction data, as specified in our
-claims process below, is the only way to ensure you will receive your allocation.
-
-:::
+!!!warning "Third-party claim processes"
+    Claiming using a third-party process can lead to losing your allocation; therefore, we cannot recommend using any third-party apps. Manually specifying your transaction data, as specified in our claims process below, is the only way to ensure you will receive your allocation.
 
 ## Generate an Account
 
