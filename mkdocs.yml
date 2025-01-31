@@ -180,7 +180,7 @@ nav:
           - Decentralized Nodes: https://nodes.web3.foundation/
           - Thousand Contributors: general/thousand-contributors.md
           - Dev Heroes: general/dev-heroes.md
-      - Metadata: general/metadata.md
+      - Metadata: https://paritytech.github.io/subxt-explorer/#/
       - Chain State Values: general/chain-state-values.md
   - Learn:
       - General:
