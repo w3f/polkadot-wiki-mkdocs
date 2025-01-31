@@ -73,7 +73,7 @@ in programs like the [Decentralized Nodes program](https://nodes.web3.foundation
 
 ## Polkadot Gifts
 
-<img align="right" src="../assets/explore/Gift.png" width="210" height="200"/>
+![Gift](../assets/explore/Gift.png){: align=right width="210" height="200"}
 
 Polkadot Gifts provide an easy way to:
 

@@ -102,6 +102,7 @@ markdown_extensions:
       custom_checkbox: true
   - pymdownx.tilde
 
+# Sidebar
 nav:
   - Explore:
       - Getting Started: general/getting-started.md

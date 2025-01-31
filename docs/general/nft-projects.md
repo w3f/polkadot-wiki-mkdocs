@@ -71,13 +71,11 @@ KodaDot's strength lies in its commitment to open-source collaboration. It has t
 collaborative hub where creators, developers, and community members work collectively for decision
 making, amassing an extensive network of over
 [90 open-source contributors](https://hello.kodadot.xyz/about-us/who-are-we/achievements). This
-robust collaboration has earned KodaDot the
-[number one rank as a dapp in the Polkadot ecosystem on Github](https://github.com/topics/polkadot).
+robust collaboration has earned KodaDot the [number one rank as a dapp in the Polkadot ecosystem on Github](https://github.com/topics/polkadot).
 
-See below a video tutorial about how to mint your NFT on [the Polkadot Asset Hub](#asset-hub) using
-KodaDot.
+See below a video tutorial about how to mint your NFT on [the Polkadot Asset Hub](#asset-hub) using KodaDot.
 
-<div class="row">
+<div class="row" style="display: flex; gap: 20px; justify-content: center;">
   <!-- Card 1 -->
   <a 
     href="https://www.youtube.com/watch?v=SKdx4pTgL04" 
@@ -86,7 +84,7 @@ KodaDot.
     data-aos-delay="100" 
     style="width: 300px; height: 300px;"
   >
-    <img src="https://img.youtube.com/vi/SKdx4pTgL04/0.jpg" class="card-image" />
+    <img src="https://img.youtube.com/vi/SKdx4pTgL04/0.jpg" class="card-image"/>
     <p class="card-title">KodaDot Tutorial on Minting NFTs</p>
   </a>
 </div>
