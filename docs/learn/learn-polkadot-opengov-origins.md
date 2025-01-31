@@ -8,7 +8,7 @@ slug: ../learn-polkadot-opengov-origins
 ---
 
 import Tracks from "./../../components/Referenda-Tracks"; import Chart from
-"./../../components/Chart"; import Tabs from "@theme/Tabs"; import TabItem from "@theme/TabItem";
+"./../../components/Chart";
 
 !!!info "Learn more about Polkadot OpenGov"
     For background information about Polkadot OpenGov, please refer to this [dedicated Wiki document](../learn/learn-polkadot-opengov.md).
