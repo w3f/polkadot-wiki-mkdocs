@@ -38,13 +38,8 @@ account. The videos below contain more information about using proxies.
   </div>
 </div>
 
-:::tip Know how to check the calls and pallets accessible by proxies
-
-For the latest information on the calls and pallets that can be fully accessed by proxies, check the
-[source code in the runtime folder](https://github.com/paritytech/polkadot-sdk/blob/153543b0c8c582e73f520e5c08cbe33bddfb5f69/runtime/polkadot/src/lib.rs#L1158)
-on the [Polkadot repository](https://github.com/paritytech/polkadot-sdk)
-
-:::
+!!!tip "Know how to check the calls and pallets accessible by proxies"
+    For the latest information on the calls and pallets that can be fully accessed by proxies, check the [source code in the runtime folder](https://github.com/paritytech/polkadot-sdk/blob/153543b0c8c582e73f520e5c08cbe33bddfb5f69/runtime/polkadot/src/lib.rs#L1158) on the [Polkadot repository](https://github.com/paritytech/polkadot-sdk)
 
 ## Creating Proxy with Polkadot-JS
 
@@ -77,12 +72,8 @@ announcements are what time lock proxies do to announce they are going to conduc
 
 ## Set-up and Use of Time-delayed Proxies with Polkadot-JS
 
-:::info
-
-See [this video tutorial](https://youtu.be/3L7Vu2SX0PE) to learn how you can setup and use
-time-delayed proxies. The video goes through the example below.
-
-:::
+!!!info
+    See [this video tutorial](https://youtu.be/3L7Vu2SX0PE) to learn how you can setup and use time-delayed proxies. The video goes through the example below.
 
 Initially the time time-delayed proxy announces its intended action using the `proxy.announce`
 extrinsic and will wait for the number of blocks defined in the delay time before executing it. The
@@ -103,14 +94,8 @@ enabled for execution.
 
 ![time-delayed proxies](../assets/time-delayed-proxies.png)
 
-:::info
-
-If you try to use `proxy.proxyAnnounced` to execute the call within the time-delay window you will
-get an error "Proxy unannounced" since the announcement will be done after the time delay. Also note
-that regular `proxy.proxy` calls do not work with time-delayed proxies, you need to announce the
-call first and then execute the announced call on a separate transaction.
-
-:::
+!!!info
+    If you try to use `proxy.proxyAnnounced` to execute the call within the time-delay window you will get an error "Proxy unannounced" since the announcement will be done after the time delay. Also note that regular `proxy.proxy` calls do not work with time-delayed proxies, you need to announce the call first and then execute the announced call on a separate transaction.
 
 ## Proxy calls
 

@@ -38,12 +38,8 @@ Polkadot's default address format to represent many different address types. Thi
 byte**, **32 byte**, and **arbitrary raw byte** variants. It also enhances the original
 [`indices`](learn-accounts.md#indices) lookup.
 
-:::info
-
-Many wallets allow you to convert between formats. Stand-alone tools exist as well; you can find
-them in the [address conversion tools](#address-conversion-tools) section.
-
-:::
+!!!info
+    Many wallets allow you to convert between formats. Stand-alone tools exist as well; you can find them in the [address conversion tools](#address-conversion-tools) section.
 
 ### For the Curious: How Prefixes Work
 
@@ -286,12 +282,8 @@ if both wallets use the same derivation paths.
 Polkadot and Kusama both have paths registered in the
 [BIP44 registry](https://github.com/satoshilabs/slips/blob/master/slip-0044.md).
 
-:::warning
-
-You must have the _parent_ private key and the derivation path to arrive at the key for an address.
-Only use custom derivation paths if you are comfortable with your knowledge of this topic.
-
-:::
+!!!warning
+    You must have the _parent_ private key and the derivation path to arrive at the key for an address. Only use custom derivation paths if you are comfortable with your knowledge of this topic.
 
 ### Password Derivation
 
@@ -312,11 +304,8 @@ have a `written derivation path` and a `password`, we can calculate the `real de
 `account key pair` using `f(seed, real derivation path)`. Unlike hard and soft derivations that can
 be mixed, only a single password should be specified per derivation.
 
-:::info
-
-Password-derived account are as secure as the chosen password.
-
-:::
+!!!info
+    Password-derived account are as secure as the chosen password.
 
 ### Account Derivation on [Ledger](../general/ledger.md) Live
 
@@ -361,13 +350,8 @@ scheme:
   - `//network//hot//0`, `//network//hot//1`, ... as the secondary low-security accounts for
     `network`
 
-:::info
-
-For more information about account derivation best practices, see
-[this post](https://forum.polkadot.network/t/polkadot-standards-proposal-psp-to-define-hierarchical-deterministic-hd-key-derivation-paths/2941/2)
-on the Polkadot Forum.
-
-:::
+!!!info
+    For more information about account derivation best practices, see [this post](https://forum.polkadot.network/t/polkadot-standards-proposal-psp-to-define-hierarchical-deterministic-hd-key-derivation-paths/2941/2) on the Polkadot Forum.
 
 ## System Accounts
 
@@ -452,13 +436,8 @@ useful for automated account generation using an air-gapped device. It is not re
 general users. Follow the instructions in the
 [Subkey documentation](https://docs.substrate.io/reference/command-line-tools/subkey/).
 
-:::info
-
-For guidelines about how to create an account using Subkey, see
-[**this video tutorial**](https://youtu.be/SWfE_EwxgIU) and visit
-[**this support article**](https://support.polkadot.network/support/solutions/articles/65000180519-how-to-create-an-account-in-subkey).
-
-:::
+!!!info
+    For guidelines about how to create an account using Subkey, see [**this video tutorial**](https://youtu.be/SWfE_EwxgIU) and visit [**this support article**](https://support.polkadot.network/support/solutions/articles/65000180519-how-to-create-an-account-in-subkey).
 
 ## Using ENS with DOT/KSM accounts
 
@@ -470,30 +449,15 @@ secure way to translate text via smart contracts. Supporting wallets can then al
 ENS domains instead of long and unwieldy addresses. This prevents phishing, fraud, and typos and
 adds a layer of usability to the regular wallet user experience.
 
-:::note
-
-You will need an ENS name and an Ethereum account with some ether to follow along with this guide.
-To register an ENS name, visit the [ENS App](https://app.ens.domains) or any number of subdomain
-registrars like [Nameth](https://nameth.io). Note that if you're using an older ENS name, you should
-make sure you're using the
-[new resolver](https://medium.com/the-ethereum-name-service/ens-registry-migration-is-over-now-what-a-few-things-to-know-fb05f921872a).
-Visiting the ENS App will warn you about this. You will also need some way to use your Ethereum
-address - following this guide on a personal computer is recommended. Wallets like
-[Frame](https://frame.sh/) and [Metamask](https://metamask.io) are safe and will make interacting
-with the Ethereum blockchain through your browser very easy.
-
-:::
+!!!note
+    You will need an ENS name and an Ethereum account with some ether to follow along with this guide. To register an ENS name, visit the [ENS App](https://app.ens.domains) or any number of subdomain registrars like [Nameth](https://nameth.io). Note that if you're using an older ENS name, you should make sure you're using the [new resolver](https://medium.com/the-ethereum-name-service/ens-registry-migration-is-over-now-what-a-few-things-to-know-fb05f921872a). Visiting the ENS App will warn you about this. You will also need some way to use your Ethereum address - following this guide on a personal computer is recommended. Wallets like [Frame](https://frame.sh/) and [Metamask](https://metamask.io) are safe and will make interacting with the Ethereum blockchain through your browser very easy.
 
 Despite living on the Ethereum blockchain, the ENS system has multi-chain support. In this guide,
 you'll go through the process of adding a KSM and DOT address to ENS. We cover both KSM and DOT to
 show two different approaches.
 
-:::note
-
-DOT can currently only be added using the Resolver method. KSM can be added through both methods are
-described below.
-
-:::
+!!!note
+    DOT can currently only be added using the Resolver method. KSM can be added through both methods are described below.
 
 This guide is also available in video format [on YouTube](https://youtu.be/XKjZk-5_mQc).
 
@@ -537,14 +501,8 @@ accounting and portfolio application [Rotki](https://rotki.com/) does support KS
 
 ## Transferring Polkadot-JS Apps Accounts/Addresses From One Computer to Another
 
-:::caution
-
-This will overwrite existing accounts with the same pubkey on your new computer. This generally
-should not make a difference (since it can still access the same account), but it might if you have
-e.g. an account that was stored externally in the extension on the old computer but was created
-directly in the browser on the new one.
-
-:::
+!!!caution
+    This will overwrite existing accounts with the same pubkey on your new computer. This generally should not make a difference (since it can still access the same account), but it might if you have e.g. an account that was stored externally in the extension on the old computer but was created directly in the browser on the new one.
 
 This has been tested on Brave and Chrome, but not other browsers.
 

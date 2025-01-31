@@ -13,12 +13,8 @@ The Treasury is a pot of funds collected through a portion of block production r
 [system account](./learn-account-advanced.md#system-accounts) that cannot be controlled by any
 external account; only the system internal logic can access it.
 
-:::tip Creating a Treasury Proposal on Polkadot OpenGov
-
-If you would like to create a treasury proposal on Polkadot OpenGov, follow the instructions
-outlined on [this how-to guide](./learn-guides-treasury.md#creating-a-treasury-proposal).
-
-:::
+!!!tip "Creating a Treasury Proposal on Polkadot OpenGov"
+    If you would like to create a treasury proposal on Polkadot OpenGov, follow the instructions outlined on [this how-to guide](./learn-guides-treasury.md#creating-a-treasury-proposal).
 
 ## Treasury Inflow and Outflow
 
@@ -44,14 +40,10 @@ The outflow is determined by the following mechanisms:
 - **Tips:** smaller payouts directly to grantees that can happen within a
   [spend period](../general/glossary.md#spend-period).
 
-:::info Spend Period Schedule
-
-On Polkadot-JS UI, navigate to Governance > Treasury to view the status of current
-[spend period](../general/glossary.md#spend-period).
+!!!info "Spend Period Schedule"
+    On Polkadot-JS UI, navigate to Governance > Treasury to view the status of current [spend period](../general/glossary.md#spend-period).
 
 ![preimage-whitelist](../assets/treasury/treasury-spend-period.png)
-
-:::
 
 ## Treasury Tracks
 
@@ -178,9 +170,5 @@ access funds directly from the parent bounty without going through an OpenGov re
 
 ---
 
-:::info Polkadot-JS Guides
-
-If you are an advanced user, see the [Polkadot-JS guides about bounties](./learn-guides-bounties.md)
-and [treasury](./learn-guides-treasury.md).
-
-:::
+!!!info "Polkadot-JS Guides"
+    If you are an advanced user, see the [Polkadot-JS guides about bounties](./learn-guides-bounties.md) and [treasury](./learn-guides-treasury.md).

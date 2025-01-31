@@ -7,12 +7,8 @@ keywords: [validate, validator, maintain, NPoS, stake]
 slug: ../learn-validator
 ---
 
-:::info
-
-This page provides a general overview of the role of validators in the Polkadot network. For more
-detailed information you can read the [Parachain Protocol Overview](./learn-parachains-protocol.md).
-
-:::
+!!!info
+    This page provides a general overview of the role of validators in the Polkadot network. For more detailed information you can read the [Parachain Protocol Overview](./learn-parachains-protocol.md).
 
 Validators secure the [relay chain](learn-architecture.md#relay-chain) by staking native tokens,
 validating proofs from collators and participating in consensus with other validators.
@@ -84,12 +80,8 @@ Finally, validators participate in the
 [chain selection process within GRANDPA](./learn-parachains-protocol.md#chain-selection), ensuring
 that only available and valid blocks end within the finalized relay chain.
 
-:::info Within an era roles can change
-
-Within the same era, a Validator can be a para-validator, block author, and participate in the
-availability distribution or the approval process. Those roles can change between sessions.
-
-:::
+!!!info "Within an era roles can change"
+    Within the same era, a Validator can be a para-validator, block author, and participate in the availability distribution or the approval process. Those roles can change between sessions.
 
 ## Further Readings
 

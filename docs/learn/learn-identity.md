@@ -9,12 +9,8 @@ slug: ../learn-identity
 
 import Tabs from "@theme/Tabs"; import TabItem from "@theme/TabItem";
 
-:::info Setting your identity on Polkassembly
-
-You can set your identity using the Polkassembly dApp. Follow
-[these support guides](https://support.polkadot.network/support/solutions/articles/65000187627-how-to-set-your-on-chain-identity-on-polkassembly).
-
-:::
+!!!info "Setting your identity on Polkassembly"
+    You can set your identity using the Polkassembly dApp. Follow [these support guides](https://support.polkadot.network/support/solutions/articles/65000187627-how-to-set-your-on-chain-identity-on-polkassembly).
 
 Polkadot provides a naming system that allows participants to add personal information to their
 on-chain account and subsequently ask for verification of this information by
@@ -78,14 +74,8 @@ provide judgement.
 There are multiple registrars on Polkadot and Kusama. Unless no additional information is available
 here, you must reach out to specific registrars individually if you want to be judged by those.
 
-:::info Decommissioned Registrar Service
-
-From the 1st of April 2024 onwards, **Registrar 0** will still exist on-chain but will not accept
-any new judgment requests. The registrar fee is set to a substantial amount to dissuade identity
-judgement requests. Identities judged by the registrar before that date will not be affected. For
-new identity judgment, please use the other registrars.
-
-:::
+!!!info "Decommissioned Registrar Service"
+    From the 1st of April 2024 onwards, **Registrar 0** will still exist on-chain but will not accept any new judgment requests. The registrar fee is set to a substantial amount to dissuade identity judgement requests. Identities judged by the registrar before that date will not be affected. For new identity judgment, please use the other registrars.
 
 <!-- prettier-ignore -->
 <Tabs groupId="clients" values={[ {label: 'Polkadot', value: 'polkadot'}, { label: 'Kusama', value: 'kusama'} ]}>
@@ -145,12 +135,7 @@ See [this page](./learn-guides-identity.md#registrars) to learn how to become a 
 
 ---
 
-:::info Polkadot-JS Guides
-
-If you are an advanced user, see the
-[Polkadot-JS guides about account identity](./learn-guides-identity.md).
-
-See also
-[these Polkadot-JS support guides](https://support.polkadot.network/support/solutions/articles/65000181981-how-to-set-and-clear-an-identity).
-
-:::
+!!!info "Polkadot-JS Guides"
+    If you are an advanced user, see the [Polkadot-JS guides about account identity](./learn-guides-identity.md).
+    
+    See also [these Polkadot-JS support guides](https://support.polkadot.network/support/solutions/articles/65000181981-how-to-set-and-clear-an-identity).

@@ -74,12 +74,8 @@ This is where Polkadot's technology shines and where NFTs 2.0 come into play. By
 optimize for complex NFT use cases without tradeoffs that would make interacting with the system
 prohibitively inefficient and expensive in other environments.
 
-:::info
-
-See [this page](./learn-nft-projects.md) for more information about specific NFT project on Polkadot
-and Kusama.
-
-:::
+!!!info
+    See [this page](./learn-nft-projects.md) for more information about specific NFT project on Polkadot and Kusama.
 
 ## Bridging
 

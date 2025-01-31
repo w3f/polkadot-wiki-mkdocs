@@ -15,10 +15,7 @@ KSM is an inflationary token. Inflation is set to be 10% annually. Depending on 
 and the ideal staking rate (more about this below), part of the inflation is distributed to the
 stakers and part to the [treasury](../learn/learn-polkadot-opengov-treasury.md).
 
-!!!info
-The current KSM token supply can be seen [here](../general/chain-state-values.md#total-issuance).
-
-
+!!!info The current KSM token supply can be seen [here](../general/chain-state-values.md#total-issuance).
 
 It is essential to understand that the primary objective of inflation is to incentivize network
 participants through
@@ -44,23 +41,16 @@ stake when the _current staking rate_ < _ideal staking rate_ and disincentivize 
 _current staking rate_ > _ideal staking rate_. The goal is to have the staking rate meet the ideal
 staking rate. The current staking rate would be the total amount staked in the current era over the
 total token supply, where the total amount staked is the stake of all validators and nominators on
-the network. The ideal staking rate accounts for having sufficient backing of tokens to prevent the
-possible compromise of security while keeping the native token liquid.
+the network. The ideal staking rate accounts for having sufficient backing of tokens to prevent the possible compromise of security while keeping the native token liquid.
 
 ![staking](../assets/rewards-inflation.png)
 
-<p style={{textAlign:"center"}}>Source: <a href="https://research.web3.foundation/Polkadot/overview/token-economics">Research - Web3 Foundation</a></p>
+More information [here](https://research.web3.foundation/Polkadot/overview/token-economics).
 
 - **x-axis**: Proportion of staked tokens
 - **y-axis**: Annualized percentage (inflation and staking rewards, see below)
-- **Blue line**: Annual inflation rate diverted to NPoS, i.e., the total amount of tokens minted to
-  pay validators and nominators. For instance, 0.1 corresponds to 10% of token inflation diverted to
-  stakers. Since annual token inflation is 10%, all inflation is used to pay validators and
-  nominators, and 0% of token inflation is diverted to the treasury.
-- **Green line**: Annual rewards rate for stakers. For instance, 0.2 corresponds to 20% of annual
-  returns on the staked tokens. You can determine the current annual staking rewards rate by looking
-  at the top bar of the staking overview on
-  [the Polkadot Staking Dashboard](https://staking.polkadot.cloud/#/overview).
+- **Blue line**: Annual inflation rate diverted to NPoS, i.e., the total amount of tokens minted to pay validators and nominators. For instance, 0.1 corresponds to 10% of token inflation diverted to stakers. Since annual token inflation is 10%, all inflation is used to pay validators and nominators, and 0% of token inflation is diverted to the treasury.
+- **Green line**: Annual rewards rate for stakers. For instance, 0.2 corresponds to 20% of annual returns on the staked tokens. You can determine the current annual staking rewards rate by looking at the top bar of the staking overview on [the Polkadot Staking Dashboard](https://staking.polkadot.cloud/#/overview).
 
 Assuming that the ideal staking rate is 60%, all of the inflation would go to the validators and
 nominators if 60% of all tokens are staked. Any deviation from the 60% - positive or negative -

@@ -13,13 +13,8 @@ import MessageBox from "../../components/MessageBox"; import "../../components/M
 See [this page](https://github.com/orgs/paritytech/projects/119/views/15?pane=issue&itemId=61684472)
 for more information." />
 
-:::info Disclaimer
-
-Various parachains or applications living on top of Polkadot might add various economic schemes and
-include slashes, but they are unrelated to the slashes described here as they only refer to the
-staked tokens via [Nominated Proof-of-Stake](./learn-staking.md#nominated-proof-of-stake-npos).
-
-:::
+!!!info "Disclaimer"
+    Various parachains or applications living on top of Polkadot might add various economic schemes and include slashes, but they are unrelated to the slashes described here as they only refer to the staked tokens via [Nominated Proof-of-Stake](./learn-staking.md#nominated-proof-of-stake-npos).
 
 Polkadot is a public permissionless network. As such, it has a mechanism to disincentivize offenses
 and incentivize good behavior. Below, you can find a summary of punishments for specific offenses:
@@ -35,12 +30,8 @@ and incentivize good behavior. Below, you can find a summary of punishments for 
 
 ## Offenses
 
-:::info Learn more about the parachain protocol
-
-To better understand the terminology used for offenses, it is recommended to get familiar with the
-[parachain protocol](./learn-parachains-protocol.md).
-
-:::
+!!!info "Learn more about the parachain protocol"
+    To better understand the terminology used for offenses, it is recommended to get familiar with the [parachain protocol](./learn-parachains-protocol.md).
 
 On Polkadot, there are six main validator offenses as shown below.
 
@@ -106,15 +97,8 @@ Slashing only occurs for active validations for a given nominator, and slashes a
 having other inactive or waiting nominations. They are also not mitigated by the validator operator
 running separate nodes; each node is considered its own entity for slashing purposes.
 
-:::info Multiple Active Nominations
-
-In rare instances, with very large bonds, a nominator may actively nominate several validators in a
-single era. In this case, the slash is proportionate to the amount staked to that specific
-validator. Note that you cannot control the percentage of stake allocated to each validator or
-choose who your active validator will be (except in the trivial case of nominating a single
-validator). Staking allocations are controlled by the [Phragmén algorithm](learn-phragmen.md).
-
-:::
+!!!info "Multiple Active Nominations"
+    In rare instances, with very large bonds, a nominator may actively nominate several validators in a single era. In this case, the slash is proportionate to the amount staked to that specific validator. Note that you cannot control the percentage of stake allocated to each validator or choose who your active validator will be (except in the trivial case of nominating a single validator). Staking allocations are controlled by the [Phragmén algorithm](learn-phragmen.md).
 
 Once a validator gets slashed, it goes into the state as an "unapplied slash". You can check this
 via

@@ -89,12 +89,9 @@ depends on the proxied account; the proxy is the consumer). **Because the existe
 part of the untouchable balance, the user can use all the spendable balance (there is no need to
 keep 1 DOT as spendable).**
 
-:::info
-
-The use of the _free_ balance as shown in the following figures will be possible once the _fungible_
+!!!info
+    The use of the _free_ balance as shown in the following figures will be possible once the _fungible_
 trait is implemented for account balances.
-
-:::
 
 If the account creates a proxy, it will use the `free` balance as shown below.
 

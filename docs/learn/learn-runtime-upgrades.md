@@ -76,14 +76,8 @@ Although upgrading your nodes is generally not necessary to follow an upgrade, w
 following the Polkadot releases and upgrading promptly, especially for high-priority or critical
 releases.
 
-:::info New Client Releases
-
-The details about the latest client releases can be found in the
-[releases section on the Polkadot repository](https://github.com/paritytech/polkadot-sdk/releases).
-A detailed analysis for client releases can be viewed on the
-[Polkadot Forum](https://forum.polkadot.network/tag/release-analysis).
-
-:::
+!!!info "New Client Releases"
+    The details about the latest client releases can be found in the [releases section on the Polkadot repository](https://github.com/paritytech/polkadot-sdk/releases). A detailed analysis for client releases can be viewed on the [Polkadot Forum](https://forum.polkadot.network/tag/release-analysis).
 
 ### Runtime vs Client versions
 
@@ -94,15 +88,10 @@ version shown on the top left section of Polkadot-JS UI below is `kusama-9370`, 
 
 ![Runtime vs Client versioning](./../assets/runtime-node-version.png)
 
-:::info Querying runtime and client versions
-
-The runtime version can be queried on-chain through Polkadot-JS UI by navigating to the Developer
-tab > Chain State > Storage > system and query `lastRuntimeUpgrade()`.
-
-The node version can be queried by navigating to the Developer tab > RPC calls > system and query
-`version()`.
-
-:::
+!!!info "Querying runtime and client versions"
+    The runtime version can be queried on-chain through Polkadot-JS UI by navigating to the Developer tab > Chain State > Storage > system and query `lastRuntimeUpgrade()`.
+    
+    The node version can be queried by navigating to the Developer tab > RPC calls > system and query `version()`.
 
 ## Runtime Upgrades for Various Users
 

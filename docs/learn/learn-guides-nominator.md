@@ -18,22 +18,15 @@ See [this page](./learn-staking.md) to learn about staking.
 
 ## Nominate Using Polkadot-JS
 
-:::info Video Tutorials
-
-- [How to Nominate/Stake](https://youtu.be/FCXC0CDhyS4?t=219)
-- [Staking with a Ledger device and Polkadot-JS](https://youtu.be/7VlTncHCGPc)
-- [Staking with a Ledger device and Ledger Live](https://www.youtube.com/watch?v=jL-N_IWiYVA)
-
-:::
+!!!info "Video Tutorials"
+    - [How to Nominate/Stake](https://youtu.be/FCXC0CDhyS4?t=219)
+    - [Staking with a Ledger device and Polkadot-JS](https://youtu.be/7VlTncHCGPc)
+    - [Staking with a Ledger device and Ledger Live](https://www.youtube.com/watch?v=jL-N_IWiYVA)
 
 ### Bond your tokens
 
-:::info Support Article
-
-Read the support article about
-[How to Bond Tokens and Nominate](https://support.polkadot.network/support/solutions/articles/65000168057-polkadot-js-ui-how-do-i-stake-nominate-on-polkadot-).
-
-:::
+!!!info "Support Article"
+    Read the support article about [How to Bond Tokens and Nominate](https://support.polkadot.network/support/solutions/articles/65000168057-polkadot-js-ui-how-do-i-stake-nominate-on-polkadot-).
 
 On the [Polkadot-JS UI](https://polkadot.js.org/apps) navigate to the "Staking" tab (within the
 "Network" menu).
@@ -86,12 +79,8 @@ earn compound interest.
 
 ### Nominate a validator
 
-:::info Support Article
-
-Read the support article about
-[How to Select Validators](https://support.polkadot.network/support/solutions/articles/65000150130-how-do-i-know-which-validators-to-choose-).
-
-:::
+!!!info "Support Article"
+    Read the support article about [How to Select Validators](https://support.polkadot.network/support/solutions/articles/65000150130-how-do-i-know-which-validators-to-choose-).
 
 You are now bonded. Being bonded means your tokens are locked and could be
 [slashed](./learn-offenses.md) if the validators you nominate misbehave. All bonded funds can be
@@ -119,14 +108,8 @@ more details.
 
 ### Stop nominating
 
-:::info Support Article
-
-Read the support article about
-[How to Stop Nominating & Unbond Tokens](https://support.polkadot.network/support/solutions/articles/65000167902-how-can-i-unstake-my-tokens-again-).
-See also the support article about
-[How to Rebond Tokens](https://support.polkadot.network/support/solutions/articles/65000170241-polkadot-js-ui-how-to-rebond-tokens-during-the-unbonding-period).
-
-:::
+!!!info "Support Article"
+    Read the support article about [How to Stop Nominating & Unbond Tokens](https://support.polkadot.network/support/solutions/articles/65000167902-how-can-i-unstake-my-tokens-again-). See also the support article about [How to Rebond Tokens](https://support.polkadot.network/support/solutions/articles/65000170241-polkadot-js-ui-how-to-rebond-tokens-during-the-unbonding-period).
 
 At some point, you might decide to stop nominating one or more validators. You can always change who
 you're nominating, but you cannot withdraw your tokens unless you unbond them.
@@ -172,12 +155,8 @@ npm install -g @polkadot/api-cli
 
 ### Step 2: Bond Tokens
 
-:::info Controller accounts are deprecated
-
-Controller accounts are deprecated. For more information, see
-[this discussion](https://forum.polkadot.network/t/staking-controller-deprecation-plan-staking-ui-leads-comms/2748).
-
-:::
+!!!info "Controller accounts are deprecated"
+    Controller accounts are deprecated. For more information, see [this discussion](https://forum.polkadot.network/t/staking-controller-deprecation-plan-staking-ui-leads-comms/2748).
 
 Executing the following command:
 

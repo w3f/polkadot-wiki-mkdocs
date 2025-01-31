@@ -100,12 +100,8 @@ vesting cases, the lock decreases over time until all the funds are transferable
 
 ## Verifying Extrinsics
 
-:::danger
-
-Do not sign a transaction if you can't verify what you are signing or you suspect you might be
-signing a different extrinsic than the one intended.
-
-:::
+!!!danger
+    Do not sign a transaction if you can't verify what you are signing or you suspect you might be signing a different extrinsic than the one intended.
 
 Verifying the extrinsic you are signing can take some more time before signing for a transaction but
 it allows you to add an extra security step. There are
@@ -221,9 +217,5 @@ to maximize their reward.
 
 ---
 
-:::info Polkadot-JS Guides
-
-If you are an advanced user, see the
-[Polkadot-JS guides about transfers](./learn-guides-transfers.md).
-
-:::
+!!!info "Polkadot-JS Guides"
+    If you are an advanced user, see the [Polkadot-JS guides about transfers](./learn-guides-transfers.md).

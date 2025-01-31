@@ -12,12 +12,8 @@ NFT-related actions within their dApp.
 
 ## NFTs Pallet
 
-:::info For Developers Only
-
-The information presented here below is for developers. A user-friendly portal for NFTs, DEX and
-Assets is under construction.
-
-:::
+!!!info "For Developers Only"
+    The information presented here below is for developers. A user-friendly portal for NFTs, DEX and Assets is under construction.
 
 NFTs is a
 [FRAME pallet](https://github.com/paritytech/polkadot-sdk/tree/master/substrate/frame/nfts#readme)
@@ -99,12 +95,8 @@ specifying different settings:
   - `Deposit required`: when disabled, no mint deposit will be taken for items. This option can be
     set by a super-user only.
 
-:::info
-
-Note that currently, Polkadot-JS UI does not support bitflags. Leave the settings field as it is.
-Everything is unlocked by default (bitflag value `0`).
-
-:::
+!!!info
+    Note that currently, Polkadot-JS UI does not support bitflags. Leave the settings field as it is. Everything is unlocked by default (bitflag value `0`).
 
 - `maxSupply` (toggle option) allows you to specify the maximum number of items that can be minted.
 - `mintSettings: PalletNftsMintSettings` allows you to specify different settings for your
@@ -124,13 +116,8 @@ Everything is unlocked by default (bitflag value `0`).
       items for the public
     - force mint: minting bypassing mint settings
 
-:::info
-
-The user can decide to lock an item or collection’s metadata, attributes, and settings. Also, a
-locking mechanism can prevent unauthorized and unprivileged transfers (unprivileged actions can be
-re-allowed anytime).
-
-:::
+!!!info
+    The user can decide to lock an item or collection’s metadata, attributes, and settings. Also, a locking mechanism can prevent unauthorized and unprivileged transfers (unprivileged actions can be re-allowed anytime).
 
 With all these options, one can decide to modify the price of the collection's items and who can
 mint, receive or buy items in that collection. Time constraints are available with `startBlock` and
@@ -158,14 +145,8 @@ claim the avatar specifying which NFT (i.e. the ID) they own in Collection A. Th
 used twice. Holders of multiple NFTs in Collection A (for example, participants in multiple
 Hackathons) can claim multiple avatars specific to each event.
 
-:::warning Time frame must be updated
-
-Someone trying to mint an NFT outside the specified time frame will trigger a `NoConfig` error, as
-the collection’s admin has specified no configuration after the time frame ends. The collection's
-admin must call the `updateMintSettings` extrinsic and add a new schedule or disable the block
-number option.
-
-:::
+!!!warning "Time frame must be updated"
+    Someone trying to mint an NFT outside the specified time frame will trigger a `NoConfig` error, as the collection’s admin has specified no configuration after the time frame ends. The collection's admin must call the `updateMintSettings` extrinsic and add a new schedule or disable the block number option.
 
 After you minted an NFT, check which NFT IDs you own under which collection. In the Polkadot-JS UI
 go to Developer > Chain State > Storage, select the `nfts.account` extrinsic, and specify the
@@ -243,12 +224,8 @@ metadata. The minting process on-chain will assign a collection and item ID to y
 IDs will later be populated with NFT files, metadata, and attributes. Once you upload the NFT files
 and related data, the above-mentioned extrinsics can be used to update a collection or item.
 
-:::info NFT/DEX/Asset Portal
-
-With the new NFT/DEX/Asset portal, all the above steps will be executed "under the hood" and the
-user will not have to worry about all technicalities.
-
-:::
+!!!info "NFT/DEX/Asset Portal"
+    With the new NFT/DEX/Asset portal, all the above steps will be executed "under the hood" and the user will not have to worry about all technicalities.
 
 ### Other Actions
 
@@ -287,12 +264,8 @@ user will not have to worry about all technicalities.
 
 ## Uniques Pallet
 
-:::info
-
-The Uniques Pallet is deprecated. Everything related to NFTs will be covered by the
-[NFTs Pallet](#nfts-pallet).
-
-:::
+!!!info
+    The Uniques Pallet is deprecated. Everything related to NFTs will be covered by the [NFTs Pallet](#nfts-pallet).
 
 Uniques is a
 [FRAME pallet](https://github.com/paritytech/polkadot-sdk/tree/master/substrate/frame/uniques)
