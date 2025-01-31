@@ -71,8 +71,9 @@ propagating through the entire ending period, where a snapshot is taken at each 
 ending period to capture the winners for that given block. At the end of the period, one of the
 snapshots is randomly selected to determine the winner of the auction.
 
-!!!info The parachain candidate with the highest bid at the ending time chosen by the Verifiable
-Random Function wins the slot auction.
+!!!info 
+    The parachain candidate with the highest bid at the ending time chosen by the Verifiable
+    Random Function wins the slot auction.
 
 A parachain auction lasts exactly one week from the starting period (1 day and 18 hours) to
 [ending period](../../general/chain-state-values.md#auction-ending-period) (candle auction phase)
