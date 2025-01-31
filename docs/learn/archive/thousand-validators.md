@@ -7,10 +7,16 @@ keywords: [thousand validators program, validator, validate, maintain, TVP]
 slug: ../thousand-validators
 ---
 
-import MessageBox from "../../../components/MessageBox"; import "../../../components/MessageBox.css";
-
-<MessageBox message="The content on this page is archived. For up-to-date information, see the
-[Decentralized Nodes web page](https://nodes.web3.foundation/)." />
+<!-- MessageBox -->
+<div id="messageBox" class="floating-message-box">
+  <p>
+    The content on this page is archived. For up-to-date information, see the
+    <a href="https://nodes.web3.foundation/" target="_blank" rel="noopener noreferrer">
+      Decentralized Nodes web page.
+    </a>
+  </p>
+  <button class="close-messagebox" aria-label="Close message">✖</button>
+</div>
 
 The Thousand Validators Programme is an initiative by Web3 Foundation and Parity Technologies to use
 the funds held by both organizations to nominate validators in the community.
