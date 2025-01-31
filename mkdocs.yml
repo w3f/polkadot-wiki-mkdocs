@@ -38,7 +38,7 @@ theme:
 plugins:
   - search
   - open-in-new-tab
-#  - macros
+  - macros
 
 # Additional configuration
 extra:

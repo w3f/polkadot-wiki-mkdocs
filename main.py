@@ -3,6 +3,10 @@ Polkadot Wiki Macro functionality
 """
 
 import substrateinterface
+import os
+
+def enable_rpc():
+    return os.environ["ENABLE_RPC"] == "true"
 
 def format(value, filter):
     match filter:
@@ -50,13 +54,16 @@ def human_readable(decimals_amount, number):
 def define_env(env):
     @env.macro
     def rpc(network, module, call, default_value, is_constant=False, readable="human_readable"):
-        url = get_network_url(network)
-        api = substrateinterface.SubstrateInterface(url)
-        result = None
-        if is_constant:
-            result = api.get_constant(module, call)
+        if enable_rpc():
+            url = get_network_url(network)
+            api = substrateinterface.SubstrateInterface(url)
+            result = None
+            if is_constant:
+                result = api.get_constant(module, call)
+            else:
+                result = api.query(module, call)
+            if result == None or result.value == None:
+                return "NOT_FOUND"
+            return format(result.value, readable)
         else:
-            result = api.query(module, call)
-        if result == None or result.value == None:
-            return "NOT_FOUND"
-        return format(result.value, readable)
+            return "DEV_MODE"
