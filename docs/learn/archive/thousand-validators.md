@@ -7,8 +7,7 @@ keywords: [thousand validators program, validator, validate, maintain, TVP]
 slug: ../thousand-validators
 ---
 
-import Tabs from "@theme/Tabs"; import TabItem from "@theme/TabItem"; import MessageBox from
-"../../../components/MessageBox"; import "../../../components/MessageBox.css";
+import MessageBox from "../../../components/MessageBox"; import "../../../components/MessageBox.css";
 
 <MessageBox message="The content on this page is archived. For up-to-date information, see the
 [Decentralized Nodes web page](https://nodes.web3.foundation/)." />
@@ -73,40 +72,31 @@ programme, set up your Polkadot node to adhere to the [requirements](#requiremen
 The below addresses are the stash / staking proxy pairs for the primary nominators involved in the
 Thousand Validators programme. They are formatted like "`stash` / `staking proxy`".
 
-<!-- prettier-ignore-start -->
+=== "Polkadot"
 
-<Tabs groupId="chains" values={[ {label: 'Polkadot', value: 'polkadot'}, { label: 'Kusama', value:
-'kusama'} ]}>
+    - `14Ns6kKbCoka3MS4Hn6b7oRw9fFejG8RH5rq5j63cWUfpPDJ` /
+      `12iz6aJ75KdqVZLGyvFJmgc5k74Pdokgy9UGTgWtnt67RNTg`
+    - `12RYJb5gG4hfoWPK3owEYtmWoko8G6zwYpvDYTyXFVSfJr8Y` /
+      `12iz6aJ75KdqVZLGyvFJmgc5k74Pdokgy9UGTgWtnt67RNTg`
+    - `16GMHo9HZv8CcJy4WLoMaU9qusgzx2wxKDLbXStEBvt5274B` /
+      `12iz6aJ75KdqVZLGyvFJmgc5k74Pdokgy9UGTgWtnt67RNTg`
+    - `13yk62yQYctYsRPXDFvC5WzBtanAsHDasenooLAxKvf5bNkK` /
+      `12iz6aJ75KdqVZLGyvFJmgc5k74Pdokgy9UGTgWtnt67RNTg`
+    - `13SkL2uACPqBzpKBh3d2n5msYNFB2QapA5vEDeKeLjG2LS3Y` /
+      `12iz6aJ75KdqVZLGyvFJmgc5k74Pdokgy9UGTgWtnt67RNTg`
+    - `12WLDL2AXoH3MHr1xj8K4m9rCcRKSWKTUz8A4mX3ah5khJBn` /
+      `12iz6aJ75KdqVZLGyvFJmgc5k74Pdokgy9UGTgWtnt67RNTg`
 
-<TabItem value="polkadot">
+=== "Kusama"
 
-- `14Ns6kKbCoka3MS4Hn6b7oRw9fFejG8RH5rq5j63cWUfpPDJ` /
-  `12iz6aJ75KdqVZLGyvFJmgc5k74Pdokgy9UGTgWtnt67RNTg`
-- `12RYJb5gG4hfoWPK3owEYtmWoko8G6zwYpvDYTyXFVSfJr8Y` /
-  `12iz6aJ75KdqVZLGyvFJmgc5k74Pdokgy9UGTgWtnt67RNTg`
-- `16GMHo9HZv8CcJy4WLoMaU9qusgzx2wxKDLbXStEBvt5274B` /
-  `12iz6aJ75KdqVZLGyvFJmgc5k74Pdokgy9UGTgWtnt67RNTg`
-- `13yk62yQYctYsRPXDFvC5WzBtanAsHDasenooLAxKvf5bNkK` /
-  `12iz6aJ75KdqVZLGyvFJmgc5k74Pdokgy9UGTgWtnt67RNTg`
-- `13SkL2uACPqBzpKBh3d2n5msYNFB2QapA5vEDeKeLjG2LS3Y` /
-  `12iz6aJ75KdqVZLGyvFJmgc5k74Pdokgy9UGTgWtnt67RNTg`
-- `12WLDL2AXoH3MHr1xj8K4m9rCcRKSWKTUz8A4mX3ah5khJBn` /
-  `12iz6aJ75KdqVZLGyvFJmgc5k74Pdokgy9UGTgWtnt67RNTg`
-
-</TabItem>
-<TabItem value="kusama">
-
-- `G1rrUNQSk7CjjEmLSGcpNu72tVtyzbWdUvgmSer9eBitXWf` /
-  `Edyfdyoi4KJVdXUJ3SU3nuZYMpg13HHa1SWYtPDCV8UPdxy`
-- `HgTtJusFEn2gmMmB5wmJDnMRXKD6dzqCpNR7a99kkQ7BNvX` /
-  `Edyfdyoi4KJVdXUJ3SU3nuZYMpg13HHa1SWYtPDCV8UPdxy`
-- `EX9uchmfeSqKTM7cMMg8DkH49XV8i4R7a7rqCn8btpZBHDP` /
-  `Edyfdyoi4KJVdXUJ3SU3nuZYMpg13HHa1SWYtPDCV8UPdxy`
-- `JLENz97TFT2kYaQmyCSEnBsK8VhaDZNmYATfsLCHyLF6Gzu` /
-  `Edyfdyoi4KJVdXUJ3SU3nuZYMpg13HHa1SWYtPDCV8UPdxy`
-
-</TabItem>
-</Tabs>
+    - `G1rrUNQSk7CjjEmLSGcpNu72tVtyzbWdUvgmSer9eBitXWf` /
+      `Edyfdyoi4KJVdXUJ3SU3nuZYMpg13HHa1SWYtPDCV8UPdxy`
+    - `HgTtJusFEn2gmMmB5wmJDnMRXKD6dzqCpNR7a99kkQ7BNvX` /
+      `Edyfdyoi4KJVdXUJ3SU3nuZYMpg13HHa1SWYtPDCV8UPdxy`
+    - `EX9uchmfeSqKTM7cMMg8DkH49XV8i4R7a7rqCn8btpZBHDP` /
+      `Edyfdyoi4KJVdXUJ3SU3nuZYMpg13HHa1SWYtPDCV8UPdxy`
+    - `JLENz97TFT2kYaQmyCSEnBsK8VhaDZNmYATfsLCHyLF6Gzu` /
+      `Edyfdyoi4KJVdXUJ3SU3nuZYMpg13HHa1SWYtPDCV8UPdxy`
 
 A time delay proxy is used as the interaction method for some of these accounts.
 

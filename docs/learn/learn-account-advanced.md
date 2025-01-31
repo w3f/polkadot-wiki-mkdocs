@@ -7,8 +7,6 @@ keywords: [account, polkadot account, polkadotjs, indices, identity, reaping, EN
 slug: ../learn-account-advanced
 ---
 
-import Tabs from "@theme/Tabs"; import TabItem from "@theme/TabItem";
-
 ## Address Format
 
 The address format used in Substrate-based chains is SS58. SS58 is a modification of Base-58-check
@@ -352,20 +350,13 @@ interact with this account. These accounts can never issue a signed
 
 Explore the main system accounts below.
 
-<!-- prettier-ignore -->
-<Tabs groupId="system" values={[ {label: 'Polkadot', value: 'polkadot'}, { label: 'Kusama', value: 'kusama'} ]}>
+=== "Polkadot"
 
-<TabItem value="polkadot">
+    Treasury account address - `13UVJyLnbVp9RBZYFwFGyDvVd1y27Tt8tkntv6Q7JVPhFsTB`
 
-Treasury account address - `13UVJyLnbVp9RBZYFwFGyDvVd1y27Tt8tkntv6Q7JVPhFsTB`
+=== "Kusama"
 
-</TabItem>
-<TabItem value="kusama">
-
-Treasury account address - `F3opxRbN5ZbjJNU511Kj2TLuzFcDq9BGduA9TgiECafpg29`
-
-</TabItem>
-</Tabs>
+    Treasury account address - `F3opxRbN5ZbjJNU511Kj2TLuzFcDq9BGduA9TgiECafpg29`
 
 You can view the existing system accounts on
 [Subscan](https://polkadot.subscan.io/account_list?role=module).
