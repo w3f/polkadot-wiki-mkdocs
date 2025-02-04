@@ -38,7 +38,7 @@ def parseMarkdown(fullPath):
 
     return [links, slug]
 
-# Make a https request to the url and analyze the resulting status code
+# Make a http request to the url and analyze the resulting status code
 def testLink(link):
     result = [False, 404]
     try:
