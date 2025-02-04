@@ -820,7 +820,7 @@ true for the workloads running on both bare-metal and VMs. But the penalty remai
 containerized workloads in some cases.
 
 As demonstrated in
-[Yusuke Endoh's article](http://mamememo.blogspot.com/2020/05/cpu-intensive-rubypython-code-runs.html),
+[Yusuke Endoh's article](https://mamememo.blogspot.com/2020/05/cpu-intensive-rubypython-code-runs.html),
 a performance penalty for containerized workloads can be as high as 100%. This is due to SECCOMP
 profile being overprotective about applying Spectre/Meltdown mitigations without providing real
 security. A longer explanation is available in the

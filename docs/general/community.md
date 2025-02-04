@@ -93,7 +93,7 @@ community members. The application we use most often to interact with the Matrix
 
     - [Kusama Twitter](https://twitter.com/kusamanetwork)
     - [Kusama Reddit](https://www.reddit.com/r/Kusama)
-    - [Kusama YouTube Channel](http://youtube.com/c/kusamanetwork)
+    - [Kusama YouTube Channel](https://youtube.com/c/kusamanetwork)
 
 
 ### Blogs and tutorials
