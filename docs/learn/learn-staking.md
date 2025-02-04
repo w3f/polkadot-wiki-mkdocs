@@ -7,11 +7,17 @@ keywords: [staking, stake, nominate, nominating, NPoS, faq]
 slug: ../learn-staking
 ---
 
-import MessageBox from "../../components/MessageBox"; import "../../components/MessageBox.css";
-
-<MessageBox message="<b>Nomination Pools are evolving!</b>
-Soon you'll be able to participate in a pool and in OpenGov with your pooled funds!
-You do not need to do anything, unless you are participating in a pool and also staking solo from the same account. In this case, please check [<b>this article</b>](https://support.polkadot.network/support/solutions/articles/65000188140-changes-for-nomination-pool-members-and-opengov-participation) on the actions you need to take as soon as possible." />
+<!-- MessageBox -->
+<div id="messageBox" class="floating-message-box">
+  <p>
+    Nomination Pools are evolving! Soon you'll be able to participate in a pool and in OpenGov with your pooled funds! You do not need to do anything, unless you are participating in a pool and also staking solo from the same account. In this case, please check
+    <a href="https://support.polkadot.network/support/solutions/articles/65000188140-changes-for-nomination-pool-members-and-opengov-participation" target="_blank" rel="noopener noreferrer">
+      this article
+    </a>
+    on the actions you need to take as soon as possible. 
+  </p>
+  <button class="close-messagebox" aria-label="Close message">✖</button>
+</div>
 
 !!!tip "New to Staking?"
     Explore Polkadot with a secure and user-friendly wallets listed on the [Polkadot website](https://www.polkadot.network/ecosystem/wallets/) and start your staking journey or explore more information about staking on [Polkadot's Staking Page](https://polkadot.network/staking/). Discover the new [Staking Dashboard](https://staking.polkadot.cloud/#/overview) that makes staking much easier and check this [extensive article list](https://support.polkadot.network/support/solutions/articles/65000182104) to help you get started. The dashboard supports [Ledger](../general/ledger.md) devices natively and does not require an extension or wallet as an interface.

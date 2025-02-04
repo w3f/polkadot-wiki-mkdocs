@@ -7,9 +7,23 @@ keywords: [parachains, application-specific, sharding, on-demand, parathread]
 slug: ../learn-parachains
 ---
 
-import MessageBox from "../../components/MessageBox"; import "../../components/MessageBox.css";
-
-<MessageBox message="[Agile Coretime](./learn-agile-coretime) is activated on the network, and parachain slot auctions and crowdloans have been deprecated. For existing parachains, the remainder of the lease is automatically converted to coretime. See more information [here](./learn-agile-coretime#implementation). For decentralized, transparent, and regulatory-compliant fundraising within the ecosystem, check out the [Polimec parachain](https://www.polimec.org/)." />
+<!-- MessageBox -->
+<div id="messageBox" class="floating-message-box">
+  <p>
+    <a href="./learn-agile-coretime.md" target="_blank" rel="noopener noreferrer">
+      Agile Coretime 
+    </a>
+    is activated on the network, and parachain slot auctions and crowdloans have been deprecated. For existing parachains, the remainder of the lease is automatically converted to coretime. See more information
+    <a href="./learn-agile-coretime#implementation" target="_blank" rel="noopener noreferrer">
+      here.
+    </a>
+    For decentralized, transparent, and regulatory-compliant fundraising within the ecosystem, check out the
+    <a href="https://www.polimec.org/" target="_blank" rel="noopener noreferrer">
+      Polimec parachain.
+    </a> 
+  </p>
+  <button class="close-messagebox" aria-label="Close message">✖</button>
+</div>
 
 !!!info "Testing on Paseo"
     For information on how to test coretime functionalities on Paseo, please see the [Paseo Content](../build/build-parachains.md#testing-a-parachain) on the parachain development guide.

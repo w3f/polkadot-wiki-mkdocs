@@ -8,10 +8,18 @@ slug: ../learn-polkadot-opengov
 ---
 
 import VLTable from "./../../components/Voluntary-Locking"; import Fellowship from
-"./../../components/Fellowship"; import MessageBox from "../../components/MessageBox"; import
-"../../components/MessageBox.css";
+"./../../components/Fellowship";
 
-<MessageBox message="Before voting or delegating in Polkadot OpenGov, get familiar with [balances and locks](./learn-account-balances#locks)." />
+<!-- MessageBox -->
+<div id="messageBox" class="floating-message-box">
+  <p>
+    Before voting or delegating in Polkadot OpenGov, get familiar with
+    <a href="./learn-account-balances#locks" target="_blank" rel="noopener noreferrer">
+      balances and locks.
+    </a>
+  </p>
+  <button class="close-messagebox" aria-label="Close message">✖</button>
+</div>
 
 !!!caution "The content in this document is subject to change"
     The governance protocol has already undergone iterations (see [Governance V1](./archive/learn-governance.md)). Governance is a constantly evolving protocol at this stage in its lifecycle.
