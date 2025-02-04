@@ -75,7 +75,7 @@ staking rewards for an address, submit transactions to a node's transaction queu
 [much more](https://paritytech.github.io/substrate-api-sidecar/dist/).
 
 The client runs on an HTTP host. The following examples use python3, but you can query any way you
-prefer at `https://HOST:PORT/`. The default is `https://127.0.0.1:8080`.
+prefer at `http://HOST:PORT/`. The default is `http://127.0.0.1:8080`.
 
 ### Fetching a Block
 
