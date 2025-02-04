@@ -119,7 +119,7 @@ KodaDot's upcoming integrations are based on
 
 KodaDot has enriched the Polkadot ecosystem by
 [offering a comprehensive API interface for builders](https://github.com/kodadot/uniquery), based on
-the SubSquid indexer. This platform also presents searchable items and collections, translating
+the SQD indexer. This platform also presents searchable items and collections, translating
 on-chain transactions into deep insights about collection ownership dynamics for end-users. For more
 info about KodaDot check out [link](https://hello.kodadot.xyz/).
 
