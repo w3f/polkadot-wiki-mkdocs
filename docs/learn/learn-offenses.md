@@ -7,11 +7,17 @@ keyword: [nominate, nominator, offenses, slashes, validator, equivocation, disab
 slug: ../learn-offenses
 ---
 
-import MessageBox from "../../components/MessageBox"; import "../../components/MessageBox.css";
-
-<MessageBox message="The material provided here is based on the changes introduced by Step 2 of the Disabling feature.
-See [this page](https://github.com/orgs/paritytech/projects/119/views/15?pane=issue&itemId=61684472)
-for more information." />
+<!-- MessageBox -->
+<div id="messageBox" class="floating-message-box">
+  <p>
+    The material provided here is based on the changes introduced by Step 2 of the Disabling feature. See
+    <a href="https://github.com/orgs/paritytech/projects/119/views/15?pane=issue&itemId=61684472" target="_blank" rel="noopener noreferrer">
+      this page
+    </a>
+    for more information.
+  </p>
+  <button class="close-messagebox" aria-label="Close message">✖</button>
+</div>
 
 !!!info "Disclaimer"
     Various parachains or applications living on top of Polkadot might add various economic schemes and include slashes, but they are unrelated to the slashes described here as they only refer to the staked tokens via [Nominated Proof-of-Stake](./learn-staking.md#nominated-proof-of-stake-npos).
