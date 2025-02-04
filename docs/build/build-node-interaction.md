@@ -400,7 +400,7 @@ Submit a serialized transaction using the `transaction` endpoint with an HTTP PO
 import requests
 import json
 
-url = 'https://127.0.0.1:8080/transaction/'
+url = 'http://127.0.0.1:8080/transaction/'
 tx_headers = {'Content-type' : 'application/json', 'Accept' : 'text/plain'}
 response = requests.post(
 	url,
