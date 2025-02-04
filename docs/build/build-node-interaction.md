@@ -85,7 +85,7 @@ Fetch a block using the `block/number` endpoint. To get the chain tip, omit the 
 import requests
 import json
 
-url = 'https://127.0.0.1:8080/blocks/7409038'
+url = 'http://127.0.0.1:8080/blocks/7409038'
 response = requests.get(url)
 if response.ok:
 	block_info = json.loads(response.text)
