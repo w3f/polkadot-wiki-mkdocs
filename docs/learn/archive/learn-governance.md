@@ -7,11 +7,16 @@ keywords: [governance, referenda, proposal, voting, endorse]
 slug: ../learn-governance
 ---
 
-import MessageBox from "../../../components/MessageBox"; import
-"../../../components/MessageBox.css";
-
-<MessageBox message="The content on this page is archived. For up-to-date information about governance, see the
-[Polkadot OpenGov page](../learn-polkadot-opengov)." />
+<!-- MessageBox -->
+<div id="messageBox" class="floating-message-box">
+  <p>
+    The content on this page is archived. For up-to-date information about governance, see the
+    <a href="../learn-polkadot-opengov" target="_blank" rel="noopener noreferrer">
+      Polkadot OpenGov page.
+    </a>
+  </p>
+  <button class="close-messagebox" aria-label="Close message">✖</button>
+</div>
 
 Polkadot uses a sophisticated governance mechanism that allows it to evolve gracefully overtime at
 the ultimate behest of its assembled stakeholders. The stated goal is to ensure that the majority of

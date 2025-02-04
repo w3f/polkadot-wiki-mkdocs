@@ -7,11 +7,17 @@ keyword: [nominate, nominator, stake, staking, pools]
 slug: ../learn-nomination-pools
 ---
 
-import MessageBox from "../../components/MessageBox"; import "../../components/MessageBox.css";
-
-<MessageBox message="<b>Nomination Pools are evolving!</b>
-Soon you'll be able to participate in a pool and in OpenGov with your pooled funds!
-You do not need to do anything, unless you are participating in a pool and also staking solo from the same account. In this case, please check [<b>this article</b>](https://support.polkadot.network/support/solutions/articles/65000188140-changes-for-nomination-pool-members-and-opengov-participation) on the actions you need to take as soon as possible." />
+<!-- MessageBox -->
+<div id="messageBox" class="floating-message-box">
+  <p>
+    Nomination Pools are evolving! Soon you'll be able to participate in a pool and in OpenGov with your pooled funds! You do not need to do anything, unless you are participating in a pool and also staking solo from the same account. In this case, please check
+    <a href="https://support.polkadot.network/support/solutions/articles/65000188140-changes-for-nomination-pool-members-and-opengov-participation" target="_blank" rel="noopener noreferrer">
+      this article
+    </a>
+    on the actions you need to take as soon as possible. 
+  </p>
+  <button class="close-messagebox" aria-label="Close message">✖</button>
+</div>
 
 !!!info "Nomination Pools are live on Polkadot!"
     Nomination pools are a new feature for Polkadot’s staking system that allows users to pool their tokens together on-chain to nominate validators and receive rewards, significantly improving the system’s scalability. Now, anyone with as little as [1 DOT can receive rewards for staking natively on Polkadot](https://polkadot.network/blog/nomination-pools-are-live-stake-natively-with-just-1-dot/). Note that rewards are not guaranteed for those pools that do not have enough bonded funds to be included within the [bags list](./learn-staking-advanced.md#bags-list). **Only members of active pools will receive rewards.**

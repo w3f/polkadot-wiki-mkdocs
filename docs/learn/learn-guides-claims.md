@@ -7,13 +7,16 @@ keywords: [claims, tokens, kusama, polkadot]
 slug: ../learn-guides-claims
 ---
 
-import MessageBox from "../../components/MessageBox"; import "../../components/MessageBox.css";
-
-<MessageBox message="Polkadot-JS is for developers and power users only. If you need help using the Polkadot-JS UI, you can contact the
-[Polkadot Support Team](https://support.polkadot.network/support/home). For more user-friendly tools
-see the [wallets](./wallets-index), [apps](./apps-index) and [dashboard](./dashboards-index) pages." />
-
-<MessageBox message="Screenshots on this page are based on Polkadot, but note that the same process applies to Kusama." />
+<!-- MessageBox -->
+<div id="messageBox" class="floating-message-box">
+  <p>
+    Polkadot-JS is for developers and power users only. If you need help using the Polkadot-JS UI, you can contact the
+    <a href="https://support.polkadot.network/support/home" target="_blank" rel="noopener noreferrer">
+      Polkadot Support Team.
+    </a>
+  </p>
+  <button class="close-messagebox" aria-label="Close message">✖</button>
+</div>
 
 If you participated in a previous DOT sale before 2020 and received your DOT allocation indicator
 tokens, you can now claim your DOT (and a proportional amount of KSM on the Kusama network). The

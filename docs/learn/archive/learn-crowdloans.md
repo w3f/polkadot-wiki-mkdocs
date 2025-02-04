@@ -7,25 +7,38 @@ keywords: [crowdloans, parachains, lending, auction]
 slug: ../learn-crowdloans
 ---
 
-import MessageBox from "../../../components/MessageBox"; import
-"../../../components/MessageBox.css";
-
-<MessageBox message="The content on this page is archived. [Agile Coretime](../learn-agile-coretime) is activated on the network, and crowdloans have been deprecated. For decentralized, transparent, and regulatory-compliant fundraising within the ecosystem, check out the [Polimec parachain](https://www.polimec.org/)." />
+<!-- MessageBox -->
+<div id="messageBox" class="floating-message-box">
+  <p>
+    The content on this page is archived.
+    <a href="../learn-agile-coretime" target="_blank" rel="noopener noreferrer">
+      Agile Coretime
+    </a>
+    is activated on the network, and crowdloans have been deprecated. For decentralized, transparent, and regulatory-compliant fundraising within the ecosystem, check out the
+    <a href="https://www.polimec.org/" target="_blank" rel="noopener noreferrer">
+      Polimec parachain.
+    </a>
+  </p>
+  <button class="close-messagebox" aria-label="Close message">✖</button>
+</div>
 
 Polkadot allows parachains to source tokens for their parachain bids in a decentralized crowdloan.
 
 !!!note "Contributing to a crowdloan"
     If you are here for guidance on how to contribute to a crowdloan, watch the video below or read this [support article on crowdloans](https://support.polkadot.network/support/solutions/articles/65000177341-how-to-participate-in-crowdloans-on-polkadot-or-kusama).
 
-<div className="row">
-  <div className="col text--center">
-    <a href="https://youtu.be/AA9mPANmzmU">
-      <img src="https://img.youtube.com/vi/AA9mPANmzmU/0.jpg" width="350" style={{ borderRadius: 10, border: '1px solid slategrey' }} />
-    </a>
-    <p>
-      <a href="https://youtu.be/AA9mPANmzmU">Crowdloans on Polkadot-JS</a>
-    </p>
-  </div>
+<div class="row" style="display: flex; gap: 20px; justify-content: center;">
+  <!-- Card 1 -->
+  <a 
+    href="https://youtu.be/AA9mPANmzmU" 
+    class="card-container" 
+    data-aos="fade-up" 
+    data-aos-delay="100" 
+    style="width: 300px; height: 300px;"
+  >
+    <img src="https://img.youtube.com/vi/AA9mPANmzmU/0.jpg" class="card-image"/>
+    <p class="card-title">Crowdloans on Polkadot-JS</p>
+  </a>
 </div>
 
 ## Crowdloan Campaigns vs Parachain Auctions

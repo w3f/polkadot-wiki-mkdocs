@@ -7,11 +7,16 @@ keyword: [guides, polkadot-js, accounts, proxy, pure proxy, anonymous proxy]
 slug: ../learn-guides-accounts-proxy-pure
 ---
 
-import MessageBox from "../../components/MessageBox"; import "../../components/MessageBox.css";
-
-<MessageBox message="Polkadot-JS is for developers and power users only. If you need help using the Polkadot-JS UI, you can contact the
-[Polkadot Support Team](https://support.polkadot.network/support/home). For more user-friendly tools
-see the [wallets](./wallets-index), [apps](./apps-index) and [dashboard](./dashboards-index) pages." />
+<!-- MessageBox -->
+<div id="messageBox" class="floating-message-box">
+  <p>
+    Polkadot-JS is for developers and power users only. If you need help using the Polkadot-JS UI, you can contact the
+    <a href="https://support.polkadot.network/support/home" target="_blank" rel="noopener noreferrer">
+      Polkadot Support Team.
+    </a>
+  </p>
+  <button class="close-messagebox" aria-label="Close message">✖</button>
+</div>
 
 !!!caution "The Account Tab in the Polkadot-JS UI cannot handle complex proxy setups"
     The Accounts Tab in the Polkadot-JS UI cannot handle complex proxy setups (e.g. a proxy -> multisig -> a pure proxy which is part of another multisig). These complex setups must be done using the [Extrinsics Tab](https://polkadot.js.org/apps/#/extrinsics) directly.

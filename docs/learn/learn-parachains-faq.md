@@ -7,9 +7,20 @@ keywords: [parachains, application-specific, sharding, faq]
 slug: ../learn-parachains-faq
 ---
 
-import MessageBox from "../../components/MessageBox"; import "../../components/MessageBox.css";
-
-<MessageBox message="Parachain Slot Auctions and Crowdloans will be deprecated right after [Agile Coretime](./learn-agile-coretime) is activated on the network. For existing parachains, the remainder of the lease will automatically be converted to coretime. See more information [here](./learn-agile-coretime#implementation)." />
+<!-- MessageBox -->
+<div id="messageBox" class="floating-message-box">
+  <p>
+    Parachain Slot Auctions and Crowdloans will be deprecated right after
+    <a href="./learn-agile-coretime" target="_blank" rel="noopener noreferrer">
+      Agile Coretime
+    </a>
+    is activated on the network. For existing parachains, the remainder of the lease will automatically be converted to coretime. See more information
+    <a href="./learn-agile-coretime#implementation" target="_blank" rel="noopener noreferrer">
+      here.
+    </a>
+  </p>
+  <button class="close-messagebox" aria-label="Close message">✖</button>
+</div>
 
 ## General
 

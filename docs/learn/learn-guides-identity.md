@@ -7,11 +7,16 @@ keywords: [registrar, identity, sub-identity, polkadot-js]
 slug: ../learn-guides-identity
 ---
 
-import MessageBox from "../../components/MessageBox"; import "../../components/MessageBox.css";
-
-<MessageBox message="Polkadot-JS is for developers and power users only. If you need help using the Polkadot-JS UI, you can contact the
-[Polkadot Support Team](https://support.polkadot.network/support/home). For more user-friendly tools
-see the [wallets](./wallets-index), [apps](./apps-index) and [dashboard](./dashboards-index) pages." />
+<!-- MessageBox -->
+<div id="messageBox" class="floating-message-box">
+  <p>
+    Polkadot-JS is for developers and power users only. If you need help using the Polkadot-JS UI, you can contact the
+    <a href="https://support.polkadot.network/support/home" target="_blank" rel="noopener noreferrer">
+      Polkadot Support Team.
+    </a>
+  </p>
+  <button class="close-messagebox" aria-label="Close message">✖</button>
+</div>
 
 !!!warning "The identity pallet is no longer on the Kusama relay chain."
     If you are on **Kusama**, any of the extrinsics which require you to use the relay chain now have to be called via the system parachain, [which you can find here.](https://polkadot.js.org/apps/?rpc=wss://kusama-people-rpc.polkadot.io)

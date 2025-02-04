@@ -7,9 +7,15 @@ keywords: [token, KSM, inflation]
 slug: ../../kusama-inflation
 ---
 
-import MessageBox from "../../components/MessageBox"; import "../../components/MessageBox.css";
-
-<MessageBox message="[Learn about Polkadot's native token DOT inflation](learn-inflation)." />
+<!-- MessageBox -->
+<div id="messageBox" class="floating-message-box">
+  <p>
+    <a href="../learn/learn-inflation.md" target="_blank" rel="noopener noreferrer">
+      Learn about Polkadot's native token DOT inflation.
+    </a>
+  </p>
+  <button class="close-messagebox" aria-label="Close message">✖</button>
+</div>
 
 KSM is an inflationary token. Inflation is set to be 10% annually. Depending on the supply staked
 and the ideal staking rate (more about this below), part of the inflation is distributed to the

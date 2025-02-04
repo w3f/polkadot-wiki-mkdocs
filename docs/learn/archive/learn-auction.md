@@ -7,10 +7,20 @@ keywords: [auction, slot auctions, parachain, bidding]
 slug: ../learn-auction
 ---
 
-import MessageBox from "../../../components/MessageBox"; import
-"../../../components/MessageBox.css";
-
-<MessageBox message="The content on this page is archived. [Agile Coretime](../learn-agile-coretime) is activated on the network, and parachain slot auctions have been deprecated. For existing parachains, the remainder of the lease is automatically converted to coretime. See more information [here](../learn-agile-coretime#implementation)." />
+<!-- MessageBox -->
+<div id="messageBox" class="floating-message-box">
+  <p>
+    The content on this page is archived.
+    <a href="../learn-agile-coretime.md" target="_blank" rel="noopener noreferrer">
+      Agile Coretime
+    </a>
+    is activated on the network, and parachain slot auctions have been deprecated. For existing parachains, the remainder of the lease is automatically converted to coretime. See more information 
+    <a href="../learn-agile-coretime#implementation" target="_blank" rel="noopener noreferrer">
+      here.
+    </a>
+  </p>
+  <button class="close-messagebox" aria-label="Close message">✖</button>
+</div>
 
 For a [parachain](../learn-parachains.md) to be added to the relay chain it must inhabit one of the
 available parachain slots. The number of parachain slots is not unbounded, as only a limited number
@@ -25,15 +35,18 @@ The parachain slots will be leased according to an unpermissioned
 improving security while operating on a blockchain. See [Rationale](#rationale) for additional
 details.
 
-<div className="row">
-  <div className="col text--center">
-    <a href="https://youtu.be/i5-Rw2Sf7-w">
-      <img src="https://img.youtube.com/vi/i5-Rw2Sf7-w/0.jpg" width="350" style={{ borderRadius: 10, border: '1px solid slategrey' }} />
-    </a>
-    <p>
-      <a href="https://youtu.be/i5-Rw2Sf7-w">A Beginner's guide to Parachain Slot Auctions</a>
-    </p>
-  </div>
+<div class="row" style="display: flex; gap: 20px; justify-content: center;">
+  <!-- Card 1 -->
+  <a 
+    href="https://youtu.be/i5-Rw2Sf7-w" 
+    class="card-container" 
+    data-aos="fade-up" 
+    data-aos-delay="100" 
+    style="width: 300px; height: 300px;"
+  >
+    <img src="https://img.youtube.com/vi/i5-Rw2Sf7-w/0.jpg" class="card-image"/>
+    <p class="card-title">A Beginner's guide to Parachain Slot Auctions</p>
+  </a>
 </div>
 
 ## Mechanics of a Candle Auction
