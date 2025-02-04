@@ -23,7 +23,7 @@ See [this page](./learn-nomination-pools.md) to learn about nomination pools.
 ## Pool Creation with Polkadot-JS
 
 !!!info
-    You easily create a pool using the [Polkadot Staking Dashboard](../general/staking-dashboard.md#pools). See [this support article](https://support.polkadot.network/support/solutions/articles/65000182388-staking-dashboard-how-to-create-a-nomination-pool#How-to-create-a-pool) for more information.
+    You easily create a pool using the [Polkadot Staking Dashboard](../general/dashboards/staking-dashboard.md#pools). See [this support article](https://support.polkadot.network/support/solutions/articles/65000182388-staking-dashboard-how-to-create-a-nomination-pool#How-to-create-a-pool) for more information.
 
 The depositor calls the `create` extrinsic, setting the administrative roles and transferring some
 funds to the pool to add themselves as the first member. As stated above, the depositor must always

@@ -7,8 +7,6 @@ keywords: [gides, advanced, polkadot-js, transfers]
 slug: ../learn-guides-transfers
 ---
 
-import Tabs from "@theme/Tabs"; import TabItem from "@theme/TabItem";
-
 <!-- MessageBox -->
 <div id="messageBox" class="floating-message-box">
   <p>

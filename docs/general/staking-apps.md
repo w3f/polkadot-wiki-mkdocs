@@ -26,7 +26,7 @@ pools. The dashboard supports [Ledger](ledger.md),
 [PolkaGate](wallets-and-extensions.md#polkagate), and Enkrypt. The dashboard also
 supports [staking proxies](../learn/learn-staking.md#stash-account-and-staking-proxy).
 
-You can find more information about the Polkadot staking dashboard on the dedicated [wiki page](staking-dashboard.md) and
+You can find more information about the Polkadot staking dashboard on the dedicated [wiki page](./staking-apps.md#polkadot-staking-dashboard) and
 [support articles](https://support.polkadot.network/support/solutions/folders/65000157523).
 
 Below a list of video tutorial about the Polkadot Staking Dashboard.

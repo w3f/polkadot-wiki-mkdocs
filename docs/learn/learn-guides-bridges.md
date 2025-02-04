@@ -7,9 +7,6 @@ keywords: [Bridge, XCM, Bridge Hub, polkadot-js]
 slug: ../learn-guides-bridges
 ---
 
-import Tabs from "@theme/Tabs"; import TabItem from "@theme/TabItem"; import DocCardList from
-'@theme/DocCardList';
-
 <!-- MessageBox -->
 <div id="messageBox" class="floating-message-box">
   <p>
@@ -21,4 +18,4 @@ import Tabs from "@theme/Tabs"; import TabItem from "@theme/TabItem"; import Doc
   <button class="close-messagebox" aria-label="Close message">✖</button>
 </div>
 
-<DocCardList />
+<!--  TODO: Add index cards -->

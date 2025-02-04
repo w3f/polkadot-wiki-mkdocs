@@ -7,8 +7,7 @@ keywords: [transaction, transfer, DOT, extrinsics]
 slug: ../learn-transactions
 ---
 
-import Tabs from "@theme/Tabs"; import TabItem from "@theme/TabItem"; import DocCardList from
-'@theme/DocCardList';
+import DocCardList from '@theme/DocCardList';
 
 ## Pallets and Extrinsics
 

@@ -18,7 +18,7 @@ slug: ../learn-guides-ledger
   <button class="close-messagebox" aria-label="Close message">✖</button>
 </div>
 
-The [Ledger devices](../general/ledger.md) are hardware wallets that keep your private key secured
+The [Ledger devices](../general/ledger.md#polkadot-generic-app) are hardware wallets that keep your private key secured
 on a physical device not directly exposed to your computer or the internet.
 
 The [Polkadot Generic application](../general/ledger.md#polkadot-generic-app) allows you to manage

@@ -232,7 +232,7 @@ The following tools help you extract and structure data from a Substrate node.
 - [Parity's Substrate Archive](https://github.com/paritytech/substrate-archive) - Can be run
   alongside a Substrate node to archive all blocks, state, and extrinsic data into PostgreSQL
   database.
-- [Subsquid Archives](https://github.com/subsquid/squid-archive-setup) - Generate a GraphQL database
+- [SQD Archives](https://github.com/subsquid/squid-archive-setup) - Generate a GraphQL database
   from a Substrate chain's data with rich filtering and querying capabilities. The data (events,
   extrinsics, blocks) for most parachains is readily available though public archive GraphQL
   endpoints, kept in
