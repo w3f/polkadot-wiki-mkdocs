@@ -189,7 +189,7 @@ level=info ts=2021-04-16T19:02:20.234Z caller=main.go:767 msg="Server is ready t
 
 ```
 
-Go to `https://SERVER_IP_ADDRESS:9090/graph` to check whether you are able to access the Prometheus
+Go to `http://SERVER_IP_ADDRESS:9090/graph` to check whether you are able to access the Prometheus
 interface or not. If it is working, exit the process by pressing on `CTRL + C`.
 
 Next, we would like to automatically start the server during the boot process, so we have to create
