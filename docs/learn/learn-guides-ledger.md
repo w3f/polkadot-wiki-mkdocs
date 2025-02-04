@@ -13,7 +13,7 @@ import MessageBox from "../../components/MessageBox"; import "../../components/M
 [Polkadot Support Team](https://support.polkadot.network/support/home). For more user-friendly tools
 see the [wallets](./wallets-index), [apps](./apps-index) and [dashboard](./dashboards-index) pages." />
 
-The [Ledger devices](../general/ledger.md) are hardware wallets that keep your private key secured
+The [Ledger devices](../general/ledger.md#polkadot-generic-app) are hardware wallets that keep your private key secured
 on a physical device not directly exposed to your computer or the internet.
 
 The [Polkadot Generic application](../general/ledger.md#polkadot-generic-app) allows you to manage

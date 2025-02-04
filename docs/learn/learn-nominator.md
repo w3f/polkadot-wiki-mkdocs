@@ -245,7 +245,7 @@ If you are a beginner, please watch the video below for detailed instructions.
 
 [![Staking Tutorial](https://img.youtube.com/vi/F59N3YKYCRs/0.jpg)](https://www.youtube.com/watch?v=F59N3YKYCRs)
 
-The [Polkadot Staking Dashboard](../general/staking-dashboard.md) allows to choose pre-selected
+The [Polkadot Staking Dashboard](../general/dashboards/staking-dashboard.md) allows to choose pre-selected
 lists of validators based on user preference, or to manually select validators similarly as in the
 Polkadot-JS UI.
 

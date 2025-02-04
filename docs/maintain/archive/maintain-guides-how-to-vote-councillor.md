@@ -21,14 +21,14 @@ slug: ../maintain-guides-how-to-vote-councillor
 The council is an elected body of on-chain accounts that are intended to represent the passive
 stakeholders of Polkadot and/or Kusama. The council has two major tasks in governance: proposing
 referenda and vetoing dangerous or malicious referenda. For more information on the council, see the
-[governance page](../learn/archive/learn-governance.md#council). This guide will walk you through
+[governance page](../../learn/archive/learn-governance.md#council). This guide will walk you through
 voting for councillors in the elections.
 
 ## Voting for Councillors
 
 Voting for councillors requires you to reserve 20.064 DOT (0.067 KSM on Kusama) as a base amount and
 an amount of 0.032 DOT (0.0001 KSM on Kusama) per vote. You can then bond whatever amount you wish
-to put behind your vote. See the [democracy guide](./archive/maintain-guides-democracy.md) for more
+to put behind your vote. See the [democracy guide](./maintain-guides-democracy.md) for more
 information.
 
 !!!warning
