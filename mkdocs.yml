@@ -119,7 +119,7 @@ nav:
           - Multisig Apps: general/multisig-apps.md
           - NFT Projects: learn/learn-nft-projects.md
           - Parachains Apps: general/parachains-apps.md
-          - Dashboards:
+      - Dashboards:
               - Dune Analytics:
                   - Polkadot Ecosystem Overview: general/dashboards/dune-analytics/polkadot-dashboards/legacy/polkadot-ecosystem-overview.md
                   - Onboarding Status and Key Dashboards: general/dashboards/dune-analytics/onboarding-status-and-key-dashboards.md
@@ -161,7 +161,7 @@ nav:
                   - DuneSQL Cheatsheet: general/dashboards/dune-analytics/dunesql-cheatsheet.md
               - Parity Data Dashboards: general/dashboards/parity-data-dashboards.md
               - Staking Dashboard: general/dashboards/staking-dashboard.md
-              - Fellowship Dashboard: https://polkadot-fellows.xyz
+              - Fellowship Dashboard: https://polkadot-fellows.xyz  
       - Community & Contributors:
           - Community: general/community.md
           - Contributing: general/contributing.md
