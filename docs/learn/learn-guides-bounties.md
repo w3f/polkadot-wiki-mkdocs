@@ -7,11 +7,11 @@ keyword: [treasury, bounties, guides, child bounty, polkadot-js]
 slug: ../learn-guides-bounties
 ---
 
-import MessageBox from "../../components/MessageBox"; import "../../components/MessageBox.css";
+
 
 <MessageBox message="Polkadot-JS is for developers and power users only. If you need help using the Polkadot-JS UI, you can contact the
 [Polkadot Support Team](https://support.polkadot.network/support/home). For more user-friendly tools
-see the [wallets](./wallets-index), [apps](./apps-index) and [dashboard](./dashboards-index) pages." />
+see the [wallets](../general/wallets-and-extensions.md), [apps](./apps-index) and [dashboard](./dashboards-index) pages." />
 
 See [this page](./learn-polkadot-opengov-treasury.md#bounties) to learn about Bounties.
 
@@ -29,7 +29,7 @@ an OpenGov referendum.
 <div className="row">
 <div className="col text--center">
     <a href="https://youtu.be/Qv_nJVcvQr8?t=52">
-      <img src="https://img.youtube.com/vi/Qv_nJVcvQr8/0.jpg" width="350" style={{ borderRadius: 10, border: '1px solid slategrey' }} />
+      <img src="https://img.youtube.com/vi/Qv_nJVcvQr8/0.jpg" width="350" style="borderRadius: 10, border: '1px solid slategrey'" />
     </a>
     <p>
       <a href="https://youtu.be/Qv_nJVcvQr8?t=52">Introduction to Bounties</a>
@@ -37,7 +37,7 @@ an OpenGov referendum.
   </div>
   <div className="col text--center">
     <a href="https://www.youtube.com/watch?v=8Cft1-8RWmk">
-      <img src="https://img.youtube.com/vi/8Cft1-8RWmk/0.jpg" width="350" style={{ borderRadius: 10, border: '1px solid slategrey' }} />
+      <img src="https://img.youtube.com/vi/8Cft1-8RWmk/0.jpg" width="350" style="borderRadius: 10, border: '1px solid slategrey'" />
     </a>
     <p>
       <a href="https://www.youtube.com/watch?v=8Cft1-8RWmk">Submit a Bounty</a>
@@ -80,7 +80,7 @@ how you can add a curator to a bounty and submit it for approval through an Open
 <div className="row">
   <div className="col text--center">
     <a href="https://www.youtube.com/watch?v=TM7vk3oP9IA">
-      <img src="https://img.youtube.com/vi/TM7vk3oP9IA/0.jpg" width="350" style={{ borderRadius: 10, border: '1px solid slategrey' }} />
+      <img src="https://img.youtube.com/vi/TM7vk3oP9IA/0.jpg" width="350" style="borderRadius: 10, border: '1px solid slategrey'" />
     </a>
     <p>
       <a href="https://www.youtube.com/watch?v=TM7vk3oP9IA">Assign Curator to a Bounty</a>
@@ -122,7 +122,7 @@ separately, depending on the process curators consider appropriate for their bou
 <div className="row">
   <div className="col text--center">
     <a href="https://www.youtube.com/watch?v=mLpvx0OQoyM">
-      <img src="https://img.youtube.com/vi/mLpvx0OQoyM/0.jpg" width="350" style={{ borderRadius: 10, border: '1px solid slategrey' }} />
+      <img src="https://img.youtube.com/vi/mLpvx0OQoyM/0.jpg" width="350" style="borderRadius: 10, border: '1px solid slategrey'" />
     </a>
     <p>
       <a href="https://www.youtube.com/watch?v=mLpvx0OQoyM">Create and Award Child Bounties</a>
@@ -151,7 +151,7 @@ permissionless, and anyone can initiate the claim on behalf of the beneficiary.
 <div className="row">
   <div className="col text--center">
     <a href="https://www.youtube.com/watch?v=db82aHgy23c">
-      <img src="https://img.youtube.com/vi/db82aHgy23c/0.jpg" width="350" style={{ borderRadius: 10, border: '1px solid slategrey' }} />
+      <img src="https://img.youtube.com/vi/db82aHgy23c/0.jpg" width="350" style="borderRadius: 10, border: '1px solid slategrey'" />
     </a>
     <p>
       <a href="https://www.youtube.com/watch?v=db82aHgy23c">Claim Child Bounty Reward</a>
@@ -171,7 +171,7 @@ See the video tutorial below to learn how to close a child bounty.
 <div className="row">
   <div className="col text--center">
     <a href="https://www.youtube.com/watch?v=Qv_nJVcvQr8&t=2109s">
-      <img src="https://img.youtube.com/vi/Qv_nJVcvQr8/0.jpg" width="350" style={{ borderRadius: 10, border: '1px solid slategrey' }} />
+      <img src="https://img.youtube.com/vi/Qv_nJVcvQr8/0.jpg" width="350" style="borderRadius: 10, border: '1px solid slategrey'" />
     </a>
     <p>
       <a href="https://www.youtube.com/watch?v=Qv_nJVcvQr8&t=2109s">Close a Child Bounty</a>

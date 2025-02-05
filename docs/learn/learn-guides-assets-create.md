@@ -7,11 +7,11 @@ keywords: [asset hub, assets, statemine, statemint, polkadot-js]
 slug: ../learn-guides-assets-create
 ---
 
-import MessageBox from "../../components/MessageBox"; import "../../components/MessageBox.css";
+
 
 <MessageBox message="Polkadot-JS is for developers and power users only. If you need help using the Polkadot-JS UI, you can contact the
 [Polkadot Support Team](https://support.polkadot.network/support/home). For more user-friendly tools
-see the [wallets](./wallets-index), [apps](./apps-index) and [dashboard](./dashboards-index) pages." />
+see the [wallets](../general/wallets-and-extensions.md), [apps](./apps-index) and [dashboard](./dashboards-index) pages." />
 
 The Asset Hub is a generic assets system parachain which provides functionality for deploying and
 transferring assets — both Fungible and Non-Fungible Tokens (NFTs). The native token of the Asset

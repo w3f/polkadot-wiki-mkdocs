@@ -21,7 +21,7 @@ share these with anyone, they can access your account and execute any transactio
 <div className="row">
   <div className="col text--center">
     <a href="https://www.youtube.com/watch?v=ARsdXZycJAg">
-      <img src="https://img.youtube.com/vi/ARsdXZycJAg/0.jpg" width="350" style={{ borderRadius: 10, border: '1px solid slategrey' }} />
+      <img src="https://img.youtube.com/vi/ARsdXZycJAg/0.jpg" width="350" style="borderRadius: 10, border: '1px solid slategrey'" />
     </a>
     <p>
       <a href="https://www.youtube.com/watch?v=ARsdXZycJAg">Stay Safe in Polkadot</a>
@@ -95,7 +95,7 @@ pages can be found [here](./community.md).
 
 You should _never_ share your seed phrase, passwords, private keys, or any other personal data with
 anyone. If you are concerned a wallet could be fake, please check out our list of well-known
-[wallets](./wallets).
+[wallets](./wallets-and-extensions.md).
 
 Some simple things that you can do to keep your assets and information secure from hackers:
 

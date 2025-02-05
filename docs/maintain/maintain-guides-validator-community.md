@@ -9,7 +9,7 @@ slug: ../maintain-guides-validator-community
 
 ## Building a Community and Attracting Nominations
 
-After [setting up a validator](maintain-guides-how-to-validate-Polkadot), nominations will only come
+After [setting up a validator](./maintain-guides-how-to-validate-polkadot.md), nominations will only come
 in with extra work. The community of nominators will need to know about the validator to trust
 staking with them, and thus the validator must distinguish themselves to attract nominations. The
 following gives some general guidance on different approaches to building a community and attracting

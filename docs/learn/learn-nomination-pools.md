@@ -7,7 +7,7 @@ keyword: [nominate, nominator, stake, staking, pools]
 slug: ../learn-nomination-pools
 ---
 
-import MessageBox from "../../components/MessageBox"; import "../../components/MessageBox.css";
+
 
 <MessageBox message="<b>Nomination Pools are evolving!</b>
 Soon you'll be able to participate in a pool and in OpenGov with your pooled funds!
@@ -109,7 +109,7 @@ your behalf. There are four permission options:
 - `PermissionlessAll`: you grant permission to any other account to compound or withdraw your
   rewards on your behalf.
 
-See the [Staking Dashboard page](../general/staking-dashboard.md#pools) for more information about
+See the [Staking Dashboard page](../general/dashboards/staking-dashboard.md#pools) for more information about
 how to set your claim permissions.
 
 See the [advanced guides](./learn-guides-staking-pools.md#claim-rewards-for-other-pool-members) to
@@ -163,7 +163,7 @@ for guidelines.
 
 As the pool root role, you can set pool commissions that will be applied to the staking rewards paid
 out to the pool's system account before rewards are allocated for the pool members. You can set pool
-commissions through the [Polkadot Staking Dashboard](../general/staking-dashboard.md#pools).
+commissions through the [Polkadot Staking Dashboard](../general/dashboards/staking-dashboard.md#pools).
 
 Three methods can be used when setting the pool commission:
 
@@ -208,7 +208,7 @@ following statements are true:
 ## Pool Lifecycle
 
 !!!info "Advanced How-to Guides"
-    See [this page](./learn-guides-staking-pools#pool-creation) for more information about the lifecycle of nomination pools. The cycle includes creation, upkeep and destruction.
+    See [this page](./learn-guides-staking-pools.md#pool-creation) for more information about the lifecycle of nomination pools. The cycle includes creation, upkeep and destruction.
 
 ## Nomination Pools - Slashing
 

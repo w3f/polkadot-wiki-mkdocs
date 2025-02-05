@@ -25,7 +25,7 @@ origin.
 Setting up any Substrate-based node relies on a similar process. For example, by default, they will
 all share the same WebSocket connection at port 9944 on localhost. In this example, we'll set up a
 Polkadot sync node on a Debian-flavoured server (such as Ubuntu 22.04). Create a new server on your
-provider of choice or locally at home. See [Set up a Full Node](maintain-sync) for additional
+provider of choice or locally at home. See [Set up a Full Node](./maintain-sync.md) for additional
 instructions. You can install from the default apt repository or build from scratch. The startup
 options in the setup process provide various settings that can be modified.
 
@@ -77,7 +77,7 @@ mode is `--rpc-methods Safe`
 
 To safely access your ws connection over an SSL-enabled connection (needed for polkadot.js), you
 have to convert the ws connection to a secure (wss) connection by using a proxy and an SSL
-certificate, you can find instructions on securing the ws port [here](/docs/maintain-wss).
+certificate, you can find instructions on securing the ws port [here](./maintain-wss.md).
 
 ## Connecting to the Node
 

@@ -86,7 +86,7 @@ implemented in the Asset Hub runtime. This signed-extension extends transactions
 optional `AssetId` that specifies the asset to be used for payment of both the execution fees and
 the optional tip. It defaults to the native token when it is set to `None`. In case it is given,
 this `AssetId` has to be an
-[XCM `Multilocation`](../learn/learn/xcm/fundamentals/multilocation-summary). Once the transaction
+[XCM `Multilocation`](../learn/xcm/fundamentals/multilocation/summary.md). Once the transaction
 is executed in the block, it will emit an `AssetTxFeePaid` event, informing of the account paying
 the fees, the amount in the asset paid as fee, the tip (if any), and the asset ID of the asset
 paying the fees.

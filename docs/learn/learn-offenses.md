@@ -7,7 +7,7 @@ keyword: [nominate, nominator, offenses, slashes, validator, equivocation, disab
 slug: ../learn-offenses
 ---
 
-import MessageBox from "../../components/MessageBox"; import "../../components/MessageBox.css";
+
 
 <MessageBox message="The material provided here is based on the changes introduced by Step 2 of the Disabling feature.
 See [this page](https://github.com/orgs/paritytech/projects/119/views/15?pane=issue&itemId=61684472)

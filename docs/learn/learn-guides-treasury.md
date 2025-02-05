@@ -7,11 +7,11 @@ keywords: [opengov, polkadot opengov, referenda, treasury, tipps, polkadot-js]
 slug: ../learn-guides-treasury
 ---
 
-import MessageBox from "../../components/MessageBox"; import "../../components/MessageBox.css";
+
 
 <MessageBox message="Polkadot-JS is for developers and power users only. If you need help using the Polkadot-JS UI, you can contact the
 [Polkadot Support Team](https://support.polkadot.network/support/home). For more user-friendly tools
-see the [wallets](./wallets-index), [apps](./apps-index) and [dashboard](./dashboards-index) pages." />
+see the [wallets](../general/wallets-and-extensions.md), [apps](./apps-index) and [dashboard](./dashboards-index) pages." />
 
 See [this page](./learn-polkadot-opengov-treasury.md) to learn about the Polkadot Treasury.
 
@@ -100,7 +100,7 @@ Polkadot-JS UI [referenda page](https://polkadot.js.org/apps/#/referenda).
 
 For the referendum to move from preparing phase to the deciding phase, a decision deposit needs to
 be placed. The decision deposit values for each individual
-[Treasury Tracks](./learn-polkadot-opengov-treasury#treasury-tracks) are listed in a section above
+[Treasury Tracks](./learn-polkadot-opengov-treasury.md#treasury-tracks) are listed in a section above
 in this document.
 
 ![Submit Treasury Proposal Decision Deposit](../assets/treasury/treasury-proposal-decision-deposit.png)

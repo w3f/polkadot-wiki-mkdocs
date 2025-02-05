@@ -389,7 +389,7 @@ attempting to slash deposits of good referenda. A subsequent Referendum Killer c
 Referendum Killer.
 
 For more information about how to cancel or kill a referendum, see the
-[advanced how-to guides](./learn-guides-polkadot-opengov#cancel-or-kill-a-referendum).
+[advanced how-to guides](./learn-guides-polkadot-opengov.md#cancel-or-kill-a-referendum).
 
 !!!info "Blacklisting"
     Blacklisting referenda in Polkadot OpenGov is [the same as in Governance v1](./archive/learn-governance.md#blacklisting-proposals).

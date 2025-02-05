@@ -7,7 +7,7 @@ keywords: [token, KSM, inflation]
 slug: ../../kusama-inflation
 ---
 
-import MessageBox from "../../components/MessageBox"; import "../../components/MessageBox.css";
+
 
 <MessageBox message="[Learn about Polkadot's native token DOT inflation](learn-inflation)." />
 

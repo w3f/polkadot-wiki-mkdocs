@@ -7,11 +7,11 @@ keywords: [gides, advanced, polkadot-js, transfers]
 slug: ../learn-guides-transfers
 ---
 
-import MessageBox from "../../components/MessageBox"; import "../../components/MessageBox.css";
+
 
 <MessageBox message="Polkadot-JS is for developers and power users only. If you need help using the Polkadot-JS UI, you can contact the
 [Polkadot Support Team](https://support.polkadot.network/support/home). For more user-friendly tools
-see the [wallets](./wallets-index), [apps](./apps-index) and [dashboard](./dashboards-index) pages." />
+see the [wallets](../general/wallets-and-extensions.md), [apps](./apps-index) and [dashboard](./dashboards-index) pages." />
 
 ## Metadata Updates with the Polkadot-JS Browser Extension
 
@@ -88,7 +88,7 @@ There are two ways that vesting schedules can be created.
 Vesting schedules have three parameters:
 
 - **locked**, the amount of tokens to be transferred in
-  [Planck units](../learn/learn-DOT#the-planck-unit))
+  [Planck units](../learn/learn-DOT.md#the-planck-unit)
 - **per block**, the number of tokens that are released per block
 - **starting block**, the block number after which the vesting schedule starts
 

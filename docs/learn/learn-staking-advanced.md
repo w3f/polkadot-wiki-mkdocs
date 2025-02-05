@@ -289,7 +289,7 @@ reward would no longer be claimable.
 !!!caution
       The staking-miner code is experimental and it is still in the development phase. Use is at your own discretion, as there is a risk of losing some funds.
 
-At the end of each era on Polkadot and Kusama, using [NPoS](learn-phragmen), a new set of validators
+At the end of each era on Polkadot and Kusama, using [NPoS](learn-phragmen.md), a new set of validators
 must be elected based on the nominator preferences. This is a computationally intensive process,
 hence the usage of the term "mining" for computing the solution. The validators use
 [off-chain workers](https://docs.substrate.io/reference/how-to-guides/offchain-workers/) to compute

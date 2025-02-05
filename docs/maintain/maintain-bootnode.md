@@ -21,7 +21,7 @@ The consensus is that bootnodes have to be accessible in three ways:
 - **p2p/ws**: the WebSocket version, which can be set by `--listen-addr /ip4/0.0.0.0/tcp/<port>/ws`.
 - **p2p/wss**: the _secure_ websocket version. An SSL-secured connection to the p2p/ws port must be
   achieved by a proxy since the node cannot include certificates. It is needed for light clients.
-  See [here](/docs/maintain-wss) for info about setting this up.
+  See [here](./maintain-wss.md) for info about setting this up.
 
 ## Network Key
 

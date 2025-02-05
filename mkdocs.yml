@@ -124,7 +124,7 @@ nav:
                   - Polkadot Ecosystem Overview: general/dashboards/dune-analytics/polkadot-dashboards/legacy/polkadot-ecosystem-overview.md
                   - Onboarding Status and Key Dashboards: general/dashboards/dune-analytics/onboarding-status-and-key-dashboards.md
                   - Annual Reviews:
-                      - Polkadot 2024 Review: general/dashboards/dune-analytics/polkadot-dashboards/annual-reviews/polkadot-2024-review.md
+                      - Polkadot 2024 Review: general/dashboards/dune-analytics/annual-reviews/polkadot-dashboards-2024-year-in-review.md
                   - Polkadot Dashboards:
                       - Overview: general/dashboards/dune-analytics/polkadot-dashboards/polkadot-dashboards-overview.md
                       - Governance: general/dashboards/dune-analytics/polkadot-dashboards/polkadot-dashboards-governance.md
@@ -276,11 +276,11 @@ nav:
                       - Assets Create: learn/learn-guides-assets-create.md
                       - Asset Conversion: learn/learn-guides-asset-conversion.md
                   - Bridge Hub Guides:
-                      - DOT-KSM Bridge: learn/learn-guides-dot-ksm-bridge.md
+                      - DOT-KSM Bridge: learn/learn-guides-DOT-KSM-bridge.md
                   - Claims: learn/learn-guides-claims.md
       - Comparisons:
           - Kusama: learn/learn-comparisons-kusama.md
-          - Ethereum: learn/learn-comparisons-ethereum.md
+          - Ethereum: learn/learn-comparison-ethereum.md
           - Cosmos: learn/learn-comparisons-cosmos.md
           - Avalanche: learn/learn-comparisons-avalanche.md
       - Video Tutorials: https://www.youtube.com/@PolkadotNetwork/playlists
@@ -351,7 +351,7 @@ nav:
       - Archive:
           - Democracy Guide: maintain/archive/maintain-guides-democracy.md
           - How to Join Council: maintain/archive/maintain-guides-how-to-join-council.md
-          - How to Vote Councillor: maintain/archive/maintain-guides-how-to-vote-councillor
+          - How to Vote Councillor: maintain/archive/maintain-guides-how-to-vote-councillor.md
   - Kusama:
       - Getting Started: kusama/kusama-getting-started.md
       - Timeline: kusama/kusama-timeline.md

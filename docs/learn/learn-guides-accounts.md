@@ -7,13 +7,13 @@ keyword: [guides, polkadot-js, accounts]
 slug: ../learn-guides-accounts
 ---
 
-import DocCardList from '@theme/DocCardList'; import MessageBox from "../../components/MessageBox"; import "../../components/MessageBox.css";
+ 
 
 <MessageBox message="Polkadot-JS is for developers and power users only. If you need help using the Polkadot-JS UI, you can contact the
 [Polkadot Support Team](https://support.polkadot.network/support/home). For more user-friendly tools
-see the [wallets](./wallets-index), [apps](./apps-index) and [dashboard](./dashboards-index) pages." />
+see the [wallets](../general/wallets-and-extensions.md), [apps](./apps-index) and [dashboard](./dashboards-index) pages." />
 
-<DocCardList />
+<!-- TODO: INDEX CARDS -->
 
 ## Account Address Format
 
@@ -49,7 +49,7 @@ clicking the colorful icon of your account will copy it in that format.
 <div className="row">
   <div className="col text--center">
     <a href="https://www.youtube.com/watch?v=DNU0p5G0Gqc">
-      <img src="https://img.youtube.com/vi/DNU0p5G0Gqc/0.jpg" width="350" style={{ borderRadius: 10, border: '1px solid slategrey' }} />
+      <img src="https://img.youtube.com/vi/DNU0p5G0Gqc/0.jpg" width="350" style="borderRadius: 10, border: '1px solid slategrey'" />
     </a>
     <p>
       <a href="https://www.youtube.com/watch?v=DNU0p5G0Gqc">Polkadot-JS Browser Extension Tutorial</a>

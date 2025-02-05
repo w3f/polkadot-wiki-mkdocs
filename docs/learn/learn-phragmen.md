@@ -44,7 +44,7 @@ constant block time of six seconds and prevent long block times at the end of ea
 validator election takes place.
 
 !!!info "Staking Miners"
-    The process of computing the optimal solution for NPoS election can be delegated to [Staking Miners](learn-staking-miner).
+    The process of computing the optimal solution for NPoS election can be delegated to [Staking Miners](./learn-staking-advanced.md#staking-miner).
 
 ### Council Elections
 

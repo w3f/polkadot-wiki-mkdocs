@@ -19,7 +19,7 @@ keywords:
 slug: ../learn-comparisons
 ---
 
-import DocCardList from '@theme/DocCardList';
+
 
 ## Rollup Comparison
 
@@ -223,4 +223,4 @@ In this section, we explore the main differences in interoperability between Pol
 
 ## Other Comparisons
 
-<DocCardList />
+<!-- TODO: INDEX CARDS -->

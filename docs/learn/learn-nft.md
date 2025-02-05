@@ -56,7 +56,7 @@ a few dollars but were on average around $100 per interaction (transfer, mint, s
 Ethereum.
 
 This prevents use cases that go beyond the current craze of _digital dust gathering NFTs_ on
-Ethereum - profile pictures, generative "look once and then put away" art, [ENS](ens) addresses, and
+Ethereum - profile pictures, generative "look once and then put away" art, [ENS](https://ens.domains/) addresses, and
 [proof of attendance badges](https://poap.xyz/) (which have since moved to the xDAI chain to save on
 gas fees).
 
@@ -93,6 +93,6 @@ and Efinity (Paratoken), the following efforts are underway:
 
 ## References
 
-- [1]: [Investopedia](https://www.investopedia.com/terms/learn/liars-poker.asp)
+- [1]: [Investopedia](https://www.investopedia.com/terms/l/liars-poker.asp)
 - [2]:
   [Unique Network's Chelobrick](https://unique.network/blog/chelobricks-making-waves-with-10-000-substrate-based-nfts/)

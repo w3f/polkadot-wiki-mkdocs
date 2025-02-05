@@ -21,7 +21,7 @@ vision with Polkadot. It will also point to resources you can use to start build
 !!!note For Developers!
     Please note that the following documentation is more geared towards developers. If you are looking
     for more general knowledge related to Polkadot, be sure to check out the
-    [Learn](../docs/learn-index) section.
+    [Learn](../learn/index.md) section.
 
 This build guide covers three different areas, taking a **top-down** approach from protocol
 development to user-facing applications:
@@ -105,7 +105,7 @@ in order to gain context about the application you could make.
 
 Polkadot is canonically referred to as the relay chain. It is also considered a _layer zero_
 protocol, as it enables the interoperability and shared security of multiple
-[parachains](learn-parachains.md), which are _layer one_ protocols. Parachains currently
+[parachains](../learn/learn-parachains.md), which are _layer one_ protocols. Parachains currently
 connect to a relay chain using the [Parachains Protocol](../learn/learn-parachains-protocol.md).
 More elaborate (or simpler) tasks could be constructed in the future.
 
@@ -272,7 +272,7 @@ on-chain.
 
 A Polkadot-native choice for smart contracts is [ink!](https://use.ink/). Other parachains that
 offer EVM-based contracts written in Solidity alongside ink!
-[are also available](./build-smart-contracts#parachains).
+[are also available](../build/build-smart-contracts.md#parachains).
 
 Because smart contracts exist on a single chain at a time, they can have smooth interoperability
 with other smart contracts on the same chain. However, they will always be constrained and limited
@@ -296,10 +296,10 @@ For front-end applications, several options exist for interfacing with Substrate
 (parachains, relay chains, etc.) and smart contracts. These often will interact with the RPC of a
 Substrate node.
 
-[Please visit the documentation for developing dApps and other general client-side development resources.](build-dapp)
+[Please visit the documentation for developing dApps and other general client-side development resources.](../build/build-dapp.md)
 
 For a complete list of tools, please take a look here:
-[Tools, APIs, and Languages](build-open-source.md)
+[Tools, APIs, and Languages](../build/build-open-source.md)
 
 ## Resources
 

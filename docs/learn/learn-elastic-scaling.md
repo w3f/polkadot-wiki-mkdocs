@@ -7,7 +7,7 @@ keywords: [elastic scaling, parachains, coretime, blockspace, parallel computing
 slug: ../learn-elastic-scaling
 ---
 
-import MessageBox from "../../components/MessageBox"; import "../../components/MessageBox.css";
+
 
 <MessageBox message="To fully follow the material on this page, it is recommended to be familiar with the primary stages
 of the [Parachain Protocol](./learn-parachains-protocol)." />

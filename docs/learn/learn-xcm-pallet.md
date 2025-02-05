@@ -8,7 +8,7 @@ slug: ../learn-xcm-pallet
 ---
 
 !!!info "XCM Documentation"
-    For a more practical approach to utilizing XCM, refer to the [XCM Docs](./learn/xcm). Please keep in mind that XCM is under active development.
+    For a more practical approach to utilizing XCM, refer to the [XCM Docs](./xcm/overview/intro.md). Please keep in mind that XCM is under active development.
 
 The XCM pallet
 ([`pallet-xcm`](https://github.com/paritytech/polkadot-sdk/blob/master/polkadot/xcm/pallet-xcm/src/lib.rs))

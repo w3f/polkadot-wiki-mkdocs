@@ -47,7 +47,7 @@ Proposals may consist of (but are not limited to):
 - Community events and outreach (meetups, pizza parties, hackerspaces).
 - Software development (wallets and wallet integration, clients and client upgrades).
 
-The [Council](learn-governance#council) governs the Treasury and how the funds are spent is up to
+The [Council](learn-governance.md#council) governs the Treasury and how the funds are spent is up to
 their judgment.
 
 !!!caution

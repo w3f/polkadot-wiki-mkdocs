@@ -10,7 +10,7 @@ slug: ../build-guides-coretime-start
 !!!warning
     This section is under construction.
 
-<DocCardList />
+<!-- TODO: INDEX CARDS -->
 
 ## Using the Polkadot SDK
 

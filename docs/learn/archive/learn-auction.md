@@ -28,7 +28,7 @@ details.
 <div className="row">
   <div className="col text--center">
     <a href="https://youtu.be/i5-Rw2Sf7-w">
-      <img src="https://img.youtube.com/vi/i5-Rw2Sf7-w/0.jpg" width="350" style={{ borderRadius: 10, border: '1px solid slategrey' }} />
+      <img src="https://img.youtube.com/vi/i5-Rw2Sf7-w/0.jpg" width="350" style="borderRadius: 10, border: '1px solid slategrey'" />
     </a>
     <p>
       <a href="https://youtu.be/i5-Rw2Sf7-w">A Beginner's guide to Parachain Slot Auctions</a>

@@ -7,7 +7,7 @@ keywords: [polkadotjs, polkadotjs apps, apps UI, extension]
 slug: ../polkadotjs
 ---
 
-import MessageBox from "../../components/MessageBox"; import "../../components/MessageBox.css";
+
 
 <MessageBox message="Polkadot-JS is for developers and power users only. If you need help using the Polkadot-JS UI, you can contact the
 [Polkadot Support Team](https://support.polkadot.network/support/home). For more user-friendly tools
@@ -133,7 +133,7 @@ Let's see how we can query on-chain data with Polkadot-JS UI on the Polkadot net
 example. To find out the current value for existential deposit, navigate to Developer > Chain
 state > Constants and query the balances pallet for existential deposit as shown in the snapshot
 below. You need to click on the plus button to execute the query. The value displayed is in
-[plancks](learn-DOT#polkadot)
+[plancks](../learn/learn-DOT.md#polkadot)
 
 ![query chain state](../assets/chain-state-constant.png)
 

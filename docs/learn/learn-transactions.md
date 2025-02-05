@@ -7,7 +7,7 @@ keywords: [transaction, transfer, DOT, extrinsics]
 slug: ../learn-transactions
 ---
 
-import DocCardList from '@theme/DocCardList';
+
 
 ## Pallets and Extrinsics
 

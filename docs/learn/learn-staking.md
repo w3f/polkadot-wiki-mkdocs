@@ -7,7 +7,7 @@ keywords: [staking, stake, nominate, nominating, NPoS, faq]
 slug: ../learn-staking
 ---
 
-import MessageBox from "../../components/MessageBox"; import "../../components/MessageBox.css";
+
 
 <MessageBox message="<b>Nomination Pools are evolving!</b>
 Soon you'll be able to participate in a pool and in OpenGov with your pooled funds!
@@ -459,4 +459,4 @@ might not be receiving staking rewards using Polkadot-JS UI.
 ---
 
 !!!info "Polkadot-JS Guides"
-    If you are an advanced user, see the [Polkadot-JS guides about staking](./learn-guides-staking).
+    If you are an advanced user, see the [Polkadot-JS guides about staking](./learn-guides-staking.md).

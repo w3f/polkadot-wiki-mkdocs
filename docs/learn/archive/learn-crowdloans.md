@@ -20,7 +20,7 @@ Polkadot allows parachains to source tokens for their parachain bids in a decent
 <div className="row">
   <div className="col text--center">
     <a href="https://youtu.be/AA9mPANmzmU">
-      <img src="https://img.youtube.com/vi/AA9mPANmzmU/0.jpg" width="350" style={{ borderRadius: 10, border: '1px solid slategrey' }} />
+      <img src="https://img.youtube.com/vi/AA9mPANmzmU/0.jpg" width="350" style="borderRadius: 10, border: '1px solid slategrey'" />
     </a>
     <p>
       <a href="https://youtu.be/AA9mPANmzmU">Crowdloans on Polkadot-JS</a>

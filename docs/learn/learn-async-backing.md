@@ -7,11 +7,9 @@ keywords: [parachains, backing, parablock, perspective parachains, unincluded se
 slug: ../learn-async-backing
 ---
 
-import MessageBox from "../../components/MessageBox"; import "../../components/MessageBox.css";
-
 <MessageBox message="To fully follow the material on this page, it is recommended to be familiar with the primary stages
-of the [Parachain Protocol](./learn-parachains-protocol). <br><br> For upgrading a parachain for Asynchronous Backing compatibility, follow the instructions on
-[this Wiki document.](./maintain-guides-async-backing)" />
+of the [Parachain Protocol](./learn-parachains-protocol.md). <br><br> For upgrading a parachain for Asynchronous Backing compatibility, follow the instructions on
+[this Wiki document.](./maintain-guides-async-backing.md)" />
 
 [Pipelining](<https://en.wikipedia.org/wiki/Pipeline_(computing)>) is a technique for processing
 multiple stages of a task simultaneously by breaking it into smaller steps. This allows the next

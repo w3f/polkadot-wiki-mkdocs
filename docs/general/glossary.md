@@ -29,7 +29,7 @@ that says whether they think a parachain candidate block is valid or invalid.
 ## Auction (Parachain)
 
 Parachain auctions were used by non-system parachains to access Polkadot. The current method is
-through purchase of [coretime](#agile-coretime).
+through purchase of [coretime](#coretime).
 
 ## Aura
 
@@ -142,7 +142,7 @@ transition proofs for the validators.
 The Polkadot Collectives parachain was added in
 [Referendum 81](https://polkadot.polkassembly.io/referendum/81) and exists only on Polkadot (i.e.,
 there is no Kusama equivalent). The Collectives chain hosts on-chain collectives that serve the
-Polkadot network, such as the [Fellowship](#fellowship) and [Polkadot Alliance](#polkadot-alliance).
+Polkadot network, such as the [Fellowship](#technical-fellowship) and [Polkadot Alliance](#polkadot-alliance).
 
 ## Commission
 
@@ -418,7 +418,7 @@ identity-based quadratic voting.
 ## Polkadot OpenGov
 
 Previously known as Governance v2 (Gov2) during early development,
-[Polkadot OpenGov](../learn/learn-polkadot-opengov) serves as the current governance protocol for
+[Polkadot OpenGov](../learn/learn-polkadot-opengov.md) serves as the current governance protocol for
 both Kusama and Polkadot.
 
 ## Origin
@@ -439,7 +439,7 @@ parathread.
 
 ## Parachain Development Kit (PDK)
 
-Similar to an [SDK](#sdk), parachain development kits (PDK) is a set of tools that make it easy for
+Similar to an [SDK](#software-development-kit-sdk), parachain development kits (PDK) is a set of tools that make it easy for
 developers to create Polkadot-compatible [parachains](#parachain).
 
 ## ParaID
@@ -488,7 +488,7 @@ Runtime Environment.
 
 ## Runtime Environment
 
-The previous name for the Polkadot [Host](#polkadot-host).
+The previous name for the Polkadot [Host](#host).
 
 ## Paseo
 
@@ -572,7 +572,7 @@ Please refer to Paseo test network.
 
 ## Root Origin
 
-A system-level origin in [Substrate](#Substrate). This is the highest privilege level and can be
+A system-level origin in [Substrate](#substrate). This is the highest privilege level and can be
 thought of as the superuser of the runtime origin. To learn about more raw origins in Substrate,
 visit [Substrate Docs](https://docs.substrate.io/main-docs/build/origins/)
 
@@ -694,7 +694,7 @@ The process of replacing sensitive data with non-sensitive data.
 ## Tracks
 
 Each [Origin](#origin) is associated with a single referendum class and each class is associated
-with a [Track](../maintain/maintain-guides-polkadot-opengov#origins-and-tracks). The Track outlines
+with a [Track](../learn/learn-polkadot-opengov-origins.md#origins-and-tracks-info). The Track outlines
 the lifecycle for the proposal and is independent from other class's tracks. Having independent
 tracks allows the network to tailor the dynamics of referenda based upon their implied privilege
 level.
@@ -729,7 +729,7 @@ and voting on consensus along with other validators.
 Vertical message passing consists of two separate types of message passing, Downward Message Passing
 (DMP) and Upward Message Passing (UMP). Downward messages pass from the relay chain to a parachain,
 although they may also originate from another parachain via
-[HRMP](#Horizontal-Relay-routed-Message-Passing). Upward messages originate from parachains and go
+[HRMP](#horizontal-relay-routed-message-passing). Upward messages originate from parachains and go
 up to the relay chain via runtime entry points.
 
 ## Voting

@@ -7,11 +7,11 @@ keyword: [guides, polkadot-js, accounts, proxy]
 slug: ../learn-guides-accounts-proxy
 ---
 
-import MessageBox from "../../components/MessageBox"; import "../../components/MessageBox.css";
+
 
 <MessageBox message="Polkadot-JS is for developers and power users only. If you need help using the Polkadot-JS UI, you can contact the
 [Polkadot Support Team](https://support.polkadot.network/support/home). For more user-friendly tools
-see the [wallets](./wallets-index), [apps](./apps-index) and [dashboard](./dashboards-index) pages." />
+see the [wallets](../general/wallets-and-extensions.md), [apps](./apps-index) and [dashboard](./dashboards-index) pages." />
 
 Proxies allow users to use an account (it can be in cold storage or a hot wallet) less frequently
 but actively participate in the network with the weight of the tokens in that account. Proxies are
@@ -22,7 +22,7 @@ account. The videos below contain more information about using proxies.
 <div className="row">
   <div className="col text--center">
     <a href="https://www.youtube.com/watch?v=1tcygkq52tU">
-      <img src="https://img.youtube.com/vi/1tcygkq52tU/0.jpg" width="350" style={{ borderRadius: 10, border: '1px solid slategrey' }} />
+      <img src="https://img.youtube.com/vi/1tcygkq52tU/0.jpg" width="350" style="borderRadius: 10, border: '1px solid slategrey'" />
     </a>
     <p>
       <a href="https://www.youtube.com/watch?v=1tcygkq52tU">Proxy Accounts Tutorial</a>
@@ -30,7 +30,7 @@ account. The videos below contain more information about using proxies.
   </div>
   <div className="col text--center">
     <a href="https://www.youtube.com/watch?v=Qv_nJVcvQr8&t=4437s">
-      <img src="https://img.youtube.com/vi/Qv_nJVcvQr8/0.jpg" width="350" style={{ borderRadius: 10, border: '1px solid slategrey' }} />
+      <img src="https://img.youtube.com/vi/Qv_nJVcvQr8/0.jpg" width="350" style="borderRadius: 10, border: '1px solid slategrey'" />
     </a>
     <p>
       <a href="https://www.youtube.com/watch?v=Qv_nJVcvQr8&t=4437s">Proxy Accounts Advanced Tutorial</a>

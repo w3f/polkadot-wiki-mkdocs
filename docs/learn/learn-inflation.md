@@ -7,7 +7,7 @@ keywords: [token, DOT, inflation]
 slug: ../learn-inflation
 ---
 
-import MessageBox from "../../components/MessageBox"; import "../../components/MessageBox.css";
+
 
 <MessageBox message="[In November 2024, Polkadot transitioned from a model that led to exponential growth in the token supply (but with a constant inflation rate) to one with linear growth (with a decreasing inflation rate).](https://forum.polkadot.network/t/proposal-for-adjusting-polkadots-inflation-system-reducing-issuance-and-complexity/9157) The constant inflation rate model is still in use for [Kusama](./learn-kusama-inflation)." />
 

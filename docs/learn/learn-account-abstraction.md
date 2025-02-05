@@ -81,7 +81,7 @@ In Substrate, the concept of account is completely deprioritized. Substrate itse
 indifferent to an account's balance and nonce. While FRAME can support their presence, it
 fundamentally does not need to rely on them.
 
-The [Cross-Consensus Messaging (XCM)](./learn-xcm-index) format can take advantage of origin
+The [Cross-Consensus Messaging (XCM)](./learn-xcm.md) format can take advantage of origin
 abstraction for cross-consensus communications by specifying the context for a particular message.
 Origins in this case imply the authority under which a message is being sent (and thereby,
 executed).

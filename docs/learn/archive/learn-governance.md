@@ -11,7 +11,7 @@ import MessageBox from "../../../components/MessageBox"; import
 "../../../components/MessageBox.css";
 
 <MessageBox message="The content on this page is archived. For up-to-date information about governance, see the
-[Polkadot OpenGov page](../learn-polkadot-opengov)." />
+[Polkadot OpenGov page](../learn-polkadot-opengov.md)." />
 
 Polkadot uses a sophisticated governance mechanism that allows it to evolve gracefully overtime at
 the ultimate behest of its assembled stakeholders. The stated goal is to ensure that the majority of
@@ -402,7 +402,7 @@ selects validators from the available pool based on nominations. However, token 
 councilors are isolated from any nominations they may have on validators. Council terms last for one
 week on Polkadot and one day day on Kusama.
 
-At the end of each term, [Phragmén election algorithm](../learn-phragmen#algorithm) runs and the
+At the end of each term, [Phragmén election algorithm](../learn-phragmen.md#algorithm) runs and the
 result will choose the new councilors based on the vote configurations of all voters. The election
 also chooses a set number of runners-up, which is 20 on Polkadot (12 on Kusama), that will remain in
 the queue with their votes intact.
