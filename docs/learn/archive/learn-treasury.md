@@ -20,7 +20,7 @@ slug: ../learn-treasury
 
 The Treasury is a pot of funds collected through a portion of block production rewards,
 [transaction fees](../learn-transactions.md#transaction-fees), [slashing](../learn-offenses.md),
-[staking inefficiencies](../learn-staking.md#inflation), etc.
+[staking inefficiencies](../learn-inflation.md), etc.
 
 The Treasury funds are held in a [system account](../learn-account-advanced.md#system-accounts) not
 accessible by anyone; only the system internal logic can access it. Funds can be spent by making a
@@ -52,7 +52,7 @@ Proposals may consist of (but are not limited to):
 - Community events and outreach (meetups, pizza parties, hackerspaces).
 - Software development (wallets and wallet integration, clients and client upgrades).
 
-The [Council](learn-governance#council) governs the Treasury and how the funds are spent is up to
+The [Council](learn-governance.md#council) governs the Treasury and how the funds are spent is up to
 their judgment.
 
 !!!caution
@@ -186,8 +186,7 @@ requested allocation (including curator's fee) and confirm the call.
 After this, a Council member will need to assist you to pass the bounty proposal for vote as a
 motion. You can contact the Council by joining the main
 [Direction Element Channel and Discord server](../../general/community.md) and publishing a short
-description of your bounty, with a link to one of the [forums](#announcing-the-proposal) for
-contextual information.
+description of your bounty, with a link to one of the forums for contextual information.
 
 A bounty can be cancelled by deleting the earmark for a specific treasury amount or be closed if the
 tasks have been completed. On the opposite side, the 90 days life of a bounty can be extended by

@@ -279,7 +279,7 @@ Within your project folder, you should now have two files:
 ## Running Your Collator
 
 > Make sure you have the
-> [`polkadot-parachain`](build-guides-install-deps.md#installing-the-omninode) binary installed!
+> [`polkadot-parachain`](build-guides-install-deps.md#install-polkadot-parachain-and-chain-spec-builder) binary installed!
 
 Before you are able to connect your collator, you must sync the relay chain. Depending on your
 download speed, the time to sync may vary. In order to avoid storing the full state of the relay
@@ -428,5 +428,5 @@ Now that you can launch a layer one blockchain, the possibilities are endless:
 
 - Setup a local development environment for your parachain
 - Create a pallet
-- [Take a look at the OpenZepplin template - which has a lot more pallets configured.](build-guides-coretime-start.md#openzepplin-templates--guides)
+- [Take a look at the OpenZepplin template - which has a lot more pallets configured.](build-guides-coretime-start.md#openzeppelin-templates--guides)
 - Upgrade your network

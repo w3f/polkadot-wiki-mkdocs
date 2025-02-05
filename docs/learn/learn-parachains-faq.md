@@ -59,7 +59,7 @@ blockchains that can be supported by the relay chain.
 
 The minimal safe ratio of validators per parachain is 5:1. With a sufficiently large set of
 validators, the randomness of their distribution along with
-[availability and validity](./learn-parachains-protocol.md#anv-protocol) will make sure security is
+[availability and validity](./learn-parachains-protocol.md#availability-and-validity-anv-protocol) will make sure security is
 on-par. However, should there be a big outage of a popular cloud provider or another network
 connectivity catastrophe, it is reasonable to expect that the number of validators per chain will
 drop.

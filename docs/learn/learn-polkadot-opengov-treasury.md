@@ -87,14 +87,14 @@ bottom right corner. Then,
 
 The treasury currently operates on a single account on-chain. The above tracks manage the outflow of
 the treasury on the network. With _sub_-treasuries, having treasury accounts that correspond to each
-[collective](./learn-system-chains#collectives) is also possible.
+[collective](./learn-system-chains.md#collectives) is also possible.
 
 Rather than have many referenda through OpenGov, the treasury can allocate funds to each
-sub-treasury (through [governance](./learn-polkadot-opengov)), from which each respective collective
+sub-treasury (through [governance](./learn-polkadot-opengov.md)), from which each respective collective
 can spend funds (depending on their specific rule set).
 
 New treasuries could be added to respective
-[system chains](./learn-system-chains#existing-system-chains) through governance by adding more
+[system chains](./learn-system-chains.md#existing-system-chains) through governance by adding more
 instances of this pallet.
 
 ## Multi-Asset Treasury Support

@@ -238,7 +238,7 @@ The approval pipeline can be divided into the following steps:
 1. Parablocks included by the Inclusion Pipeline are pending approval for a time window known as the
    **secondary checking window**.
 2. During the secondary checking window, validators (secondary checkers) randomly self-select based
-   on a [VRF](./learn-cryptography#vrf) lottery to perform secondary checks on each of the
+   on a [VRF](./learn-cryptography.md#vrf) lottery to perform secondary checks on each of the
    parablock.
 3. Secondary checkers acquire the parablock with PoV (erasure codings are necessary to reconstruct
    PoV) and re-run the validation function.

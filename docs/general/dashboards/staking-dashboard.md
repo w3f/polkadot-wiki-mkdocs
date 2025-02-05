@@ -10,19 +10,19 @@ slug: ../staking-dashboard
 ## Preliminary Notes
 
 The [Polkadot Staking Dashboard](https://staking.polkadot.cloud/#/overview) supports
-[**proxy accounts**](../../learn/learn-proxies.md) and you can import your
-[staking proxy](../../learn/learn-staking-advanced.md#staking-proxies) (for nominators) or
-[non-transfer proxy](../../learn/learn-proxies.md#proxy-types) (for nomination pool admins and members).
+[**proxy accounts**](../../../learn/learn-proxies.md) and you can import your
+[staking proxy](../../../learn/learn-staking-advanced.md#staking-proxies) (for nominators) or
+[non-transfer proxy](../../../learn/learn-proxies.md#proxy-types) (for nomination pool admins and members).
 
-The dashboard also has **native [Ledger](ledger.md) support**, meaning that you do not need an
+The dashboard also has **native [Ledger](../ledger.md) support**, meaning that you do not need an
 extension or a wallet to use it; you just need your Ledger device.
 [Metadata updates](../../learn/learn-guides-transfers.md#metadata-updates-with-the-polkadot-js-browser-extension)
 are thus not necessary, as you only need to keep your Ledger apps up-to-date.
 
 Before using the dashboard, make sure you have a
-[wallet or extension](../wallets-and-extensions.md#browser-extensions) with a funded account. Note
-that accounts on wallets or extensions can be imported from [Ledger](./../ledger.md) or
-[Polkadot Vault](../polkadot-vault.md).
+[wallet or extension](../../wallets-and-extensions.md#browser-extensions) with a funded account. Note
+that accounts on wallets or extensions can be imported from [Ledger](.././../ledger.md) or
+[Polkadot Vault](../../polkadot-vault.md).
 
 On top of the [existential deposit](../../learn/learn-accounts.md#existential-deposit-and-reaping), you
 need some free balance to pay for
@@ -34,8 +34,8 @@ For more information about staking visit the [staking page](../../learn/learn-st
 ## Using the Polkadot Staking Dashboard
 
 The [Polkadot Staking Dashboard](https://staking.polkadot.cloud/#/overview) is a tool only dedicated
-to [staking](../../learn/learn-staking.md) on Polkadot, [Kusama](../../learn/learn-comparisons-kusama.md)
-(Polkadot's canary network) and [Westend](../../learn/learn-DOT.md#getting-tokens-on-the-westend-testnet) (Polkadot's test network).
+to [staking](../../../learn/learn-staking.md) on Polkadot, [Kusama](../../../learn/learn-comparisons-kusama.md)
+(Polkadot's canary network) and [Westend](../../../learn/learn-DOT.md#getting-tokens-on-the-westend-testnet) (Polkadot's test network).
 
 The dashboard is not a wallet, meaning that you cannot transfer funds between accounts. To fund
 accounts, you can use [wallets and extension](../wallets-and-extensions.md). You can participate in
@@ -48,7 +48,7 @@ connect it to the dashboard (connect button on the top-right corner), this will 
     email and password but just need an account created on the supported non-custodial wallets. Any
     transaction to be submitted needs to be signed by you. Also, if you use light clients, which are
     resistant to censorship, you interact trustlessly with the network without intermediaries. Welcome
-    to the world of [true Web3](../web3-and-polkadot.md)!
+    to the world of [true Web3](../../web3-and-polkadot.md)!
 
 Note the pictures on this page refer to Kusama, but the same applies to Polkadot and Westend.
 
@@ -100,7 +100,7 @@ Note that Sections A and B will always be visible while you use the dashboard.
 - **Section E: The Balance Panel** shows the bonded amount distinguishing between "Nominating", "In
   a Pool", and "Not Staking". The amount that is not staking is further divided into "Free" (a
   balance that can be transferred) and "Reserve" (a balance that is needed the keep the account
-  on-chain, see [existential deposit](../../learn/index.md#existential-deposit-and-reaping)).
+  on-chain, see [existential deposit](../../../learn/learn-accounts.md#existential-deposit-and-reaping)).
   In this case, 0.301 KSM are bonded for nominating, 0.3 KSM are bonded in a pool, and 0.145 KSM are
   not used for staking. Of the non-staking balance, 0.144 KSM are free while
   [a small portion is reserved for the existential deposit](../chain-state-values.md#existential-deposit).
@@ -175,7 +175,7 @@ This page of the dashboard has four main panels (Sidebar and Accounts Panels exc
     - Rename Pool: you can change the pool's name.
     - Lock Pool: you can lock the pool so that new members are not allowed.
     - Destroy Pool: you can destroy the pool. See
-    [this wiki page](../../learn/learn-guides-staking-pools.md#pool-destruction) and
+    [this wiki page](../../../learn/learn-guides-staking-pools.md#pool-destruction-with-polkadot-js) and
     [this support article](https://support.polkadot.network/support/solutions/articles/65000182388-staking-dashboard-how-to-create-a-nomination-pool#How-to-destroy-a-pool) for more information.
 
     You can see any unclaimed rewards in the middle of the panel. You can claim and bond the rewards (`+ Compound` button) or withdraw them as a free balance (`Withdraw` button). In this case, there are approximately 0.0012 KSM that can be claimed. You can see the Pool Status at the bottom of the panel, currently set to "Nominating and Earning Rewards".

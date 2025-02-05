@@ -81,7 +81,7 @@ In Substrate, the concept of account is completely deprioritized. Substrate itse
 indifferent to an account's balance and nonce. While FRAME can support their presence, it
 fundamentally does not need to rely on them.
 
-The [Cross-Consensus Messaging (XCM)](./learn-xcm-index) format can take advantage of origin
+The [Cross-Consensus Messaging (XCM)](./learn-xcm.md) format can take advantage of origin
 abstraction for cross-consensus communications by specifying the context for a particular message.
 Origins in this case imply the authority under which a message is being sent (and thereby,
 executed).
@@ -99,7 +99,7 @@ include:
 
 - [Multi-signature accounts](./learn-account-multisig.md) to control an account using different ones
 - [Proxy accounts](./learn-proxies.md) for role-based representation, and ownership representation
-  through [pure proxies](./learn-proxies.md#anonymous-proxy-pure-proxy)
+  through [pure proxies](./learn-proxies.md)
 - [Derivative accounts](./learn-account-advanced.md#derivation-paths) for using the same _parent_
   private key on multiple _children_ accounts
 - Account recovery mechanisms such as social recovery to help regain access to your key using

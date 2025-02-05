@@ -83,7 +83,7 @@ and the [**Polkadot Staking Dashboard**](https://staking.polkadot.cloud/#/overvi
 transacting on-chain directly.
 
 !!!info Metadata Updates
-    The browser extension is a tool that interacts with the Polkadot network, but it is disconnected from it when it is not in use. It is important you [**always check for metadata updates**](../learn/learn-guides-accounts.md#metadata-updates-with-the-polkadot-js-browser-extension) before using the extension or other account management tools such as Parity Signer (aka Polkadot Vault).
+    The browser extension is a tool that interacts with the Polkadot network, but it is disconnected from it when it is not in use. It is important you [**always check for metadata updates**](../learn/learn-guides-accounts.md#polkadot-js-browser-extension) before using the extension or other account management tools such as Parity Signer (aka Polkadot Vault).
 
 
 
@@ -138,7 +138,7 @@ Let's see how we can query on-chain data with Polkadot-JS UI on the Polkadot net
 example. To find out the current value for existential deposit, navigate to Developer > Chain
 state > Constants and query the balances pallet for existential deposit as shown in the snapshot
 below. You need to click on the plus button to execute the query. The value displayed is in
-[plancks](learn-DOT#polkadot)
+[plancks](../learn/learn-DOT.md#polkadot)
 
 ![query chain state](../assets/chain-state-constant.png)
 

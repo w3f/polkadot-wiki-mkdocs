@@ -7,7 +7,8 @@ keywords: [polkadot-js, polkadot js]
 slug: ../learn-polkadotjs
 ---
 
-import DocCardList from '@theme/DocCardList';
+
+
 
 <!-- MessageBox -->
 <div id="messageBox" class="floating-message-box">
@@ -20,4 +21,4 @@ import DocCardList from '@theme/DocCardList';
   <button class="close-messagebox" aria-label="Close message">✖</button>
 </div>
 
-<DocCardList />
+<!-- TODO: INDEX CARDS -->

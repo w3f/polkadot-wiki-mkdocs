@@ -61,7 +61,7 @@ transaction without the possibility of verifying it.
 
 ### Replay Attack
 
-A replay attack is where past transactions can be replayed (same [balance](#balance-transfers),
+A replay attack is where past transactions can be replayed (same [balance](../learn/learn-transactions.md#balance-transfers),
 receiver account, etc.) without knowing private keys. It is an attack where publicly known data can
 be "replayed" as a new extrinsic. This could happen in the context of
 [reaping accounts](../learn/learn-accounts.md#existential-deposit-and-reaping) because the reaping

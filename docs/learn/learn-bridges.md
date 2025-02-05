@@ -7,8 +7,6 @@ keywords: [bridges, cross-chain, bridge methods]
 slug: ../learn-bridges
 ---
 
-import DocCardList from '@theme/DocCardList';
-
 Bridges are vital infrastructure, enabling cross-chain communication between technically diverse
 networks like Polkadot and Ethereum. Bridges allow these chains to acknowledge and trust each
 other’s finalized states, paving the way for many applications like asset swaps and chain
@@ -29,8 +27,6 @@ have proven to be a critical vulnerability.
 
 Thus, Bridge designs come in various flavors ranging from centralized and trusted to more
 decentralized and trustless. Polkadot favors the latter bridge designs for its ecosystem.
-
-<DocCardList />
 
 ## Trustless Bridges
 

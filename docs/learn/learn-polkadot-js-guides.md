@@ -9,6 +9,8 @@ slug: ../learn-polkadot-js-guides
 
 import DocCardList from '@theme/DocCardList';
 
+
+
 <!-- MessageBox -->
 <div id="messageBox" class="floating-message-box">
   <p>
@@ -23,4 +25,4 @@ import DocCardList from '@theme/DocCardList';
 !!!info
     We support only the use of the [**Polkadot-JS UI**](https://polkadot.js.org/apps/#/explorer) together with the [**Polkadot-JS browser extension**](https://polkadot.js.org/extension/), [**Ledger**](https://www.ledger.com/ledger-live) and [**Polkadot Vault**](https://www.parity.io/technologies/signer/) for signing transactions. We do not provide support for third party applications.
 
-<DocCardList />
+<!-- TODO: INDEX CARDS -->

@@ -7,7 +7,7 @@ keywords: [coretime, blockspace, parachain, on-demand, cores, multi-threading, s
 slug: ../learn-agile-coretime
 ---
 
-import DocCardList from '@theme/DocCardList';
+
 
 [Scheduling](<https://en.wikipedia.org/wiki/Scheduling_(computing)>) is the process of assigning
 tasks or jobs to resources (like CPU cores) at specific times or under certain conditions. Effective
@@ -31,7 +31,7 @@ among them.
 Polkadot achieves multi-threading by [splitting and interlacing](#splitting-and-interlacing)
 Coretime.
 
-<DocCardList />
+<!-- TODO: INDEX CARDS -->
 
 ## Introduction to Agile Coretime
 

@@ -214,7 +214,7 @@ for a more detailed description of Cumulus.
 
 Cumulus is still in development, but the idea is that it should be simple to take a Substrate chain
 and add the parachain code by importing the crates and adding a single line of code. Keep up-to-date
-with the latest Cumulus developments from the [Cumulus section](###cumulus).
+with the latest Cumulus developments from the [Cumulus section](#cumulus).
 
 !!!info
     Substrate and Cumulus provide a PDK from the abstraction of the blockchain format, but it is **not
@@ -315,7 +315,7 @@ underneath "Development", following the
 You can also take advantage of the account functions offered on Polkadot-JS Apps to test the entire
 Parachain onboarding process (e.g. registration and coretime purchase).
 
-Start a local node on [Westend](../maintain/maintain-networks.md###westend-test-network) by running:
+Start a local node on [Westend](../maintain/maintain-networks.md#westend-test-network) by running:
 
 ```bash
 polkadot --chain=westend-dev --alice

@@ -27,7 +27,7 @@ You can signal your intent to participate by:
 
 Once you have submitted your contribution proposal, the team will:
 
-1. Evaluate. Your [evaluators](#1kc-evaluators) will differ depending on which area you want to
+1. Evaluate. Your evaluators will differ depending on which area you want to
    contribute.
 2. Accept or deny. Once we review your proposal, we will get in touch with you about the status.
 3. Define your delivery. All tasks will have different delivery requirements; we will communicate

@@ -21,7 +21,7 @@ import Tabs from "@theme/Tabs"; import TabItem from "@theme/TabItem"; import Doc
   <button class="close-messagebox" aria-label="Close message">✖</button>
 </div>
 
-<DocCardList />
+<!-- TODO: INDEX CARDS -->
 
 ## Account Address Format
 
@@ -57,7 +57,7 @@ clicking the colorful icon of your account will copy it in that format.
 <div className="row">
   <div className="col text--center">
     <a href="https://www.youtube.com/watch?v=DNU0p5G0Gqc">
-      <img src="https://img.youtube.com/vi/DNU0p5G0Gqc/0.jpg" width="350" style={{ borderRadius: 10, border: '1px solid slategrey' }} />
+      <img src="https://img.youtube.com/vi/DNU0p5G0Gqc/0.jpg" width="350" style="borderRadius: 10, border: '1px solid slategrey'" />
     </a>
     <p>
       <a href="https://www.youtube.com/watch?v=DNU0p5G0Gqc">Polkadot-JS Browser Extension Tutorial</a>
@@ -144,7 +144,7 @@ See [**this video tutorial**](https://youtu.be/DNU0p5G0Gqc?t=261) to learn how t
 password for an account created on the Polkadot-JS UI (i.e. a non-injected account).
 
 !!!note
-    If you create an account first using Polkadot-JS Apps UI and then add it to the browser extension, you need to follow the [guidelines for the browser extension](#reset-password-using-the-browser-extension) to change the password of such an account.
+    If you create an account first using Polkadot-JS Apps UI and then add it to the browser extension, you need to follow the [guidelines for the browser extension](#restore-account-on-the-polkadot-js-browser-extension) to change the password of such an account.
 
 ### Restore Account on the Polkadot-JS UI
 

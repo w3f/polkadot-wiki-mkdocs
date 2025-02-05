@@ -9,14 +9,7 @@ slug: ../learn-archive
 
 import DocCardList from '@theme/DocCardList';
 
-<!-- MessageBox -->
-<div id="messageBox" class="floating-message-box">
-  <p>
-    This section contains archived pages. The content in them no longer applies to Polkadot but can
-still be relevant for parachains and related projects.
-  </p>
-  <button class="close-messagebox" aria-label="Close message">✖</button>
-</div>
+<MessageBox message="This section contains archived pages. The content in them no longer applies to Polkadot but can
+still be relevant for parachains and related projects." />
 
-
-<DocCardList />
+<!-- TODO: INDEX CARDS -->

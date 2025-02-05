@@ -27,7 +27,7 @@ standalone solo chains built with the Polkadot SDK the ability to upgrade their 
 "business logic") without a hard fork of the respective network.
 
 Rather than encoding the runtime in the nodes, Polkadot nodes contain a WebAssembly
-[execution host](learn-polkadot-host). They maintain consensus on a very low-level and
+[execution host](learn-polkadot-host.md). They maintain consensus on a very low-level and
 well-established instruction set. Upgrades can be small, isolated, and very specific by deploying
 WebAssembly on-chain and having nodes auto-enact the new logic at a particular block height.
 
@@ -103,7 +103,7 @@ Infrastructure services include but are not limited to the following:
 - API services
 - Node-as-a-Service (NaaS)
 - General infrastructure management (e.g. block explorers, custodians)
-- [Wallets](./wallets)
+- [Wallets](../general/wallets-and-extensions.md)
 
 For validators, keeping in sync with the network is key. At times, upgrades will require validators
 to upgrade their clients within a specific time frame, for example, if a release includes breaking
