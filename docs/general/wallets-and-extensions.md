@@ -1,6 +1,9 @@
 ---
+id: wallets-and-extensions
 title: Wallets and Extensions
 description: An Overview of Wallets and Browser Extensions in the Polkadot Ecosystem.
+keywords: [wallets, extensions]
+slug: ../wallets-and-extensions
 ---
 
 !!!caution

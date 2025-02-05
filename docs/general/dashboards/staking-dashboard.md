@@ -20,11 +20,11 @@ extension or a wallet to use it; you just need your Ledger device.
 are thus not necessary, as you only need to keep your Ledger apps up-to-date.
 
 Before using the dashboard, make sure you have a
-[wallet or extension](../../wallets-and-extensions.md#browser-extensions) with a funded account. Note
+[wallet or extension](../wallets-and-extensions.md#browser-extensions) with a funded account. Note
 that accounts on wallets or extensions can be imported from [Ledger](./../ledger.md) or
 [Polkadot Vault](../polkadot-vault.md).
 
-On top of the [existential deposit](../../learn/index.md#existential-deposit-and-reaping), you
+On top of the [existential deposit](../../learn/learn-accounts.md#existential-deposit-and-reaping), you
 need some free balance to pay for
 [transaction fees](../../learn/learn-transactions.md#transaction-fees) and
 [the minimum amount to place your nominations or join a nomination pool](../chain-state-values.md#minimum-bond-to-participate-in-staking).
@@ -34,7 +34,7 @@ For more information about staking visit the [staking page](../../learn/learn-st
 ## Using the Polkadot Staking Dashboard
 
 The [Polkadot Staking Dashboard](https://staking.polkadot.cloud/#/overview) is a tool only dedicated
-to [staking](../../learn/learn-staking.md) on Polkadot, [Kusama](../learn//learn-comparisons-kusama.md)
+to [staking](../../learn/learn-staking.md) on Polkadot, [Kusama](../../learn/learn-comparisons-kusama.md)
 (Polkadot's canary network) and [Westend](../../learn/learn-DOT.md#getting-tokens-on-the-westend-testnet) (Polkadot's test network).
 
 The dashboard is not a wallet, meaning that you cannot transfer funds between accounts. To fund
@@ -48,7 +48,7 @@ connect it to the dashboard (connect button on the top-right corner), this will 
     email and password but just need an account created on the supported non-custodial wallets. Any
     transaction to be submitted needs to be signed by you. Also, if you use light clients, which are
     resistant to censorship, you interact trustlessly with the network without intermediaries. Welcome
-    to the world of [true Web3](web3-and-polkadot.md)!
+    to the world of [true Web3](../web3-and-polkadot.md)!
 
 Note the pictures on this page refer to Kusama, but the same applies to Polkadot and Westend.
 
@@ -268,4 +268,4 @@ Support for the Staking Dashboard is available at
 ## Network
 
 Under Network, you can connect to either Polkadot, Kusama, or Westend through public RPC nodes or
-light clients for a true Web3 experience. For more information about light clients, see [this page](web3-and-polkadot.md#decentralized-access-points).
+light clients for a true Web3 experience. For more information about light clients, see [this page](../web3-and-polkadot.md#decentralized-access-points).
