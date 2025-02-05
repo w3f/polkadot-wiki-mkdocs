@@ -145,7 +145,7 @@ referenda in Governance v1.
 so as often as they wish. Previous features were expanded and improved, most notably
 [**Origins and Tracks**](#origins-and-tracks) help facilitate the flow and processing of the
 submitted referenda. The [Technical Fellowship](./learn-polkadot-technical-fellowship.md) has the
-option to [whitelist](#whitelisting) referenda that can be then proposed in the track with
+option to [whitelist](./learn-polkadot-technical-fellowship.md#whitelisting) referenda that can be then proposed in the track with
 [whitelist origin](./learn-polkadot-opengov-origins.md#whitelisted-caller).
 
 ### Referenda Timeline
@@ -302,7 +302,7 @@ Decision Period.
 Once the proposal exits the Lead-in Period and enters the Voting Period, to be approved, it must
 satisfy the approval and support criteria for the **Confirmation Period**.
 
-- **Approval** is defined as the share of [conviction](#voluntary-locking)-weighted _aye_ votes
+- **Approval** is defined as the share of [conviction](#voluntary-locking-conviction-voting)-weighted _aye_ votes
   against the conviction-weighted total of _aye_ and _nay_ votes. The code implementation can be
   viewed
   [here](https://github.com/paritytech/polkadot-sdk/blob/f2fbba3be1d7deaf7cfc731cea00552c212ddfcf/substrate/frame/conviction-voting/src/types.rs#L77)

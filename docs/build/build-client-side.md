@@ -122,7 +122,7 @@ to the decentralized _content-centric_ approach.
 
     [Crust Network](https://crust.network) provides a Web3.0 decentralized storage network for the
     Metaverse. It is designed to realize core values of decentralization, privacy, and assurance. Crust
-    supports multiple storage-layer protocols such as [IPFS]([#decentralized-storage-options](https://ipfs.io/)), and
+    supports multiple storage-layer protocols such as [IPFS](https://ipfs.io/), and
     exposes instant accessible on-chain storage functions to users. Crustʼs technical stack is also
     capable of supporting data manipulating and computing.
 
