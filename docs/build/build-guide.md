@@ -122,7 +122,7 @@ Parachains built through the Polkadot SDK, open possibilities to construct compl
 contracts. However, unlike smart contracts, parachains lack a mandatory gas metering system entirely
 and could potentially be vulnerable to bugs that cause infinite loops (something that is prevented
 by design in smart contracts). This vulnerability is mitigated by the
-[weight system](https://docs.substrate.io/build/tx-weights-fees/) that is implemented in Substrate
+[weight system](https://docs.polkadot.com/polkadot-protocol/basics/blocks-transactions-fees/fees/) that is implemented in Substrate
 -- although it places more of a burden on the developer of the parachain to perform properly
 benchmarks.
 

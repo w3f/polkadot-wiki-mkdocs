@@ -660,7 +660,7 @@ describe how tokens can be transferred from one account to another.
 ## Substrate
 
 A modular framework for building blockchains. Polkadot is built using
-[Substrate](https://substrate.io/). Chains built with Substrate will be easy to connect as
+[Substrate](https://docs.polkadot.com/develop/parachains/intro-polkadot-sdk/#substrate). Chains built with Substrate will be easy to connect as
 parachains. For developers, see the
 [Substrate GitHub repository](https://github.com/paritytech/polkadot-sdk/tree/master/substrate).
 

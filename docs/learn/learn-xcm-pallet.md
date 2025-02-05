@@ -13,7 +13,7 @@ slug: ../learn-xcm-pallet
 The XCM pallet
 ([`pallet-xcm`](https://github.com/paritytech/polkadot-sdk/blob/master/polkadot/xcm/pallet-xcm/src/lib.rs))
 provides a set of pre-defined, commonly used XCVM programs in the form of a set of extrinsics using
-[FRAME](https://docs.substrate.io/reference/frame-pallets/).
+[FRAME](https://docs.polkadot.com/develop/parachains/intro-polkadot-sdk/#frame).
 
 This pallet provides some default implementations for traits required by `XcmConfig`. The XCM
 executor is also included as an associated type within the pallet's configuration.

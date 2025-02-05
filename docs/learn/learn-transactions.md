@@ -11,11 +11,11 @@ import DocCardList from '@theme/DocCardList';
 
 ## Pallets and Extrinsics
 
-Polkadot is built using [Substrate](https://substrate.io/), a modular framework to efficiently build
+Polkadot is built using [Substrate](https://docs.polkadot.com/develop/parachains/intro-polkadot-sdk/#substrate), a modular framework to efficiently build
 blockchains. Substrate's FRAME development environment provides modules called pallets and support
 libraries that you can use, modify, and extend to build the runtime logic to suit the needs of your
 blockchain. You can explore Substrate's FRAME pallets on
-[this dedicated page](https://docs.substrate.io/reference/frame-pallets/).
+[this dedicated page](https://docs.polkadot.com/develop/parachains/intro-polkadot-sdk/#frame).
 
 Within each functional **pallet** on the blockchain, one can **call** its functions and execute them
 successfully, provided they have the permission to do so. Because these calls originate outside of

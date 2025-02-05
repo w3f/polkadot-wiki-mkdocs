@@ -74,7 +74,7 @@ or the [Wallets](../general/wallets-and-extensions.md) page on the Wiki for deta
 - [Substrate](https://github.com/paritytech/polkadot-sdk/tree/master/substrate) - Blockchain
   development platform written in Rust. The Rust version of the Polkadot Host is being built with
   Substrate.
-- [Substrate Docs](https://docs.substrate.io/) - Comprehensive documentation and tutorials for
+- [Substrate Docs](https://docs.polkadot.com/tutorials/) - Comprehensive documentation and tutorials for
   building a blockchain using Substrate.
 - [Substrate VSCode plugin (deprecated)](https://github.com/paritytech/vscode-substrate).
 - [Substrate Debug Kit (deprecated)](https://github.com/paritytech/substrate-debug-kit) - A

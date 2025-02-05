@@ -23,7 +23,7 @@ done through two main approaches:
      centralized and insecure.
 
 There is now a new paradigm: instead of specifying a centralized RPC node, developers just need to
-define the blockchain's [chain specification](https://docs.substrate.io/main-docs/build/chain-spec/)
+define the blockchain's [chain specification](https://docs.polkadot.com/develop/parachains/deployment/generate-chain-specs/)
 for their application to synchronize with the chain. This is possible with Substrate connect.
 
 ## What is Substrate Connect?

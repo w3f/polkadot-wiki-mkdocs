@@ -62,7 +62,7 @@ educating professionals and the general public about Web3 and blockchain technol
 learning about Polkadot and regularly contributes to Wiki articles. He got
 [certified as a blockchain analyst](https://www.credential.net/bad85935-7e6e-4b4a-9ed2-e96128bdb5e5)
 and is currently learning about [Rust](https://www.rust-lang.org/) and
-[Substrate](https://substrate.io/).
+[Substrate](https://docs.polkadot.com/develop/parachains/intro-polkadot-sdk/#substrate).
 
 ### Bader Youssef
 
