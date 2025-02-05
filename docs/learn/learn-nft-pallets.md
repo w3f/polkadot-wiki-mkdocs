@@ -237,7 +237,7 @@ and related data, the above-mentioned extrinsics can be used to update a collect
   attributes of an NFT. An example could be that all Polkadot fellowship members have an NFT badge
   that gets updated over time (sort of a rank) with a consequent upgrade in membership permissions.
 - A collection is managed by the
-  [Issuer, the Admin, and the Freezer](./learn-assets.md#creation-and-management). Those roles can
+  [Issuer, the Admin, and the Freezer](./learn-assets.md#create-and-manage-assets). Those roles can
   be changed anytime.
 - Setting metadata for an item or collection (metadata includes all essential information about the
   item or the collection). Metadata could consist of any arbitrary data like the IPFS hash.

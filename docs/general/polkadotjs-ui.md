@@ -44,7 +44,7 @@ can also:
   [Settings](#settings)).
 - Create a [**multi-signature account**](../learn/learn-account-multisig.md).
 - Add a proxied account (see
-  [**Pure Proxies**](../learn/learn-proxies-pure.md#anonymous-proxy-pure-proxy) for more
+  [**Pure Proxies**](../learn/learn-proxies-pure.md) for more
   information).
 
 For each account visible in the UI, you can perform different actions, including
@@ -90,9 +90,7 @@ In this UI section, you can change general settings such as appearance and langu
   differs from having an account injected from a browser extension).
 - Choose to attach Ledger devices. This adds an account directly in the UI from a Ledger device.
 
-Under Settings you can also do the metadata update. Usually, if there is an update, this will be
-shown as a notification. For more information about metadata updates, see the
-[**dedicated section**](../learn/learn-guides-accounts.md#metadata-updates-with-the-polkadot-js-browser-extension).
+Under Settings you can also do the metadata update. Usually, if there is an update, this will be shown as a notification.
 
 ## Other Functionalities
 
@@ -121,10 +119,10 @@ In this section of the UI, you can access advanced features such as:
 
 The [Extrinsic tab](https://polkadot.js.org/apps/#/extrinsics) provides the use to access more
 granular functions such as
-[**pure proxies**](../learn/learn-proxies-pure.md#anonymous-proxy-pure-proxy) and
+[**pure proxies**](../learn/learn-proxies-pure.md) and
 [**time-delayed proxies**](../learn/learn-proxies.md#time-delayed-proxy), change
 [**nomination pool**](../learn/learn-nomination-pools.md) settings (nomination and roles) and use
-[**non-transfer proxies**](../learn/learn-proxies.md#non-transfer-proxy),
+[**non-transfer proxies**](../learn/learn-proxies.md#proxy-types),
 [**destroy assets**](../learn/learn-assets.md#destroying-an-asset), and much more.
 
 ## Beginner's Guide to Polkadot-JS

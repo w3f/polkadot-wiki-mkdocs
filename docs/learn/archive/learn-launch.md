@@ -7,9 +7,6 @@ keyword: [launch, phases, polkadot, DOT, claim, token sale, redenomination]
 slug: ../learn-launch
 ---
 
-import MessageBox from "../../../components/MessageBox"; import
-"../../../components/MessageBox.css";
-
 <MessageBox message="The content on this page is archived." />
 
 The Polkadot network has a phased roll-out plan, with important milestones toward decentralization

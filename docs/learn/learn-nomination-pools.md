@@ -112,7 +112,7 @@ your behalf. There are four permission options:
 See the [Staking Dashboard page](../general/dashboards/staking-dashboard.md#pools) for more information about
 how to set your claim permissions.
 
-See the [advanced guides](./learn-guides-staking-pools.md#claim-rewards-for-other-pool-members) to
+See the [advanced guides](./learn-guides-staking-pools.md#claim-rewards-for-other-pool-members-with-polkadot-js) to
 learn how to claim rewards for another pool member.
 
 ### Unbond and withdraw funds
@@ -208,7 +208,7 @@ following statements are true:
 ## Pool Lifecycle
 
 !!!info "Advanced How-to Guides"
-    See [this page](./learn-guides-staking-pools.md#pool-creation) for more information about the lifecycle of nomination pools. The cycle includes creation, upkeep and destruction.
+    See [this page](./learn-guides-staking-pools.md#pool-creation-with-polkadot-js) for more information about the lifecycle of nomination pools. The cycle includes creation, upkeep and destruction.
 
 ## Nomination Pools - Slashing
 

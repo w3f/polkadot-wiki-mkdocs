@@ -7,9 +7,6 @@ keywords: [DOT, redenomination]
 slug: ../learn-redenomination
 ---
 
-import MessageBox from "../../../components/MessageBox"; import
-"../../../components/MessageBox.css";
-
 <MessageBox message="The content on this page is archived." />
 
 On August 21, 2020, the redenomination of DOT, the native token on Polkadot, occurred. From this

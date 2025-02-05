@@ -50,7 +50,7 @@ There are three types of actions you can take with a multisig account:
 
 - Executing a call `asMulti`. This is used to begin or end a multisig transaction.
 - Approving a call `approveAsMulti`. This is used to approve an extrinsic and pass-on to the next
-  signatory (see [example below](#example-using-multi-signature-accounts) for more information).
+  signatory (see [example below](#example-using-multisig-accounts) for more information).
 - Cancelling a call `cancelAsMulti`.
 
 !!!info

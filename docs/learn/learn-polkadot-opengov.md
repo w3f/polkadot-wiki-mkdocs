@@ -7,10 +7,6 @@ keywords: [governance, referenda, proposal, voting, endorse]
 slug: ../learn-polkadot-opengov
 ---
 
-import VLTable from "./../../components/Voluntary-Locking"; import Fellowship from
-"./../../components/Fellowship"; import MessageBox from "../../components/MessageBox"; import
-"../../components/MessageBox.css";
-
 <MessageBox message="Before voting or delegating in Polkadot OpenGov, get familiar with [balances and locks](./learn-account-balances#locks)." />
 
 !!!caution "The content in this document is subject to change"
@@ -75,7 +71,7 @@ network, Polkadot OpenGov proposes the following main changes:
 The figure below shows an overview of Polkadot OpenGov's structure.
 
 !!!info
-    See [this page](./archive/learn-governance.md#summary) for a comparison with the structure of Governance V1.
+    See [this page](./archive/learn-governance.md#governance-summary) for a comparison with the structure of Governance V1.
 
 ![opengov-overview](../assets/opengov-overview.png)
 
@@ -90,7 +86,7 @@ need to be submitted to the Small Tipper track, while a proposal requiring subst
 need to be submitted to the Medium or Big Spender track.
 
 The [Polkadot Technical Fellowship](./learn-polkadot-technical-fellowship.md) can decide to
-[whitelist](#whitelisting) a proposal that will be enacted through the Whitelist Caller origin.
+[whitelist](./learn-polkadot-technical-fellowship.md#whitelisting) a proposal that will be enacted through the Whitelist Caller origin.
 Those proposals will have a shorter Lead-in, Confirmation, and Enactment period when compared to the
 Root Origin track.
 

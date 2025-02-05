@@ -7,8 +7,6 @@ keywords: [thousand validators program, validator, validate, maintain, TVP]
 slug: ../thousand-validators
 ---
 
-import MessageBox from "../../../components/MessageBox"; import "../../../components/MessageBox.css";
-
 <MessageBox message="The content on this page is archived. For up-to-date information, see the
 [Decentralized Nodes web page](https://nodes.web3.foundation/)." />
 
@@ -56,7 +54,7 @@ programme, set up your Polkadot node to adhere to the [requirements](#requiremen
 
 #### Requirements
 
-- Verified identity (see [here](../learn-identity.md#setting-an-identity) for instructions)
+- Verified identity (see [here](../learn-guides-identity.md#setting-an-identity) for instructions)
 - Connect to dedicated telemetry (use
   `--telemetry-url 'wss://telemetry-backend.w3f.community/submit 1'` when starting the node)
 - Minimum of 5_000 DOTs self stake on Polkadot and 10 KSM on Kusama

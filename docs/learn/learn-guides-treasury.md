@@ -212,7 +212,7 @@ an account address on the chain.
 The `validFrom` field is optional, and refers to the block height of the relay chain upon which the
 payout can be issued. If the `validFrom` parameter is not set, the spend can be paid out immediately
 after approval. For more information on this field, refer to the
-[guide below](#creating-a-staged-proposal-with-validfrom).
+[guide below](#creating-a-multistage-payout-proposal-with-validfrom).
 
 The final call should look like the following, where we:
 

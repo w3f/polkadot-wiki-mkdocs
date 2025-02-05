@@ -192,7 +192,7 @@ You can start delegating your votes by clicking the "Delegate" button on
 
 If it is the first time you delegate or vote, there will be a banner message. You can delegate on a
 single track or all the tracks. You have an option to specify the number of votes (i.e., the number
-of tokens) and the [conviction multiplier](./learn-polkadot-opengov.md#voluntary-locking). After
+of tokens) and the [conviction multiplier](./learn-polkadot-opengov.md#voluntary-locking-conviction-voting). After
 clicking "Next", you will need to specify the account to delegate your votes to, and after clicking
 "Delegate" and "Sign and Submit" your delegations will appear for each track (see below).
 

@@ -41,7 +41,7 @@ A user's account requires a private key that can sign on to one of the
 private key, an account cannot sign anything. In Polkadot, there are some exceptions of accounts
 that do not have known private keys (i.e. keyless accounts). Such accounts are
 [multi-signature accounts](./learn-account-multisig.md),
-[pure proxies](./learn-proxies-pure.md#anonymous-proxy-pure-proxy), and
+[pure proxies](./learn-proxies-pure.md), and
 [system accounts](./learn-account-advanced.md#system-accounts) that are not discussed here and are
 meant for an advanced audience.
 

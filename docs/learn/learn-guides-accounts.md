@@ -136,7 +136,7 @@ See [**this video tutorial**](https://youtu.be/DNU0p5G0Gqc?t=261) to learn how t
 password for an account created on the Polkadot-JS UI (i.e. a non-injected account).
 
 !!!note
-    If you create an account first using Polkadot-JS Apps UI and then add it to the browser extension, you need to follow the [guidelines for the browser extension](#reset-password-using-the-browser-extension) to change the password of such an account.
+    If you create an account first using Polkadot-JS Apps UI and then add it to the browser extension, you need to follow the [guidelines for the browser extension](#restore-account-on-the-polkadot-js-browser-extension) to change the password of such an account.
 
 ### Restore Account on the Polkadot-JS UI
 

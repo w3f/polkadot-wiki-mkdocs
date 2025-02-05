@@ -796,5 +796,5 @@ Cryptographic proof statements of data validity.
 ## Whitelist Pallet
 
 Allows one [Origin ](#origin) to escalate the privilege level of another Origin for a certain
-operation. In terms of OpenGov, it allows the [Fellowship](#fellowship) to authorise a new origin
+operation. In terms of OpenGov, it allows the [Fellowship](#technical-fellowship) to authorise a new origin
 (which we will call Whitelisted-Root) to be executed with Root-level privileges.

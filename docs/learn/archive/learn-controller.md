@@ -7,9 +7,6 @@ keywords: [nominated proof of stake, staking, controller]
 slug: ../learn-controller
 ---
 
-import MessageBox from "../../../components/MessageBox"; import
-"../../../components/MessageBox.css";
-
 <MessageBox message="The content on this page is archived. Controller accounts are deprecated. For more information, see
 [this discussion](https://forum.polkadot.network/t/staking-controller-deprecation-plan-staking-ui-leads-comms/2748)." />
 

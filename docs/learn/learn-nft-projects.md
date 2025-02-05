@@ -44,7 +44,7 @@ developers writing smart contracts with [ink!](https://use.ink) based on
 
 The main advantage of having a multi-virtual machine environment for NFT developers is that it will
 give more possibilities to the builders for the use case they are developing. With the support of
-WASM smart contracts, developers can develop solutions like [RMRK](./learn-nft.md#rmrk) with smart
+WASM smart contracts, developers can develop solutions like [RMRK](https://www.rmrk.app/) with smart
 contracts.
 
 ## Basilisk

@@ -40,7 +40,7 @@ channels.
 
 ### Setting Identity
 
-All validators should set an on-chain [identity](../learn/learn-identity.md#setting-an-identity) and
+All validators should set an on-chain [identity](../learn/learn-guides-identity.md#setting-an-identity) and
 get a judgement on the identity so that nominators can find nodes when browsing through various
 dashboards and UIs. When someone interacts with the chain, it ensures that an address they may come
 across belongs to the validator, and actions of that identity throughout various parts of the

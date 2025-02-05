@@ -136,7 +136,7 @@ given time. Read more about this in the [staking page](learn-staking.md).
 Avalanche does not have a native trustless message-passing mechanism. Instead, it relies on bridges.
 Though, because it is an EVM-compatible protocol, it's able to interoperate at a token level.
 However, subnets do not have a messaging layer out of the box. Polkadot, with its [XCM](learn-xcm.md)
-and [XCMP](learn-xcm.md#xcmp-cross-chain-message-passing) messaging protocols, allows for a native and
+and [XCMP](learn-xcm-transport.md#xcmp-cross-chain-message-passing) messaging protocols, allows for a native and
 trustless messaging scheme, thus supporting the composability of chains and enabling the development
 of powerful cross-chain applications.
 

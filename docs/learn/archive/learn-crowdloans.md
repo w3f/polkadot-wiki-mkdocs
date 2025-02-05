@@ -7,9 +7,6 @@ keywords: [crowdloans, parachains, lending, auction]
 slug: ../learn-crowdloans
 ---
 
-import MessageBox from "../../../components/MessageBox"; import
-"../../../components/MessageBox.css";
-
 <MessageBox message="The content on this page is archived. [Agile Coretime](../learn-agile-coretime) is activated on the network, and crowdloans have been deprecated. For decentralized, transparent, and regulatory-compliant fundraising within the ecosystem, check out the [Polimec parachain](https://www.polimec.org/)." />
 
 Polkadot allows parachains to source tokens for their parachain bids in a decentralized crowdloan.
@@ -102,7 +99,7 @@ upgrades (as determined through its local governance).
 ### Contributing to Crowdloans
 
 !!!info "Minimum Crowdloan Contribution"
-    There is a [minimum balance for contributions for a crowdloan campaign](../../general/chain-state-values.md#minimum-crowdloan-contribution). This is to make crowdloans as accessible as possible while maintaining a balance to justify using the network's resources.
+    There is a [minimum balance for contributions for a crowdloan campaign](../../general/chain-state-values.md). This is to make crowdloans as accessible as possible while maintaining a balance to justify using the network's resources.
 
 Each created campaign will have an index. Once a crowdloan campaign is open, anyone can participate
 by sending a transaction referencing the campaign's index. Tokens used to participate must be

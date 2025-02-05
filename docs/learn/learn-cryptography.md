@@ -205,7 +205,7 @@ submitter. The proof can be verified by any challenger to ensure the random numb
 valid.
 
 The VRF used in Polkadot is roughly the same as the one used in Ouroboros Praos. Ouroboros
-randomness is secure for block production and works well for [BABE](learn-consensus.md#BABE). Where
+randomness is secure for block production and works well for [BABE](learn-consensus.md#block-production-babe). Where
 they differ is that Polkadot's VRF does not depend on a central clock (the problem becomes - whose
 central clock?), rather, it depends on its own past results to determine present and future results,
 and it uses slot numbers as a clock emulator, estimating time.
@@ -213,7 +213,7 @@ and it uses slot numbers as a clock emulator, estimating time.
 #### Here's how it works in detail:
 
 Slots are discrete units of time six seconds in length. Each slot can contain a block, but may not.
-Slots make up [epochs](../general/glossary.md##epoch) - on Polkadot, 2400 slots make one epoch,
+Slots make up [epochs](../general/glossary.md#epoch) - on Polkadot, 2400 slots make one epoch,
 which makes epochs four hours long.
 
 In every slot, each validator "rolls a die". They execute a function (the VRF) that takes as input

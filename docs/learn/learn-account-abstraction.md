@@ -99,7 +99,7 @@ include:
 
 - [Multi-signature accounts](./learn-account-multisig.md) to control an account using different ones
 - [Proxy accounts](./learn-proxies.md) for role-based representation, and ownership representation
-  through [pure proxies](./learn-proxies.md#anonymous-proxy-pure-proxy)
+  through [pure proxies](./learn-proxies.md)
 - [Derivative accounts](./learn-account-advanced.md#derivation-paths) for using the same _parent_
   private key on multiple _children_ accounts
 - Account recovery mechanisms such as social recovery to help regain access to your key using

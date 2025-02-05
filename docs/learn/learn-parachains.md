@@ -238,7 +238,7 @@ economic distinction than a technological one.
 
 On-demand parachains have the exact same benefits for connecting to the relay chain that a full
 parachain has. Namely, it is able to send messages to other para-objects through
-[XCMP](learn-xcm.md###XCMP) and it is secured under the full economic security of the relay chain
+[XCMP](learn-xcm-transport.md#xcmp-cross-chain-message-passing) and it is secured under the full economic security of the relay chain
 validator set.
 
 ## Parachains' Use Cases

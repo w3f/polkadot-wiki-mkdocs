@@ -7,9 +7,6 @@ keywords: [governance, referenda, proposal, voting, endorse]
 slug: ../learn-governance
 ---
 
-import MessageBox from "../../../components/MessageBox"; import
-"../../../components/MessageBox.css";
-
 <MessageBox message="The content on this page is archived. For up-to-date information about governance, see the
 [Polkadot OpenGov page](../learn-polkadot-opengov.md)." />
 
@@ -41,7 +38,7 @@ the top of the queue. When it is time, the proposal at the top of the queue will
 [Public Referendum](#public-referenda). For instance, the proposal with 11 endorsements is shown at
 the top of the queue in the figure, which is ready to become a referendum.
 
-The public can also submit a [treasury proposal](./learn-treasury.md#creating-a-treasury-proposal),
+The public can also submit a [treasury proposal](./learn-treasury.md),
 which must be evaluated by the [Council](#council) through a motion. If the Council motion passes,
 the treasury proposal can be directly executed or go to the external queue, which will be voted on
 through a [Council Referendum](#council-referenda). See the figure's green horizontal path from the
@@ -111,7 +108,7 @@ it will be left to the stakeholders _en masse_ to determine the proposal’s fat
 ### Blacklisting Proposals
 
 A proposal can be blacklisted by Root Origin (e.g. sudo). A blacklisted proposal and its related
-referendum (if any) are immediately [canceled](#canceling). Additionally, a blacklisted proposal's
+referendum (if any) are immediately [canceled](#cancelling-proposals). Additionally, a blacklisted proposal's
 hash cannot re-appear in the proposal queue. Blacklisting is useful when removing erroneous
 proposals that could be submitted with the same hash.
 
@@ -319,7 +316,7 @@ below).
 ### Voluntary Locking
 
 !!!info "Voluntary Locking"
-    For more information about voluntary locking or conviction voting see [Polkadot OpenGov](../learn-polkadot-opengov.md#voluntary-locking).
+    For more information about voluntary locking or conviction voting see [Polkadot OpenGov](../learn-polkadot-opengov.md#voluntary-locking-conviction-voting).
 
 ### Delegations
 
@@ -327,7 +324,7 @@ In Polkadot, you can
 [delegate your voting power](../../maintain/archive/maintain-guides-democracy.md#delegate-a-vote) to
 another account you trust if you are not willing to stay up-to-date with all referenda.
 
-You can also use a [governance proxy](../learn-proxies.md#governance-proxy) to vote on behalf of
+You can also use a [governance proxy](../learn-proxies.md#proxy-types) to vote on behalf of
 your stash account. The proxy can be yours, or you can authorize a third-party governance proxy to
 vote with your stash. Learn more from the [dedicated page on Proxy Accounts](../learn-proxies.md).
 

@@ -28,7 +28,7 @@ It's important to note that XCM does not define how messages are delivered but r
 they should look, act, and contain relative instructions to the on-chain actions the message intends
 to perform.
 
-[**XCMP**](./learn-xcm-transport.md#xcmp-design), or Cross Chain Message Passing, is the actual
+[**XCMP**](./learn-xcm-transport.md#xcmp-cross-chain-message-passing), or Cross Chain Message Passing, is the actual
 network-layer protocol to deliver XCM-formatted messages to other participating parachains. There
 are other ways to define transport layer protocols for delivering XCM messages(see:
 [HRMP](./learn-xcm-transport.md#hrmp-xcmp-lite) and

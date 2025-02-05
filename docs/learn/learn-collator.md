@@ -83,7 +83,7 @@ Collators are being used on the [Paseo](../build/build-parachains.md#testing-a-p
 and you can learn more about how they are used with Cumulus via the
 [Cumulus](https://paritytech.github.io/polkadot-sdk/master/polkadot_sdk_docs/polkadot_sdk/cumulus/index.html)
 Rust documentation. More information can be found under the
-[Cumulus section](../build/build-parachains.md###cumulus) on the build parachain page.
+[Cumulus section](../build/build-parachains.md#cumulus) on the build parachain page.
 
 ## Guides and Tools
 
