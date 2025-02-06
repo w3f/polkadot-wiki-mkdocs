@@ -53,7 +53,7 @@ def human_readable(decimals_amount, number):
 
 def define_env(env):
     @env.macro
-    def rpc(network, module, call, default_value, is_constant=False, readable="human_readable"):
+    def rpc(network, module, call, default_value, is_constant=False, readable=""):
         if enable_rpc():
             url = get_network_url(network)
             api = substrateinterface.SubstrateInterface(url)
