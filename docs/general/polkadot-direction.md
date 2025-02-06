@@ -99,7 +99,7 @@ Polkadot 1.0 was a chain-centric paradigm consisting of isolated chains able to 
 This was not fundamentally different from having completely different chains connected to bridges,
 with the only difference of having the relay chain securing the network, providing message-passing
 capability, and doing some extra tasks such as [staking](../learn/learn-staking.md),
-[accounts](./learn-accounts-index), [balances](../learn/learn-transactions.md#balance-transfers),
+[accounts](../learn/learn-accounts.md), [balances](../learn/learn-transactions.md#balance-transfers),
 and [governance](../learn/learn-polkadot-opengov.md). Having a chain-centric system will ultimately
 end in chain-centric application and UX.
 

@@ -8,7 +8,7 @@ slug: ../learn-xcm-transport
 ---
 
 !!!info "XCM Documentation"
-    For a more practical approach to utilizing XCM, refer to the [XCM Docs](./learn/xcm). Please keep in mind that XCM is under active development.
+    For a more practical approach to utilizing XCM, refer to the [XCM Docs](./xcm/overview/intro.md). Please keep in mind that XCM is under active development.
 
 With the XCM format established, common patterns for protocols of these messages are needed.
 Polkadot implements two message passing protocols for acting on XCM messages between its constituent
@@ -84,7 +84,7 @@ A tutorial on how to open an HRMP channel on a parachain can be found
 <div className="row">
   <div className="col text--center">
     <a href="https://www.youtube.com/watch?v=tOnzk4AROUY">
-      <img src="https://img.youtube.com/vi/tOnzk4AROUY/0.jpg" width="350" style={{ borderRadius: 10, border: '1px solid slategrey' }} />
+      <img src="https://img.youtube.com/vi/tOnzk4AROUY/0.jpg" width="350" style="borderRadius: 10, border: '1px solid slategrey'" />
     </a>
     <p>
       <a href="https://www.youtube.com/watch?v=tOnzk4AROUY">XCMP Explained</a>

@@ -12,7 +12,7 @@ slug: ../maintain-index
 Welcome to the network maintainers section of the Polkadot Wiki. Here you will find information and
 guides to set up a node and run the network.
 
-<DocCardList />
+<!-- TODO: INDEX CARDS -->
 
 !!!info "Polkadot's Canary Network Kusama"
     For more information about being a Kusama maintainer, see the pages below:

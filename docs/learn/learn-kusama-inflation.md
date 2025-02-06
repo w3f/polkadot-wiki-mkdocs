@@ -53,7 +53,7 @@ possible compromise of security while keeping the native token liquid.
 
 ![staking](./../assets/rewards-inflation.png)
 
-<p style={{textAlign:"center"}}>Source: <a href="https://research.web3.foundation/Polkadot/overview/token-economics">Research - Web3 Foundation</a></p>
+<p style="textAlign: 'center'">Source: <a href="https://research.web3.foundation/Polkadot/overview/token-economics">Research - Web3 Foundation</a></p>
 
 - **x-axis**: Proportion of staked tokens
 - **y-axis**: Annualized percentage (inflation and staking rewards, see below)

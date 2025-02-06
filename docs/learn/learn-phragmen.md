@@ -17,7 +17,7 @@ try to optimize three metrics when computing a solution graph of nominators and 
 1. Maximize the stake behind the minimally staked validator.
 1. Minimize the variance of the stake in the set.
 
-!!!note [Sequential Phragmén](#understanding-phragmén), [Phragmms](#phragmms-fka-balphragmms) and
+!!!note [Sequential Phragmén](#basic-phragmén), [Phragmms](#phragmms-aka-balphragmms) and
 [Star balancing](https://crates.parity.io/sp_npos_elections/balancing/fn.balance.html) are a few
 notable algorithms used for computing the NPoS solutions in Polkadot and Kusama.
 
@@ -44,7 +44,7 @@ constant block time of six seconds and prevent long block times at the end of ea
 validator election takes place.
 
 !!!info "Staking Miners"
-    The process of computing the optimal solution for NPoS election can be delegated to [Staking Miners](learn-staking-miner).
+    The process of computing the optimal solution for NPoS election can be delegated to [Staking Miners](./learn-staking-advanced.md#staking-miner).
 
 ### Council Elections
 

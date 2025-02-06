@@ -22,6 +22,7 @@ The council is an elected body of on-chain accounts that are intended to represe
 stakeholders of Polkadot and/or Kusama. The council has two major tasks in governance: proposing
 referenda and vetoing dangerous or malicious referenda. For more information on the council, see the
 [governance page](../../learn/archive/learn-governance.md#council). This guide will walk you through
+[governance page](../../learn/archive/learn-governance.md#council). This guide will walk you through
 voting for councillors in the elections.
 
 ## Voting for Councillors
@@ -64,7 +65,7 @@ Go to the "Governance" > "Council" tab on the
 
 Under the "Council overview" tab, click on "Vote".
 
-![polkadotjs_removeVoter](../assets/council/polkadotjs_removeVoter.png)
+![polkadotjs_removeVoter](../../assets/council/polkadotjs_removeVoter.png)
 
 Issue the "Unvote all" option.
 

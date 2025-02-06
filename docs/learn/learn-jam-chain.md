@@ -347,7 +347,7 @@ within the relay chain, there's a provision for passing more data via a candidat
 be practical if all parachains transmitted all data all the time. JAM adheres strictly to rules,
 even for parachain services, including limitations on data transmission between the "refine" and
 "accumulate" phases. Currently, with
-[Horizontal relay chain Message Passing (HRMP)](./learn-xcm-transport.md#hrmp-xcmp-lites), all
+[Horizontal relay chain Message Passing (HRMP)](./learn-xcm-transport.md#hrmp-xcmp-lite), all
 messages traverse the relay chain, constraining the data payload to 4 kB or less, which might not be
 realistic. Thus, XCMP, where only message headers are relayed via the chain while the actual message
 data is transmitted off-chain, emerges as a necessary and overdue improvement.

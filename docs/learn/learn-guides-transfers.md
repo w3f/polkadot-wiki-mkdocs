@@ -93,7 +93,7 @@ There are two ways that vesting schedules can be created.
 Vesting schedules have three parameters:
 
 - **locked**, the amount of tokens to be transferred in
-  [Planck units](../learn/learn-DOT#the-planck-unit))
+  [Planck units](../learn/learn-DOT.md#the-planck-unit)
 - **per block**, the number of tokens that are released per block
 - **starting block**, the block number after which the vesting schedule starts
 

@@ -15,11 +15,16 @@ slug: ../learn-nft-projects
 <!-- prettier-ignore -->
 <!-- no toc -->
 
+- [List of NFT Projects](#list-of-nft-projects)
 - [Astar](#astar)
 - [Basilisk](#basilisk)
 - [KodaDot](#kodadot)
+  - [The Team Behind KodaDot](#the-team-behind-kodadot)
+  - [Ecosystem Tools by KodaDot](#ecosystem-tools-by-kodadot)
 - [Moonbeam](#moonbeam)
 - [RMRK](#rmrk)
+  - [NFT Legos](#nft-legos)
+  - [NFT from Kanaria](#nft-from-kanaria)
 - [Asset Hub](#asset-hub)
 - [Unique Network](#unique-network)
 
@@ -39,7 +44,7 @@ developers writing smart contracts with [ink!](https://use.ink) based on
 
 The main advantage of having a multi-virtual machine environment for NFT developers is that it will
 give more possibilities to the builders for the use case they are developing. With the support of
-WASM smart contracts, developers can develop solutions like [RMRK](./learn-nft#rmrk) with smart
+WASM smart contracts, developers can develop solutions like [RMRK](https://www.rmrk.app/) with smart
 contracts.
 
 ## Basilisk
@@ -72,10 +77,10 @@ robust collaboration has earned KodaDot the
 See below a video tutorial about how to mint your NFT on [the Polkadot Asset Hub](#asset-hub) using
 KodaDot.
 
-<div className="row">
-  <div className="col text--center">
+<div class="row">
+  <div class="col text--center">
     <a href="https://www.youtube.com/watch?v=SKdx4pTgL04">
-      <img src="https://img.youtube.com/vi/SKdx4pTgL04/0.jpg" width="350" style={{ borderRadius: 10, border: '1px solid slategrey' }} />
+      <img src="https://img.youtube.com/vi/SKdx4pTgL04/0.jpg" width="350" style="border-radius: 10px; border: 1px solid slategrey;" />
     </a>
     <p>
       <a href="https://www.youtube.com/watch?v=SKdx4pTgL04">KodaDot Tutorial on Minting NFTs</a>

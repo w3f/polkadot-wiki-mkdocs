@@ -500,8 +500,8 @@ groups:
         labels:
           severity: critical
         annotations:
-          summary: "Instance [{{ $labels.instance }}] down"
-          description: "[{{ $labels.instance }}] of job [{{ $labels.job }}] has been down for more than 1 minute."
+          summary: "Instance [{% raw %}{{ $labels.instance }}{% endraw %}] down"
+          description: "[{% raw %}{{ $labels.instance }}{% endraw %}] of job [{% raw %}{{ $labels.job }}{% endraw %}] has been down for more than 1 minute."
 ```
 
 Change the ownership of this file to `prometheus` instead of `root` by running:

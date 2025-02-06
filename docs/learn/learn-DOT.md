@@ -143,7 +143,7 @@ On the Westend network, you can also earn WNDs as rewards by
 <div className="row">
   <div className="col text--center">
     <a href="https://www.youtube.com/watch?v=0ji0ccZyb3k">
-      <img src="https://img.youtube.com/vi/0ji0ccZyb3k/0.jpg" width="350" style={{ borderRadius: 10, border: '1px solid slategrey' }} />
+      <img src="https://img.youtube.com/vi/0ji0ccZyb3k/0.jpg" width="350" style="borderRadius: 10, border: '1px solid slategrey'" />
     </a>
     <p>
       <a href="https://www.youtube.com/watch?v=0ji0ccZyb3k">Testing Polkadot features on Westend</a>

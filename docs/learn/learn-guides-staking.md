@@ -7,8 +7,6 @@ keyword: [nominate, stake, staking, claim, rewards, polkadot-js, pools]
 slug: ../learn-guides-staking
 ---
 
-import DocCardList from '@theme/DocCardList';
-
 <!-- MessageBox -->
 <div id="messageBox" class="floating-message-box">
   <p>
@@ -20,4 +18,4 @@ import DocCardList from '@theme/DocCardList';
   <button class="close-messagebox" aria-label="Close message">✖</button>
 </div>
 
-<DocCardList />
+<!-- TODO: INDEX CARDS -->

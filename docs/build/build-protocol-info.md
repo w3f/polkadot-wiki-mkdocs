@@ -174,7 +174,7 @@ with the same hash are both valid. In the case that one is invalid, the network 
 transaction and does not charge a transaction fee to the sender nor consider the transaction in the
 block's fullness.
 
-Imagine this contrived example with a [reaped account](#existential-deposit). The first and last
+Imagine this contrived example with a [reaped account](../learn/learn-accounts.md#existential-deposit-and-reaping). The first and last
 transactions are identical, and both valid.
 
 | Index | Hash | Origin    | Nonce | Call                | Results                       |

@@ -389,7 +389,7 @@ automatically check if you qualify. For more information, visit the
   which can help to decentralize the network through the sophisticated
   [NPoS system](./learn-consensus.md#nominated-proof-of-stake)
 - 85% of inflation/year of the tokens is primarily intended for staking rewards. Check the
-  [inflation](learn-staking-advanced.md#inflation) section on the Wiki for more information.
+  [inflation](learn-inflation.md) section on the Wiki for more information.
 
 ### Cons of Staking
 
@@ -465,4 +465,4 @@ might not be receiving staking rewards using Polkadot-JS UI.
 ---
 
 !!!info "Polkadot-JS Guides"
-    If you are an advanced user, see the [Polkadot-JS guides about staking](./learn-guides-staking).
+    If you are an advanced user, see the [Polkadot-JS guides about staking](./learn-guides-staking.md).

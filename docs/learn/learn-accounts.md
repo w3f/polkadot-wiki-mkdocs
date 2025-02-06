@@ -7,12 +7,12 @@ keywords: [account, polkadot account, polkadotjs, indices, identity, reaping]
 slug: ../learn-accounts
 ---
 
-import DocCardList from '@theme/DocCardList';
+
 
 !!!info "User friendly wallets"
     Create your Polkadot accounts with any of the secure and user-friendly wallets listed on the [Polkadot website](https://www.polkadot.network/ecosystem/wallets/).
 
-See the [Wallets](./wallets-index) section for more information about different wallet options
+See the [Wallets](../general/wallets-and-extensions.md) section for more information about different wallet options
 available, and specifically the [wallets and extensions](../general/wallets-and-extensions.md) page,
 which lists the user friendly wallet projects funded by the Polkadot/Kusama Treasuries or by the
 [Web3 Foundation Grants Program](../general/grants.md).
@@ -23,7 +23,7 @@ This document covers the basics of accounts in the Polkadot ecosystem. See the
 [indices](./learn-account-advanced.md#indices). For a more in-depth explanation of the cryptography
 behind accounts, please see the [cryptography page](learn-cryptography.md).
 
-<DocCardList />
+<!-- TODO: INDEX CARDS -->
 
 ## Account Address
 
@@ -41,7 +41,7 @@ A user's account requires a private key that can sign on to one of the
 private key, an account cannot sign anything. In Polkadot, there are some exceptions of accounts
 that do not have known private keys (i.e. keyless accounts). Such accounts are
 [multi-signature accounts](./learn-account-multisig.md),
-[pure proxies](./learn-proxies-pure.md#anonymous-proxy-pure-proxy), and
+[pure proxies](./learn-proxies-pure.md), and
 [system accounts](./learn-account-advanced.md#system-accounts) that are not discussed here and are
 meant for an advanced audience.
 
@@ -77,7 +77,7 @@ when dealing with non-trivial amounts of funds.
 Generating a mnemonic seed on a browser extension or a mobile application will create a hot key or
 hot wallet. Create your Polkadot accounts with a secure and user-friendly wallet listed on the
 [Polkadot website](https://www.polkadot.network/ecosystem/wallets/). See also the
-[Wallets](./wallets-index) section for more information about wallets and the
+[Wallets](../general/wallets-and-extensions.md) section for more information about wallets and the
 [wallets and extensions](../general/wallets-and-extensions.md) page for wallets and browser
 extensions funded by the Polkadot/Kusama Treasuries or by the
 [Web3 Foundation Grants Program](../general/grants.md).
@@ -135,4 +135,4 @@ but gets put back when it has the existential deposit.
 ---
 
 !!!info "Polkadot-JS Guides"
-    If you are an advanced user, see the [Polkadot-JS guides about accounts](./learn-guides-accounts).
+    If you are an advanced user, see the [Polkadot-JS guides about accounts](./learn-guides-accounts.md).

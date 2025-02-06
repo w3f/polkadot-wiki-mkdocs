@@ -43,7 +43,7 @@ them using the Polkadot-JS UI.
 <div className="row">
 <div className="col text--center">
     <a href="https://youtu.be/Qv_nJVcvQr8?t=2109">
-      <img src="https://img.youtube.com/vi/Qv_nJVcvQr8/0.jpg" width="350" style={{ borderRadius: 10, border: '1px solid slategrey' }} />
+      <img src="https://img.youtube.com/vi/Qv_nJVcvQr8/0.jpg" width="350" style="borderRadius: 10, border: '1px solid slategrey'" />
     </a>
     <p>
       <a href="https://youtu.be/Qv_nJVcvQr8?t=2109">Transact with Multi-signature Accounts</a>
@@ -55,7 +55,7 @@ There are three types of actions you can take with a multisig account:
 
 - Executing a call `asMulti`. This is used to begin or end a multisig transaction.
 - Approving a call `approveAsMulti`. This is used to approve an extrinsic and pass-on to the next
-  signatory (see [example below](#example-using-multi-signature-accounts) for more information).
+  signatory (see [example below](#example-using-multisig-accounts) for more information).
 - Cancelling a call `cancelAsMulti`.
 
 !!!info

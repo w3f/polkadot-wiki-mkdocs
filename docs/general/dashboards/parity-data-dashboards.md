@@ -36,24 +36,24 @@ Polkadot & Kusama Relay/Parachains. Users can select whether they want to view:
 
 The default view is set to Polkadot,Monthly, Substrate + EVM.
 
-![Default Selection](../../../../assets/parity-data-dashboards/ecosystem-chart-default-selection.png)
+![Default Selection](../../assets/parity-data-dashboards/ecosystem-chart-default-selection.png)
 
 Here is an example of selecting Polkadot, Daily, Substrate Only for Transactions.
 
-![Daily Substrate Transactions Selection](../../../../assets/parity-data-dashboards/ecosystem-polkadot-daily-substrate-transactions-selection.png)
+![Daily Substrate Transactions Selection](../../assets/parity-data-dashboards/ecosystem-polkadot-daily-substrate-transactions-selection.png)
 
 Users can also specify which chains they would like to view metrics for. The default view is set to
 the entire Relay & Parachain grouping. Below is an example of selecting data for only Polkadot
 Relay, Moonbeam and Nodle chains. Users can hit invert selection for convenience to de-select all
 options before selecting their desired chains.
 
-![Chain Selection](../../../../assets/parity-data-dashboards/ecosystem-chain-selection-example.png)
+![Chain Selection](../../assets/parity-data-dashboards/ecosystem-chain-selection-example.png)
 
 Also, for all graphs on the website, in the top right users can toggle between chart types: choosing
 bar, line or stacked and a combination of those. See below for an example from the
 [Stablecoins](https://dashboards.data.paritytech.io/stablecoins.html) tab.
 
-![Stablecoin USDC Example](../../../../assets/parity-data-dashboards/stablecoins-usdc-toggle-chart-type-example.png)
+![Stablecoin USDC Example](../../assets/parity-data-dashboards/stablecoins-usdc-toggle-chart-type-example.png)
 
 ## Where the Data Comes From
 
@@ -81,11 +81,11 @@ history and is continuously expanding.
 
 **DotLake Batch Architecture**
 
-![DotLake Batch Architecture](../../../../assets/parity-data-dashboards/dotlake-batch.png)
+![DotLake Batch Architecture](../../assets/parity-data-dashboards/dotlake-batch.png)
 
 **Real-Time Architecture**
 
-![Real-Time Architecture](../../../../assets/parity-data-dashboards/dotlake-rt.png)
+![Real-Time Architecture](../../assets/parity-data-dashboards/dotlake-rt.png)
 
 ## Support: Data Requests, Collaborations, Parachain Onboarding etc.
 

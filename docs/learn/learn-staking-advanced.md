@@ -150,7 +150,7 @@ running time complexity, etc.), please read
 ## Rewards Distribution
 
 !!!info
-    The general rule for rewards across validators is that two validators get paid essentially the same amount of tokens for equal work, i.e. they are not paid proportional to their total stakes. There is a probabilistic component to staking rewards in the form of [era points](../maintain/maintain-guides-validator-payout.md##era-points) and [tips](./learn-guides-transfers.md#calculating-fees-with-polkadot-js) but these should average out over time.
+    The general rule for rewards across validators is that two validators get paid essentially the same amount of tokens for equal work, i.e. they are not paid proportional to their total stakes. There is a probabilistic component to staking rewards in the form of [era points](../maintain/maintain-guides-validator-payout.md#era-points) and [tips](./learn-guides-transfers.md#calculating-fees-with-polkadot-js) but these should average out over time.
 
 Validators are paid the same regardless of stake backing them. Validators with less stake will
 generally pay more to nominators per-token than the ones with more stake. This gives nominators an
@@ -245,7 +245,7 @@ transactions would allow the block construction algorithm to process only a limi
 and ensure that the network maintains a constant block time. If all rewards were sent out in one
 block, this could cause serious issues with the stability of the network.
 
-Simple payouts require one transaction per validator, per [era](../general/glossary.md##era), to
+Simple payouts require one transaction per validator, per [era](../general/glossary.md#era), to
 claim rewards. The reason Polkadot requires this is to avoid an attack where someone has several
 thousand accounts nominating a single validator. The major cost in reward distribution is mutating
 the accounts in storage, and Polkadot cannot pay out several thousand accounts in a single
@@ -265,7 +265,7 @@ calculated, and nobody issued a payout for that era from that validator in the n
 reward would no longer be claimable.
 
 !!!info "Advanced How-to Guides"
-    In order to be absolutely sure that staking rewards can be claimed, users should trigger a payout before 28 eras have passed. See [this page](./learn-guides-nominator.md#claiming-rewards-with-the-polkadot-js-ui) for more information about how to claim rewards using the Polkadot-JS UI.
+    In order to be absolutely sure that staking rewards can be claimed, users should trigger a payout before 28 eras have passed. See [this page](./learn-guides-nominator.md#claiming-rewards-with-polkadot-js) for more information about how to claim rewards using the Polkadot-JS UI.
 
 ### FAQ and Cautionary Notes
 
@@ -289,7 +289,7 @@ reward would no longer be claimable.
 !!!caution
       The staking-miner code is experimental and it is still in the development phase. Use is at your own discretion, as there is a risk of losing some funds.
 
-At the end of each era on Polkadot and Kusama, using [NPoS](learn-phragmen), a new set of validators
+At the end of each era on Polkadot and Kusama, using [NPoS](learn-phragmen.md), a new set of validators
 must be elected based on the nominator preferences. This is a computationally intensive process,
 hence the usage of the term "mining" for computing the solution. The validators use
 [off-chain workers](https://docs.substrate.io/reference/how-to-guides/offchain-workers/) to compute
@@ -401,7 +401,7 @@ Queue
 The staking miners are required to pay a deposit to post their solutions. Deposit amount is the sum
 of `SignedDepositBase` +`SignedDepositByte` + `SignedDepositWeight`. All good solutions are subject
 to receiving a `SignedRewardBase`. For more information about deposit values see the
-[Chain State Values page](../general/chain-state-values.md#staking-miner-deposit).
+[Chain State Values page](../general/chain-state-values.md).
 
 ### Further Resources
 

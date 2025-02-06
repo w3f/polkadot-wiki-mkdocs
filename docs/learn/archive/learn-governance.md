@@ -46,7 +46,7 @@ the top of the queue. When it is time, the proposal at the top of the queue will
 [Public Referendum](#public-referenda). For instance, the proposal with 11 endorsements is shown at
 the top of the queue in the figure, which is ready to become a referendum.
 
-The public can also submit a [treasury proposal](./learn-treasury.md#creating-a-treasury-proposal),
+The public can also submit a [treasury proposal](./learn-treasury.md),
 which must be evaluated by the [Council](#council) through a motion. If the Council motion passes,
 the treasury proposal can be directly executed or go to the external queue, which will be voted on
 through a [Council Referendum](#council-referenda). See the figure's green horizontal path from the
@@ -116,7 +116,7 @@ it will be left to the stakeholders _en masse_ to determine the proposal’s fat
 ### Blacklisting Proposals
 
 A proposal can be blacklisted by Root Origin (e.g. sudo). A blacklisted proposal and its related
-referendum (if any) are immediately [canceled](#canceling). Additionally, a blacklisted proposal's
+referendum (if any) are immediately [canceled](#cancelling-proposals). Additionally, a blacklisted proposal's
 hash cannot re-appear in the proposal queue. Blacklisting is useful when removing erroneous
 proposals that could be submitted with the same hash.
 
@@ -324,7 +324,7 @@ below).
 ### Voluntary Locking
 
 !!!info "Voluntary Locking"
-    For more information about voluntary locking or conviction voting see [Polkadot OpenGov](../learn-polkadot-opengov.md#voluntary-locking).
+    For more information about voluntary locking or conviction voting see [Polkadot OpenGov](../learn-polkadot-opengov.md#voluntary-locking-conviction-voting).
 
 ### Delegations
 
@@ -332,7 +332,7 @@ In Polkadot, you can
 [delegate your voting power](../../maintain/archive/maintain-guides-democracy.md#delegate-a-vote) to
 another account you trust if you are not willing to stay up-to-date with all referenda.
 
-You can also use a [governance proxy](../learn-proxies.md#governance-proxy) to vote on behalf of
+You can also use a [governance proxy](../learn-proxies.md#proxy-types) to vote on behalf of
 your stash account. The proxy can be yours, or you can authorize a third-party governance proxy to
 vote with your stash. Learn more from the [dedicated page on Proxy Accounts](../learn-proxies.md).
 
@@ -407,7 +407,7 @@ selects validators from the available pool based on nominations. However, token 
 councilors are isolated from any nominations they may have on validators. Council terms last for one
 week on Polkadot and one day day on Kusama.
 
-At the end of each term, [Phragmén election algorithm](../learn-phragmen#algorithm) runs and the
+At the end of each term, [Phragmén election algorithm](../learn-phragmen.md#algorithm) runs and the
 result will choose the new councilors based on the vote configurations of all voters. The election
 also chooses a set number of runners-up, which is 20 on Polkadot (12 on Kusama), that will remain in
 the queue with their votes intact.

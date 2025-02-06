@@ -7,7 +7,7 @@ keywords: [transaction, transfer, DOT, extrinsics]
 slug: ../learn-transactions
 ---
 
-import DocCardList from '@theme/DocCardList';
+
 
 ## Pallets and Extrinsics
 
@@ -83,8 +83,7 @@ not to do so and most wallet software will not allow you to make an immortal ext
 
 ### Balance Transfers
 
-Balance transfers are transfers of token balances between accounts. This is the most well-known type
-of transfer.
+Balance transfers are transfers of token balances between accounts. This is the most well-known type of transfer.
 
 ### Vested Transfers
 

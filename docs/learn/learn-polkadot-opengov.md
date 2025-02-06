@@ -83,7 +83,7 @@ network, Polkadot OpenGov proposes the following main changes:
 The figure below shows an overview of Polkadot OpenGov's structure.
 
 !!!info
-    See [this page](./archive/learn-governance.md#summary) for a comparison with the structure of Governance V1.
+    See [this page](./archive/learn-governance.md#governance-summary) for a comparison with the structure of Governance V1.
 
 ![opengov-overview](../assets/opengov-overview.png)
 
@@ -98,7 +98,7 @@ need to be submitted to the Small Tipper track, while a proposal requiring subst
 need to be submitted to the Medium or Big Spender track.
 
 The [Polkadot Technical Fellowship](./learn-polkadot-technical-fellowship.md) can decide to
-[whitelist](#whitelisting) a proposal that will be enacted through the Whitelist Caller origin.
+[whitelist](./learn-polkadot-technical-fellowship.md#whitelisting) a proposal that will be enacted through the Whitelist Caller origin.
 Those proposals will have a shorter Lead-in, Confirmation, and Enactment period when compared to the
 Root Origin track.
 
@@ -145,7 +145,7 @@ referenda in Governance v1.
 so as often as they wish. Previous features were expanded and improved, most notably
 [**Origins and Tracks**](#origins-and-tracks) help facilitate the flow and processing of the
 submitted referenda. The [Technical Fellowship](./learn-polkadot-technical-fellowship.md) has the
-option to [whitelist](#whitelisting) referenda that can be then proposed in the track with
+option to [whitelist](./learn-polkadot-technical-fellowship.md#whitelisting) referenda that can be then proposed in the track with
 [whitelist origin](./learn-polkadot-opengov-origins.md#whitelisted-caller).
 
 ### Referenda Timeline
@@ -302,7 +302,7 @@ Decision Period.
 Once the proposal exits the Lead-in Period and enters the Voting Period, to be approved, it must
 satisfy the approval and support criteria for the **Confirmation Period**.
 
-- **Approval** is defined as the share of [conviction](#voluntary-locking)-weighted _aye_ votes
+- **Approval** is defined as the share of [conviction](#voluntary-locking-conviction-voting)-weighted _aye_ votes
   against the conviction-weighted total of _aye_ and _nay_ votes. The code implementation can be
   viewed
   [here](https://github.com/paritytech/polkadot-sdk/blob/f2fbba3be1d7deaf7cfc731cea00552c212ddfcf/substrate/frame/conviction-voting/src/types.rs#L77)
@@ -397,7 +397,7 @@ attempting to slash deposits of good referenda. A subsequent Referendum Killer c
 Referendum Killer.
 
 For more information about how to cancel or kill a referendum, see the
-[advanced how-to guides](./learn-guides-polkadot-opengov#cancel-or-kill-a-referendum).
+[advanced how-to guides](./learn-guides-polkadot-opengov.md#cancel-or-kill-a-referendum).
 
 !!!info "Blacklisting"
     Blacklisting referenda in Polkadot OpenGov is [the same as in Governance v1](./archive/learn-governance.md#blacklisting-proposals).

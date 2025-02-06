@@ -105,7 +105,7 @@ Polkadot-JS UI [referenda page](https://polkadot.js.org/apps/#/referenda).
 
 For the referendum to move from preparing phase to the deciding phase, a decision deposit needs to
 be placed. The decision deposit values for each individual
-[Treasury Tracks](./learn-polkadot-opengov-treasury#treasury-tracks) are listed in a section above
+[Treasury Tracks](./learn-polkadot-opengov-treasury.md#treasury-tracks) are listed in a section above
 in this document.
 
 ![Submit Treasury Proposal Decision Deposit](../assets/treasury/treasury-proposal-decision-deposit.png)
@@ -217,7 +217,7 @@ an account address on the chain.
 The `validFrom` field is optional, and refers to the block height of the relay chain upon which the
 payout can be issued. If the `validFrom` parameter is not set, the spend can be paid out immediately
 after approval. For more information on this field, refer to the
-[guide below](#creating-a-staged-proposal-with-validfrom).
+[guide below](#creating-a-multistage-payout-proposal-with-validfrom).
 
 The final call should look like the following, where we:
 
