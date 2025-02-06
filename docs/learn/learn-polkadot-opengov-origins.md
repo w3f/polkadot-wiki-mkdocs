@@ -7,9 +7,6 @@ keywords: [proposal, referenda, OpenGov, origins]
 slug: ../learn-polkadot-opengov-origins
 ---
 
-import Tracks from "./../../components/Referenda-Tracks"; import Chart from
-"./../../components/Chart";
-
 !!!info "Learn more about Polkadot OpenGov"
     For background information about Polkadot OpenGov, please refer to this [dedicated Wiki document](../learn/learn-polkadot-opengov.md).
 
@@ -64,17 +61,48 @@ than the min enactment period.
 ## Origins and Tracks Info
 
 === "Polkadot"
-
-    <Tracks network="polkadot" defaultValue="Loading Polkadot Tracks..."/>
+    | ID  | Origin              | Max Deciding | Decision Deposit | Prepare Period | Decision Period | Confirm Period | Min Enactment Period | Min Approval         | Min Support          |
+    |-----|---------------------|--------------|------------------|----------------|-----------------|----------------|----------------------|----------------------|----------------------|
+    | 0   | Root                | 1            | 100000 DOT       | 2 Hours        | 28 Days         | 1 Day          | 1 Day                | Reciprocal           | Linear Decreasing    |
+    | 1   | Whitelisted Caller  | 100          | 10000 DOT        | 30 Minutes     | 28 Days         | 10 Minutes     | 10 Minutes           | Reciprocal           | Reciprocal           |
+    | 2   | Wish For Change     | 10           | 20000 DOT        | 2 Hours        | 28 Days         | 1 Day          | 10 Minutes           | Reciprocal           | Linear Decreasing    |
+    | 10  | Staking Admin       | 10           | 5000 DOT         | 2 Hours        | 28 Days         | 3 Hours        | 10 Minutes           | Linear Decreasing    | Reciprocal           |
+    | 11  | Treasurer           | 10           | 1000 DOT         | 2 Hours        | 28 Days         | 7 Days         | 1 Day                | Reciprocal           | Linear Decreasing    |
+    | 12  | Lease Admin         | 10           | 5000 DOT         | 2 Hours        | 28 Days         | 3 Hours        | 10 Minutes           | Linear Decreasing    | Reciprocal           |
+    | 13  | Fellowship Admin    | 10           | 5000 DOT         | 2 Hours        | 28 Days         | 3 Hours        | 10 Minutes           | Linear Decreasing    | Reciprocal           |
+    | 14  | General Admin       | 10           | 5000 DOT         | 2 Hours        | 28 Days         | 3 Hours        | 10 Minutes           | Reciprocal           | Reciprocal           |
+    | 15  | Auction Admin       | 10           | 5000 DOT         | 2 Hours        | 28 Days         | 3 Hours        | 10 Minutes           | Reciprocal           | Reciprocal           |
+    | 20  | Referendum Canceller| 1,000        | 10000 DOT        | 2 Hours        | 7 Days          | 3 Hours        | 10 Minutes           | Linear Decreasing    | Reciprocal           |
+    | 21  | Referendum Killer   | 1,000        | 50000 DOT        | 2 Hours        | 28 Days         | 3 Hours        | 10 Minutes           | Linear Decreasing    | Reciprocal           |
+    | 30  | Small Tipper        | 200          | 1 DOT            | 1 Minutes      | 7 Days          | 10 Minutes     | 1 Minutes            | Linear Decreasing    | Reciprocal           |
+    | 31  | Big Tipper          | 100          | 10 DOT           | 10 Minutes     | 7 Days          | 1 Hours        | 10 Minutes           | Linear Decreasing    | Reciprocal           |
+    | 32  | Small Spender       | 50           | 100 DOT          | 4 Hours        | 28 Days         | 2 Days         | 1 Day                | Linear Decreasing    | Reciprocal           |
+    | 33  | Medium Spender      | 50           | 200 DOT          | 4 Hours        | 28 Days         | 4 Days         | 1 Day                | Linear Decreasing    | Reciprocal           |
+    | 34  | Big Spender         | 50           | 400 DOT          | 4 Hours        | 28 Days         | 7 Days         | 1 Day                | Linear Decreasing    | Reciprocal           |
 
 === "Kusama"
-
-    <Tracks network="kusama" defaultValue="Loading Kusama Tracks..."/>
+    | ID  | Origin              | Max Deciding | Decision Deposit | Prepare Period | Decision Period | Confirm Period | Min Enactment Period | Min Approval         | Min Support          |
+    |-----|---------------------|--------------|------------------|----------------|-----------------|----------------|----------------------|----------------------|----------------------|
+    | 0   | Root                | 1            | 3333.333333 KSM  | 2 Hours        | 14 Days         | 1 Day          | 1 Day                | Reciprocal           | Linear Decreasing    |
+    | 1   | Whitelisted Caller  | 100          | 333.333333 KSM   | 30 Minutes     | 14 Days         | 10 Minutes     | 10 Minutes           | Reciprocal           | Reciprocal           |
+    | 2   | Wish For Change     | 10           | 666.666667 KSM   | 2 Hours        | 14 Days         | 1 Day          | 10 Minutes           | Reciprocal           | Linear Decreasing    |
+    | 10  | Staking Admin       | 10           | 166.666667 KSM   | 2 Hours        | 14 Days         | 3 Hours        | 10 Minutes           | Linear Decreasing    | Reciprocal           |
+    | 11  | Treasurer           | 10           | 33.333333 KSM    | 2 Hours        | 14 Days         | 2 Days         | 1 Day                | Reciprocal           | Linear Decreasing    |
+    | 12  | Lease Admin         | 10           | 166.666667 KSM   | 2 Hours        | 14 Days         | 3 Hours        | 10 Minutes           | Linear Decreasing    | Reciprocal           |
+    | 13  | Fellowship Admin    | 10           | 166.666667 KSM   | 2 Hours        | 14 Days         | 3 Hours        | 10 Minutes           | Linear Decreasing    | Reciprocal           |
+    | 14  | General Admin       | 10           | 166.666667 KSM   | 2 Hours        | 14 Days         | 3 Hours        | 10 Minutes           | Reciprocal           | Reciprocal           |
+    | 15  | Auction Admin       | 10           | 166.666667 KSM   | 2 Hours        | 14 Days         | 3 Hours        | 10 Minutes           | Reciprocal           | Reciprocal           |
+    | 20  | Referendum Canceller| 1,000        | 333.333333 KSM   | 2 Hours        | 7 Days          | 3 Hours        | 10 Minutes           | Linear Decreasing    | Reciprocal           |
+    | 21  | Referendum Killer   | 1,000        | 1666.666667 KSM  | 2 Hours        | 14 Days         | 3 Hours        | 10 Minutes           | Linear Decreasing    | Reciprocal           |
+    | 30  | Small Tipper        | 200          | 0.033333 KSM     | 1 Minutes      | 7 Days          | 10 Minutes     | 1 Minutes            | Linear Decreasing    | Reciprocal           |
+    | 31  | Big Tipper          | 100          | 0.333333 KSM     | 10 Minutes     | 7 Days          | 1 Hours        | 10 Minutes           | Linear Decreasing    | Reciprocal           |
+    | 32  | Small Spender       | 50           | 3.333333 KSM     | 4 Hours        | 14 Days         | 2 Days         | 1 Day                | Linear Decreasing    | Reciprocal           |
+    | 33  | Medium Spender      | 50           | 6.666667 KSM     | 4 Hours        | 14 Days         | 4 Days         | 1 Day                | Linear Decreasing    | Reciprocal           |
+    | 34  | Big Spender         | 50           | 13.333333 KSM    | 4 Hours        | 14 Days         | 7 Days         | 1 Day                | Linear Decreasing    | Reciprocal           |
 
 !!!info
     For every referendum in each of these tracks, the Polkadot-JS UI displays interactive graphs of the support and approval.
-
-![UI Support and Approval](./../assets/governance/support-approval-polkadot-js-ui.png)
+    ![UI Support and Approval](./../assets/governance/support-approval-polkadot-js-ui.png)
 
 ### Root
 
@@ -88,7 +116,7 @@ than the min enactment period.
     day 28. This ensures that the token holders receive ample time to vote on the proposal during the
     decision period.
 
-    <Chart title="" type="line" dataId="Root" network="Polkadot" maxX="672" maxY="100" />
+     ![](./../assets/polkadot-opengov-origins/root_origin_polkadot.png)
 
 === "Kusama"
 
@@ -100,7 +128,7 @@ than the min enactment period.
     day 14. This ensures that the token holders receive ample time to vote on the proposal during the
     decision period.
 
-    <Chart title="" type="line" dataId="Root" network="Kusama" maxX="336" maxY="100" />
+     ![](./../assets/polkadot-opengov-origins/root_origin_kusama.png)
 
 ### Whitelisted Caller
 
@@ -114,7 +142,7 @@ than the min enactment period.
     with over 93.5% approval to be considered to be part of the confirm period. **Note how no referendum
     on the Whitelisted track can ever pass with less than 5% support.**
 
-    <Chart title="" type="line" dataId="Whitelist" network="Polkadot" maxX="672" maxY="100" />
+    ![](./../assets/polkadot-opengov-origins/whitelisted_caller_polkadot.png)
 
 === "Kusama"
 
@@ -126,7 +154,7 @@ than the min enactment period.
     88% approval to be considered to be part of the confirm period. **Note how no referendum on the
     Whitelisted track can ever pass with less than 5% support.**
 
-    <Chart title="" type="line" dataId="Whitelist" network="Kusama" maxX="336" maxY="100" />
+    ![](./../assets/polkadot-opengov-origins/whitelisted_caller_kusama.png)
 
 ### Wish For Change
 
@@ -141,12 +169,11 @@ track serves as a signal for a change without conferring privileges.
 
 === "Polkadot"
 
-    <Chart title="" type="line" dataId="Root" network="Polkadot" maxX="672" maxY="100" />
+    ![](./../assets/polkadot-opengov-origins/wish_for_change_polkadot.png)
 
 === "Kusama"
 
-
-    <Chart title="" type="line" dataId="Root" network="Kusama" maxX="336" maxY="100" />
+    ![](./../assets/polkadot-opengov-origins/wish_for_change_kusama.png)
 
 ### Staking Admin
 
@@ -155,12 +182,11 @@ calls from the staking pallet and the Election Provider Multiphase Pallet.
 
 === "Polkadot"
 
-    <Chart title="" type="line" dataId="AdminStaking" network="Polkadot" maxX="672" maxY="100" />
+    ![](./../assets/polkadot-opengov-origins/staking_admin_polkadot.png)
 
 === "Kusama"
 
-
-    <Chart title="" type="line" dataId="AdminStaking" network="Kusama" maxX="336" maxY="100" />
+    ![](./../assets/polkadot-opengov-origins/staking_admin_kusama.png)
 
 ### Treasurer
 
@@ -169,15 +195,14 @@ calls from the staking pallet and the Election Provider Multiphase Pallet.
     The origin for spending funds from the treasury (up to 10M DOT). This origin has the privilege to
     execute calls from the Treasury pallet.
 
-    <Chart title="" type="line" dataId="Treasurer" network="Polkadot" maxX="672" maxY="100" /> :polkadot
+    ![](./../assets/polkadot-opengov-origins/treasurer_polkadot.png)
 
 === "Kusama"
-
 
     The origin for spending funds from the treasury (up to 333333.33 KSM). This origin has the privilege
     to execute calls from the Treasury pallet.
 
-    <Chart title="" type="line" dataId="Treasurer" network="Kusama" maxX="336" maxY="100" />
+    ![](./../assets/polkadot-opengov-origins/treasurer_kusama.png)
 
 ### Lease Admin
 
@@ -185,12 +210,11 @@ Origin can force slot leases. This origin has the privilege to execute calls fro
 
 === "Polkadot"
 
-    <Chart title="" type="line" dataId="AdminLease" network="Polkadot" maxX="672" maxY="100" />
+    ![](./../assets/polkadot-opengov-origins/slot_admin_polkadot.png)
 
 === "Kusama"
 
-
-    <Chart title="" type="line" dataId="AdminLease" network="Kusama" maxX="336" maxY="100" />
+    ![](./../assets/polkadot-opengov-origins/slot_admin_kusama.png)
 
 ### Fellowship Admin
 
@@ -198,12 +222,11 @@ The origin for managing the composition of the fellowship.
 
 === "Polkadot"
 
-    <Chart title="" type="line" dataId="AdminFellowship" network="Polkadot" maxX="672" maxY="100" />
+    ![](./../assets/polkadot-opengov-origins/fellowship_admin_polkadot.png)
 
 === "Kusama"
 
-
-    <Chart title="" type="line" dataId="AdminFellowship" network="Kusama" maxX="336" maxY="100" />
+    ![](./../assets/polkadot-opengov-origins/fellowship_admin_kusama.png)
 
 ### General Admin
 
@@ -211,12 +234,11 @@ The origin managing the registrar and permissioned HRMP channel operations.
 
 === "Polkadot"
 
-    <Chart title="" type="line" dataId="AdminGeneral" network="Polkadot" maxX="672" maxY="100" />
+    ![](./../assets/polkadot-opengov-origins/general_admin_polkadot.png)
 
 === "Kusama"
 
-
-    <Chart title="" type="line" dataId="AdminGeneral" network="Kusama" maxX="336" maxY="100" />
+    ![](./../assets/polkadot-opengov-origins/general_admin_kusama.png)
 
 ### Referendum Canceller
 
@@ -225,11 +247,11 @@ slightly sharper reductions in their thresholds for passing.
 
 === "Polkadot"
 
-    <Chart title="" type="line" dataId="RefCanceller" network="Polkadot" maxX="672" maxY="100" />
+    ![](./../assets/polkadot-opengov-origins/referendum_canceller_polkadot.png)
 
 === "Kusama"
 
-    <Chart title="" type="line" dataId="RefCanceller" network="Kusama" maxX="336" maxY="100" />
+    ![](./../assets/polkadot-opengov-origins/referendum_canceller_kusama.png)
 
 ### Referendum Killer
 
@@ -239,12 +261,11 @@ passing.
 
 === "Polkadot"
 
-    <Chart title="" type="line" dataId="RefKiller" network="Polkadot" maxX="672" maxY="100" />
+    ![](./../assets/polkadot-opengov-origins/referendrum_killer_polkadot.png)
 
 === "Kusama"
 
-
-    <Chart title="" type="line" dataId="RefKiller" network="Kusama" maxX="336" maxY="100" />
+    ![](./../assets/polkadot-opengov-origins/referendum_killer_kusama.png)
 
 ### Small Tipper
 
@@ -252,15 +273,13 @@ passing.
 
     Origin able to spend up to 250 DOT from the treasury at once.
 
-    <Chart title="" type="line" dataId="SmallTipper" network="Polkadot" maxX="672" maxY="100" />
+    ![](./../assets/polkadot-opengov-origins/small_tipper_polkadot.png)
 
 === "Kusama"
 
-
     Origin able to spend up to 8.25 KSM from the treasury at once.
 
-    <Chart title="" type="line" dataId="SmallTipper" network="Kusama" maxX="336" maxY="100" />
-
+    ![](./../assets/polkadot-opengov-origins/small_tipper_kusama.png)
 
 ### Big Tipper
 
@@ -268,14 +287,13 @@ passing.
 
     Origin able to spend up to 1000 DOT from the treasury at once.
 
-    <Chart title="" type="line" dataId="BigTipper" network="Polkadot" maxX="672" maxY="100" />
+    ![](./../assets/polkadot-opengov-origins/big_tipper_polkadot.png)
 
 === "Kusama"
 
-
     Origin able to spend up to 33.33 KSM from the treasury at once.
 
-    <Chart title="" type="line" dataId="BigTipper" network="Kusama" maxX="336" maxY="100" />
+    ![](./../assets/polkadot-opengov-origins/big_tipper_kusama.png)
 
 ### Small Spender
 
@@ -283,13 +301,13 @@ passing.
 
     Origin able to spend up to 10000 DOT from the treasury at once.
 
-    <Chart title="" type="line" dataId="SmallSpender" network="Polkadot" maxX="672" maxY="100" />
+    ![](./../assets/polkadot-opengov-origins/small_spender_polkadot.png)
 
 === "Kusama"
 
     Origin able to spend up to 333.33 KSM from the treasury at once.
 
-    <Chart title="" type="line" dataId="SmallSpender" network="Kusama" maxX="336" maxY="100" />
+    ![](./../assets/polkadot-opengov-origins/small_spender_kusama.png)
 
 ### Medium Spender
 
@@ -297,13 +315,13 @@ passing.
 
     Origin able to spend up to 100000 DOT from the treasury at once.
 
-    <Chart title="" type="line" dataId="MediumSpender" network="Polkadot" maxX="672" maxY="100" />
+    ![](./../assets/polkadot-opengov-origins/medium_spender_polkadot.png)
 
 === "Kusama"
 
     Origin able to spend up to 3333.33 KSM from the treasury at once.
 
-    <Chart title="" type="line" dataId="MediumSpender" network="Kusama" maxX="336" maxY="100" />
+    ![](./../assets/polkadot-opengov-origins/medium_spender_kusama.png)
 
 ### Big Spender
 
@@ -311,10 +329,10 @@ passing.
 
     Origin able to spend up to 1000000 DOT from the treasury at once.
 
-    <Chart title="" type="line" dataId="BigSpender" network="Polkadot" maxX="672" maxY="100" />
+    ![](./../assets/polkadot-opengov-origins/big_spender_polkadot.png)
 
 === "Kusama"
 
     Origin able to spend up to 33333.33 KSM from the treasury at once.
 
-    <Chart title="" type="line" dataId="BigSpender" network="Kusama" maxX="336" maxY="100" />
+    ![](./../assets/polkadot-opengov-origins/big_spender_kusama.png)
