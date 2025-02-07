@@ -14,13 +14,13 @@ slug: ../chain-state-values
 === "Polkadot"
 
     !!!info "What to do with DOT"
-        - __{{ rpc("polkadot", "Balances", "ExistentialDeposit", 0, is_constant=true, readable="human_readable") }} DOT:__ the minimum balance required to have an active account on Polkadot Network. If your account balance drops below the minimum, your account will be reaped. Learn more about [Accounts](../learn/learn-accounts.md) and the [Existential Deposit](../learn/learn-accounts.md#existential-deposit-and-reaping) requirement.
-        - __{{ rpc("polkadot", "NominationPools", "MinJoinBond", 0, is_constant=false, readable="human_readable") }} DOT:__ the minimum contribution required to join a [nomination pool](../learn/learn-nomination-pools.md) and earn staking rewards for contributing to the security of the network. Learn more about [nomination pools](../learn/learn-nomination-pools.md).
-        - __{{ rpc("polkadot-people", "Identity", "BasicDeposit", 0, is_constant=true, readable="human_readable") }} DOT:__ register an [on-chain identity](../learn/learn-identity.md)
-        - __{{ rpc("polkadot", "Proxy", "ProxyDepositBase", 0, is_constant=true, readable="human_readable") }} DOT:__ create a [proxy account](../learn/learn-proxies.md).
-        - __{{ rpc("polkadot", "Staking", "MinNominatorBond", 0, is_constant=false, readable="human_readable") }} DOT:__ the minimum stake required to submit your intent to directly nominate validators.
-        - __{{ rpc("polkadot", "Staking", "MinimumActiveStake", 0, is_constant=false, readable="human_readable") }} DOT:__ the minimum amount of DOT required to become an active nominator and earn rewards, i.e. the minimum active bond. To increase the chance of earning staking rewards, your stake should not be less than the minimum stake among the active nominators, which is a dynamic threshold. If you have lesser DOT than the minimum active nomination, please consider contributing to [nomination pools](../learn/learn-nomination-pools.md). Learn more about [becoming a nominator](../learn/learn-nominator.md).
-        - __{{ rpc("polkadot", "NominationPools", "MinCreateBond", 0, is_constant=false, readable="human_readable") }} DOT:__ you can create your own [nomination pool](../learn/learn-nomination-pools.md).
+        - __{{ rpc("polkadot", "Balances", "ExistentialDeposit", 0, is_constant=true, readable="human_readable") }} :__ the minimum balance required to have an active account on Polkadot Network. If your account balance drops below the minimum, your account will be reaped. Learn more about [Accounts](../learn/learn-accounts.md) and the [Existential Deposit](../learn/learn-accounts.md#existential-deposit-and-reaping) requirement.
+        - __{{ rpc("polkadot", "NominationPools", "MinJoinBond", 0, is_constant=false, readable="human_readable") }} :__ the minimum contribution required to join a [nomination pool](../learn/learn-nomination-pools.md) and earn staking rewards for contributing to the security of the network. Learn more about [nomination pools](../learn/learn-nomination-pools.md).
+        - __{{ rpc("polkadot-people", "Identity", "BasicDeposit", 0, is_constant=true, readable="human_readable") }} :__ register an [on-chain identity](../learn/learn-identity.md)
+        - __{{ rpc("polkadot", "Proxy", "ProxyDepositBase", 0, is_constant=true, readable="human_readable") }} :__ create a [proxy account](../learn/learn-proxies.md).
+        - __{{ rpc("polkadot", "Staking", "MinNominatorBond", 0, is_constant=false, readable="human_readable") }} :__ the minimum stake required to submit your intent to directly nominate validators.
+        - __{{ rpc("polkadot", "Staking", "MinimumActiveStake", 0, is_constant=false, readable="human_readable") }} :__ the minimum amount of DOT required to become an active nominator and earn rewards, i.e. the minimum active bond. To increase the chance of earning staking rewards, your stake should not be less than the minimum stake among the active nominators, which is a dynamic threshold. If you have lesser DOT than the minimum active nomination, please consider contributing to [nomination pools](../learn/learn-nomination-pools.md). Learn more about [becoming a nominator](../learn/learn-nominator.md).
+        - __{{ rpc("polkadot", "NominationPools", "MinCreateBond", 0, is_constant=false, readable="human_readable") }} :__ you can create your own [nomination pool](../learn/learn-nomination-pools.md).
 
     #### Active Validator Count
 
@@ -32,11 +32,11 @@ slug: ../chain-state-values
 
     #### Bounty Curator Deposit
 
-    On Polkadot, the bounty curator deposit is calculated by multiplying the curator fee by the bounty curator deposit multiplier set to {{ rpc("polkadot", "Bounties", "CuratorDepositMultiplier", 500000, true, readable="percentage") }}. The deposit can range between a minimum of {{ rpc("polkadot", "Bounties", "CuratorDepositMin", 100000000000, true, readable="human_readable") }} DOT and a maximum of {{ rpc("polkadot", "Bounties", "CuratorDepositMax", 2000000000000, true, readable="human_readable") }} DOT.
+    On Polkadot, the bounty curator deposit is calculated by multiplying the curator fee by the bounty curator deposit multiplier set to {{ rpc("polkadot", "Bounties", "CuratorDepositMultiplier", 500000, true, readable="percentage") }}. The deposit can range between a minimum of {{ rpc("polkadot", "Bounties", "CuratorDepositMin", 100000000000, true, readable="human_readable") }}  and a maximum of {{ rpc("polkadot", "Bounties", "CuratorDepositMax", 2000000000000, true, readable="human_readable") }}
 
     #### Bounty Deposit
 
-    The deposit to submit a bounty on Polkadot is {{ rpc("polkadot", "Bounties", "BountyDepositBase", 10000000000, true, readable="human_readable") }} DOT.
+    The deposit to submit a bounty on Polkadot is {{ rpc("polkadot", "Bounties", "BountyDepositBase", 10000000000, true, readable="human_readable") }}
 
     #### Bounty Duration
 
@@ -48,15 +48,15 @@ slug: ../chain-state-values
 
     #### Existential Deposit
 
-    The minimum number of tokens to keep an account alive on the Polkadot relay chain is {{ rpc("polkadot", "Balances", "ExistentialDeposit", 333000000, true, readable="human_readable") }} DOT.
+    The minimum number of tokens to keep an account alive on the Polkadot relay chain is {{ rpc("polkadot", "Balances", "ExistentialDeposit", 333000000, true, readable="human_readable") }}
 
     #### Inactive Issuance
 
-    Polkadot's inactive issuance is {{ rpc("polkadot", "Balances", "InactiveIssuance", 20115636146084858300) }} in the era {{ rpc("polkadot", "Staking", "CurrentEra", 1553, is_constant=false) }}.
+    Polkadot's inactive issuance is {{ rpc("polkadot", "Balances", "InactiveIssuance", 20115636146084858300, is_constant=false, readable="precise_dot") }} in the era {{ rpc("polkadot", "Staking", "CurrentEra", 1553, is_constant=false) }}.
 
     #### Index Deposit
 
-    The deposit to reserve an index on Polkadot is {{ rpc("polkadot", "Indices", "Deposit", 100000000000, is_constant=true, readable="human_readable") }} DOT.
+    The deposit to reserve an index on Polkadot is {{ rpc("polkadot", "Indices", "Deposit", 100000000000, is_constant=true, readable="human_readable") }}
 
     #### Maximum Number of Nominators
 
@@ -80,15 +80,15 @@ slug: ../chain-state-values
 
     #### Minimum Bond to Join a Nomination Pool
 
-    The minimum bond to join a Polkadot nomination pool is {{ rpc("polkadot", "NominationPools", "MinJoinBond", 10000000000, is_constant=false, readable="human_readable") }} DOT.
+    The minimum bond to join a Polkadot nomination pool is {{ rpc("polkadot", "NominationPools", "MinJoinBond", 10000000000, is_constant=false, readable="human_readable") }}
 
     #### Minimum Bond to Participate in Staking
 
-    The minimum bond to nominate on Polkadot is {{ rpc("polkadot", "Staking", "MinNominatorBond", 2500000000000, is_constant=false, readable="human_readable") }}  DOT while the minimum amount to join a pool is {{ rpc("polkadot", "NominationPools", "MinJoinBond", 10000000000, is_constant=false, readable="human_readable") }} DOT.
+    The minimum bond to nominate on Polkadot is {{ rpc("polkadot", "Staking", "MinNominatorBond", 2500000000000, is_constant=false, readable="human_readable") }}  while the minimum amount to join a pool is {{ rpc("polkadot", "NominationPools", "MinJoinBond", 10000000000, is_constant=false, readable="human_readable") }}
 
     #### Minimum Validator Bond
 
-    To start a validator instance on Polkadot, the minimum bond required is {{ rpc("polkadot", "Staking", "MinValidatorBond", 0, is_constant=false, readable="human_readable") }} DOT.
+    To start a validator instance on Polkadot, the minimum bond required is {{ rpc("polkadot", "Staking", "MinValidatorBond", 0, is_constant=false, readable="human_readable") }}
 
     #### Minimum Validator Commission
 
@@ -96,11 +96,11 @@ slug: ../chain-state-values
 
     #### Multisig Deposit Base
 
-    The multisig deposit base on Polkadot is {{ rpc("polkadot", "Multisig", "DepositBase", 200880000000, is_constant=true, readable="human_readable") }} DOT.
+    The multisig deposit base on Polkadot is {{ rpc("polkadot", "Multisig", "DepositBase", 200880000000, is_constant=true, readable="human_readable") }}
 
     #### Multisig Deposit Factor
 
-    The multisig deposit factor on Polkadot is {{ rpc("polkadot", "Multisig", "DepositFactor", 320000000, is_constant=true, readable="human_readable") }} DOT.
+    The multisig deposit factor on Polkadot is {{ rpc("polkadot", "Multisig", "DepositFactor", 320000000, is_constant=true, readable="human_readable") }}
 
     #### Nomination Pool Max Commission
 
@@ -116,27 +116,27 @@ slug: ../chain-state-values
 
     #### OpenGov Submission Deposit
 
-    A deposit of {{ rpc("polkadot", "Referenda", "SubmissionDeposit", 0, is_constant=true, readable="human_readable") }} DOT is needed to submit a referendum on Polkadot.
+    A deposit of {{ rpc("polkadot", "Referenda", "SubmissionDeposit", 0, is_constant=true, readable="human_readable") }} is needed to submit a referendum on Polkadot.
 
     #### Parachain ID Registration Deposit
 
-    Reserving a `ParaID` on Polkadot requires a deposit of {{ rpc("polkadot", "Registrar", "ParaDeposit", 0, is_constant=true, readable="human_readable") }} DOT.
+    Reserving a `ParaID` on Polkadot requires a deposit of {{ rpc("polkadot", "Registrar", "ParaDeposit", 0, is_constant=true, readable="human_readable") }}
 
     #### Parachain Genesis State Registration Deposit
 
-    Registering the genesis state and WASM code of a Polkadot parachain requires a deposit {{ rpc("polkadot", "Registrar", "DataDepositPerByte", 0, is_constant=true,  readable="human_readable") }} DOT per byte.
+    Registering the genesis state and WASM code of a Polkadot parachain requires a deposit {{ rpc("polkadot", "Registrar", "DataDepositPerByte", 0, is_constant=true,  readable="human_readable") }} per byte.
 
     #### Proxy Deposits
 
-    The creation of proxies on Polkadot requires a **proxy deposit base** of {{ rpc("polkadot", "Proxy", "ProxyDepositBase", 0, is_constant=true,  readable="human_readable") }} DOT and a **proxy deposit factor** of {{ rpc("polkadot", "Proxy", "ProxyDepositFactor", 0, is_constant=true,  readable="human_readable") }} DOT that is multiplied by the number of proxies under the same proxied account.
+    The creation of proxies on Polkadot requires a **proxy deposit base** of {{ rpc("polkadot", "Proxy", "ProxyDepositBase", 0, is_constant=true,  readable="human_readable") }} and a **proxy deposit factor** of {{ rpc("polkadot", "Proxy", "ProxyDepositFactor", 0, is_constant=true,  readable="human_readable") }} that is multiplied by the number of proxies under the same proxied account.
 
-    In case of time-delayed proxies, there is an **announcement deposit base** of {{ rpc("polkadot", "Proxy", "AnnouncementDepositBase", 0, is_constant=true,  readable="human_readable") }} DOT for announcing a call and an **announcement deposit factor** of {{ rpc("polkadot", "Proxy", "AnnouncementDepositFactor", 0, is_constant=true, readable="human_readable") }} DOT for each proxy call.
+    In case of time-delayed proxies, there is an **announcement deposit base** of {{ rpc("polkadot", "Proxy", "AnnouncementDepositBase", 0, is_constant=true,  readable="human_readable") }} for announcing a call and an **announcement deposit factor** of {{ rpc("polkadot", "Proxy", "AnnouncementDepositFactor", 0, is_constant=true, readable="human_readable") }} for each proxy call.
 
     #### Staking Miner Deposit and Reward
 
-    Staking miners on Polkadot are required to reserve a deposit to submit their solutions. The the deposit is the sum of a **signed deposit base** of {{ rpc("polkadot", "ElectionProviderMultiPhase", "SignedDepositBase", 0, is_constant=true, readable="human_readable") }} DOT, a **signed deposit per byte** of {{ rpc("polkadot", "ElectionProviderMultiPhase", "SignedDepositByte", 0, is_constant=true, readable="human_readable") }} DOT (a solution weighing 200KB would yield 200 x 0.0000097656 = 0.00195312 DOT), and a **signed deposit weight** set to 0.
+    Staking miners on Polkadot are required to reserve a deposit to submit their solutions. The the deposit is the sum of a **signed deposit base** of {{ rpc("polkadot", "ElectionProviderMultiPhase", "SignedDepositBase", 0, is_constant=true, readable="human_readable") }} DOT, a **signed deposit per byte** of {{ rpc("polkadot", "ElectionProviderMultiPhase", "SignedDepositByte", 0, is_constant=true, readable="human_readable") }} (a solution weighing 200KB would yield 200 x 0.0000097656 = 0.00195312 DOT), and a **signed deposit weight** set to 0.
 
-    The **signed reward base** on Polkadot is {{ rpc("polkadot", "ElectionProviderMultiPhase", "SignedRewardBase", 0, is_constant=true, readable="human_readable") }} DOT which is a fixed amount.
+    The **signed reward base** on Polkadot is {{ rpc("polkadot", "ElectionProviderMultiPhase", "SignedRewardBase", 0, is_constant=true, readable="human_readable") }} which is a fixed amount.
 
     #### Staking Miner Max Submissions
 
@@ -151,7 +151,7 @@ slug: ../chain-state-values
 
     #### Total Issuance
 
-    Polkadot's total issuance is {{ rpc("polkadot", "Balances", "TotalIssuance", 0, is_constant=false) }} in the era {{ rpc("polkadot", "Staking", "CurrentEra", 0, is_constant=false) }}.
+    Polkadot's total issuance is {{ rpc("polkadot", "Balances", "TotalIssuance", 0, is_constant=false, readable="precise-dot") }} in the era {{ rpc("polkadot", "Staking", "CurrentEra", 0, is_constant=false) }}.
 
     #### Treasury Burn Factor
 
@@ -170,13 +170,13 @@ slug: ../chain-state-values
 === "Kusama"
 
     !!!info "What to do with KSM"
-        - __{{ rpc("kusama", "Balances", "ExistentialDeposit", 0, is_constant=true, readable="human_readable") }} KSM:__ the minimum balance required to have an active account on Kusama Network. If your account balance drops below the minimum, your account will be reaped. Learn more about [Accounts](../learn/learn-accounts.md) and the [Existential Deposit](../learn/learn-accounts.md#existential-deposit-and-reaping) requirement.
-        - __{{ rpc("kusama", "NominationPools", "MinJoinBond", 0, is_constant=false, readable="human_readable") }} KSM:__ the minimum contribution required to join a [nomination pool](../learn/learn-nomination-pools.md) and earn staking rewards for contributing to the security of the network. Learn more about [nomination pools](../learn/learn-nomination-pools.md).
-        - __{{ rpc("kusama-people", "Identity", "BasicDeposit", 0, is_constant=true, readable="human_readable") }} KSM:__ register an [on-chain identity](../learn/learn-identity.md)
-        - __{{ rpc("kusama", "Proxy", "ProxyDepositBase", 0, is_constant=true, readable="human_readable") }} KSM:__ create a [proxy account](../learn/learn-proxies.md).
-        - __{{ rpc("kusama", "Staking", "MinNominatorBond", 0, is_constant=false, readable="human_readable") }} KSM:__ the minimum stake required to submit your intent to directly nominate validators.
-        - __{{ rpc("kusama", "Staking", "MinimumActiveStake", 0, is_constant=false, readable="human_readable") }} KSM:__ the minimum amount of KSM required to become an active nominator and earn rewards, i.e. the minimum active bond. To increase the chance of earning staking rewards, your stake should not be less than the minimum stake among the active nominators, which is a dynamic threshold. If you have lesser KSM than the minimum active nomination, please consider contributing to [nomination pools](../learn/learn-nomination-pools.md). Learn more about [becoming a nominator](../learn/learn-nominator.md).
-        - __{{ rpc("kusama", "NominationPools", "MinCreateBond", 0, is_constant=false, readable="human_readable") }} KSM:__ you can create your own [nomination pool](../learn/learn-nomination-pools.md).
+        - __{{ rpc("kusama", "Balances", "ExistentialDeposit", 0, is_constant=true, readable="human_readable") }} :__ the minimum balance required to have an active account on Kusama Network. If your account balance drops below the minimum, your account will be reaped. Learn more about [Accounts](../learn/learn-accounts.md) and the [Existential Deposit](../learn/learn-accounts.md#existential-deposit-and-reaping) requirement.
+        - __{{ rpc("kusama", "NominationPools", "MinJoinBond", 0, is_constant=false, readable="human_readable") }} :__ the minimum contribution required to join a [nomination pool](../learn/learn-nomination-pools.md) and earn staking rewards for contributing to the security of the network. Learn more about [nomination pools](../learn/learn-nomination-pools.md).
+        - __{{ rpc("kusama-people", "Identity", "BasicDeposit", 0, is_constant=true, readable="human_readable") }} :__ register an [on-chain identity](../learn/learn-identity.md)
+        - __{{ rpc("kusama", "Proxy", "ProxyDepositBase", 0, is_constant=true, readable="human_readable") }} :__ create a [proxy account](../learn/learn-proxies.md).
+        - __{{ rpc("kusama", "Staking", "MinNominatorBond", 0, is_constant=false, readable="human_readable") }} :__ the minimum stake required to submit your intent to directly nominate validators.
+        - __{{ rpc("kusama", "Staking", "MinimumActiveStake", 0, is_constant=false, readable="human_readable") }} :__ the minimum amount of KSM required to become an active nominator and earn rewards, i.e. the minimum active bond. To increase the chance of earning staking rewards, your stake should not be less than the minimum stake among the active nominators, which is a dynamic threshold. If you have lesser KSM than the minimum active nomination, please consider contributing to [nomination pools](../learn/learn-nomination-pools.md). Learn more about [becoming a nominator](../learn/learn-nominator.md).
+        - __{{ rpc("kusama", "NominationPools", "MinCreateBond", 0, is_constant=false, readable="human_readable") }} :__ you can create your own [nomination pool](../learn/learn-nomination-pools.md).
 
     #### Active Validator Count
 
@@ -188,11 +188,11 @@ slug: ../chain-state-values
 
     #### Bounty Curator Deposit
 
-    On Kusama, the bounty curator deposit is calculated by multiplying the curator fee by the bounty curator deposit multiplier set to {{ rpc("kusama", "Bounties", "CuratorDepositMultiplier", 500000, true, readable="percentage") }}. The deposit can range between a minimum of {{ rpc("kusama", "Bounties", "CuratorDepositMin", 100000000000, true, readable="human_readable") }} KSM and a maximum of {{ rpc("kusama", "Bounties", "CuratorDepositMax", 2000000000000, true, readable="human_readable") }} KSM.
+    On Kusama, the bounty curator deposit is calculated by multiplying the curator fee by the bounty curator deposit multiplier set to {{ rpc("kusama", "Bounties", "CuratorDepositMultiplier", 500000, true, readable="percentage") }}. The deposit can range between a minimum of {{ rpc("kusama", "Bounties", "CuratorDepositMin", 100000000000, true, readable="human_readable") }}  and a maximum of {{ rpc("kusama", "Bounties", "CuratorDepositMax", 2000000000000, true, readable="human_readable") }}
 
     #### Bounty Deposit
 
-    The deposit to submit a bounty on Kusama is {{ rpc("kusama", "Bounties", "BountyDepositBase", 10000000000, true, readable="human_readable") }} DOT.
+    The deposit to submit a bounty on Kusama is {{ rpc("kusama", "Bounties", "BountyDepositBase", 10000000000, true, readable="human_readable") }} .
 
     #### Bounty Duration
 
@@ -208,11 +208,11 @@ slug: ../chain-state-values
 
     #### Inactive Issuance
 
-    Kusama's inactive issuance is {{ rpc("kusama", "Balances", "InactiveIssuance", 20115636146084858300) }} in the era {{ rpc("kusama", "Staking", "CurrentEra", 1553, is_constant=false) }}.
+    Kusama's inactive issuance is {{ rpc("kusama", "Balances", "InactiveIssuance", 20115636146084858300, is_constant=false, readable="precise_ksm") }} in the era {{ rpc("kusama", "Staking", "CurrentEra", 1553, is_constant=false) }}.
 
     #### Index Deposit
 
-    The deposit to reserve an index on Kusama is {{ rpc("kusama", "Indices", "Deposit", 100000000000, is_constant=true, readable="human_readable") }} KSM.
+    The deposit to reserve an index on Kusama is {{ rpc("kusama", "Indices", "Deposit", 100000000000, is_constant=true, readable="human_readable") }}
 
     #### Maximum Number of Nominators
 
