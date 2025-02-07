@@ -4,8 +4,6 @@ Polkadot Wiki Macro functionality
 
 import substrateinterface
 import os
-from dotenv import load_dotenv
-load_dotenv()
 
 def enable_rpc():
     return os.environ["ENABLE_RPC"] == "true"
