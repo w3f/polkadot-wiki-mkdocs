@@ -94,6 +94,15 @@
 /docs/general/dune-analytics    /general/general/dune-analytics    301
 /docs/parity-data-dashboards    /general/parity-data-dashboards    301
 /docs/staking-dashboard    /general/staking-dashboard    301
+/docs/general/dune-analytics/polkadot-annual-reviews    /general/dashboards/dune-analytics/polkadot-dashboards/legacy/polkadot-ecosystem-overview   301
+/docs/general/dune-analytics/polkadot-dashboards    /general/dashboards/dune-analytics/polkadot-dashboards/legacy/polkadot-ecosystem-overview   301
+/docs/general/dune-analytics/parachain-dashboards   /general/dashboards/dune-analytics/polkadot-dashboards/legacy/polkadot-ecosystem-overview   301
+/docs/general/dune-analytics/polkadot-dashboards-overview   /general/dashboards/dune-analytics/polkadot-dashboards/polkadot-dashboards-overview    301
+/docs/general/dune-analytics/polkadot-dashboards-governance  /general/dashboards/dune-analytics/polkadot-dashboards/polkadot-dashboards-governance    301
+/docs/general/dune-analytics/polkadot-dashboards-staking  /general/dashboards/dune-analytics/polkadot-dashboards/polkadot-dashboards-staking    301
+/docs/general/dune-analytics/polkadot-dashboards-network  /general/dashboards/dune-analytics/polkadot-dashboards/polkadot-dashboards-network    301
+/docs/general/dune-analytics/polkadot-2024-review   /general/dashboards/dune-analytics/annual-reviews/polkadot-dashboards-2024-year-in-review   301
+/docs/general/dune-analytics/:parachain-dashboard   /general/dashboards/dune-analytics/parachain-dashboards/:parachain-dashboard    301
 /docs/grants    /general/grants    301
 /docs/decentralized-futures    /general/decentralized-futures    301
 /docs/polkadot-community-foundation    /general/polkadot-community-foundation    301
@@ -118,5 +127,9 @@
 /docs/learn-cryptography    /learn/learn-cryptography    301
 /docs/learn-polkadotjs    /learn/learn-polkadotjs    301
 /docs/learn-runtime-upgrades    /learn/learn-runtime-upgrades    301
-/docs/learn/xcm/introduction    /learn/learn-xcm/introduction    301
-/docs/learn/xcm/overview    /learn/learn-xcm/overview    301
+/docs/learn/xcm/introduction    /learn/learn-xcm    301
+/docs/learn/xcm/overview    /learn/learn-xcm    301
+/docs/learn-*    /general/web3-and-polkadot    301
+/docs/build-*    /build/build-guide    301
+/docs/maintain-*    /maintain/maintain-index    301
+/docs/*    /general/getting-started    301
