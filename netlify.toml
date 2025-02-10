@@ -6,7 +6,7 @@
   ENABLE_RPC = "true"
 
 [context.deploy-preview]
-  command = "mkdocs build --strict"
+  command = "sh scripts/deploy.sh"
   publish = "site"
   environment = { ENABLE_RPC = "true" }
 
