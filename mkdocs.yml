@@ -52,7 +52,7 @@ extra:
     - icon: fontawesome/brands/youtube
       link: https://www.youtube.com/channel/UCB7PbjuZLEba_znc7mEGNgw
     - icon: fontawesome/brands/discord
-      link: https://dot.li/discord
+      link: https://polkadot-discord.w3f.tools/
 extra_css:
   - stylesheets/extra.css
   - stylesheets/MessageBox.css

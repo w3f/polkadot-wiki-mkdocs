@@ -82,7 +82,7 @@ can set a custom path with `--base-path <path>`.
 The keystore stores session keys, which are important for validator operations.
 
 - [Polkadot documentation](../learn/learn-cryptography.md)
-- [Substrate documentation](https://docs.substrate.io/main-docs/fundamentals/accounts-addresses-keys/#specialized-accounts)
+- [Substrate documentation](https://docs.polkadot.com/polkadot-protocol/basics/cryptography/#cryptography)
 
 **`db`**
 
@@ -154,5 +154,5 @@ puts your node at higher risk of attack. You can run your own, private
 
 The node also exposes a Prometheus endpoint by default (disable with `--no-prometheus`). Substrate
 has a
-[monitor node metrics tutorial](https://docs.substrate.io/tutorials/get-started/monitor-node-metrics/)
+[monitor node metrics tutorial](https://docs.polkadot.com/infrastructure/running-a-validator/operational-tasks/general-management/#monitor-your-node)
 which uses this endpoint.

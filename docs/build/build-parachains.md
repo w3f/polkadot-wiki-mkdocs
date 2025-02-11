@@ -188,7 +188,7 @@ Currently, the only PDK is
 [the Polkadot SDK](https://github.com/paritytech/polkadot-sdk/tree/master/substrate) and
 [Cumulus](https://github.com/paritytech/polkadot-sdk/tree/master/cumulus).
 
-**[Substrate](https://substrate.io/)** is a blockchain framework that provides the basic building
+**[Substrate](https://docs.polkadot.com/develop/parachains/intro-polkadot-sdk/#substrate)** is a blockchain framework that provides the basic building
 blocks of a blockchain (things like the networking layer, consensus, a Wasm interpreter) while
 providing an intuitive way to construct your runtime. Substrate is made to ease the process of
 creating a new chain, but it does not provide support for relay chain compatibility directly. For

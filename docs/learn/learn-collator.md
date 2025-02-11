@@ -87,7 +87,7 @@ Rust documentation. More information can be found under the
 
 ## Guides and Tools
 
-- [Tutorial covering Cumulus and Collators](https://docs.substrate.io/reference/how-to-guides/parachains/connect-to-a-relay-chain/)
+- [Tutorial covering Cumulus and Collators](https://docs.polkadot.com/develop/toolkit/parachains/spawn-chains/zombienet/get-started/)
 - [Paseo testnet guide](../build/build-parachains.md#testing-a-parachain)
 - [polkadot-launch](https://github.com/shawntabrizi/polkadot-launch) - a tool to quickly spin up a
   local Polkadot testnet based on some parameters like number of parachains, collator setup, etc.
