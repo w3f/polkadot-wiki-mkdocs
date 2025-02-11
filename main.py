@@ -13,11 +13,15 @@ def format(value, filter):
         case "percentage":
             return f"{value / 10000}%"
         case "human_readable":
-            return human_readable(10, value)
+            return f"{human_readable(10, value)} DOT"
         case "human_readable_kusama":
-            return human_readable(12, value)
+            return f"{human_readable(12, value)} KSM"
         case "blocks_to_days":
             return str(blocks_to_days(value))
+        case "precise_ksm":
+            return f"{human_readable(12, value, rounded=False)} KSM"
+        case "precise_dot":
+            return f"{human_readable(10, value, rounded=False)} DOT"
         case _:
             return str(value)
         
@@ -39,21 +43,25 @@ def get_network_url(network):
         case "kusama-people":
             return "wss://rpc-people-kusama.luckyfriday.io"
         
-def human_readable(decimals_amount, number):
+def human_readable(decimals_amount, number, rounded=True):
     balance_str = str(number)
     if len(balance_str) <= decimals_amount:
         # Add leading zeros if necessary
         padded_balance = "0" * (decimals_amount - len(balance_str)) + balance_str
+        if rounded:
+            padded_balance = str(round(int(padded_balance) / 10 ** (decimals_amount - 1)))
         return f"0.{padded_balance}" 
     else:
         # Split the string at the decimal point
         whole_part = balance_str[:-decimals_amount]
         decimal_part = balance_str[-decimals_amount:]
+        if rounded:
+            decimal_part = str(round(int(decimal_part) / 10 ** (decimals_amount - 1)))
         return f"{whole_part}.{decimal_part}"
 
 def define_env(env):
     @env.macro
-    def rpc(network, module, call, default_value, is_constant=False, readable="human_readable"):
+    def rpc(network, module, call, default_value, is_constant=False, readable=""):
         if enable_rpc():
             url = get_network_url(network)
             api = substrateinterface.SubstrateInterface(url)
