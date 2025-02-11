@@ -1,6 +1,6 @@
 /docs/explore-index    /general    301
 /docs/learn-index    /learn    301
-/docs/build-guide    /general/build-guide    301
+/docs/build-guide    /build/build-guide    301
 /docs/maintain-index    /general/maintain-index    301
 /docs/kusama-getting-started    /kusama/kusama-getting-started    301
 /docs/getting-started    /general/getting-started    301
@@ -10,7 +10,7 @@
 /docs/apps-index    /general/apps-index    301
 /docs/dashboards-index    /general/dashboards-index    301
 /docs/community-index    /general/community-index    301
-/docs/funding    /general/funding    301
+/docs/funding    /general/grants    301
 /docs/programs-index    /general/programs-index    301
 /docs/metadata    /general/metadata    301
 /docs/chain-state-values    /general/chain-state-values    301
@@ -35,11 +35,11 @@
 /docs/learn-parachains    /learn/learn-parachains    301
 /docs/learn-parachains-protocol    /learn/learn-parachains-protocol    301
 /docs/learn-wasm    /learn/learn-wasm    301
-/docs/build-guides-coretime-start    /general/build-guides-coretime-start    301
-/docs/build-storage    /general/build-storage    301
-/docs/build-dapp    /general/build-dapp    301
+/docs/build-guides-coretime-start    /build/build-guides-coretime-start    301
+/docs/build-storage    /build/build-client-side/#decentralized-storage-options    301
+/docs/build-dapp    /build/build-client-side   301
 /docs/learn-bridges    /learn/learn-bridges    301
-/docs/learn/thousand-validators    /learn/learn-thousand-validators    301
+/docs/learn/thousand-validators    /learn/archive/thousand-validators/    301
 /docs/maintain-polkadot-parameters    /maintain/maintain-polkadot-parameters    301
 /docs/maintain-node-index    /maintain/maintain-node-index    301
 /docs/maintain-collator-index    /maintain/maintain-collator-index    301
@@ -47,12 +47,12 @@
 /docs/maintain-archive    /maintain/maintain-archive    301
 /docs/learn-nominator    /learn/learn-nominator    301
 /docs/maintain-guides-how-to-validate-kusama    /maintain/kusama/maintain-guides-how-to-validate-kusama    301
-/docs/build-pdk    /general/build-pdk    301
+/docs/build-pdk    /build/build-parachains   301
 /docs/kusama-timeline    /kusama/kusama-timeline    301
 /docs/kusama-coc    /kusama/kusama-coc    301
 /docs/kusama-bug-bounty    /kusama/kusama-bug-bounty    301
 /docs/kusama-social-recovery    /kusama/kusama-social-recovery    301
-/docs/kusama-adversarial-cheatsheet    /kusama/kusama-adversarial-cheatsheet    301
+/docs/kusama-adversarial-cheatsheet    /kusama/kusama-adverserial-cheatsheet    301
 /docs/maintain-guides-society-kusama    /maintain/kusama/maintain-guides-society-kusama    301
 /docs/learn-kusama-inflation    /kusama/kusama-inflation    301
 /docs/learn-guides-claims    /learn/learn-guides-claims    301
@@ -75,7 +75,7 @@
 /docs/start-building    /general/start-building    301
 /docs/faq    /general/faq    301
 /docs/glossary    /general/glossary    301
-/docs/learn-scams    /learn/learn-scams    301
+/docs/learn-scams   /general/scams/    301
 /docs/learn-account-abstraction    /learn/learn-account-abstraction    301
 /docs/ledger    /general/ledger    301
 /docs/polkadot-vault    /general/polkadot-vault    301
@@ -92,9 +92,9 @@
 /docs/multisig-apps    /general/multisig-apps    301
 /docs/learn-nft-projects    /learn/learn-nft-projects    301
 /docs/parachains-apps    /general/parachains-apps    301
-/docs/general/dune-analytics    /general/general/dune-analytics    301
-/docs/parity-data-dashboards    /general/parity-data-dashboards    301
-/docs/staking-dashboard    /general/staking-dashboard    301
+/docs/general/dune-analytics     /general/dashboards/general/dune-analytics    301
+/docs/parity-data-dashboards     /general/dashboards/parity-data-dashboards    301
+/docs/staking-dashboard     /general/dashboards/staking-dashboard/    301
 /docs/general/dune-analytics/polkadot-annual-reviews    /general/dashboards/dune-analytics/polkadot-dashboards/legacy/polkadot-ecosystem-overview   301
 /docs/general/dune-analytics/polkadot-dashboards    /general/dashboards/dune-analytics/polkadot-dashboards/legacy/polkadot-ecosystem-overview   301
 /docs/general/dune-analytics/parachain-dashboards   /general/dashboards/dune-analytics/polkadot-dashboards/legacy/polkadot-ecosystem-overview   301
@@ -106,7 +106,7 @@
 /docs/general/dune-analytics/:parachain-dashboard   /general/dashboards/dune-analytics/parachain-dashboards/:parachain-dashboard    301
 /docs/grants    /general/grants    301
 /docs/decentralized-futures    /general/decentralized-futures    301
-/docs/polkadot-community-foundation    /general/polkadot-community-foundation    301
+/docs/polkadot-community-foundation    /general/pcf   301
 /docs/ecosystem-funds    /general/ecosystem-funds    301
 /docs/decentralized-voices    /general/decentralized-voices    301
 /docs/bug-bounty    /general/bug-bounty    301
@@ -115,7 +115,7 @@
 /docs/dev-heroes    /general/dev-heroes    301
 /docs/polkadotjs    /general/polkadotjs    301
 /docs/learn-nomination-pools    /learn/learn-nomination-pools    301
-/docs/maintain-guides-how-to-validate-polkadot    /general/maintain-guides-how-to-validate-polkadot    301
+/docs/maintain-guides-how-to-validate-polkadot    /maintain/maintain-guides-how-to-validate-polkadot    301
 /docs/learn-staking-index    /learn/learn-staking-index    301
 /docs/learn-polkadot-opengov-index    /learn/learn-polkadot-opengov-index    301
 /docs/learn-assets-index    /learn/learn-assets-index    301
