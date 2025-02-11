@@ -162,7 +162,7 @@ The following libraries/SDKs allow for interfacing with a Substrate node in othe
   Tool to construct, sign, and broadcast transactions. Signing can be done offline.
 - [Polkadot API Cpp](https://github.com/usetech-llc/polkadot_api_cpp) - A С++ API for Polkadot, can
   build `clip`, a command line tool.
-- [Subkey](https://docs.substrate.io/reference/command-line-tools/subkey/) - Command line utility
+- [Subkey](https://docs.polkadot.com/polkadot-protocol/basics/accounts/#using-subkey) - Command line utility
   for generating and inspecting key pairs.
 
 ### WASM

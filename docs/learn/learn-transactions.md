@@ -144,7 +144,7 @@ unsigned 128-bit integer.
 
 See
 [the Polkadot specification](https://spec.polkadot.network/id-weights#id-definitions-in-polkadot)
-and [the Substrate documentation](https://docs.substrate.io/build/tx-weights-fees/) for more
+and [the Substrate documentation](https://docs.polkadot.com/polkadot-protocol/basics/blocks-transactions-fees/fees/#transactions-weights-and-fees) for more
 details.
 
 ### Fee Multiplier

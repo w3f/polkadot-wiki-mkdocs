@@ -66,7 +66,7 @@ integrated into web apps: https://github.com/smol-dot/smoldot.
     entirely in Javascript. Substrate Connect uses a
     [smoldot WASM light client](https://github.com/paritytech/smoldot) to securely connect to the
     blockchain network without relying on specific 3rd parties. Substrate Connect is available on Chrome
-    and Firefox as a [browser extension](https://substrate.io/developers/substrate-connect/).
+    and Firefox as a [browser extension](https://chromewebstore.google.com/detail/substrate-connect-extensi/khccbhhbocaaklceanjginbdheafklai).
 
 <!--separates content from instructions-->
 

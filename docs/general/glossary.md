@@ -225,7 +225,7 @@ waiting to become referenda. Compare the Community queue.
 
 ## Extrinsic
 
-A [SCALE encoded](https://docs.substrate.io/reference/scale-codec/) array consisting of a version
+A [SCALE encoded](https://docs.polkadot.com/polkadot-protocol/basics/data-encoding/#scale-codec) array consisting of a version
 number, signature, and varying data types indicating the resulting runtime function to be called,
 including the parameters required for that function to be executed. These state changes are invoked
 from the outside world, i.e. they are not part of the system itself. Extrinsics can take two forms,
@@ -574,7 +574,7 @@ Please refer to Paseo test network.
 
 A system-level origin in [Substrate](#Substrate). This is the highest privilege level and can be
 thought of as the superuser of the runtime origin. To learn about more raw origins in Substrate,
-visit [Substrate Docs](https://docs.substrate.io/main-docs/build/origins/)
+visit [Substrate Docs](https://docs.polkadot.com/polkadot-protocol/glossary/#origin)
 
 ## Runtime
 
@@ -780,7 +780,7 @@ block and include limitations on block size, to prevent execution of certain ext
 deemed too expensive and could decelerate the network. This is handled by the weight system, where
 the cost of the transactions (referred to as [extrinsics](#extrinsic)) are determined before
 execution. Checkout this section of the Substrate docs covering
-[transaction weights and fees](https://docs.substrate.io/build/tx-weights-fees/).
+[transaction weights and fees](https://docs.polkadot.com/polkadot-protocol/basics/blocks-transactions-fees/fees/#transactions-weights-and-fees).
 
 ## Westend
 
