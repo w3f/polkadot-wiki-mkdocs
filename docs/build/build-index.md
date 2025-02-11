@@ -24,7 +24,7 @@ that should be included, please reach out to us on
 ## Tools & Resources
 
 - [Tools](build-tools-index.md) - Maintained list of tools.
-- [Subkey](https://docs.substrate.io/reference/command-line-tools/subkey/) - Command line utility
+- [Subkey](https://docs.polkadot.com/polkadot-protocol/basics/accounts/#using-subkey) - Command line utility
   for generating and inspecting key pairs.
 - [JS tools](https://github.com/polkadot-js/tools) - TypeScript tools for offline signing of
   transactions, RPC calls, and more.

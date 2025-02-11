@@ -14,7 +14,7 @@ on-chain use them. Not managing how resources are used can open an attack vector
 (Denial of Service), where an attacker floods the chain with operations in order to get it to stop
 producing blocks. In order to manage how resources are used and to protect against DoS attacks, XCM
 uses a concept of _weight_. This concept, which has the purpose of quantifying usage of blockchain
-resources, comes from the [Substrate](https://docs.substrate.io/build/tx-weights-fees/) world.
+resources, comes from the [Substrate](https://docs.polkadot.com/polkadot-protocol/basics/blocks-transactions-fees/fees/) world.
 
 Weight is two-dimensional, it tracks both time (execution time) and space (state accesses). Weight
 determines how much fees need to be paid in order to perform some operation. The logic for turning

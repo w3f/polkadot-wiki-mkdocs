@@ -49,9 +49,9 @@ echo '{"id":1,"jsonrpc":"2.0","method":"chain_getBlock","params":["0x7d4ef171d48
 ```
 
 Some return values may not appear meaningful at first glance. Polkadot uses
-[SCALE encoding](https://docs.substrate.io/reference/scale-codec/) as a format that is suitable for
+[SCALE encoding](https://docs.polkadot.com/polkadot-protocol/basics/data-encoding/#scale-codec) as a format that is suitable for
 resource-constrained execution environments. You will need to decode the information and use the
-chain [metadata](https://docs.substrate.io/reference/command-line-tools/subxt/#metadata)
+chain [metadata](https://docs.polkadot.com/polkadot-protocol/basics/chain-data/#metadata-format)
 (`state_getMetadata`) to obtain human-readable information.
 
 ### Tracking the Chain Head

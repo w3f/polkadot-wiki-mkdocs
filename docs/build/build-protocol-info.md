@@ -49,7 +49,7 @@ Base58Check format such as a version prefix, a hash-based checksum suffix, and b
 <!-- todo: link to dev hub once up -->
 
 See the
-[SS58 page](https://docs.substrate.io/main-docs/fundamentals/accounts-addresses-keys/#address-encoding-and-chain-specific-addresses)
+[SS58 page](https://docs.polkadot.com/polkadot-protocol/basics/accounts/#address-formats)
 in the Substrate documentation for encoding information and a more comprehensive list of network
 prefixes.
 
@@ -120,7 +120,7 @@ Extrinsics constitute information from the outside world and take on three forms
 
 As an infrastructure provider, you will deal almost exclusively with signed transactions. You will,
 however, see other extrinsics within the blocks that you decode. Find more information in the
-[Substrate documentation](https://docs.substrate.io/main-docs/build/tx-weights-fees/).
+[Substrate documentation](https://docs.polkadot.com/polkadot-protocol/basics/blocks-transactions-fees/fees/#transactions-weights-and-fees).
 
 Inherent extrinsics are unsigned and contain information that is not provably true, but validators
 agree on based on some measure of reasonability. For example, a timestamp cannot be proved, but

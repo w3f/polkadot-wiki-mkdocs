@@ -13,7 +13,7 @@ your infrastructure is always better than a third-party-hosted one in this brave
 world.
 
 This guide will show you how to connect to [Polkadot network](https://polkadot.network/), but the
-same process applies to any other [Substrate](https://substrate.io)-based chain. First, let's
+same process applies to any other [Substrate](https://docs.polkadot.com/develop/parachains/intro-polkadot-sdk/#substrate)-based chain. First, let's
 clarify the term _full node_.
 
 ### Types of Nodes
@@ -66,7 +66,7 @@ integrated into web apps: https://github.com/smol-dot/smoldot.
     entirely in Javascript. Substrate Connect uses a
     [smoldot WASM light client](https://github.com/paritytech/smoldot) to securely connect to the
     blockchain network without relying on specific 3rd parties. Substrate Connect is available on Chrome
-    and Firefox as a [browser extension](https://substrate.io/developers/substrate-connect/).
+    and Firefox as a [browser extension](https://chromewebstore.google.com/detail/substrate-connect-extensi/khccbhhbocaaklceanjginbdheafklai).
 
 <!--separates content from instructions-->
 
@@ -299,7 +299,7 @@ default chain"
 
 ## Get Substrate
 
-Follow instructions as outlined [here](https://docs.substrate.io/quick-start/) - note that Windows
+Follow instructions as outlined [here](https://docs.polkadot.com/develop/parachains/intro-polkadot-sdk/#substrate) - note that Windows
 users will have their work cut out for them. It's better to use a virtual machine instead.
 
 Test if the installation was successful by running `cargo --version`.

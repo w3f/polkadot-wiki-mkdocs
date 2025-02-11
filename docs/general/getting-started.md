@@ -137,7 +137,7 @@ This is recommended for users with backgrounds of all levels, and the course is 
   [Kusama treasury](https://kusama.subsquare.io/referenda/102). The platform also hosts
   [Substrate in Bits](https://polkadot.study/tutorials/substrate-in-bits/), a technical content
   series aimed at solving the pain points of developers building with
-  [Substrate](https://substrate.io/) and [Rust](https://www.rust-lang.org/).
+  [Substrate](https://docs.polkadot.com/develop/parachains/intro-polkadot-sdk/#substrate) and [Rust](https://www.rust-lang.org/).
 
 For brand-new learners of Kusama, Polkadot's canary cousin network: To learn more about how to build
 and maintain on the Kusama network, please head over to our

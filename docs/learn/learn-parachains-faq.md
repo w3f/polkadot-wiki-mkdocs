@@ -35,7 +35,7 @@ chain provides.
 
 ### How about parachains that are not Substrate-based?
 
-Substrate provides [FRAME Pallets](https://docs.substrate.io/main-docs/fundamentals/runtime-intro/)
+Substrate provides [FRAME Pallets](https://docs.polkadot.com/develop/parachains/intro-polkadot-sdk/#frame)
 as part of its framework to seamlessly build a rustic-based blockchain. Part of FRAME are pallets
 that can be used for consensus. Polkadot, being a Substrate-based chain, relies on BABE as the block
 production scheme and GRANDPA as the finality gadget as part of its consensus mechanism.
