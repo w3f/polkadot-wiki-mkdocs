@@ -5,7 +5,7 @@ import xml.etree.ElementTree as ET
 sitemap_path = './wiki_sitemap.xml'
 
 # Base URL for testing
-base_url = 'http://localhost:8888'
+base_url = 'https://wiki-mkdocs.netlify.app/'
 
 # Parse the sitemap.xml file
 tree = ET.parse(sitemap_path)
@@ -22,6 +22,7 @@ for url in root.findall('ns:url', namespace):
     
     try:
         response = requests.get(test_url)
-        print(f'{test_url} - Status: {response.status_code}')
+        if response.status_code == 404:
+            print(f'{test_url} - Status: {response.status_code}')
     except requests.exceptions.RequestException as e:
         print(f'{test_url} - Error: {e}')
