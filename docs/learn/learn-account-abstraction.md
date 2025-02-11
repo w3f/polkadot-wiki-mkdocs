@@ -92,7 +92,7 @@ chain within its FRAME system origin.
 
 ### Protocol-level Account Abstraction
 
-While the [Substrate FRAME system](https://docs.substrate.io/reference/frame-pallets/) does not have
+While the [Substrate FRAME system](https://docs.polkadot.com/develop/parachains/intro-polkadot-sdk/#frame) does not have
 a single pallet (module) for complete account abstraction, it incorporates various pallets that
 collectively achieve similar functionalities. Polkadot's native account abstraction functionalities
 include:

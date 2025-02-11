@@ -23,14 +23,14 @@ done through two main approaches:
      centralized and insecure.
 
 There is now a new paradigm: instead of specifying a centralized RPC node, developers just need to
-define the blockchain's [chain specification](https://docs.substrate.io/main-docs/build/chain-spec/)
+define the blockchain's [chain specification](https://docs.polkadot.com/develop/parachains/deployment/generate-chain-specs/)
 for their application to synchronize with the chain. This is possible with Substrate connect.
 
 ## What is Substrate Connect?
 
 ### Replacing [RPC node](build-node-interaction.md) reliance with light clients
 
-[Substrate connect](https://substrate.io/substrate-connect/) is a JavaScript library and browser
+[Substrate connect](https://chromewebstore.google.com/detail/substrate-connect-extensi/khccbhhbocaaklceanjginbdheafklai) is a JavaScript library and browser
 extension that builds on the [PolkadotJS API](https://polkadot.js.org/api/) to enable developers to
 build application-specific light clients for Substrate chains. There is no installation required or
 optional extension with minimal or no maintenance. The node is run by the JavaScript engine.

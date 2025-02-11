@@ -88,7 +88,7 @@ key is a base-16 (hexadecimal) address.
 This is to showcase that the **SS58 address is based on the public key (aka "Account ID")**
 
 The Subkey Tool's The
-[Inspecting Keys](https://docs.substrate.io/reference/command-line-tools/subkey/#inspecting-keys)
+[Inspecting Keys](https://docs.polkadot.com/polkadot-protocol/basics/accounts/#using-subkey)
 section explains how to use the `inspect` command to recalculate your key pair's public key and
 address.
 
@@ -183,7 +183,7 @@ that use different measures will arrive at a different set of addresses from the
 phrase.
 
 !!!danger "Not all wallets use the same algorithm to convert from mnemonic phrase to private key"
-    [Subkey](https://docs.substrate.io/reference/command-line-tools/subkey/) and Polkadot-JS based wallets use the BIP39 dictionary for mnemonic generation, but use the entropy byte array to generate the private key, while full BIP39 wallets (like Ledger) use 2048 rounds of PBKDF2 on the mnemonic. The same mnemonic may generate different private keys on other wallets due to the various cryptographic algorithms used. See [Substrate BIP39 Repo](https://github.com/paritytech/substrate-bip39) for more information.
+    [Subkey](https://docs.polkadot.com/polkadot-protocol/basics/accounts/#using-subkey) and Polkadot-JS based wallets use the BIP39 dictionary for mnemonic generation, but use the entropy byte array to generate the private key, while full BIP39 wallets (like Ledger) use 2048 rounds of PBKDF2 on the mnemonic. The same mnemonic may generate different private keys on other wallets due to the various cryptographic algorithms used. See [Substrate BIP39 Repo](https://github.com/paritytech/substrate-bip39) for more information.
 
 Portability depends on several factors:
 
@@ -254,7 +254,7 @@ For instance, `//bill//account//1` and `//john/polkadot/initial` are both valid.
 derived account, you must know both the seed and the derivation path, so you should either use a
 well-defined sequence (e.g. //0, //1, //2...) or be sure to write down any derivation paths you use.
 
-See the [Subkey documentation](https://docs.substrate.io/reference/command-line-tools/subkey/) for
+See the [Subkey documentation](https://docs.polkadot.com/polkadot-protocol/basics/accounts/#using-subkey) for
 details and examples of derivation path formats. The Polkadot-JS Apps and Extension and Parity
 Signer support custom derivation paths using the same syntax as Subkey.
 
@@ -407,7 +407,7 @@ recommended for technically advanced users comfortable with the command line and
 code. Subkey lets you generate keys on any device that can compile the code. Subkey may also be
 useful for automated account generation using an air-gapped device. It is not recommended for
 general users. Follow the instructions in the
-[Subkey documentation](https://docs.substrate.io/reference/command-line-tools/subkey/).
+[Subkey documentation](https://docs.polkadot.com/polkadot-protocol/basics/accounts/#using-subkey).
 
 !!!info
     For guidelines about how to create an account using Subkey, see [**this video tutorial**](https://youtu.be/SWfE_EwxgIU) and visit [**this support article**](https://support.polkadot.network/support/solutions/articles/65000180519-how-to-create-an-account-in-subkey).

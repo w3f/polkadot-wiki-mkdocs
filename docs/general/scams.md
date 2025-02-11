@@ -141,12 +141,11 @@ You can use the following list of our official domains to make sure that you're 
 site:
 
 - https://polkadot.com
-- https://polkadot.network
 - https://polkadot.io
 - https://kusama.network
 - https://web3.foundation
 - https://parity.io
-- https://substrate.io
+- https://docs.polkadot.com/
 
 Of course, many projects building on Polkadot and Kusama use similar names. If, however, a site
 poses as Polkadot, Kusama, Web3 Foundation, or Parity on a domain not listed above, then it's most

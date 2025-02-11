@@ -64,7 +64,7 @@ subject to change, the metadata allows developers to structure any extrinsics or
 accordingly. The metadata provides you with all of the information required to know how to construct
 the serialized call data specific to your transaction. You can read more about the metadata, its
 format and how to get it in the
-[Substrate documentation](https://docs.substrate.io/reference/command-line-tools/subxt/#metadata).
+[Substrate documentation](https://docs.polkadot.com/polkadot-protocol/basics/chain-data/#use-subxt).
 
 **Summary**
 
@@ -232,7 +232,7 @@ There are several ways to submit a signed payload:
 ## Notes
 
 Some addresses to use in the examples. See
-[Subkey documentation](https://docs.substrate.io/reference/command-line-tools/subkey/).
+[Subkey documentation](https://docs.polkadot.com/polkadot-protocol/basics/accounts/#using-subkey).
 
 ```bash
 $ subkey --network polkadot generate
