@@ -327,40 +327,40 @@ slug: ../chain-state-values
 
     #### Asset Deposit
 
-    To reserve an asset on the Polkadot Asset Hub you need a deposit of {{ rpc("polkadot-assethub", "Assets", "AssetDeposit", 100000000000, true, readable="human_readable") }} and {{ rpc("polkadot-assethub", "Assets", "MetadataDepositBase", 668933304, true, readable="human_readable") }} for the asset metadata.
+    To reserve an asset on the Polkadot Asset Hub you need a deposit of {{ rpc("polkadot-assethub", "Assets", "AssetDeposit", 100000000000, true, readable="precise_dot") }} and {{ rpc("polkadot-assethub", "Assets", "MetadataDepositBase", 668933304, true, readable="precise_dot") }} for the asset metadata.
 
     #### Existential Deposit
 
-    The minimum number of tokens to keep an account alive on the Polkadot Asset Hub is {{ rpc("polkadot-assethub", "Balances", "ExistentialDeposit", 100000000, true, readable="human_readable") }}.
+    The minimum number of tokens to keep an account alive on the Polkadot Asset Hub is {{ rpc("polkadot-assethub", "Balances", "ExistentialDeposit", 100000000, true, readable="precise_dot") }}.
 
 === "Kusama Asset Hub"
 
     #### Asset Deposit
 
-    To reserve an asset on the Kusama Asset Hub you need a deposit of {{ rpc("kusama-assethub", "Assets", "AssetDeposit", 100000000000, true, readable="human_readable_kusama") }} and {{ rpc("kusama-assethub", "Assets", "MetadataDepositBase", 668933304, true, readable="human_readable_kusama") }} for the asset metadata.
+    To reserve an asset on the Kusama Asset Hub you need a deposit of {{ rpc("kusama-assethub", "Assets", "AssetDeposit", 100000000000, true, readable="precise_ksm") }} and {{ rpc("kusama-assethub", "Assets", "MetadataDepositBase", 668933304, true, readable="precise_ksm") }} for the asset metadata.
 
     #### Existential Deposit
 
-    The minimum number of tokens to keep an account alive on the Kusama Asset Hub is {{ rpc("kusama-assethub", "Balances", "ExistentialDeposit", 100000000, true, readable="human_readable_kusama") }}.
+    The minimum number of tokens to keep an account alive on the Kusama Asset Hub is {{ rpc("kusama-assethub", "Balances", "ExistentialDeposit", 100000000, true, readable="precise_ksm") }}.
 
 === "Polkadot People"
 
     #### Identity Deposit
 
-    The creation of a Polkadot identity required a deposit of {{ rpc("polkadot-people", "Identity", "BasicDeposit", 2001700000, true, readable="human_readable") }} and {{ rpc("polkadot-people", "Identity", "ByteDeposit", 100000, true, readable="human_readable") }} (per byte) per each field beyond the legal name.
+    The creation of a Polkadot identity required a deposit of {{ rpc("polkadot-people", "Identity", "BasicDeposit", 2001700000, true, readable="precise_dot") }} and {{ rpc("polkadot-people", "Identity", "ByteDeposit", 100000, true, readable="precise_dot") }} (per byte) per each field beyond the legal name.
 
     #### Sub-identity Deposit
 
-    The creation of a Polkadot sub-identity required a deposit of {{ rpc("polkadot-people", "Identity", "SubAccountDeposit", 2005300000, true, readable="human_readable") }}.
+    The creation of a Polkadot sub-identity required a deposit of {{ rpc("polkadot-people", "Identity", "SubAccountDeposit", 2005300000, true, readable="precise_dot") }}.
 
 === "Kusama People"
 
     #### Identity Deposit
 
-    The creation of a Kusama identity required a deposit of {{ rpc("kusama-people", "Identity", "BasicDeposit", 6672333321, true, readable="human_readable_kusama") }} and {{ rpc("kusama-people", "Identity", "ByteDeposit", 333333, true, readable="human_readable_kusama") }} (per byte) per each field beyond the legal name.
+    The creation of a Kusama identity required a deposit of {{ rpc("kusama-people", "Identity", "BasicDeposit", 6672333321, true, readable="precise_ksm") }} and {{ rpc("kusama-people", "Identity", "ByteDeposit", 333333, true, readable="precise_ksm") }} (per byte) per each field beyond the legal name.
 
     #### Sub-identity Deposit
 
-    The creation of a Kusama sub-identity required a deposit of {{ rpc("kusama-people", "Identity", "SubAccountDeposit", 6684333309, true, readable="human_readable_kusama") }}.
+    The creation of a Kusama sub-identity required a deposit of {{ rpc("kusama-people", "Identity", "SubAccountDeposit", 6684333309, true, readable="precise_ksm") }}.
 
 <!-- prettier-ignore-end -->
