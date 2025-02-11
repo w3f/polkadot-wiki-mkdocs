@@ -1,2 +1,2 @@
 ENABLE_RPC=true mkdocs build
-cp _redirects ./site
+cp _redirects _headers ./site
