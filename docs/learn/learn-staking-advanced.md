@@ -292,7 +292,7 @@ reward would no longer be claimable.
 At the end of each era on Polkadot and Kusama, using [NPoS](learn-phragmen), a new set of validators
 must be elected based on the nominator preferences. This is a computationally intensive process,
 hence the usage of the term "mining" for computing the solution. The validators use
-[off-chain workers](https://docs.substrate.io/reference/how-to-guides/offchain-workers/) to compute
+[off-chain workers](https://paritytech.github.io/polkadot-sdk/master/polkadot_sdk_docs/reference_docs/frame_offchain_workers/index.html) to compute
 the result and submit a transaction to propose the set of winners. This can also be delegated to
 stand-alone programs, whose task is to mine the optimal solution. Staking miners compete with each
 other to produce election solutions which consist of a validator set, stake distribution across that
