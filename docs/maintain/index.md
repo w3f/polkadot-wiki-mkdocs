@@ -7,8 +7,6 @@ keywords: [maintain, validator, collator]
 slug: ../maintain-index
 ---
 
-
-
 Welcome to the network maintainers section of the Polkadot Wiki. Here you will find information and
 guides to set up a node and run the network.
 

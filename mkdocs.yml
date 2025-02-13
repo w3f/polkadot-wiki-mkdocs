@@ -105,13 +105,16 @@ markdown_extensions:
 # Sidebar
 nav:
   - Explore:
+      - Explore Index: general/index.md
       - Getting Started: general/getting-started.md
       - Wallets:
+          - general/wallets/index.md 
           - Polkadot Ecosystem Wallets: https://polkadot.network/ecosystem/wallets/
           - Wallets and Extensions: general/wallets-and-extensions.md
           - Ledger: general/ledger.md
           - Polkadot Vault: general/polkadot-vault.md
       - Apps:
+          - general/apps/index.md
           - Polkadot Ecosystem Apps: https://polkadot.network/ecosystem/dapps/
           - DotAppStore: https://dotappstore.com/
           - Staking Apps: general/staking-apps.md
@@ -120,7 +123,9 @@ nav:
           - NFT Projects: learn/learn-nft-projects.md
           - Parachains Apps: general/parachains-apps.md
       - Dashboards:
+              - general/dashboards/index.md
               - Dune Analytics:
+                  - general/dashboards/dune-analytics/index.md
                   - Polkadot Ecosystem Overview: general/dashboards/dune-analytics/polkadot-dashboards/legacy/polkadot-ecosystem-overview.md
                   - Onboarding Status and Key Dashboards: general/dashboards/dune-analytics/onboarding-status-and-key-dashboards.md
                   - Annual Reviews:
@@ -163,16 +168,19 @@ nav:
               - Staking Dashboard: general/dashboards/staking-dashboard.md
               - Fellowship Dashboard: https://polkadot-fellows.xyz  
       - Community & Contributors:
+          - general/community/index.md
           - Community: general/community.md
           - Contributing: general/contributing.md
           - Contributors: general/contributors.md
       - Funding:
+          - general/funding/index.md
           - Grants: general/grants.md
           - Decentralized Futures: general/decentralized-futures.md
           - Polkadot OpenGov Treasury: learn/learn-polkadot-opengov-treasury.md
           - Polkadot Community Foundation: general/pcf.md
           - Ecosystem Funds: general/ecosystem-funds.md
       - Programs:
+          - general/programs/index.md   
           - Decentralized Voices: general/decentralized-voices.md
           - Bug Bounty: general/bug-bounty.md
           - Ambassadors: general/ambassadors.md
@@ -183,12 +191,16 @@ nav:
       - Metadata: https://paritytech.github.io/subxt-explorer/#/
       - Chain State Values: general/chain-state-values.md
   - Learn:
+      - learn/index.md
       - General:
+          - learn/general/index.md
           - Web3 and Polkadot: general/web3-and-polkadot.md
           - Polkadot Vision:
+              - general/polkadot-vision/index.md
               - Polkadot V1: general/polkadot-v1.md
               - Polkadot Direction: general/polkadot-direction.md
           - Stay Safe:
+              - general/stay-safe/index.md
               - How to DYOR: general/how-to-dyor.md
               - Scams: general/scams.md
               - Transaction Attacks: general/transaction-attacks.md
@@ -197,6 +209,7 @@ nav:
           - FAQ: general/faq.md
           - Glossary: general/glossary.md
       - Basics:
+          - learn/basics/index.md
           - Accounts:
               - Account Balances: learn/learn-account-balances.md
               - Account Abstraction: learn/learn-account-abstraction.md
@@ -216,6 +229,7 @@ nav:
               - OpenGov Tracker: https://ogtracker.io/
               - OpenGov Portal: https://opengovwatch.notion.site/Polkadot-OpenGov-Portal-f8baf91a46864144ae96c47173a10225
           - Tokens and Assets:
+              - learn/assets/index.md
               - DOT: learn/learn-DOT.md
               - Inflation: learn/learn-inflation.md
               - Asset Hub:
@@ -223,15 +237,18 @@ nav:
               - Teleport: learn/learn-teleport.md
               - NFT: learn/learn-nft.md
           - Network Participants:
+              - learn/participants/index.md
               - Collator: learn/learn-collator.md
               - Nominator: learn/learn-nominator.md
               - Validator: learn/learn-validator.md
           - Offenses: learn/learn-offenses.md
           - Components:
+              - learn/components/index.md
               - Polkadot Host: learn/learn-polkadot-host.md
               - WASM: learn/learn-wasm.md
               - Runtime Upgrades: learn/learn-runtime-upgrades.md
       - Advanced:
+          - learn/advanced/index.md
           - Architecture:
               - Consensus: learn/learn-consensus.md
               - Parachains Protocol: learn/learn-parachains-protocol.md
@@ -291,6 +308,7 @@ nav:
               - JAM Chain: learn/learn-jam-chain.md
               - JAM FAQ: learn/learn-jam-faq.md
       - Archive:
+          - learn/archive/index.md
           - Governance: learn/archive/learn-governance.md
           - Treasury: learn/archive/learn-treasury.md
           - Launch: learn/archive/learn-launch.md
@@ -300,14 +318,17 @@ nav:
           - Crowdloans: learn/archive/learn-crowdloans.md
           - Thousand Validators: learn/archive/thousand-validators.md
   - Build:
+        - build/index.md
         - Build Guide: build/build-guide.md
         - Network Overview: build/build-network-overview.md
         - Client-side Development:
+            - build/client/index.md
             - Client-side Development: build/build-client-side.md
             - Light Clients: build/build-light-clients.md
             - Node Interaction: build/build-node-interaction.md
         - Smart Contracts: build/build-smart-contracts.md
         - Protocol Development Resources:
+            - build/protocol/index.md
             - Coretime Guides:
                 - Install Dependencies: build/build-guides-install-deps.md
                 - Basic Template: build/build-guides-template-basic.md
@@ -317,18 +338,21 @@ nav:
             - Integrate Assets: build/build-integrate-assets.md
             - HRMP Channels: build/build-hrmp-channels.md
         - Tooling:
+            - build/tooling/index.md
             - Data: build/build-data.md
             - Open Source: build/build-open-source.md
         - Hackathon: build/build-hackathon.md
         - Archive:
+            - build/archive/index.md
             - Transaction Construction: build/build-transaction-construction.md
             - Integration: build/build-integration.md
             - Node Management: build/build-node-management.md
             - Parachains: build/build-parachains.md
   - Maintain:
-      - Maintain Index: maintain/maintain-index.md
+      - maintain/index.md
       - Polkadot Parameters: maintain/maintain-polkadot-parameters.md
       - Nodes and Dapps:
+          - maintain/node/index.md
           - Endpoints: maintain/maintain-endpoints.md
           - Sync: maintain/maintain-sync.md
           - Bootnode: maintain/maintain-bootnode.md
@@ -337,8 +361,10 @@ nav:
           - Networks: maintain/maintain-networks.md
           - Errors: maintain/maintain-errors.md
       - Collator Guides:
+          - maintain/collator/index.md
           - Async Backing: maintain/maintain-guides-async-backing.md
       - Validator Guides:
+          - maintain/validator/index.md
           - How to Validate Polkadot: maintain/maintain-guides-how-to-validate-polkadot.md
           - Validator Payout: maintain/maintain-guides-validator-payout.md
           - How to Systemd: maintain/maintain-guides-how-to-systemd.md
@@ -361,6 +387,6 @@ nav:
       - Adversarial Cheatsheet: kusama/kusama-adverserial-cheatsheet.md
       - Society Guide: maintain/kusama/maintain-guides-society-kusama.md
       - How to Validate Kusama: maintain/kusama/maintain-guides-how-to-validate-kusama.md
-      - Kusama Inflation: learn/learn-kusama-inflation.md    
+      - Kusama Inflation: learn/learn-kusama-inflation.md
 
 
