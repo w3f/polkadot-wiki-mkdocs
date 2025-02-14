@@ -1,3 +1,7 @@
-# Collator Index
+# Collator
 
-This page is currently unavailable. Please check back later for updates on maintaining collators in the Polkadot network.
+<div class="grid cards" markdown>
+
+- **[Async Backing](../maintain-guides-async-backing.md)** - Guide on Async Backing.
+
+</div>
