@@ -298,6 +298,7 @@ nav:
                       - DOT-KSM Bridge: learn/learn-guides-DOT-KSM-bridge.md
                   - Claims: learn/learn-guides-claims.md
       - Comparisons:
+          - learn/comparisons/index.md
           - Kusama: learn/learn-comparisons-kusama.md
           - Ethereum: learn/learn-comparison-ethereum.md
           - Cosmos: learn/learn-comparisons-cosmos.md
