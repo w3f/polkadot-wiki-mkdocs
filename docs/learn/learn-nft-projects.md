@@ -106,10 +106,10 @@ robust collaboration has earned KodaDot the
 See below a video tutorial about how to mint your NFT on [the Polkadot Asset Hub](#asset-hub) using
 KodaDot.
 
-<div className="row">
-  <div className="col text--center">
+<div class="row">
+  <div class="col text--center">
     <a href="https://www.youtube.com/watch?v=SKdx4pTgL04">
-      <img src="https://img.youtube.com/vi/SKdx4pTgL04/0.jpg" width="350" style={{ borderRadius: 10, border: '1px solid slategrey' }} />
+      <img src="https://img.youtube.com/vi/SKdx4pTgL04/0.jpg" width="350" style="border-radius: 10px; border: 1px solid slategrey;" />
     </a>
     <p>
       <a href="https://www.youtube.com/watch?v=SKdx4pTgL04">KodaDot Tutorial on Minting NFTs</a>
