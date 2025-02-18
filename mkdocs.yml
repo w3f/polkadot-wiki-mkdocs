@@ -333,6 +333,7 @@ nav:
         - Protocol Development Resources:
             - build/protocol/index.md
             - Coretime Guides:
+                - Coretime Overview: build/build-guides-coretime-start.md
                 - Install Dependencies: build/build-guides-install-deps.md
                 - Basic Template: build/build-guides-template-basic.md
                 - Coretime Troubleshooting: build/build-guides-coretime-troubleshoot.md
@@ -351,6 +352,10 @@ nav:
             - Integration: build/build-integration.md
             - Node Management: build/build-node-management.md
             - Parachains: build/build-parachains.md
+            - Build Dapps: build/build-dapps.md
+            - Build Oracle: build/build-oracle.md
+            - Storage:  build/build-storage.md
+            - 
   - Maintain:
       - maintain/index.md
       - Polkadot Parameters: maintain/maintain-polkadot-parameters.md
