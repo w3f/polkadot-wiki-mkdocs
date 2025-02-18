@@ -1,0 +1,9450 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Advanced Concepts about Polkadot's Accounts.">
+      
+      
+        <meta name="author" content="Web3 Foundation Technologies">
+      
+      
+        <link rel="canonical" href="https://w3f.github.io/polkadot-wiki-mkdocs/learn/learn-account-advanced/">
+      
+      
+        <link rel="prev" href="../learn-DOT-KSM-bridge/">
+      
+      
+        <link rel="next" href="../learn-staking-advanced/">
+      
+      
+      <link rel="icon" href="../../assets/Polkadot_Favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.4">
+    
+    
+      
+        <title>Polkadot Accounts In-Depth - </title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.8608ea7d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/MessageBox.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/announcement-bar.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="pink">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#address-format" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+<div id="announcement-bar">
+    <p>
+        The Polkadot's JAM Tour is coming to Asia in 2025! 👉
+        <a href="https://lu.ma/pala_labs" target="_blank" rel="noopener noreferrer">Register
+            Here</a>
+    </p>
+    <span id="announcement-close" aria-label="Close Announcement" style="cursor: pointer;">✖</span>
+</div>
+
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="" class="md-header__button md-logo" aria-label="" data-md-component="logo">
+      
+  <img src="../../assets/wiki-logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Polkadot Accounts In-Depth
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/w3f/polkadot-wiki-mkdocs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    w3f/polkadot-wiki-mkdocs
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../general/" class="md-tabs__link">
+          
+  
+    
+  
+  Explore
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+    
+  
+  Learn
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../build/" class="md-tabs__link">
+          
+  
+    
+  
+  Build
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../maintain/" class="md-tabs__link">
+          
+  
+    
+  
+  Maintain
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../kusama/kusama-getting-started/" class="md-tabs__link">
+          
+  
+    
+  
+  Kusama
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="" class="md-nav__button md-logo" aria-label="" data-md-component="logo">
+      
+  <img src="../../assets/wiki-logo.svg" alt="logo">
+
+    </a>
+    
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/w3f/polkadot-wiki-mkdocs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    w3f/polkadot-wiki-mkdocs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../general/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Explore
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1" id="__nav_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Explore
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/getting-started/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Getting Started
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_3" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../general/wallets/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Wallets
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_3" id="__nav_1_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_3">
+            <span class="md-nav__icon md-icon"></span>
+            Wallets
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://polkadot.network/ecosystem/wallets/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Polkadot Ecosystem Wallets
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/wallets-and-extensions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Wallets and Extensions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/ledger/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ledger
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/polkadot-vault/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Polkadot Vault
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../general/apps/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Apps
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_4" id="__nav_1_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_4">
+            <span class="md-nav__icon md-icon"></span>
+            Apps
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://polkadot.network/ecosystem/dapps/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Polkadot Ecosystem Apps
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://dotappstore.com/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DotAppStore
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/staking-apps/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Staking Apps
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/governance-apps/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Governance Apps
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/multisig-apps/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Multisig Apps
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../learn-nft-projects/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    NFT Projects
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/parachains-apps/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parachains Apps
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_5" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../general/dashboards/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Dashboards
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_5" id="__nav_1_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_5">
+            <span class="md-nav__icon md-icon"></span>
+            Dashboards
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_5_2" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../general/dashboards/dune-analytics/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Dune Analytics
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_5_2" id="__nav_1_5_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_1_5_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            Dune Analytics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/dashboards/dune-analytics/polkadot-dashboards/legacy/polkadot-ecosystem-overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Polkadot Ecosystem Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/dashboards/dune-analytics/onboarding-status-and-key-dashboards/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Onboarding Status and Key Dashboards
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_5_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_5_2_4" id="__nav_1_5_2_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Annual Reviews
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_5_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_5_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            Annual Reviews
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/dashboards/dune-analytics/annual-reviews/polkadot-dashboards-2024-year-in-review/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Polkadot 2024 Review
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_5_2_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_5_2_5" id="__nav_1_5_2_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Polkadot Dashboards
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_5_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_5_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            Polkadot Dashboards
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/dashboards/dune-analytics/polkadot-dashboards/polkadot-dashboards-overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/dashboards/dune-analytics/polkadot-dashboards/polkadot-dashboards-governance/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Governance
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/dashboards/dune-analytics/polkadot-dashboards/polkadot-dashboards-staking/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Staking
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/dashboards/dune-analytics/polkadot-dashboards/polkadot-dashboards-network/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Network
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_5_2_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_5_2_6" id="__nav_1_5_2_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Parachain Dashboards
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_5_2_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_5_2_6">
+            <span class="md-nav__icon md-icon"></span>
+            Parachain Dashboards
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/dashboards/dune-analytics/parachain-dashboards/acala-dashboards/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Acala
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/dashboards/dune-analytics/parachain-dashboards/assethub-dashboards/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AssetHub
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/dashboards/dune-analytics/parachain-dashboards/astar-dashboards/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Astar
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/dashboards/dune-analytics/parachain-dashboards/bifrost-dashboards/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bifrost
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/dashboards/dune-analytics/parachain-dashboards/bridgehub-dashboards/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    BridgeHub
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/dashboards/dune-analytics/parachain-dashboards/centrifuge-dashboards/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Centrifuge
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/dashboards/dune-analytics/parachain-dashboards/collectives-dashboards/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Collectives
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/dashboards/dune-analytics/parachain-dashboards/coretime-dashboards/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Coretime
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/dashboards/dune-analytics/parachain-dashboards/energywebx-dashboards/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    EnergyWebX
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/dashboards/dune-analytics/parachain-dashboards/frequency-dashboards/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Frequency
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/dashboards/dune-analytics/parachain-dashboards/hydration-dashboards/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hydration
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/dashboards/dune-analytics/parachain-dashboards/interlay-dashboards/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Interlay
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/dashboards/dune-analytics/parachain-dashboards/invarch-dashboards/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    InvArch
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/dashboards/dune-analytics/parachain-dashboards/litentry-dashboards/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Litentry
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/dashboards/dune-analytics/parachain-dashboards/manta-dashboards/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Manta
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/dashboards/dune-analytics/parachain-dashboards/moonbeam-dashboards/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Moonbeam
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/dashboards/dune-analytics/parachain-dashboards/neuroweb-dashboards/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Neuroweb
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/dashboards/dune-analytics/parachain-dashboards/nodle-dashboards/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Nodle
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/dashboards/dune-analytics/parachain-dashboards/people-dashboards/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    People
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/dashboards/dune-analytics/parachain-dashboards/pendulum-dashboards/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Pendulum
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/dashboards/dune-analytics/parachain-dashboards/phala-dashboards/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Phala
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/dashboards/dune-analytics/parachain-dashboards/polkadex-dashboards/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Polkadex
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/dashboards/dune-analytics/parachain-dashboards/polimec-dashboards/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Polimec
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/dashboards/dune-analytics/parachain-dashboards/snowbridge-dashboards/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Snowbridge
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/dashboards/dune-analytics/parachain-dashboards/stellaswap-dashboards/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Stellaswap
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/dashboards/dune-analytics/parachain-dashboards/unique-dashboards/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unique
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/dashboards/dune-analytics/project-dashboards/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Project Dashboards
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/dashboards/dune-analytics/dunesql-cheatsheet/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DuneSQL Cheatsheet
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/dashboards/parity-data-dashboards/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parity Data Dashboards
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/dashboards/staking-dashboard/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Staking Dashboard
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://polkadot-fellows.xyz" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fellowship Dashboard
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_6" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../general/community/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Community & Contributors
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_6" id="__nav_1_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_6">
+            <span class="md-nav__icon md-icon"></span>
+            Community & Contributors
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/community/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Community
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/contributing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contributing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/contributors/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contributors
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_7" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../general/funding/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Funding
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_7" id="__nav_1_7_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_7">
+            <span class="md-nav__icon md-icon"></span>
+            Funding
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/grants/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Grants
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/decentralized-futures/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Decentralized Futures
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../learn-polkadot-opengov-treasury/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Polkadot OpenGov Treasury
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/pcf/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Polkadot Community Foundation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/ecosystem-funds/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ecosystem Funds
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_8" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../general/programs/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Programs
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_8" id="__nav_1_8_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_8">
+            <span class="md-nav__icon md-icon"></span>
+            Programs
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/decentralized-voices/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Decentralized Voices
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/bug-bounty/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bug Bounty
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/ambassadors/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ambassadors
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/alpha-program/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Alpha Program
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://nodes.web3.foundation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Decentralized Nodes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/thousand-contributors/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Thousand Contributors
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/dev-heroes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dev Heroes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://paritytech.github.io/subxt-explorer/#/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Metadata
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/chain-state-values/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chain State Values
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Learn
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Learn
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../general/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    General
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            General
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/web3-and-polkadot/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Web3 and Polkadot
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_3" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../general/polkadot-vision/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Polkadot Vision
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_2_3" id="__nav_2_2_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Polkadot Vision
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/polkadot-v1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Polkadot V1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/polkadot-direction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Polkadot Direction
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../general/stay-safe/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Stay Safe
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_2_4" id="__nav_2_2_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            Stay Safe
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/how-to-dyor/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to DYOR
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/scams/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Scams
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/transaction-attacks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Transaction Attacks
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://research.web3.foundation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Web3 Foundation Research
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/start-building/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Start Building
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/faq/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FAQ
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/glossary/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Glossary
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../basics/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Basics
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Basics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3_2" id="__nav_2_3_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Accounts
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            Accounts
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../learn-account-balances/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Account Balances
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../learn-account-abstraction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Account Abstraction
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../learn-identity/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Identity
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../learn-account-multisig/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Account Multisig
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../learn-proxies/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Proxies
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../learn-proxies-pure/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Proxies Pure
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../learn-transactions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Transactions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../staking/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Staking
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_3_4" id="__nav_2_3_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            Staking
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../learn-staking/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Staking
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../learn-nomination-pools/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Nomination Pools
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_5" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../polkadot-opengov/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Polkadot OpenGov
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_3_5" id="__nav_2_3_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            Polkadot OpenGov
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../learn-polkadot-opengov/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Polkadot OpenGov
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../learn-polkadot-opengov-origins/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Polkadot OpenGov Origins
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../learn-polkadot-technical-fellowship/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Polkadot Technical Fellowship
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://www.opengov.watch/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OpenGov.Watch
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://ogtracker.io/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OpenGov Tracker
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://opengovwatch.notion.site/Polkadot-OpenGov-Portal-f8baf91a46864144ae96c47173a10225" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OpenGov Portal
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_6" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../assets/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Tokens and Assets
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_3_6" id="__nav_2_3_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_3_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3_6">
+            <span class="md-nav__icon md-icon"></span>
+            Tokens and Assets
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../learn-DOT/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DOT
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../learn-inflation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Inflation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_6_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3_6_4" id="__nav_2_3_6_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Asset Hub
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_3_6_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3_6_4">
+            <span class="md-nav__icon md-icon"></span>
+            Asset Hub
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../learn-asset-conversion-assethub/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Asset Conversion (Asset Hub)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../learn-teleport/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Teleport
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../learn-nft/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction to NFTs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_7" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../participants/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Network Participants
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_3_7" id="__nav_2_3_7_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_3_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3_7">
+            <span class="md-nav__icon md-icon"></span>
+            Network Participants
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../learn-collator/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Collator
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../learn-nominator/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Nominator
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../learn-validator/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Validator
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../learn-offenses/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Offenses
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_9" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../components/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Components
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_3_9" id="__nav_2_3_9_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_3_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3_9">
+            <span class="md-nav__icon md-icon"></span>
+            Components
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../learn-polkadot-host/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Polkadot Host
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../learn-wasm/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    WASM
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../learn-runtime-upgrades/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Runtime Upgrades
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../advanced/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Advanced
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            Advanced
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_2" id="__nav_2_4_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Architecture
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            Architecture
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../learn-consensus/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Consensus
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../learn-parachains-protocol/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parachains Protocol
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../learn-async-backing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Async Backing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_2_4" id="__nav_2_4_2_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Scheduling
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            Scheduling
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../learn-guides-coretime-marketplaces/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Coretime Marketplaces
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../learn-guides-coretime-parachains/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Coretime Parachains
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../learn-elastic-scaling/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Elastic Scaling
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_2_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_2_6" id="__nav_2_4_2_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Parachains
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_2_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_2_6">
+            <span class="md-nav__icon md-icon"></span>
+            Parachains
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../learn-parachains/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parachains
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../learn-system-chains/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    System Chains
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../learn-parachains-faq/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parachains FAQ
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_2_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_2_7" id="__nav_2_4_2_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Bridges
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_2_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_2_7">
+            <span class="md-nav__icon md-icon"></span>
+            Bridges
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../learn-snowbridge/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Snowbridge
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../learn-hyperbridge/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hyperbridge
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../learn-DOT-KSM-bridge/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DOT-KSM Bridge
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Account (Advanced)
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Account (Advanced)
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#address-format" class="md-nav__link">
+    <span class="md-ellipsis">
+      Address Format
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Address Format">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#for-the-curious-how-prefixes-work" class="md-nav__link">
+    <span class="md-ellipsis">
+      For the Curious: How Prefixes Work
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#address-conversion-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Address Conversion Tools
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Address Conversion Tools">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-to-verify-a-public-keys-associated-address" class="md-nav__link">
+    <span class="md-ellipsis">
+      How to Verify a Public Key's Associated Address
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#portability" class="md-nav__link">
+    <span class="md-ellipsis">
+      Portability
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#derivation-paths" class="md-nav__link">
+    <span class="md-ellipsis">
+      Derivation Paths
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Derivation Paths">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#soft-and-hard-derivation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Soft and Hard Derivation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#password-derivation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Password Derivation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#account-derivation-on-ledger-live" class="md-nav__link">
+    <span class="md-ellipsis">
+      Account Derivation on Ledger Live
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#account-derivation-on-subkey-and-polkadot-vault" class="md-nav__link">
+    <span class="md-ellipsis">
+      Account Derivation on Subkey and Polkadot Vault
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#system-accounts" class="md-nav__link">
+    <span class="md-ellipsis">
+      System Accounts
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#indices" class="md-nav__link">
+    <span class="md-ellipsis">
+      Indices
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-accounts-with-subkey" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating Accounts with Subkey
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-ens-with-dotksm-accounts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using ENS with DOT/KSM accounts
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Using ENS with DOT/KSM accounts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#adding-via-the-ui" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adding via the UI
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wallet-support" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wallet Support
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#relevant-links" class="md-nav__link">
+    <span class="md-ellipsis">
+      Relevant links
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#transferring-polkadot-js-apps-accountsaddresses-from-one-computer-to-another" class="md-nav__link">
+    <span class="md-ellipsis">
+      Transferring Polkadot-JS Apps Accounts/Addresses From One Computer to Another
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../learn-staking-advanced/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Staking (Advanced)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../learn-nft-pallets/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    NFT Pallets
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../learn-cryptography/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cryptography
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../learn-phragmen/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Phragmen
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_8" id="__nav_2_4_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Polkadot-JS
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_8">
+            <span class="md-nav__icon md-icon"></span>
+            Polkadot-JS
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/polkadotjs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PolkadotJS
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/polkadotjs-ui/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PolkadotJS UI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_8_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_8_3" id="__nav_2_4_8_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Polkadot-JS Guides
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_4_8_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_8_3">
+            <span class="md-nav__icon md-icon"></span>
+            Polkadot-JS Guides
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_8_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_8_3_1" id="__nav_2_4_8_3_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Account Guides
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_2_4_8_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_8_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            Account Guides
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../learn-guides-accounts-multisig/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Accounts Multisig
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../learn-guides-accounts-proxy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Accounts Proxy
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../learn-guides-accounts-proxy-pure/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Accounts Proxy Pure
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../learn-guides-transfers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Transfers
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_8_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_8_3_3" id="__nav_2_4_8_3_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Staking Guides
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_2_4_8_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_8_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            Staking Guides
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../learn-guides-nominator/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Nominator
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../learn-guides-staking-pools/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Staking Pools
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../learn-guides-polkadot-opengov/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Polkadot OpenGov
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../learn-guides-test-opengov-proposals/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Test OpenGov Proposals
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../learn-guides-treasury/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Treasury
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../learn-guides-bounties/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bounties
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../learn-guides-identity/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Identity
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../learn-guides-ledger/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ledger
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../learn-guides-vault/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Vault
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_8_3_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_8_3_11" id="__nav_2_4_8_3_11_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Asset Hub Guides
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_2_4_8_3_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_8_3_11">
+            <span class="md-nav__icon md-icon"></span>
+            Asset Hub Guides
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../learn-guides-assets-create/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Assets Create
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../learn-guides-asset-conversion/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Asset Conversion
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_8_3_12" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_8_3_12" id="__nav_2_4_8_3_12_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Bridge Hub Guides
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_2_4_8_3_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_8_3_12">
+            <span class="md-nav__icon md-icon"></span>
+            Bridge Hub Guides
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../learn-guides-DOT-KSM-bridge/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DOT-KSM Bridge
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../learn-guides-claims/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Claims
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../comparisons/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Comparisons
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            Comparisons
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../learn-comparisons-kusama/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Kusama
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../learn-comparison-ethereum/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ethereum
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../learn-comparisons-cosmos/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cosmos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../learn-comparisons-avalanche/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Avalanche
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://www.youtube.com/@PolkadotNetwork/playlists" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Video Tutorials
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_7" id="__nav_2_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Future Implementations
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_7">
+            <span class="md-nav__icon md-icon"></span>
+            Future Implementations
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../learn-spree/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Spree
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../learn-safrole/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Safrole
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_7_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_7_3" id="__nav_2_7_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    JAM
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_7_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_7_3">
+            <span class="md-nav__icon md-icon"></span>
+            JAM
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../learn-jam-chain/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    JAM Chain
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../learn-jam-faq/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    JAM FAQ
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_8" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../archive/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Archive
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_8" id="__nav_2_8_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_8">
+            <span class="md-nav__icon md-icon"></span>
+            Archive
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../archive/learn-governance/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Governance
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../archive/learn-treasury/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Treasury
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../archive/learn-launch/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Launch
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../archive/learn-redenomination/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Redenomination
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../archive/learn-controller/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Controller
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../archive/learn-auction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Auction
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../archive/learn-crowdloans/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Crowdloans
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../archive/thousand-validators/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Thousand Validators
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../build/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Build
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Build
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/build-guide/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Build Guide
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/build-network-overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Network Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../build/client/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Client-side Development
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            Client-side Development
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/build-client-side/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Client-side Development
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/build-light-clients/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Light Clients
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/build-node-interaction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Node Interaction
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/build-smart-contracts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Smart Contracts
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../build/protocol/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Protocol Development Resources
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_6">
+            <span class="md-nav__icon md-icon"></span>
+            Protocol Development Resources
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_6_2" id="__nav_3_6_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Coretime Guides
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_6_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_6_2">
+            <span class="md-nav__icon md-icon"></span>
+            Coretime Guides
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/build-guides-coretime-start/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Coretime Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/build-guides-install-deps/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Install Dependencies
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/build-guides-template-basic/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basic Template
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/build-guides-coretime-troubleshoot/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Coretime Troubleshooting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../learn-guides-coretime-swap/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Coretime Swap
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/build-protocol-info/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Protocol Information
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/build-integrate-assets/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Integrate Assets
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/build-hrmp-channels/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    HRMP Channels
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../build/tooling/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Tooling
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_7" id="__nav_3_7_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_7">
+            <span class="md-nav__icon md-icon"></span>
+            Tooling
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/build-data/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Data
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/build-open-source/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Open Source
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/build-hackathon/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hackathon
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_9" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../build/archive/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Archive
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_9" id="__nav_3_9_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_9">
+            <span class="md-nav__icon md-icon"></span>
+            Archive
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/build-transaction-construction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Transaction Construction
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/build-integration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Integration
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/build-node-management/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Node Management
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/build-parachains/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parachains
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/build-dapps.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Build Dapps
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/build-oracle/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Build Oracle
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../build/build-storage/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Storage
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../maintain/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Maintain
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Maintain
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../maintain/maintain-polkadot-parameters/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Polkadot Parameters
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../maintain/node/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Nodes and Dapps
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            Nodes and Dapps
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../maintain/maintain-endpoints/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Endpoints
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../maintain/maintain-sync/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sync
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../maintain/maintain-bootnode/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bootnode
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../maintain/maintain-rpc/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RPC
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../maintain/maintain-wss/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    WSS
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../maintain/maintain-networks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Networks
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../maintain/maintain-errors/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Errors
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../maintain/collator/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Collator Guides
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4">
+            <span class="md-nav__icon md-icon"></span>
+            Collator Guides
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../maintain/maintain-guides-async-backing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Async Backing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_5" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../maintain/validator/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Validator Guides
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4_5" id="__nav_4_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_5">
+            <span class="md-nav__icon md-icon"></span>
+            Validator Guides
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../maintain/maintain-guides-how-to-validate-polkadot/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to Validate Polkadot
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../maintain/maintain-guides-validator-payout/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Validator Payout
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../maintain/maintain-guides-how-to-systemd/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to Systemd
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../maintain/maintain-guides-secure-validator/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Secure Validator
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../maintain/maintain-guides-how-to-upgrade/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to Upgrade
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../maintain/maintain-guides-how-to-monitor-your-node/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to Monitor Your Node
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../maintain/maintain-guides-how-to-chill/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to Chill
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../maintain/maintain-guides-how-to-stop-validating/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to Stop Validating
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../maintain/maintain-guides-validator-community/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Community Validator Guide
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_6" id="__nav_4_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Archive
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_6">
+            <span class="md-nav__icon md-icon"></span>
+            Archive
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../maintain/archive/maintain-guides-democracy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Democracy Guide
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../maintain/archive/maintain-guides-how-to-join-council/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to Join Council
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../maintain/archive/maintain-guides-how-to-vote-councillor/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to Vote Councillor
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Kusama
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Kusama
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kusama/kusama-getting-started/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Getting Started
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kusama/kusama-timeline/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Timeline
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kusama/kusama-coc/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Code of Conduct
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kusama/kusama-bug-bounty/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bug Bounty
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kusama/kusama-social-recovery/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Social Recovery
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kusama/kusama-adverserial-cheatsheet/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Adversarial Cheatsheet
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../maintain/kusama/maintain-guides-society-kusama/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Society Guide
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../maintain/kusama/maintain-guides-how-to-validate-kusama/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to Validate Kusama
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../learn-kusama-inflation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Kusama Inflation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#address-format" class="md-nav__link">
+    <span class="md-ellipsis">
+      Address Format
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Address Format">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#for-the-curious-how-prefixes-work" class="md-nav__link">
+    <span class="md-ellipsis">
+      For the Curious: How Prefixes Work
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#address-conversion-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Address Conversion Tools
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Address Conversion Tools">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-to-verify-a-public-keys-associated-address" class="md-nav__link">
+    <span class="md-ellipsis">
+      How to Verify a Public Key's Associated Address
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#portability" class="md-nav__link">
+    <span class="md-ellipsis">
+      Portability
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#derivation-paths" class="md-nav__link">
+    <span class="md-ellipsis">
+      Derivation Paths
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Derivation Paths">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#soft-and-hard-derivation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Soft and Hard Derivation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#password-derivation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Password Derivation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#account-derivation-on-ledger-live" class="md-nav__link">
+    <span class="md-ellipsis">
+      Account Derivation on Ledger Live
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#account-derivation-on-subkey-and-polkadot-vault" class="md-nav__link">
+    <span class="md-ellipsis">
+      Account Derivation on Subkey and Polkadot Vault
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#system-accounts" class="md-nav__link">
+    <span class="md-ellipsis">
+      System Accounts
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#indices" class="md-nav__link">
+    <span class="md-ellipsis">
+      Indices
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-accounts-with-subkey" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating Accounts with Subkey
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-ens-with-dotksm-accounts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using ENS with DOT/KSM accounts
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Using ENS with DOT/KSM accounts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#adding-via-the-ui" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adding via the UI
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wallet-support" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wallet Support
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#relevant-links" class="md-nav__link">
+    <span class="md-ellipsis">
+      Relevant links
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#transferring-polkadot-js-apps-accountsaddresses-from-one-computer-to-another" class="md-nav__link">
+    <span class="md-ellipsis">
+      Transferring Polkadot-JS Apps Accounts/Addresses From One Computer to Another
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/w3f/polkadot-wiki-mkdocs/edit/master/docs/learn/learn-account-advanced.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+  <h1>Account (Advanced)</h1>
+
+<h2 id="address-format">Address Format<a class="headerlink" href="#address-format" title="Permanent link">&para;</a></h2>
+<p>The address format used in Substrate-based chains is SS58. SS58 is a modification of Base-58-check
+from Bitcoin with some minor changes. Notably, the format contains an <em>address type</em> prefix that
+identifies an address belonging to a specific network.</p>
+<p>For example:</p>
+<ul>
+<li>Polkadot addresses <strong>always start with</strong> the number <strong>1</strong>.</li>
+<li>Kusama addresses always start with a capital letter, such as <strong>C, D, E, F, G, H, J</strong>.</li>
+<li>Generic Substrate addresses <strong>always start with</strong> the number <strong>5</strong>.</li>
+</ul>
+<p>These prefixes, including how to validate addresses, are embedded in the Substrate SS58 format.
+Never use regular expressions for address validation.</p>
+<p>It's important to understand that different network formats are <strong>merely other representations of
+the same public key in a private-public keypair</strong> generated by an address generation tool. As a
+result, the addresses across Substrate-based chains are compatible if the format is converted
+correctly.</p>
+<p>As of Runtime 28, the default <a href="./#address-format">address format</a> is the <a href="https://github.com/paritytech/polkadot-sdk/blob/master/substrate/primitives/runtime/src/multiaddress.rs"><code>MultiAddress</code></a>
+type.</p>
+<p>This <code>enum</code> is a multi-format address wrapper for on-chain accounts and allows us to describe
+Polkadot's default address format to represent many different address types. This includes <strong>20
+byte</strong>, <strong>32 byte</strong>, and <strong>arbitrary raw byte</strong> variants. It also enhances the original
+<a href="./#indices"><code>indices</code></a> lookup.</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Many wallets allow you to convert between formats. Stand-alone tools exist as well; you can find them in the <a href="#address-conversion-tools">address conversion tools</a> section.</p>
+</div>
+<h3 id="for-the-curious-how-prefixes-work">For the Curious: How Prefixes Work<a class="headerlink" href="#for-the-curious-how-prefixes-work" title="Permanent link">&para;</a></h3>
+<p>The <a href="https://github.com/paritytech/ss58-registry/blob/main/ss58-registry.json">SS58 registry</a> states
+that:</p>
+<ul>
+<li>Polkadot has an address type of <code>00000000b</code> (<code>0</code> in decimal).</li>
+<li>Kusama (Polkadot Canary) has an address type of <code>00000010b</code> (<code>2</code> in decimal).</li>
+<li>Generic Substrate has <code>00101010b</code> as the address type (<code>42</code> in decimal).</li>
+</ul>
+<p>Because the <code>Base58-check</code> alphabet has no number 0, the lowest value is indeed 1. So <code>00000000b</code> is
+1 in Base58-check. If we try to
+<a href="https://www.better-converter.com/Encoders-Decoders/Base58Check-to-Hexadecimal-Decoder">decode</a> a
+Polkadot address like <code>1FRMM8PEiWXYax7rpS6X4XZX1aAAxSWx1CrKTyrVYhV24fg</code>, the result is
+<code>000aff6865635ae11013a83835c019d44ec3f865145943f487ae82a8e7bed3a66b29d7</code>. The first byte is <code>00</code>,
+which is indeed <code>00000000</code> in binary and <code>0</code> in decimal and thus matches the address type of
+Polkadot.</p>
+<p>Let's take a look at Substrate addresses. If we decode
+<code>5CK8D1sKNwF473wbuBP6NuhQfPaWUetNsWUNAAzVwTfxqjfr</code>, we get
+<code>2a0aff6865635ae11013a83835c019d44ec3f865145943f487ae82a8e7bed3a66b77e5</code>. The first byte is <code>2a</code>
+which when
+<a href="https://www.rapidtables.com/convert/number/hex-to-decimal.html">converted from hex to decimal</a>
+is 42. 42 is <code>00101010</code> in binary, just as the SS58 document states.</p>
+<p>Finally, let's look at Kusama addresses. Decoding <code>CpjsLDC1JFyrhm3ftC9Gs4QoyrkHKhZKtK7YqGTRFtTafgp</code>
+gives us <code>020aff6865635ae11013a83835c019d44ec3f865145943f487ae82a8e7bed3a66b0985</code> with the first
+byte being <code>02</code>, just as specified. If we try a Kusama address that starts with a completely
+different letter, like <code>J4iggBtsWsb61RemU2TDWDXTNHqHNfBSAkGvVZBtn1AJV1a</code>, we still get <code>02</code> as the
+first byte: <code>02f2d606a67f58fa0b3ad2b556195a0ef905676efd4e3ec62f8fa1b8461355f1142509</code>. It seems
+counterintuitive that some addresses always have the same prefix and others like Kusama can vary
+wildly, but it's just a quirk of Base58-check encoding.</p>
+<h2 id="address-conversion-tools">Address Conversion Tools<a class="headerlink" href="#address-conversion-tools" title="Permanent link">&para;</a></h2>
+<p>You can use the tools below to convert any SS58 address for any network for use on different
+networks</p>
+<ul>
+<li><a href="https://polkadot.subscan.io/tools/ss58_transform">handy subscan tool</a></li>
+<li><a href="https://polkadot-address-convertor.netlify.app/">simple address converter</a></li>
+</ul>
+<h3 id="how-to-verify-a-public-keys-associated-address">How to Verify a Public Key's Associated Address<a class="headerlink" href="#how-to-verify-a-public-keys-associated-address" title="Permanent link">&para;</a></h3>
+<p>You can verify your public key's associated address through a series of inspection steps, where the
+key is a base-16 (hexadecimal) address.</p>
+<h4 id="using-subkey-to-retrieve-public-key-from-ss58-address">Using Subkey to Retrieve Public Key from SS58 Address<a class="headerlink" href="#using-subkey-to-retrieve-public-key-from-ss58-address" title="Permanent link">&para;</a></h4>
+<p>This is to showcase that the <strong>SS58 address is based on the public key (aka "Account ID")</strong></p>
+<p>The Subkey Tool's The
+<a href="https://docs.polkadot.com/polkadot-protocol/basics/accounts/#using-subkey">Inspecting Keys</a>
+section explains how to use the <code>inspect</code> command to recalculate your key pair's public key and
+address.</p>
+<p>Start by inspecting your account's Polkadot address by running the inspect command against your
+account's address:</p>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>subkey<span class="w"> </span>inspect<span class="w"> </span>1a1LcBX6hGPKg5aQ6DXZpAHCCzWjckhea4sz3P1PvL3oc4F
+
+Public<span class="w"> </span>Key<span class="w"> </span>URI<span class="w"> </span><span class="sb">`</span>1a1LcBX6hGPKg5aQ6DXZpAHCCzWjckhea4sz3P1PvL3oc4F<span class="sb">`</span><span class="w"> </span>is<span class="w"> </span>account:
+<span class="w">  </span>Network<span class="w"> </span>ID/version:<span class="w"> </span>polkadot
+<span class="w">  </span>Public<span class="w"> </span>key<span class="w"> </span><span class="o">(</span>hex<span class="o">)</span>:<span class="w">   </span>0x192c3c7e5789b461fbf1c7f614ba5eed0b22efc507cda60a5e7fda8e046bcdce
+<span class="w">  </span>Account<span class="w"> </span>ID:<span class="w">         </span>0x192c3c7e5789b461fbf1c7f614ba5eed0b22efc507cda60a5e7fda8e046bcdce
+<span class="w">  </span>SS58<span class="w"> </span>Address:<span class="w">       </span>1a1LcBX6hGPKg5aQ6DXZpAHCCzWjckhea4sz3P1PvL3oc4F
+</code></pre></div>
+<p>Take note of the hexadecimal string for "Public key (hex)". This is your account's public key.</p>
+<p>Running the <code>inspect</code> command on your public key along with the <code>--public</code> parameter the SS58
+address for the default network (substrate) is returned.</p>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>subkey<span class="w"> </span>inspect<span class="w"> </span>--public<span class="w"> </span>0x192c3c7e5789b461fbf1c7f614ba5eed0b22efc507cda60a5e7fda8e046bcdce
+
+Network<span class="w"> </span>ID/version:<span class="w"> </span>substrate
+<span class="w">  </span>Public<span class="w"> </span>key<span class="w"> </span><span class="o">(</span>hex<span class="o">)</span>:<span class="w">   </span>0x192c3c7e5789b461fbf1c7f614ba5eed0b22efc507cda60a5e7fda8e046bcdce
+<span class="w">  </span>Account<span class="w"> </span>ID:<span class="w">         </span>0x192c3c7e5789b461fbf1c7f614ba5eed0b22efc507cda60a5e7fda8e046bcdce
+<span class="w">  </span>Public<span class="w"> </span>key<span class="w"> </span><span class="o">(</span>SS58<span class="o">)</span>:<span class="w">  </span>5CdiCGvTEuzut954STAXRfL8Lazs3KCZa5LPpkPeqqJXdTHp
+<span class="w">  </span>SS58<span class="w"> </span>Address:<span class="w">       </span>5CdiCGvTEuzut954STAXRfL8Lazs3KCZa5LPpkPeqqJXdTHp
+</code></pre></div>
+<p>Using the <code>--network</code> flag, you can define the network that you would like to inspect, where the
+SS58 address will be based on that network. Now, running the <code>inspect</code> command with
+<code>--network polkadot</code> return your original Polkadot address, thus verifying the public key.</p>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>subkey<span class="w"> </span>inspect<span class="w"> </span>--network<span class="w"> </span>polkadot<span class="w"> </span>5CdiCGvTEuzut954STAXRfL8Lazs3KCZa5LPpkPeqqJXdTHp
+
+Public<span class="w"> </span>Key<span class="w"> </span>URI<span class="w"> </span><span class="sb">`</span>5CdiCGvTEuzut954STAXRfL8Lazs3KCZa5LPpkPeqqJXdTHp<span class="sb">`</span><span class="w"> </span>is<span class="w"> </span>account:
+<span class="w">  </span>Network<span class="w"> </span>ID/version:<span class="w"> </span>polkadot
+<span class="w">  </span>Public<span class="w"> </span>key<span class="w"> </span><span class="o">(</span>hex<span class="o">)</span>:<span class="w">   </span>0x192c3c7e5789b461fbf1c7f614ba5eed0b22efc507cda60a5e7fda8e046bcdce
+<span class="w">  </span>Account<span class="w"> </span>ID:<span class="w">         </span>0x192c3c7e5789b461fbf1c7f614ba5eed0b22efc507cda60a5e7fda8e046bcdce
+<span class="w">  </span>Public<span class="w"> </span>key<span class="w"> </span><span class="o">(</span>SS58<span class="o">)</span>:<span class="w">  </span>1a1LcBX6hGPKg5aQ6DXZpAHCCzWjckhea4sz3P1PvL3oc4F
+<span class="w">  </span>SS58<span class="w"> </span>Address:<span class="w">       </span>1a1LcBX6hGPKg5aQ6DXZpAHCCzWjckhea4sz3P1PvL3oc4F
+</code></pre></div>
+<p>You will notice that the Subkey Tool recognizes the correct address network and returns the
+associated public key. The public key is returned as a hexadecimal string (i.e. prefixed with
+<strong>"0x"</strong>). <strong>For both SS58 addresses, the same public key is returned.</strong></p>
+<h4 id="address-verification">Address Verification<a class="headerlink" href="#address-verification" title="Permanent link">&para;</a></h4>
+<h5 id="consider-the-following-example">Consider the following example:<a class="headerlink" href="#consider-the-following-example" title="Permanent link">&para;</a></h5>
+<p><img alt="19" src="../../assets/accounts/pubkey-1.png" /></p>
+<p>If you are comfortable enough to distinguish between each account parameter, you can prefix the
+public-key string with <strong>"0x"</strong> on your own:</p>
+<p>From:
+<code>Pay DOTs to the Polkadot account:192c3c7e5789b461fbf1c7f614ba5eed0b22efc507cda60a5e7fda8e046bcdce</code>,
+we prefix the address by "0x" -&gt;
+<code>0x192c3c7e5789b461fbf1c7f614ba5eed0b22efc507cda60a5e7fda8e046bcdce</code>.</p>
+<p>Using the <a href="https://polkadot.subscan.io/tools/ss58_transform">handy subscan tool</a>, you can verify
+both address associations to your public key. Copy your public key into the "Input Account or Public
+Key" textbox and click "Transform" at the bottom. On the right-hand side, the addresses for Polkadot
+and Substrate that are returned based on your public key should match the ones you inspected.</p>
+<p><img alt="20" src="../../assets/accounts/pubkey-2.png" /></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You may have to scroll down to the bottom of the menu to find the Substrate address based on the menu listings. You will notice that many networks that also use the same Substrate address.</p>
+</div>
+<p>You can verify your public key verification by recalling that Polkadot addresses start with a '1',
+whereas Substrate addresses generally start with a '5' (Kusama addresses start with a capital
+letter). See <a href="./#address-format">Addresses</a> for more details.</p>
+<p>Furthermore, the <a href="https://github.com/w3f/utility-scripts">Utility Scripts</a> can be referenced for how
+the verification is performed:
+<a href="https://github.com/w3f/utility-scripts/blob/master/src/misc/pubkeyToAddress.js">pubkeyToAddress.js</a>
+demonstrates how a single public key interprets a Polkadot, Substrate, or Kusama address.</p>
+<h2 id="portability">Portability<a class="headerlink" href="#portability" title="Permanent link">&para;</a></h2>
+<p>Portability is the ability to use a mnemonic phrase or seed across multiple wallets.</p>
+<p>Most wallets generate a mnemonic phrase for users to back up their wallets and generate a private
+key from the mnemonic. Not all wallets use the same algorithm to convert from mnemonic phrase to
+private key, which affects the ability to use the same mnemonic phrase in multiple wallets. Wallets
+that use different measures will arrive at a different set of addresses from the exact mnemonic
+phrase.</p>
+<div class="admonition danger">
+<p class="admonition-title">Not all wallets use the same algorithm to convert from mnemonic phrase to private key</p>
+<p><a href="https://docs.polkadot.com/polkadot-protocol/basics/accounts/#using-subkey">Subkey</a> and Polkadot-JS based wallets use the BIP39 dictionary for mnemonic generation, but use the entropy byte array to generate the private key, while full BIP39 wallets (like Ledger) use 2048 rounds of PBKDF2 on the mnemonic. The same mnemonic may generate different private keys on other wallets due to the various cryptographic algorithms used. See <a href="https://github.com/paritytech/substrate-bip39">Substrate BIP39 Repo</a> for more information.</p>
+</div>
+<p>Portability depends on several factors:</p>
+<ul>
+<li>Derivation path</li>
+<li>Mnemonic format</li>
+<li>Seed derivation</li>
+<li>Signature scheme</li>
+</ul>
+<p>To use the exact mnemonic across multiple wallets, ensure they follow compatible methods for
+generating keys and signing messages. If you are still looking for understandable documentation,
+contact the project maintainers.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"></th>
+<th style="text-align: center;">Mnemonic Format</th>
+<th style="text-align: center;">Derivation Path</th>
+<th style="text-align: center;">Seed Derivation</th>
+<th style="text-align: center;">Signature Support</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Polkadot-JS Extension</td>
+<td style="text-align: center;">Standard</td>
+<td style="text-align: center;">User-Defined</td>
+<td style="text-align: center;">BIP32</td>
+<td style="text-align: center;">sr25519</td>
+</tr>
+<tr>
+<td style="text-align: left;">Polkadot-JS Apps</td>
+<td style="text-align: center;">Standard*</td>
+<td style="text-align: center;">User-Defined</td>
+<td style="text-align: center;">BIP32</td>
+<td style="text-align: center;">sr25519, ed25519, secp256k</td>
+</tr>
+<tr>
+<td style="text-align: left;">Ledger</td>
+<td style="text-align: center;">BIP39</td>
+<td style="text-align: center;">BIP44&dagger;</td>
+<td style="text-align: center;">BIP32&Dagger;</td>
+<td style="text-align: center;">ed25519&sect;</td>
+</tr>
+<tr>
+<td style="text-align: left;">Subkey</td>
+<td style="text-align: center;">Standard*</td>
+<td style="text-align: center;">User-Defined</td>
+<td style="text-align: center;">BIP32</td>
+<td style="text-align: center;">sr25519, ed25519, secp256k1</td>
+</tr>
+</tbody>
+</table>
+<p>* Ed25519 keys have <a href="https://github.com/paritytech/substrate-bip39">limited compatibility</a> with
+BIP39.</p>
+<p>&dagger; <a href="https://github.com/satoshilabs/slips/blob/master/slip-0044.md">BIP44 Registry</a></p>
+<p>&Dagger; Ed25519 and BIP32 based on
+<a href="https://github.com/LedgerHQ/orakolo/blob/master/papers/Ed25519_BIP%20Final.pdf">Khovratovich</a></p>
+<p>&sect; Sr25519 planned</p>
+<h2 id="derivation-paths">Derivation Paths<a class="headerlink" href="#derivation-paths" title="Permanent link">&para;</a></h2>
+<p>If you want to create and manage several accounts on the network using the same seed, you can use
+derivation paths. We can think of the derived accounts as child accounts of the root account created
+using the original mnemonic seed phrase.</p>
+<h3 id="soft-and-hard-derivation">Soft and Hard Derivation<a class="headerlink" href="#soft-and-hard-derivation" title="Permanent link">&para;</a></h3>
+<p>A soft derivation allows someone to potentially "go backward” to figure out the initial account's
+private key if they know the derived account's private key. It is also possible to determine that
+different accounts generated from the same seed are linked to that seed. A hard derivation path does
+not allow either of these - even if you know a derived private key, it's not feasible to figure out
+the private key of the root address, and it's impossible to prove that the first account is linked
+with the second. These derivation methods have their use cases, given that the private keys for all
+the derived accounts are fully secure. Unless you have a specific need for a soft derivation, it is
+recommended to generate the account using a hard derivation path.</p>
+<p>Many Polkadot key generation tools support hard and soft derivation. For instance, if you intend to
+create an account to be used on the relay chain, you can derive a <strong>hard key</strong> child account using
+<strong>//</strong> after the mnemonic phrase.</p>
+<div class="highlight"><pre><span></span><code>&#39;caution juice atom organ advance problem want pledge someone senior holiday very//0&#39;
+</code></pre></div>
+<p>and a <strong>soft key</strong> child account using <strong>/</strong> after the mnemonic phrase</p>
+<div class="highlight"><pre><span></span><code>&#39;caution juice atom organ advance problem want pledge someone senior holiday very/0&#39;
+</code></pre></div>
+<p>If you want to create another account using the Polkadot chain using the same seed, you can change
+the number at the end of the string above. For example, <code>/1</code>, <code>/2</code>, and <code>/3</code> will create different
+derived accounts.</p>
+<p>You can use any letters or numbers in the derivation path as long as they make sense to you; they do
+not have to follow any specific pattern. You may combine multiple derivations in your path, as well.
+For instance, <code>//bill//account//1</code> and <code>//john/polkadot/initial</code> are both valid. To recreate a
+derived account, you must know both the seed and the derivation path, so you should either use a
+well-defined sequence (e.g. //0, //1, //2...) or be sure to write down any derivation paths you use.</p>
+<p>See the <a href="https://docs.polkadot.com/polkadot-protocol/basics/accounts/#using-subkey">Subkey documentation</a> for
+details and examples of derivation path formats. The Polkadot-JS Apps and Extension and Parity
+Signer support custom derivation paths using the same syntax as Subkey.</p>
+<p>Some wallets will automatically add derivation paths to the end of the generated mnemonic phrase.
+This will generate separate seeds for different paths, allowing separate signing keys with the same
+mnemonic, e.g. <code>&lt;mnemonic phrase&gt;//polkadot</code> and <code>&lt;mnemonic phrase&gt;//kusama</code>. Although you may
+correctly save the mnemonic phrase, using it in another wallet will generate the same addresses only
+if both wallets use the same derivation paths.</p>
+<p>Polkadot and Kusama both have paths registered in the
+<a href="https://github.com/satoshilabs/slips/blob/master/slip-0044.md">BIP44 registry</a>.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>You must have the <em>parent</em> private key and the derivation path to arrive at the key for an address. Only use custom derivation paths if you are comfortable with your knowledge of this topic.</p>
+</div>
+<h3 id="password-derivation">Password Derivation<a class="headerlink" href="#password-derivation" title="Permanent link">&para;</a></h3>
+<p>There is an additional type of derivation called password derivation. On Polkadot you can derive a
+<strong>password key</strong> account using <strong>///</strong> after the mnemonic phrase</p>
+<div class="highlight"><pre><span></span><code>&#39;caution juice atom organ advance problem want pledge someone senior holiday very///0&#39;
+</code></pre></div>
+<p>In this type of derivation, if the mnemonic phrase leaks, accounts cannot be derived without the
+initial password. In fact, for soft- and hard-derived accounts, if someone knows the mnemonic phrase
+and the derivation path, they will have access to your account. For password-derived accounts, the
+password is applied on the derivation path. You can know the mnemonic phrase and the derivation
+path, but without the password, it is impossible to access the account. In mathematical terms, if we
+have a <code>written derivation path</code> and a <code>password</code>, we can calculate the <code>real derivation path</code> as
+<code>f(written derivation path, password)</code>, where <code>f</code> is a function. We can then calculate the
+<code>account key pair</code> using <code>f(seed, real derivation path)</code>. Unlike hard and soft derivations that can
+be mixed, only a single password should be specified per derivation.</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Password-derived account are as secure as the chosen password.</p>
+</div>
+<h3 id="account-derivation-on-ledger-live">Account Derivation on <a href="../../general/ledger/">Ledger</a> Live<a class="headerlink" href="#account-derivation-on-ledger-live" title="Permanent link">&para;</a></h3>
+<p>Ledger Live will only show the main account with BIP44 path 44'/354'/0'/0'/0'. This means that if
+you created a derived account with a derivation path 44'/354'/0'/0'/1' on a wallet or extension, it
+will not be displayed on the Ledger Live App. Consequently, it is not possible to transact with
+derived accounts using the Ledger Live App, but it is possible to do so using Polkadot-JS. Check
+<a href="../learn-accounts/">the accounts page</a> for more information about derived accounts and
+derivation paths.</p>
+<p>Note that you cannot import Kusama Ledger accounts in Ledger Live. To see Kusama account balances,
+you must import your ledger account into a <a href="../../general/wallets-and-extensions/"><strong>wallet</strong></a>.</p>
+<h3 id="account-derivation-on-subkey-and-polkadot-vault">Account Derivation on <a href="#creating-accounts-with-subkey">Subkey</a> and <a href="../../general/polkadot-vault/">Polkadot Vault</a><a class="headerlink" href="#account-derivation-on-subkey-and-polkadot-vault" title="Permanent link">&para;</a></h3>
+<p>The Subkey tool and Polkadot Vault App use the following Polkadot Standard Hard Derivation scheme:</p>
+<ul>
+<li><code>//network</code> as the primary account for <code>network</code>, named according to <code>network</code>'s named chain
+  specification</li>
+<li><code>//network//0</code>, <code>//network//1</code>, ... as the secondary high-security accounts for <code>network</code></li>
+</ul>
+<p>For example, the Vault app will generate a new account from a <code>SEED PHRASE</code>, and for each network
+will create a derived child account from that seed. For the default networks Polkadot, Kusama and
+Westend the derivation path will be:</p>
+<ul>
+<li><code>SEED PHRASE//polkadot</code> for Polkadot, with <code>SEED PHRASE//polkadot//0</code> as the first secondary
+  high-security account</li>
+<li><code>SEED PHRASE//kusama</code> for Kusama, with <code>SEED PHRASE//kusama//0</code> as the first secondary
+  high-security account</li>
+<li><code>SEED PHRASE//westend</code> for Westend, with <code>SEED PHRASE//westend//0</code> as the first secondary
+  high-security account</li>
+</ul>
+<p>Additionally, although it is not strictly necessary, users can adopt the following good practice
+scheme:</p>
+<ul>
+<li><code>//network//pub</code> as the primary high-security public account for <code>network</code> (the one the user is
+  happy to be associated with their "real" ID)</li>
+<li><code>//network//pub//0</code>, <code>//network//pub//0</code>, ... as the secondary high-security public accounts for
+    <code>network</code></li>
+<li><code>//network//hot</code> as the primary low-security account for <code>network</code> (the one whose secret key the
+  user exports from the Vault app to carry on an internet-connected device)</li>
+<li><code>//network//hot//0</code>, <code>//network//hot//1</code>, ... as the secondary low-security accounts for
+    <code>network</code></li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>For more information about account derivation best practices, see <a href="https://forum.polkadot.network/t/polkadot-standards-proposal-psp-to-define-hierarchical-deterministic-hd-key-derivation-paths/2941/2">this post</a> on the Polkadot Forum.</p>
+</div>
+<h2 id="system-accounts">System Accounts<a class="headerlink" href="#system-accounts" title="Permanent link">&para;</a></h2>
+<p>As the word suggests, system accounts are used by the system. They are used, for example, for the
+treasury, crowdloans, and nomination pools. From the point of view of the runtime, these accounts
+are like any other account on-chain. These special system accounts are just public keys, with the
+private key being unknown (and unattainable). So, that means that only the pallet itself can
+interact with this account. These accounts can never issue a signed
+<a href="../learn-transactions/">extrinsic</a> since they do not have a private key.</p>
+<p>Explore the main system accounts below.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Polkadot</label><label for="__tabbed_1_2">Kusama</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>Treasury account address - <code>13UVJyLnbVp9RBZYFwFGyDvVd1y27Tt8tkntv6Q7JVPhFsTB</code></p>
+</div>
+<div class="tabbed-block">
+<p>Treasury account address - <code>F3opxRbN5ZbjJNU511Kj2TLuzFcDq9BGduA9TgiECafpg29</code></p>
+</div>
+</div>
+</div>
+<p>You can view the existing system accounts on
+<a href="https://polkadot.subscan.io/account_list?role=module">Subscan</a>.</p>
+<p>Let us take a look at how system accounts are generated under the hood. For instance, to generate
+the treasury account, the raw bytes of the strings "modl" and "py/trsry" are combined to create the
+<code>AccountID</code>. For more information, check the post on Substrate StackExchange on
+<a href="https://substrate.stackexchange.com/questions/536/how-do-treasury-accounts-compare-to-end-user-accounts-in-frame">Treasury accounts</a>.
+Similarly, to generate the crowdloan account, the raw bytes of the strings "modl" and "py/cfund"
+along with the fund index are combined to create the <code>AccountID</code>. Similar logic applies to
+nomination pool and parachain accounts as well.</p>
+<h2 id="indices">Indices<a class="headerlink" href="#indices" title="Permanent link">&para;</a></h2>
+<p>Polkadot addresses can have indices. An index is like a short and easy-to-remember version of an
+address. Claiming an index requires <a href="../../general/chain-state-values/#index-deposit">a deposit</a>
+released when the index is cleared. Any index can be claimed if it is not taken by someone else.</p>
+<p>But what if an account gets reaped, as explained above? In that case, the index is emptied. In other
+words, the slot frees up again, making it available for anyone to claim. It is possible to <em>freeze</em>
+an index and permanently assign it to an address. <strong>This action consumes a deposit, and the index
+will be permanently bound to the address with no option to release it.</strong></p>
+<div class="admonition note">
+<p class="admonition-title">Lookup Account Index on-chain</p>
+<p>When someone shares their account index, their actual account address on-chain can be looked up through Polkadot-JS Apps UI &gt; Developer &gt; Chain state &gt; Storage and selecting state query on indices pallet for the account corresponding to the index.</p>
+</div>
+<p>Here is an example snapshot that shows how to lookup the corresponding account address of the
+account index 1988 on
+<a href="../../maintain/maintain-networks/#westend-test-network">Westend network (Polkadot Test Network)</a>,
+using Polkadot-JS Apps UI. The output shows the account address, deposit amount, and a boolean flag
+indicating whether this is claimed permanently.</p>
+<p><img alt="query account index" src="../../assets/accounts/query-index.png" /></p>
+<p>Submit a <code>claim</code> extrinsic to the <code>indices</code> pallet to register an index. The easiest way to do this
+is via Polkadot-JS UI through the <em>Developer -&gt; Extrinsics</em> menu:</p>
+<p><img alt="Indices extrinsics" src="../../assets/accounts/index.png" /></p>
+<p>To find available indices to claim on Polkadot or Kusama,
+<a href="https://www.shawntabrizi.com/substrate-js-utilities/indices/">this helper tool may come in handy</a>.</p>
+<p>For keeping the index permanently, you can follow up with a <code>freeze</code> extrinsic as mentioned above.</p>
+<h2 id="creating-accounts-with-subkey">Creating Accounts with Subkey<a class="headerlink" href="#creating-accounts-with-subkey" title="Permanent link">&para;</a></h2>
+<p><a href="https://github.com/paritytech/polkadot-sdk/tree/master/substrate/bin/utils/subkey">Subkey</a> is
+recommended for technically advanced users comfortable with the command line and compiling Rust
+code. Subkey lets you generate keys on any device that can compile the code. Subkey may also be
+useful for automated account generation using an air-gapped device. It is not recommended for
+general users. Follow the instructions in the
+<a href="https://docs.polkadot.com/polkadot-protocol/basics/accounts/#using-subkey">Subkey documentation</a>.</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>For guidelines about how to create an account using Subkey, see <a href="https://youtu.be/SWfE_EwxgIU"><strong>this video tutorial</strong></a> and visit <a href="https://support.polkadot.network/support/solutions/articles/65000180519-how-to-create-an-account-in-subkey"><strong>this support article</strong></a>.</p>
+</div>
+<h2 id="using-ens-with-dotksm-accounts">Using ENS with DOT/KSM accounts<a class="headerlink" href="#using-ens-with-dotksm-accounts" title="Permanent link">&para;</a></h2>
+<p>ENS (Ethereum Name Service) is a distributed and open system of smart contracts on the Ethereum
+blockchain which allows users to claim domain names like <code>bruno.eth</code>.</p>
+<p>The ENS is equivalent to a DNS (Domain Name System) domain. Instead, it offers a decentralized and
+secure way to translate text via smart contracts. Supporting wallets can then allow senders to input
+ENS domains instead of long and unwieldy addresses. This prevents phishing, fraud, and typos and
+adds a layer of usability to the regular wallet user experience.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You will need an ENS name and an Ethereum account with some ether to follow along with this guide. To register an ENS name, visit the <a href="https://app.ens.domains">ENS App</a> or any number of subdomain registrars like <a href="https://nameth.io">Nameth</a>. Note that if you're using an older ENS name, you should make sure you're using the <a href="https://medium.com/the-ethereum-name-service/ens-registry-migration-is-over-now-what-a-few-things-to-know-fb05f921872a">new resolver</a>. Visiting the ENS App will warn you about this. You will also need some way to use your Ethereum address - following this guide on a personal computer is recommended. Wallets like <a href="https://frame.sh/">Frame</a> and <a href="https://metamask.io">Metamask</a> are safe and will make interacting with the Ethereum blockchain through your browser very easy.</p>
+</div>
+<p>Despite living on the Ethereum blockchain, the ENS system has multi-chain support. In this guide,
+you'll go through the process of adding a KSM and DOT address to ENS. We cover both KSM and DOT to
+show two different approaches.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>DOT can currently only be added using the Resolver method. KSM can be added through both methods are described below.</p>
+</div>
+<p>This guide is also available in video format <a href="https://youtu.be/XKjZk-5_mQc">on YouTube</a>.</p>
+<h3 id="adding-via-the-ui">Adding via the UI<a class="headerlink" href="#adding-via-the-ui" title="Permanent link">&para;</a></h3>
+<p>The <a href="https://app.ens.domains">ENS App</a> allows an ENS domain owner to inspect all records bound to
+the domain, and to add new ones.</p>
+<p><img alt="bruno.eth domain name in the ENS application" src="../../assets/ens/01-min.png" /></p>
+<p>In the example above, the domain <code>bruno.eth</code> has an Ethereum and a Bitcoin address attached. Let's
+attach a KSM account. First, click the <code>[+]</code> icon in the Records tab.</p>
+<p><img alt="The plus icon in the records tab" src="../../assets/ens/02-min.png" /></p>
+<p>Then, pick "Other Addresses", "KSM", and input the Kusama address:</p>
+<p><img alt="Inputs needed to register a KSM address" src="../../assets/ens/03-min.png" /></p>
+<p>After clicking Save, your Ethereum wallet will ask you to confirm a transaction. Once processed, the
+record will show up on the domain's page:</p>
+<p><img alt="KSM address now visible in bruno.eth records" src="../../assets/ens/04-min.png" /></p>
+<p>The exact process applies to adding your DOT address.</p>
+<p>Once the transaction is confirmed, your address will be bound to your ENS domain.</p>
+<h3 id="wallet-support">Wallet Support<a class="headerlink" href="#wallet-support" title="Permanent link">&para;</a></h3>
+<p>There is no wallet support for ENS names for either KSM or DOT at this time, but the crypto
+accounting and portfolio application <a href="https://rotki.com/">Rotki</a> does support KSM ENS resolution.</p>
+<h3 id="relevant-links">Relevant links<a class="headerlink" href="#relevant-links" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://docs.ens.domains/">ENS docs</a></li>
+<li><a href="https://medium.com/the-ethereum-name-service/ens-launches-multi-coin-support-15-wallets-to-integrate-92518ab20599">ENS Multi-chain announcement</a></li>
+<li><a href="https://github.com/ensdomains/address-encoder">Address encoder</a></li>
+<li><a href="https://swolfeyes.github.io/ethereum-namehash-calculator/">Namehash calculator</a></li>
+<li><a href="https://www.shawntabrizi.com/substrate-js-utilities/">Address to pubkey converter</a></li>
+</ul>
+<h2 id="transferring-polkadot-js-apps-accountsaddresses-from-one-computer-to-another">Transferring Polkadot-JS Apps Accounts/Addresses From One Computer to Another<a class="headerlink" href="#transferring-polkadot-js-apps-accountsaddresses-from-one-computer-to-another" title="Permanent link">&para;</a></h2>
+<div class="admonition caution">
+<p class="admonition-title">Caution</p>
+<p>This will overwrite existing accounts with the same pubkey on your new computer. This generally should not make a difference (since it can still access the same account), but it might if you have e.g. an account that was stored externally in the extension on the old computer but was created directly in the browser on the new one.</p>
+</div>
+<p>This has been tested on Brave and Chrome, but not other browsers.</p>
+<ol>
+<li>Go to Polkadot-JS Apps</li>
+<li>Go to JavaScript console on the browser (Available in Developer Tools)</li>
+<li>Type in the command:</li>
+</ol>
+<div class="highlight"><pre><span></span><code>JSON.stringify(localStorage)
+</code></pre></div>
+<ol start="4">
+<li>Copy and paste the returned string to a text editor and save the file.</li>
+<li>Check that the string you pasted begins and ends with a tick mark ('). If not, add one to the
+   beginning and end.</li>
+<li>Save and send that file with the copied string to the new computer.</li>
+<li>On the new computer, go to Polkadot-JS Apps</li>
+<li>Open the Javascript console on the browser (Available in Developer Tools)</li>
+<li>Set a variable raw equal to the string from the text file</li>
+</ol>
+<div class="highlight"><pre><span></span><code>raw = ... copy-pasted json from original computer ...
+</code></pre></div>
+<ol start="10">
+<li>Run the following code on the console:</li>
+</ol>
+<div class="highlight"><pre><span></span><code>accounts = JSON.parse(raw);
+for (var key in accounts) {
+    if (accounts.hasOwnProperty(key)) {
+        val = JSON.stringify(accounts[key]).replace(/\\/g,&#39;&#39;).slice(1,-1);
+        console.log(key + &quot; -&gt; &quot; + val);
+        localStorage.setItem(key, val);
+    }
+}
+</code></pre></div>
+<ol start="11">
+<li>Refresh Polkadot-JS App browser and check the Accounts and Addresses pages. All of your accounts
+    and addresses should now be available.</li>
+</ol>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+    
+      
+        
+        <nav class="md-footer__inner md-grid" aria-label="Footer" >
+          
+            
+            <a href="../learn-DOT-KSM-bridge/" class="md-footer__link md-footer__link--prev" aria-label="Previous: DOT-KSM Bridge">
+              <div class="md-footer__button md-icon">
+                
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+              </div>
+              <div class="md-footer__title">
+                <span class="md-footer__direction">
+                  Previous
+                </span>
+                <div class="md-ellipsis">
+                  DOT-KSM Bridge
+                </div>
+              </div>
+            </a>
+          
+          
+            
+            <a href="../learn-staking-advanced/" class="md-footer__link md-footer__link--next" aria-label="Next: Staking (Advanced)">
+              <div class="md-footer__title">
+                <span class="md-footer__direction">
+                  Next
+                </span>
+                <div class="md-ellipsis">
+                  Staking (Advanced)
+                </div>
+              </div>
+              <div class="md-footer__button md-icon">
+                
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+              </div>
+            </a>
+          
+        </nav>
+      
+    
+    <div class="md-footer-meta md-typeset">
+      <div class="md-footer-meta__inner md-grid">
+        <!-- Add custom links section -->
+        <div class="policy-links">
+          <a href="/terms-of-use/">Terms of Use</a>
+          <a href="/privacy-policy/">Privacy Policy</a>
+          <a href="/cookie-policy/">Cookie Policy</a>
+        </div>
+        
+          <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/Polkadot" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8l164.9-188.5L26.8 48h145.6l100.5 132.9zm-24.8 373.8h39.1L151.1 88h-42z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.reddit.com/r/polkadot" target="_blank" rel="noopener" title="www.reddit.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M0 256C0 114.6 114.6 0 256 0s256 114.6 256 256-114.6 256-256 256H37.1c-13.7 0-20.5-16.5-10.9-26.2L75 437C28.7 390.7 0 326.7 0 256m349.6-102.4c23.6 0 42.7-19.1 42.7-42.7s-19.1-42.7-42.7-42.7c-20.6 0-37.8 14.6-41.8 34-34.5 3.7-61.4 33-61.4 68.4v.2c-37.5 1.6-71.8 12.3-99 29.1-10.1-7.8-22.8-12.5-36.5-12.5-33 0-59.8 26.8-59.8 59.8 0 24 14.1 44.6 34.4 54.1 2 69.4 77.6 125.2 170.6 125.2s168.7-55.9 170.6-125.3c20.2-9.6 34.1-30.2 34.1-54 0-33-26.8-59.8-59.8-59.8-13.7 0-26.3 4.6-36.4 12.4-27.4-17-62.1-27.7-100-29.1v-.2c0-25.4 18.9-46.5 43.4-49.9 4.4 18.8 21.3 32.8 41.5 32.8zm-172.5 93.3c16.7 0 29.5 17.6 28.5 39.3s-13.5 29.6-30.3 29.6-31.4-8.8-30.4-30.5S160.3 247 177 247zm190.1 38.3c1 21.7-13.7 30.5-30.4 30.5s-29.3-7.9-30.3-29.6 11.8-39.3 28.5-39.3 31.2 16.6 32.1 38.3zm-48.1 56.7c-10.3 24.6-34.6 41.9-63 41.9s-52.7-17.3-63-41.9c-1.2-2.9.8-6.2 3.9-6.5 18.4-1.9 38.3-2.9 59.1-2.9s40.7 1 59.1 2.9c3.1.3 5.1 3.6 3.9 6.5"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/paritytech/polkadot-sdk" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.youtube.com/channel/UCB7PbjuZLEba_znc7mEGNgw" target="_blank" rel="noopener" title="www.youtube.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305m-317.51 213.508V175.185l142.739 81.205z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://polkadot-discord.w3f.tools/" target="_blank" rel="noopener" title="polkadot-discord.w3f.tools" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M524.531 69.836a1.5 1.5 0 0 0-.764-.7A485 485 0 0 0 404.081 32.03a1.82 1.82 0 0 0-1.923.91 338 338 0 0 0-14.9 30.6 447.9 447.9 0 0 0-134.426 0 310 310 0 0 0-15.135-30.6 1.89 1.89 0 0 0-1.924-.91 483.7 483.7 0 0 0-119.688 37.107 1.7 1.7 0 0 0-.788.676C39.068 183.651 18.186 294.69 28.43 404.354a2.02 2.02 0 0 0 .765 1.375 487.7 487.7 0 0 0 146.825 74.189 1.9 1.9 0 0 0 2.063-.676A348 348 0 0 0 208.12 430.4a1.86 1.86 0 0 0-1.019-2.588 321 321 0 0 1-45.868-21.853 1.885 1.885 0 0 1-.185-3.126 251 251 0 0 0 9.109-7.137 1.82 1.82 0 0 1 1.9-.256c96.229 43.917 200.41 43.917 295.5 0a1.81 1.81 0 0 1 1.924.233 235 235 0 0 0 9.132 7.16 1.884 1.884 0 0 1-.162 3.126 301.4 301.4 0 0 1-45.89 21.83 1.875 1.875 0 0 0-1 2.611 391 391 0 0 0 30.014 48.815 1.86 1.86 0 0 0 2.063.7A486 486 0 0 0 610.7 405.729a1.88 1.88 0 0 0 .765-1.352c12.264-126.783-20.532-236.912-86.934-334.541M222.491 337.58c-28.972 0-52.844-26.587-52.844-59.239s23.409-59.241 52.844-59.241c29.665 0 53.306 26.82 52.843 59.239 0 32.654-23.41 59.241-52.843 59.241m195.38 0c-28.971 0-52.843-26.587-52.843-59.239s23.409-59.241 52.843-59.241c29.667 0 53.307 26.82 52.844 59.239 0 32.654-23.177 59.241-52.844 59.241"/></svg>
+    </a>
+  
+</div>
+        
+      </div>
+    </div>
+  </footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.annotate", "content.tooltips", "navigation.footer", "navigation.tabs", "navigation.indexes", "navigation.top", "navigation.path", "content.action.edit"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.f1b6f286.min.js"></script>
+      
+        <script src="../../javascript/MessageBox.js"></script>
+      
+        <script src="../../javascript/init_kapa_widget.js"></script>
+      
+        <script src="../../javascript/announcement-bar.js"></script>
+      
+        <script src="../../js/open_in_new_tab.js"></script>
+      
+    
+  </body>
+</html>
