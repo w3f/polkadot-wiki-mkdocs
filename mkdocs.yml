@@ -355,7 +355,6 @@ nav:
             - Build Dapps: build/build-dapps.md
             - Build Oracle: build/build-oracle.md
             - Storage:  build/build-storage.md
-            - 
   - Maintain:
       - maintain/index.md
       - Polkadot Parameters: maintain/maintain-polkadot-parameters.md
