@@ -46,12 +46,19 @@
       {% endif %}
     {% endif %}
     <div class="md-footer-meta md-typeset">
-      <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-meta__inner md-grid" style="display: flex; align-items: center; justify-content: center; gap: 20px;">
+
+        <!-- Logo Section -->
+        <div class="footer-logo">
+          <img src="{{ config.extra.footer_logo | url }}" alt="Logo" style="height: 40px;">
+        </div>
+
         <!-- Add custom links section -->
         <div class="policy-links">
-          <a href="/terms-of-use/">Terms of Use</a>
-          <a href="/privacy-policy/">Privacy Policy</a>
-          <a href="/cookie-policy/">Cookie Policy</a>
+          <a href="https://web3.foundation/">© 2025 Web3 Foundation</a> |
+          <a href="https://polkadot.com/legal-disclosures">Legal Disclosures</a> |
+          <a href="https://polkadot.com/legal-disclosures">Disclaimer</a> |
+          <a href="https://polkadot.com/privacy">Privacy</a>
         </div>
         {% if config.extra.social %}
           {% include "partials/social.html" %}
