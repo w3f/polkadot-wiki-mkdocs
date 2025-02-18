@@ -221,7 +221,7 @@ nav:
               - Asset Hub:
                   - Asset Conversion (Asset Hub): learn/learn-asset-conversion-assethub.md
               - Teleport: learn/learn-teleport.md
-              - NFT: learn/learn-nft.md
+              - Introduction to NFTs: learn/learn-nft.md
           - Network Participants:
               - Collator: learn/learn-collator.md
               - Nominator: learn/learn-nominator.md
