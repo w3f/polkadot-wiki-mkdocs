@@ -24,4 +24,3 @@ There are many ways you can get involved in expanding Polkadot’s ecosystem, su
 - Mentoring and onboarding newcomers
 - Identifying partnerships and opportunities for the Polkadot ecosystem
 - Participating in calls and tasks that help drive the ecosystem forward
-
