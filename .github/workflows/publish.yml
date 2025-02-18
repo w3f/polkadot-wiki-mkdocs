@@ -18,3 +18,4 @@ jobs:
           NETLIFY_DEPLOY_TO_PROD: true
           install_command: "pip install -r requirements.txt"
           build_command: "sh scripts/deploy.sh"
+          build_directory: "site"
