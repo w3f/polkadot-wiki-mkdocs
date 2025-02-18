@@ -1,4 +1,4 @@
-name: Netlify Deploy
+name: Netlify Deploy CI/CD
 on:
   push:
     branches:
