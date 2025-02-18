@@ -42,6 +42,7 @@ plugins:
 
 # Additional configuration
 extra:
+  footer_logo: assets/Polkadot_Logo_White.png
   social:
     - icon: fontawesome/brands/x-twitter
       link: https://twitter.com/Polkadot
