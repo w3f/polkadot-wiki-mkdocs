@@ -22,6 +22,7 @@ for url in root.findall('ns:url', namespace):
     
     try:
         response = requests.get(test_url)
-        print(f'{test_url} - Status: {response.status_code}')
+        if response.status_code == 404:
+            print(f'{test_url} - Status: {response.status_code}')
     except requests.exceptions.RequestException as e:
         print(f'{test_url} - Error: {e}')

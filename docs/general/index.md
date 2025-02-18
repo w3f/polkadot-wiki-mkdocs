@@ -1,10 +1,12 @@
-# Wallets
+# Explore
 
 <div class="grid cards" markdown>
 
-- **[Polkadot Ecosystem Wallets](https://polkadot.com/get-started/wallets)** – Wallets listed on the Official Polkadot Website.
-- **[Wallets and Extensions](wallets-and-extensions.md)** - An Overview of Wallets and Browser Extensions in the Polkadot Ecosystem.
-- **[Ledger](ledger.md)** - Use the Polkadot Ledger Application.
-- **[Polkadot Vault](polkadot-vault.md)** - Your Old Smartphone as an Air-gapped Wallet.
+- **[Wallets](wallets/index.md)** - Information about wallets.
+- **[Apps](apps/index.md)** - Details on various apps.
+- **[Dashboards](dashboards/index.md)** - Access to dashboards.
+- **[Community & Contributors](community/index.md)** - Community and contributor information.
+- **[Funding](funding/index.md)** - Funding opportunities and details.
+- **[Programs](programs/index.md)** - Information on various programs.
 
 </div>

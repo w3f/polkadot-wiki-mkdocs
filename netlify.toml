@@ -10,12 +10,7 @@
   publish = "site"
   environment = { ENABLE_RPC = "true" }
 
-[context.branch-deploy]
-  command = "mkdocs build --strict"
-  publish = "site"
-  environment = { ENABLE_RPC = "true" }
-
 [context.dev]
   command = "sh scripts/deploy.sh"
   publish = "site"
-  environment = { ENABLE_RPC = "true" }
+  environment = { ENABLE_RPC = "false" }
