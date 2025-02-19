@@ -20,21 +20,6 @@ apologize if we missed your project!
 
 ---
 
-- [About](#about)
-- [Layers of Polkadot Stack](#layers-of-polkadot-stack)
-  - [Wallets](#wallets)
-  - [User Interface](#user-interface)
-  - [Tools, APIs, and Languages](#tools-apis-and-languages)
-  - [ink! Smart Contracts](#ink-smart-contracts)
-  - [Chains and Pallets](#chains-and-pallets)
-  - [Host](#host)
-  - [Network Maintenance Tools](#network-maintenance-tools)
-  - [Signatures](#signatures)
-  - [Consensus](#consensus)
-  - [Networking](#networking)
-  - [Primitives](#primitives)
-- [Contributing](#contributing)
-
 ## About
 
 The Polkadot Tech Stack is a subset of the Web 3.0 Tech Stack, which consists of the **open-source**

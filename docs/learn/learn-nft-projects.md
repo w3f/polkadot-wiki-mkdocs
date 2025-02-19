@@ -15,13 +15,16 @@ slug: ../learn-nft-projects
 <!-- prettier-ignore -->
 <!-- no toc -->
 
+- [List of NFT Projects](#list-of-nft-projects)
 - [Asset Hub](#asset-hub)
 - [Astar](#astar)
 - [Basilisk](#basilisk)
 - [Crust](#crust)
 - [Darwinia Network](#darwinia-network)
 - [KodaDot](#kodadot)
-- [MNet Continuum](#mnet-continuum) (ex BitCountry)
+  - [History of KodaDot](#history-of-kodadot)
+  - [Ecosystem Tools by KodaDot](#ecosystem-tools-by-kodadot)
+- [MNet Continuum](#mnet-continuum)
 - [Moonbeam](#moonbeam)
 - [Mythical](#mythical)
 - [NFTMozaic](#nftmozaic)
@@ -33,10 +36,10 @@ slug: ../learn-nft-projects
 The Asset Hub is a [system chain](./learn-system-chains.md) which provides functionality for deploying
 and transferring assets — both Fungible and Non-Fungible Tokens (NFTs). The Asset Hub currently
 hosts [Uniques pallet](./learn-nft-pallets.md#uniques-pallet) (its use on AssetHub is not encouraged)
-and the [NFTs pallet](./learn-nft-pallets#nfts-pallet).
+and the [NFTs pallet](./learn-nft-pallets.md#nfts-pallet).
 
 A more in-depth overview of the Asset Hub pallets and developer resources available to the
-developers can be found in the dedicated [section about NFT pallets](./learn-nft-pallets).
+developers can be found in the dedicated [section about NFT pallets](./learn-nft-pallets.md).
 
 ## Astar
 

@@ -136,6 +136,16 @@ nav:
                       - Governance: general/dashboards/dune-analytics/polkadot-dashboards/polkadot-dashboards-governance.md
                       - Staking: general/dashboards/dune-analytics/polkadot-dashboards/polkadot-dashboards-staking.md
                       - Network: general/dashboards/dune-analytics/polkadot-dashboards/polkadot-dashboards-network.md
+                      - Legacy:
+                          - Polkadot DOT Ordinals: general/dashboards/dune-analytics/polkadot-dashboards/legacy/polkadot-dot-ordinals.md
+                          - Polkadot Governance Dashboard: general/dashboards/dune-analytics/polkadot-dashboards/legacy/polkadot-governance-dashboard.md
+                          - Polkadot OpenGov Referenda Home: general/dashboards/dune-analytics/polkadot-dashboards/legacy/polkadot-opengov-referenda-home.md
+                          - Polkadot OpenGov Referendum Voting Analysis: general/dashboards/dune-analytics/polkadot-dashboards/legacy/polkadot-opengov-referendum-voting-analysis.md
+                          - Polkadot Staking Dashboard Nomination Pool: general/dashboards/dune-analytics/polkadot-dashboards/legacy/polkadot-staking-dashboard-nomination-pool.md
+                          - Polkadot Staking Dashboard Nominators: general/dashboards/dune-analytics/polkadot-dashboards/legacy/polkadot-staking-dashboard-nominators.md
+                          - Polkadot Staking Dashboard Pool Member: general/dashboards/dune-analytics/polkadot-dashboards/legacy/polkadot-staking-dashboard-pool-member.md
+                          - Polkadot Staking Dashboard Validators: general/dashboards/dune-analytics/polkadot-dashboards/legacy/polkadot-staking-dashboard-validators.md
+                          - Polkadot Staking Dashboard: general/dashboards/dune-analytics/polkadot-dashboards/legacy/polkadot-staking-dashboard.md
                   - Parachain Dashboards:
                       - Acala: general/dashboards/dune-analytics/parachain-dashboards/acala-dashboards.md
                       - AssetHub: general/dashboards/dune-analytics/parachain-dashboards/assethub-dashboards.md
@@ -209,6 +219,7 @@ nav:
           - Start Building: general/start-building.md
           - FAQ: general/faq.md
           - Glossary: general/glossary.md
+          - NFT Projects: general/nft-projects.md
       - Basics:
           - learn/basics/index.md
           - Accounts:
@@ -346,6 +357,7 @@ nav:
             - build/tooling/index.md
             - Data: build/build-data.md
             - Open Source: build/build-open-source.md
+            - Tools Index: build/build-tools-index.md
         - Hackathon: build/build-hackathon.md
         - Archive:
             - build/archive/index.md
@@ -353,7 +365,7 @@ nav:
             - Integration: build/build-integration.md
             - Node Management: build/build-node-management.md
             - Parachains: build/build-parachains.md
-            - Build Dapps: build/build-dapps.md
+            - Build Dapp: build/build-dapp.md
             - Build Oracle: build/build-oracle.md
             - Storage:  build/build-storage.md
   - Maintain:
@@ -386,6 +398,7 @@ nav:
           - Democracy Guide: maintain/archive/maintain-guides-democracy.md
           - How to Join Council: maintain/archive/maintain-guides-how-to-join-council.md
           - How to Vote Councillor: maintain/archive/maintain-guides-how-to-vote-councillor.md
+          - maintain/maintain-archive.md
   - Kusama:
       - Getting Started: kusama/kusama-getting-started.md
       - Timeline: kusama/kusama-timeline.md
@@ -395,6 +408,7 @@ nav:
       - Adversarial Cheatsheet: kusama/kusama-adverserial-cheatsheet.md
       - Society Guide: maintain/kusama/maintain-guides-society-kusama.md
       - How to Validate Kusama: maintain/kusama/maintain-guides-how-to-validate-kusama.md
-      - Kusama Inflation: learn/learn-kusama-inflation.md
+      - Kusama Inflation: kusama/kusama-inflation.md
+      - Kusama Society: kusama/kusama-society.md
 
 

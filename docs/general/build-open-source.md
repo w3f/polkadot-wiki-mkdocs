@@ -19,20 +19,7 @@ it. [**Please feel free to make edits and additions via pull requests**](#contri
 
 ---
 
-- [About](#about)
-- [Layers of Polkadot Stack](#layers-of-polkadot-stack)
-  - [Wallets](#wallets)
-  - [User Interface](#user-interface)
-  - [Tools, APIs, and Languages](#tools-apis-and-languages)
-  - [ink! Smart Contracts](#ink-smart-contracts)
-  - [Chains and Pallets](#chains-and-pallets)
-  - [Host](#host)
-  - [Network Maintenance Tools](#network-maintenance-tools)
-  - [Signatures](#signatures)
-  - [Consensus](#consensus)
-  - [Networking](#networking)
-  - [Primitives](#primitives)
-- [Contributing](#contributing)
+<!-- no toc -->
 
 ## About
 
