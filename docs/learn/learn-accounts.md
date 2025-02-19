@@ -7,8 +7,6 @@ keywords: [account, polkadot account, polkadotjs, indices, identity, reaping]
 slug: ../learn-accounts
 ---
 
-
-
 !!!info "User friendly wallets"
     Create your Polkadot accounts with any of the secure and user-friendly wallets listed on the [Polkadot website](https://www.polkadot.network/ecosystem/wallets/).
 
@@ -100,6 +98,40 @@ Depending on what software you use to access your account, there are various way
 restore your account. It is a good idea to back your information up and keep it secure. In general,
 as long as you know how you created your account and have the mnemonic seed phrase or the JSON
 backup file (and password) stored securely, you can restore your account.
+
+### Unified Address Format
+
+Polkadot's address format allows it to
+[map your Polkadot address into multiple ones of different parachains](./learn-account-advanced.md#address-format).
+This has been a major UX problem in onboarding new users. A unified address format across parachains
+within the Polkadot ecosystem aims to deliver a **simpler, more consistent user experience** while
+reducing errors.
+
+Below is an example of the Hydration parachain.
+
+- Legacy Format: `7LMa9HR4MgV3Ae8t632XcJJSPBaEFou4RDRXQzeVE6BrpYCk`
+
+- New format: `13m1rnJf9MPFKwef2Vc2pXYffcZhoGEGXxXFew8X4Dj96FcA`
+
+From a UI perspective, your Polkadot address will be the same on any parachain. The main benefits of
+the unified address format include the following:
+
+- Simplified User Experience: A single address format reduces complexity, making Polkadot more
+  accessible.
+- Consistency Across Ecosystem: No more dealing with multiple formats for different parachains.
+- Improved Ecosystem Usability: A unified experience enhances the overall robustness and usability
+  of the Polkadot network.
+
+:::info Exchanges and Legacy Formats
+
+Some exchanges may require the legacy format for deposits or withdrawals during the transition.
+Parachain upgrades are happening progressively, and exchanges may take time to fully integrate the
+new format.
+
+To assist, a feature for copying legacy addresses is being implemented to ensure a seamless
+experience during this interim period.
+
+:::
 
 ## Existential Deposit and Reaping
 
