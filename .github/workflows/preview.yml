@@ -22,8 +22,27 @@ jobs:
 
       - name: Build MkDocs site
         run: mkdocs build
+        env:
+          ENABLE_RPC: true
 
-      - name: Deploy to Netlify
+      - name: Deploy Prod to Netlify
+        if: github.ref == 'refs/heads/master'
+        uses: nwtgck/actions-netlify@v3.0
+        with:
+          publish-dir: './site'
+          production-branch: master
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          deploy-message: "Deploy from GitHub Actions"
+          enable-pull-request-comment: false
+          enable-commit-comment: true
+          overwrites-pull-request-comment: true
+          production-deploy: true
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+
+      - name: Deploy Preview to Netlify
+        if: github.ref != 'refs/heads/master'
         uses: nwtgck/actions-netlify@v3.0
         with:
           publish-dir: './site'
