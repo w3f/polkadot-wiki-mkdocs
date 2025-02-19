@@ -1,8 +1,9 @@
 # .github/workflows/netlify.yml
 name: Build and Deploy to Netlify
 on:
-  push:
   pull_request:
+    types:
+      - synchronize
 jobs:
   build:
     runs-on: ubuntu-22.04
