@@ -18,21 +18,22 @@ One of the most attractive targets for malicious actors are your wallet secret s
 optionally exported backup JSON file. Keep them offline in a secure and private location. If you
 share these with anyone, they can access your account and execute any transaction.
 
-<div className="row">
-  <div className="col text--center">
-    <a href="https://www.youtube.com/watch?v=ARsdXZycJAg">
-      <img src="https://img.youtube.com/vi/ARsdXZycJAg/0.jpg" width="350" style="borderRadius: 10, border: '1px solid slategrey'" />
-    </a>
-    <p>
-      <a href="https://www.youtube.com/watch?v=ARsdXZycJAg">Stay Safe in Polkadot</a>
-    </p>
-  </div>
+<div class="row" style="display: flex; gap: 20px; justify-content: center;">
+  <!-- Card 1 -->
+  <a 
+    href="https://www.youtube.com/watch?v=ARsdXZycJA" 
+    class="card-container" 
+    data-aos="fade-up" 
+    data-aos-delay="100" 
+    style="width: 300px; height: 300px;"
+  >
+    <img src="https://img.youtube.com/vi/ARsdXZycJAg/0.jpg" class="card-image"/>
+    <p class="card-title">Stay Safe in Polkadot</p>
+  </a>
 </div>
 
 !!!info
     Visit [this support article](https://support.polkadot.network/support/solutions/articles/65000181874-how-to-store-your-mnemonic-phrase-and-backup-file-safely) for more information about key security.
-
-
 
 ## Essential Rules
 

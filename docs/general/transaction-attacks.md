@@ -13,10 +13,7 @@ signing a Transaction B. An Attack might come from:
 ### Clipboard Memory
 
 !!!info
-For a more detailed read about clipboard memory attacks see
-[this article](https://www.kaspersky.com/blog/cryptoshuffler-bitcoin-stealer/19976/).
-
-
+    For a more detailed read about clipboard memory attacks see [this article](https://www.kaspersky.com/blog/cryptoshuffler-bitcoin-stealer/19976/).
 
 This is a common attack. The clipboard memory is that memory on your computer dedicated to
 copy-paste operations. There is malicious software that can be remotely installed on your computer
@@ -81,10 +78,7 @@ try to issue an extrinsic sending 20 DOT, the transfer will fail).
 ## Defense against Attacks
 
 !!!warning
-If you can't verify the transaction or you suspect you are signing something different than what you
-intended, don't sign it!
-
-
+    If you can't verify the transaction or you suspect you are signing something different than what you intended, don't sign it!
 
 To avoid being victim of an attack:
 

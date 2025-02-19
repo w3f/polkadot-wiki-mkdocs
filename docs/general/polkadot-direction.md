@@ -8,7 +8,7 @@ slug: ../polkadot-direction
 ---
 
 !!!info
-  The material on this page is based on [Gavin Wood's talk at Polkadot Decoded 2023](https://www.youtube.com/watch?v=GIB1WeVuJD0).
+    The material on this page is based on [Gavin Wood's talk at Polkadot Decoded 2023](https://www.youtube.com/watch?v=GIB1WeVuJD0).
 
 
 
