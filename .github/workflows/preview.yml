@@ -4,6 +4,9 @@ on:
   pull_request:
     types:
       - synchronize
+  push:
+    branches:
+      - master
 jobs:
   build:
     runs-on: ubuntu-22.04
