@@ -1,12 +1,10 @@
 # .github/workflows/netlify.yml
 name: Build and Deploy to Netlify
 on:
-  push:
   pull_request:
 jobs:
   build:
     runs-on: ubuntu-22.04
-    steps:
     steps:
       - uses: actions/checkout@v4
 
