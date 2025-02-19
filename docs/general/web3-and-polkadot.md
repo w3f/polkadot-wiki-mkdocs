@@ -24,10 +24,8 @@ internet into a decentralized web, where users control their data and identity i
 environment. The Web3 movement aims to remove intermediaries and build trustless infrastructure.
 Web3 is an interactive and collaborative web where users can read, write, and **own** data.
 
-!!!note The Web3 Movement
-
-To learn more about the Web3 movement, check out this video from the
-[Web3 Summit](https://youtu.be/l44z35vabvA)
+!!!note "The Web3 Movement"
+    To learn more about the Web3 movement, check out this video from the [Web3 Summit](https://youtu.be/l44z35vabvA)
 
 
 
