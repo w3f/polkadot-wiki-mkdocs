@@ -3,7 +3,7 @@ title: Welcome to the Polkadot Wiki
 description: Home Page
 ---
 
-The Polkadot Wiki is a high-level technical documentation about the Polkadot Ecosystem. Use the cards below to explore and learn more about Polkadot.
+The Polkadot Wiki features high-level technical documentation about the Polkadot Ecosystem. Use the cards below to explore and learn more about Polkadot.
 
 <div class="row">
   <!-- Card 1 -->
