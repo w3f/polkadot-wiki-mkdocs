@@ -276,10 +276,18 @@ nav:
                   - Parachains: learn/learn-parachains.md
                   - System Chains: learn/learn-system-chains.md
                   - Parachains FAQ: learn/learn-parachains-faq.md
+              - Cross Consensus Messaging (XCM): 
+                    - XCM: learn/learn-xcm.md
+                    - XCM Pallet: learn/learn-xcm-pallet.md 
+                    - XCM Transport: learn/learn-xcm-transport.md
+                    - XCM Virtual Machine (XCVM): learn/learn-xcvm.md
+                    - XCM Instructions: learn/learn-xcm-instructions.md
+                    - XCM Use Cases: learn/learn-xcm-usecases.md
               - Bridges:
                   - Snowbridge: learn/learn-snowbridge.md
                   - Hyperbridge: learn/learn-hyperbridge.md
                   - DOT-KSM Bridge: learn/learn-DOT-KSM-bridge.md
+                  
           - Account (Advanced): learn/learn-account-advanced.md
           - Staking (Advanced): learn/learn-staking-advanced.md
           - NFT Pallets: learn/learn-nft-pallets.md
