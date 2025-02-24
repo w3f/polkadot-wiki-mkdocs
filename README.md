@@ -27,7 +27,3 @@ ENABLE_RPC=false mkdocs serve
 # If you're not in a virtual env and this the above doesn't work
 python -m mkdocs serve
 ```
-
-## Migration
-
-For documentation on migration, see: [MIGRATION.MD](MIGRATION.MD).
