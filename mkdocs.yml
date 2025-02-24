@@ -38,7 +38,8 @@ theme:
 plugins:
   - search
   - open-in-new-tab
-  - macros
+  - macros:
+      module_name: macros/rpc
 
 # Additional configuration
 extra:
@@ -106,7 +107,6 @@ markdown_extensions:
 
 # Sidebar
 nav:
-  - Home: index.md
   - Explore:
       - general/index.md
       - Getting Started: general/getting-started.md
