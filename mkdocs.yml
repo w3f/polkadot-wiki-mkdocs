@@ -38,7 +38,8 @@ theme:
 plugins:
   - search
   - open-in-new-tab
-  - macros
+  - macros:
+      module_name: macros/rpc
 
 # Additional configuration
 extra:
