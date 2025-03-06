@@ -75,3 +75,16 @@ def define_env(env):
             return format(result.value, readable)
         else:
             return "DEV_MODE"
+        
+    @env.macro
+    def metadata(network):
+        url = get_network_url(network)
+        api = substrateinterface.SubstrateInterface(url)
+        metadata = api.get_metadata()
+
+        # Decode the metadata object to a dictionary
+        metadata_dict = metadata.decode()
+        print(metadata_dict)
+
+        # Return the metadata as a formatted string
+        return f"<pre>{metadata_dict}</pre>"
