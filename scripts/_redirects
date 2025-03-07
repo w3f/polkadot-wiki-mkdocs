@@ -35,7 +35,6 @@
 /docs/learn-xcvm    /learn/learn-xcvm    301
 /docs/learn-xcm-instructions    /learn/learn-xcm-instructions    301
 /docs/learn-xcm-usecases    /learn/learn-xcm-usecases   301
-/docs/learn-xcm-*   /learn/learn-xcm    301
 /docs/learn-agile-coretime    /learn/learn-agile-coretime    301
 /docs/build-open-source    /build/build-open-source    301
 /docs/learn-parachains    /learn/learn-parachains    301
@@ -137,10 +136,6 @@
 /docs/learn-runtime-upgrades    /learn/learn-runtime-upgrades    301
 /docs/learn/xcm/introduction    /learn/learn-xcm    301
 /docs/learn/xcm/overview    /learn/learn-xcm    301
-/docs/learn/xcm/*    /learn/learn-xcm    301
-/docs/learn-*    /general/web3-and-polkadot    301
-/docs/build-*    /build/build-guide    301
-/docs/*    /general/getting-started    301
 /docs/learn-crosschain    /learn/learn-xcm    301
 /docs/learn-cross-consensus    /learn/learn-xcm    301
 /docs/learn-security    /learn/learn-parachains    301
@@ -189,3 +184,8 @@
 /docs/learn-comparisons-ethereum-2    /learn/learn-comparisons    301
 /en/latest    /    301
 /en/    /    301
+/docs/learn-xcm-*   /learn/learn-xcm    301
+/docs/learn/xcm/*    /learn/learn-xcm    301
+/docs/learn-*    /general/web3-and-polkadot    301
+/docs/build-*    /build/build-guide    301
+/docs/*    /general/getting-started    301
