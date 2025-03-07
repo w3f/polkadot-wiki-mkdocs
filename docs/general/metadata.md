@@ -1,4 +1,4 @@
---********-
+---
 title: Metadata Explorer
 description: Visualization tool for network metadata.
 template: metadata.html
