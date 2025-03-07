@@ -1537,6 +1537,236 @@
   <lastmod>2025-02-04T15:32:49+00:00</lastmod>
   <priority>0.33</priority>
 </url>
+<url>
+  <loc>https://wiki.polkadot.network/docs/learn-crosschain</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/docs/learn-cross-consensus</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/docs/learn-security</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/docs/learn-account-transfer</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/docs/ens</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/docs/learn-keys</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/docs/learn-randomness</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/docs/learn-simple-payouts</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/docs/learn-staking-miner</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/docs/learn-gov2</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/docs/learn-opengov</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/docs/build-wallets</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/docs/wallets</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/docs/learn-common-goods</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/docs/maintain-guides-how-to-use-polkadot-validator-setup</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/docs/maintain-guides-how-to-setup-a-validator-with-reverse-proxy</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/docs/learn-ledger</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/docs/learn-polkadotjs</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/docs/maintain-bug-bounty</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/docs/learn-staking-faq</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/docs/learn-statemint</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/docs/learn-assets-guides</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/docs/learn-kusama-vs-polkadot</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/docs/build-build-with-polkadot</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/docs/learn-availability</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/docs/maintain-guides-opengov</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/docs/learn-staking-guides</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/docs/learn-identity-guides</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/docs/learn-vault-guides</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/docs/learn-staking-apps</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/docs/maintain-guides-polkadot-opengov</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/docs/learn-account-generation</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/docs/learn-account-restore</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/docs/learn-accounts-index</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/docs/learn-transactions-index</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/docs/learn-extrinsics</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/docs/learn-balance-transfers</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/docs/learn-transaction-fees</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/docs/builders-program</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/docs/maintain-guides-how-to-nominate-polkadot</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/docs/learn-parathreads</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/docs/maintain-guides-avoid-slashing</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/docs/learn-guides-assets-ledger</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/docs/learn-bridge-hub</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/docs/learn-comparison-rollup</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/docs/learn-comparisons-ethereum-2</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
 
 
 </urlset>
