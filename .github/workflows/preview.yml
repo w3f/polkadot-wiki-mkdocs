@@ -25,6 +25,11 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Build MkDocs site
+        run: sh scripts/deploy.sh
+        env:
+          ENABLE_RPC: true
+
       - name: Deploy Prod to Netlify
         if: github.ref == 'refs/heads/master'
         uses: nwtgck/actions-netlify@v3.0
