@@ -128,13 +128,12 @@ After these jobs are completed, the CICD production workflow will automatically 
 | [Audit Links](https://github.com/w3f/polkadot-wiki/blob/master/.github/workflows/audit-links.yml)                         | Test all links in the docs for broken references and opens a new issue displaying results if any are found.                                                                                                       | Monthly or [Workflow Dispatch](https://github.com/w3f/polkadot-wiki/actions/workflows/audit-links.yml)          |
 | [Code QL Analysis](https://github.com/w3f/polkadot-wiki/blob/master/.github/workflows/codeql-analysis.yml)                | Tests for vulnerabilities across the codebase                                                                                                                                                                     | Weekly, Push to `master` or Pull Request to `master`                                                            |
 | [Dependabot]()                                                                                                            | Helps keep packages up-to-date with latest release.                                                                                                                                                               | Daily                                                                                                           |
-| [Build and Deploy to Netlify]()         | Builds and deploys the site to Netlify. If it is a PR, it generates a preview. If it is a push to master, it will deploy on the production URL.                                                                            |
+| [Build and Deploy to Netlify](https://github.com/w3f/polkadot-wiki/blob/master/.github/workflows/preview.yml)         | Builds and deploys the site to Netlify. If it is a PR, it generates a preview. If it is a push to master, it will deploy on the production URL.                                                                            |
 | [Status Badges](https://github.com/w3f/polkadot-wiki/blob/master/.github/workflows/status-badges.yml)                     | Update the commit history of various [open source projects](https://github.com/w3f/polkadot-wiki/blob/master/docs/build/build-open-source.md) in the ecosystem.                                                   | Weekly or [Workflow Dispatch](https://github.com/w3f/polkadot-wiki/actions/workflows/status-badges.yml)         |
 
 ### Conditional Rendering
 
-The Polkadot Wiki does not support conditional rendering. If needed, use `Tabs` and `TabItem` to
-display values for Polkadot and Kusama.
+The Polkadot Wiki does not support conditional rendering. If needed, represent multiple chains (i.e, Polkadot and Kusama) using the tab layout specified here on the[ Mkdocs Material documentation](https://squidfunk.github.io/mkdocs-material/reference/content-tabs/#usage).
 
 ## Internationalization
 
