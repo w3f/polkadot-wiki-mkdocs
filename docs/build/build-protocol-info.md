@@ -149,7 +149,7 @@ valid. If the extrinsic is not included in a block within this validity window, 
 from the transaction queue.
 
 The chain only stores a limited number of prior block hashes as reference. You can query this
-parameter, called [`BlockHashCount`](../general/chain-state-values.md#block-hash-count), from the
+parameter, called [`BlockHashCount`](../general/chain-state-values.md), from the
 chain state or metadata. If the validity period is larger than the number of blocks stored on-chain,
 then the transaction will only be valid as long as there is a block to check it against, i.e. the
 minimum value of validity period and block hash count.

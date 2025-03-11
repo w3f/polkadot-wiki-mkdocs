@@ -63,7 +63,7 @@ On Kusama, one day is approximately four eras whereas on Polkadot, one era is ap
 In each era, the validators elected to the active set earn era points which correspond to the actual
 rewards earned that are distributed proportionally to the nominators after deducting the validator
 commission. The
-[minimum validator commission](../../general/chain-state-values.md#minimum-validator-commission) can
+[minimum validator commission](../../general/chain-state-values.md) can
 be set through on-chain governance. For more information rewards and payouts, check the
 [validator payout](../maintain-guides-validator-payout.md) document.
 
