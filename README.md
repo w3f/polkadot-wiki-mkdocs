@@ -23,6 +23,8 @@
     - [Deployments](#deployments)
     - [GitHub Actions](#github-actions)
   - [Conditional Rendering](#conditional-rendering)
+  - [Mkdocs Macros](#mkdocs-macros)
+    - [RPC Macro Example](#rpc-macro-example)
 - [Internationalization](#internationalization)
 - [License](#license)
 <!-- /TOC -->
@@ -102,11 +104,8 @@ Use the style guide from the
 
 ### Formatting
 
-Prettier is automatically run when making a local commit. Verify that all changes render as expected
-after making new commits by [running the projects locally](#start).
-
 See the [Conditional Rendering](#conditional-rendering) and
-[React Components](#inline-react-components) sections for additional details regarding how to
+[Mkdocs Macros](#mkdocs-macros) sections for additional details regarding how to
 properly format syntax for elements outside of the standard markdown library.
 
 ### Automation
@@ -133,6 +132,33 @@ After these jobs are completed, the CICD production workflow will automatically 
 ### Conditional Rendering
 
 The Polkadot Wiki does not support conditional rendering. If needed, represent multiple chains (i.e, Polkadot and Kusama) using the tab layout specified here on the[ Mkdocs Material documentation](https://squidfunk.github.io/mkdocs-material/reference/content-tabs/#usage).
+
+### Mkdocs Macros
+
+Mkdocs macros allow the use of Jinja2 templates and custom Python functions to allow for custom data fetching and rendering within Mkdocs. All current macros can be found in: [`macros/`](./macros/). 
+
+#### RPC Macro Example
+
+For example, the `rpc` macro can be used in the following manner, with each field representing the input for the function signature respectively.
+
+1. `rpc` macro function signature:
+
+```py
+def rpc(network, module, call, default_value, is_constant=False, readable="")
+```
+
+2. Example Usage:
+
+```md
+## Number of Nominators
+{{ rpc("polkadot", "Staking", "CounterForNominators", 36793, is_constant=false) }}
+```
+
+3. Different types of readable, depending on usage and network: 
+    * Percentage
+    * Human Readable / Human Readable Kusama (rounds to nearest 100)
+    * Blocks to days (converts blocks to days)
+    * Precise DOT / KSM (returns an unrounded number with full precision)
 
 ## Internationalization
 
