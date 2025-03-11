@@ -7,7 +7,7 @@ keywords: [contributing, contributions, translations]
 slug: ../contributing
 ---
 
-The wiki was started and is maintained by the Web3 Foundation. It is an open-source project and aims
+The wiki was started and is maintained by [the Web3 Foundation Technical Education Team](./contributors.md). It is an open-source project and aims
 to be the most extensive knowledge resource on the Polkadot and Kusama ecosystems. Much of the
 material currently focuses on Polkadot and Kusama directly, but is open to covering informational
 material for community projects.
@@ -18,12 +18,6 @@ material for community projects.
 Nonetheless, pull requests, discussions, and contributions from the community are encouraged. Active community members who demonstrate a record of good contributions may be given `write` access to the repository.
 
 Otherwise, the Web3 Foundation holds the administrative position and has the final say on the included content. Specifically, the foundation’s Technical Education team is most directly involved.
-
-!!!note "Contributing Explainer"
-      Check out the [How to Contribute to the Polkadot Wiki](https://www.youtube.com/watch?v=6i55KOcy7B0)
-      video for steps on contributions.
-
-
 
 ## How to Contribute
 
