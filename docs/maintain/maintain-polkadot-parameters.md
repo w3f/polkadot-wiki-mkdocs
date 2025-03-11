@@ -68,7 +68,7 @@ a block in the chain. Thus, the times given are *estimates*. See
 ### Staking, Validating, and Nominating
 
 The maximum number of validators that can be nominated by a nominator is can be see
-[here](../general/chain-state-values.md#maximum-votes-per-nominator).
+[here](../general/chain-state-values.md).
 
 === "Polkadot"
 

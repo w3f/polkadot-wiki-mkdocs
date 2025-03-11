@@ -489,7 +489,7 @@ below are a few public snapshot providers for Polkadot and Kusama.
 
 ## Bond DOT
 
-There is a [minimum bond](../general/chain-state-values.md#minimum-validator-bond) to start a
+There is a [minimum bond](../general/chain-state-values.md) to start a
 validator instance, but to enter the active validator set and be eligible to earn rewards, your
 validator node should be nominated by a minimum number of DOT tokens.
 
