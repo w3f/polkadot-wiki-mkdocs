@@ -84,6 +84,6 @@ and render the Wiki on your local machine before submitting a pull request for r
 Wiki locally also adds the benefit of checking for broken links.
 
 !!!info "Run the Wiki Locally"
-      For more information about how to run the Wiki locally on your machine visit [the README file on GitHub](../../README.md#running-locally).
+      For more information about how to run the Wiki locally on your machine visit [the README file on GitHub](https://github.com/w3f/polkadot-wiki/blob/master/README.md).
       
 This document is based on the [Level contribution guidelines](https://github.com/Level/community/blob/master/CONTRIBUTING.md).
