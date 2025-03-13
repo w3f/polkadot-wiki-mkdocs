@@ -7,6 +7,9 @@ keywords: [validator, community, reputation, nominations]
 slug: ../maintain-guides-validator-community
 ---
 
+!!! danger "This section will be deprecated. For the latest information, please see the [Polkadot Developer Documentation](https://docs.polkadot.com/)"
+    Visit the [Polkadot Developer Documentation](https://docs.polkadot.com/) to learn more.
+
 ## Building a Community and Attracting Nominations
 
 After [setting up a validator](./maintain-guides-how-to-validate-polkadot.md), nominations will only come

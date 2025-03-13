@@ -313,7 +313,7 @@
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://wiki.polkadot.network/docs/maintain/maintain-guides-how-to-vote-councillor</loc>
+  <loc>https://wiki.polkadot.network/docs/maintain/maintain-guides-how-to-validate-polkadot</loc>
   <lastmod>2025-02-04T15:32:49+00:00</lastmod>
   <priority>0.64</priority>
 </url>
@@ -738,7 +738,7 @@
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://wiki.polkadot.network/docs/learn-jam-faq</loc>
+  <loc>https://wiki.polkadot.network/docs/learn/jam-faq</loc>
   <lastmod>2025-02-04T15:32:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
@@ -1767,6 +1767,260 @@
   <lastmod>2025-02-04T15:32:49+00:00</lastmod>
   <priority>0.64</priority>
 </url>
-
+<url>
+  <loc>https://wiki.polkadot.network/opensearch.xml</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/index.html</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/js</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/js/clipboard.min.js</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/js/custom.js</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/js/copycode.js</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/docs</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/docs/learn</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/docs/learn/xcm</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/docs/learn/xcm/fundamentals</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/docs/learn/xcm/fundamentals/multilocation-example</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/docs/learn/xcm/fundamentals/multilocation-junctions</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/docs/learn/xcm/fundamentals/multilocation</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/docs/learn/xcm/fundamentals/multilocation-summary</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/docs/learn/xcm/journey-fees</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/docs/learn/xcm/journey-transact</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/docs/learn/xcm/fundamentals-fees</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/docs/learn/xcm/fundamentals-xcvm</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/docs/learn/xcm/journey-summary</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/docs/learn/xcm/fundamentals-multiasset</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/docs/learn/xcm/journey-register</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/docs/learn/xcm/journey-holding</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/docs/learn/xcm/overview-xcvm</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/docs/learn/xcm/references</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/docs/learn/xcm/journey-version</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/docs/learn/xcm/introduction</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/docs/learn/xcm/journey-locks</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/docs/learn/xcm/journey-channels</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/docs/learn/xcm/quickstart-simulator</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/docs/learn/xcm/quickstart-summary</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/docs/learn/xcm/journey</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/docs/learn/xcm/journey/transfers-teleport</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/docs/learn/xcm/journey/transfers</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/docs/learn/xcm/journey/transfers-summary</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/docs/learn/xcm/journey/transfers-reserve</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/docs/learn/xcm/quickstart</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/docs/learn/xcm/testing</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/docs/learn/xcm/config-deep-dive</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/docs/learn/xcm/overview-format</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/docs/learn/xcm/journey-expectations</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/docs/learn/xcm/journey-queries</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/docs/learn/xcm/overview-summary</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/docs/learn/xcm/journey-origin</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/docs/learn/xcm/quickstart-first-look</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/docs/learn/xcm/reference-xcvm-registers</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/docs/learn/xcm/overview</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/docs/learn/xcm/fundamentals-summary</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/docs/learn/xcm/overview-intro</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/docs/learn/xcm/journey-assets</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/docs/learn/xcm/reference-glossary</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wiki.polkadot.network/docs/learn/xcm/overview-architecture</loc>
+  <lastmod>2025-02-04T15:32:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
 
 </urlset>
