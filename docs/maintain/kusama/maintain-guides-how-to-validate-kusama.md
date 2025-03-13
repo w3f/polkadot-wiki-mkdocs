@@ -7,6 +7,9 @@ keywords: [validate, validator, kusama, stake, maintain]
 slug: ../../maintain-guides-how-to-validate-kusama
 ---
 
+!!! danger "This section will be deprecated. For the latest information, please see the [Polkadot Developer Documentation](https://docs.polkadot.com/)"
+    Visit the [Polkadot Developer Documentation](https://docs.polkadot.com/) to learn more.
+
 ## Preliminaries
 
 Running a validator on a live network is a lot of responsibility! You will be accountable for not

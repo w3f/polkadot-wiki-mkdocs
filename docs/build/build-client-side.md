@@ -7,6 +7,9 @@ keywords: [data, index, query, explorer, dashboard, dapp, uapp, app, frontend, c
 slug: ../build-client-side
 ---
 
+!!! danger "This section will be deprecated. For the latest information, please see the [Polkadot Developer Documentation](https://docs.polkadot.com/)"
+    Visit the [Polkadot Developer Documentation](https://docs.polkadot.com/) to learn more.
+
 As with any blockchain, building decentralized applications (dApps) is a significant part of how a
 developer can build on Polkadot.
 
