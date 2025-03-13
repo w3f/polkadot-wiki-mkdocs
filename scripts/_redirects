@@ -34,17 +34,17 @@
 /docs/build-tools-index    https://docs.polkadot.com/develop/toolkit/integrations    301
 /docs/build-hackathon    /build/build-hackathon    301
 /docs/build-archive-index    https://docs.polkadot.com/develop    301
+/docs/learn-xcm-index    /learn/xcm   301
 /docs/learn-xcm    /learn/learn-xcm  301
-/docs/learn-xcm-index    /learn/learn-xcm   301
-/docs/learn-xcm-pallet    /learn/learn-xcm   301
+/docs/learn-xcm-pallet    /learn/learn-xcm-pallet   301
 /docs/learn-xcm-transport    /learn/learn-xcm-transport    301
 /docs/learn-xcvm    /learn/learn-xcvm    301
 /docs/learn-xcm-instructions    /learn/learn-xcm-instructions    301
 /docs/learn-xcm-usecases    /learn/learn-xcm-usecases   301
 /docs/learn-agile-coretime    /learn/learn-agile-coretime    301
 /docs/build-open-source    /build/build-open-source    301
+/docs/learn-parachains-index    /learn/parachains   301
 /docs/learn-parachains    /learn/learn-parachains    301
-/docs/learn-parachains-index    /learn/learn-parachains   301
 /docs/learn-parachains-protocol    /learn/learn-parachains-protocol    301
 /docs/learn-wasm    /learn/learn-wasm    301
 /docs/build-guides-coretime-start   https://docs.polkadot.com/tutorials/polkadot-sdk/parachains/zero-to-hero    301
@@ -88,7 +88,7 @@
 /docs/build-index    https://docs.polkadot.com/develop    301
 /docs/maintain/maintain-guides-how-to-vote-councillor    /maintain/archive/maintain-guides-how-to-vote-councillor    301
 /docs/maintain/maintain-guides-democracy    /maintain/archive/maintain-guides-democracy    301
-/docs/learn-accounts    /learn/learn-accounts    301
+/docs/learn-accounts    /learn/accounts  301
 /docs/learn-transactions    /learn/learn-transactions   301
 /docs/learn-staking    /learn/learn-staking    301
 /docs/learn-proxies    /learn/learn-proxies    301
@@ -150,7 +150,7 @@
 /docs/maintain-guides-validator-payout  https://docs.polkadot.com/infrastructure/staking-mechanics/rewards-payout    301
 /docs/learn-polkadot-opengov-index    /learn/polkadot-opengov    301
 /docs/maintain-networks  https://docs.polkadot.com/develop/networks    301
-/docs/learn-assets-index    /learn/learn-assets   301
+/docs/learn-assets-index    /learn/asset-hub   301
 /docs/learn-assets   /learn/learn-assets    301
 /docs/learn-participants-index    /learn/participants    301
 /docs/learn-components-index    /learn/components    301
@@ -199,7 +199,7 @@
 /docs/maintain-guides-polkadot-opengov    /learn/learn-polkadot-opengov-origins    301
 /docs/learn-account-generation    /learn/learn-accounts    301
 /docs/learn-account-restore    /learn/learn-accounts    301
-/docs/learn-accounts-index    /learn/learn-accounts    301
+/docs/learn-accounts-index    /learn/accounts    301
 /docs/learn-transactions-index    /learn/learn-transactions    301
 /docs/learn-extrinsics    /learn/learn-transactions    301
 /docs/learn-balance-transfers    /learn/learn-transactions    301
