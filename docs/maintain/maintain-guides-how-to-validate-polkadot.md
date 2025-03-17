@@ -7,6 +7,9 @@ keywords: [validator setup, validator, validate, binary, runtime]
 slug: ../maintain-guides-how-to-validate-polkadot
 ---
 
+!!! danger "This section will be deprecated. For the latest information, please see the [Polkadot Developer Documentation](https://docs.polkadot.com/)"
+
+
 !!!tip
     If you are a beginner, it is recommended that you start your validator journey on Kusama network.
     Check the [Kusama guide](kusama/maintain-guides-how-to-validate-kusama.md) for details on how to get
