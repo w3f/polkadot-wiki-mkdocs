@@ -8,7 +8,7 @@ slug: ../build-hrmp-channels
 ---
 
 !!! danger "This section will be deprecated. For the latest information, please see the [Polkadot Developer Documentation](https://docs.polkadot.com/)"
-    Visit the [Polkadot Developer Documentation](https://docs.polkadot.com/) to learn more.
+
 
 In order to communicate over [HRMP](../learn/learn-xcm-transport.md#hrmp-xcmp-lite), parachains must
 establish channels by registering them on the relay chain. Like

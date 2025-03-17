@@ -8,7 +8,7 @@ slug: ../build-storage
 ---
 
 !!! danger "This section will be deprecated. For the latest information, please see the [Polkadot Developer Documentation](https://docs.polkadot.com/)"
-    Visit the [Polkadot Developer Documentation](https://docs.polkadot.com/) to learn more.
+
 
 Storage is an integral part of modern computer systems, and the same is true for distributed and
 decentralized systems like a blockchain. When interacting with the Polkadot ecosystem, it will be

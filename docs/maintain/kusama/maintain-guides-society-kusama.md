@@ -8,7 +8,7 @@ slug: ../../maintain-guides-society-kusama
 ---
 
 !!! danger "This section will be deprecated. For the latest information, please see the [Polkadot Developer Documentation](https://docs.polkadot.com/)"
-    Visit the [Polkadot Developer Documentation](https://docs.polkadot.com/) to learn more.
+
 
 Kappa Sigma Mu is a membership club using the Substrate
 [Society pallet](https://paritytech.github.io/substrate/master/pallet_society/index.html). It is an

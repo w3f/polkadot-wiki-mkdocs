@@ -8,7 +8,7 @@ slug: ../build-integration
 ---
 
 !!! danger "This section will be deprecated. For the latest information, please see the [Polkadot Developer Documentation](https://docs.polkadot.com/)"
-    Visit the [Polkadot Developer Documentation](https://docs.polkadot.com/) to learn more.
+
 
 Welcome to the Polkadot integration guide. This guide will provide all the information you need to
 get started on your integration. The target audiences for this guide are wallets and custodians, but

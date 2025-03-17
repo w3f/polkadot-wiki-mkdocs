@@ -8,7 +8,7 @@ slug: ../maintain-guides-how-to-monitor-your-node
 ---
 
 !!! danger "This section will be deprecated. For the latest information, please see the [Polkadot Developer Documentation](https://docs.polkadot.com/)"
-    Visit the [Polkadot Developer Documentation](https://docs.polkadot.com/) to learn more.
+
 
 This guide will walk you through how to set up [Prometheus](https://prometheus.io/) with
 [Grafana](https://grafana.com/) to monitor your node using Ubuntu 18.04 or 20.04.

@@ -8,7 +8,7 @@ slug: ../maintain-index
 ---
 
 !!! danger "This section will be deprecated. For the latest information, please see the [Polkadot Developer Documentation](https://docs.polkadot.com/)"
-    Visit the [Polkadot Developer Documentation](https://docs.polkadot.com/) to learn more.
+
 
 Welcome to the network maintainers section of the Polkadot Wiki. Here you will find information and
 guides to set up a node and run the network.

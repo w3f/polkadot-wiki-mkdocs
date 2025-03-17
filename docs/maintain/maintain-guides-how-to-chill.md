@@ -8,7 +8,7 @@ slug: ../maintain-guides-how-to-chill
 ---
 
 !!! danger "This section will be deprecated. For the latest information, please see the [Polkadot Developer Documentation](https://docs.polkadot.com/)"
-    Visit the [Polkadot Developer Documentation](https://docs.polkadot.com/) to learn more.
+
 
 Staking bonds can be in any of the three states: validating, nominating, or chilled (neither
 validating nor nominating). When a staker wants to temporarily pause their active engagement in

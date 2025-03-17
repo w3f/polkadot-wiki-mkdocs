@@ -9,7 +9,7 @@ slug: ../maintain-guides-async-backing
 ---
 
 !!! danger "This section will be deprecated. For the latest information, please see the [Polkadot Developer Documentation](https://docs.polkadot.com/)"
-    Visit the [Polkadot Developer Documentation](https://docs.polkadot.com/) to learn more.
+
 
 !!!info Who is this guide for?
     This guide is relevant for cumulus based parachain projects started in 2023 or before. Later

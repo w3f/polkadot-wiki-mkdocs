@@ -8,7 +8,7 @@ slug: ../maintain-networks
 ---
 
 !!! danger "This section will be deprecated. For the latest information, please see the [Polkadot Developer Documentation](https://docs.polkadot.com/)"
-    Visit the [Polkadot Developer Documentation](https://docs.polkadot.com/) to learn more.
+
 
 Polkadot is built on top of Substrate, a modular framework for blockchains. One feature of Substrate
 is to allow for connection to different networks using a single executable and configuring it with a

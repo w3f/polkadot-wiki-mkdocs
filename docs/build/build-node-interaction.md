@@ -8,7 +8,7 @@ slug: ../build-node-interaction
 ---
 
 !!! danger "This section will be deprecated. For the latest information, please see the [Polkadot Developer Documentation](https://docs.polkadot.com/)"
-    Visit the [Polkadot Developer Documentation](https://docs.polkadot.com/) to learn more.
+
 
 This page will guide you through some basic interactions with your node. This guide should _guide
 you to the proper tools,_ not be seen as canonical reference. Always refer to the proper

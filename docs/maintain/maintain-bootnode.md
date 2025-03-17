@@ -8,7 +8,7 @@ slug: ../maintain-bootnode
 ---
 
 !!! danger "This section will be deprecated. For the latest information, please see the [Polkadot Developer Documentation](https://docs.polkadot.com/)"
-    Visit the [Polkadot Developer Documentation](https://docs.polkadot.com/) to learn more.
+
 
 !!!note
     When you first start a node, it has to find a way to find other nodes in the network. For that

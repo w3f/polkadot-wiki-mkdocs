@@ -8,7 +8,7 @@ slug: ../build-guides-template-basic
 ---
 
 !!! danger "This section will be deprecated. For the latest information, please see the [Polkadot Developer Documentation](https://docs.polkadot.com/)"
-    Visit the [Polkadot Developer Documentation](https://docs.polkadot.com/) to learn more.
+
 
 !!!warning "Not a production ready guide."
     This guide is considered a moving document and currently uses the **Paseo** testnet. This guide is

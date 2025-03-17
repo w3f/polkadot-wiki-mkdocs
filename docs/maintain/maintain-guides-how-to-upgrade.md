@@ -8,7 +8,7 @@ slug: ../maintain-guides-how-to-upgrade
 ---
 
 !!! danger "This section will be deprecated. For the latest information, please see the [Polkadot Developer Documentation](https://docs.polkadot.com/)"
-    Visit the [Polkadot Developer Documentation](https://docs.polkadot.com/) to learn more.
+
 
 Validators perform critical functions for the network by
 [backing and including blocks](../learn/learn-parachains-protocol.md). Validators may have to go

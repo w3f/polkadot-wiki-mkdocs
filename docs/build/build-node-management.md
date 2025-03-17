@@ -8,7 +8,7 @@ slug: ../build-node-management
 ---
 
 !!! danger "This section will be deprecated. For the latest information, please see the [Polkadot Developer Documentation](https://docs.polkadot.com/)"
-    Visit the [Polkadot Developer Documentation](https://docs.polkadot.com/) to learn more.
+
 
 This page contains basic information about running a Parity Polkadot client. There are a lot of ways
 to obtain/run a client, e.g. compiling from source, running in Docker, or downloading a binary. This

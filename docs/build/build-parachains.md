@@ -8,7 +8,7 @@ slug: ../build-pdk
 ---
 
 !!! danger "This section will be deprecated. For the latest information, please see the [Polkadot Developer Documentation](https://docs.polkadot.com/)"
-    Visit the [Polkadot Developer Documentation](https://docs.polkadot.com/) to learn more.
+
 
 Parachains are connected to and secured by the relay chain. They benefit from the _pooled security_,
 _thought-through governance_, and overall _scalability_ of the heterogeneous sharding approach of

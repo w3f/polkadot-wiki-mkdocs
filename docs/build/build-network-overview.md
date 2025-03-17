@@ -8,7 +8,7 @@ slug: ../build-network-overview
 ---
 
 !!! danger "This section will be deprecated. For the latest information, please see the [Polkadot Developer Documentation](https://docs.polkadot.com/)"
-    Visit the [Polkadot Developer Documentation](https://docs.polkadot.com/) to learn more.
+
 
 While Polkadot itself is the mainnet, there are several networks that can cater to different
 development or application-driven contexts.

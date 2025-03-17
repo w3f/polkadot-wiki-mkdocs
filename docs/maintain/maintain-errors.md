@@ -8,7 +8,7 @@ slug: ../maintain-errors
 ---
 
 !!! danger "This section will be deprecated. For the latest information, please see the [Polkadot Developer Documentation](https://docs.polkadot.com/)"
-    Visit the [Polkadot Developer Documentation](https://docs.polkadot.com/) to learn more.
+
 
 Errors in Substrate-based chains are usually accompanied by descriptive messages. However, to read
 these messages, a tool parsing the blockchain data needs to request _chain metadata_ from a node.
